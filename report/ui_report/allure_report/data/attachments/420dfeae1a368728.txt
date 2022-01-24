@@ -1,0 +1,7 @@
+INFO     DEFAULT:base.py:43 SUCCESS==> 打开网址 https://www.baidu.com/, 花费 7.8012 秒
+INFO     DEFAULT:base.py:220 SUCCESS==> 定位元素: <id==kw> 输入内容: 测试01, 花费 0.2046 秒 
+INFO     DEFAULT:base.py:272 SUCCESS==> 点击元素: <id==su>, 花费 0.1157 秒
+INFO     DEFAULT:base.py:522 SUCCESS==> 取网页标题, 花费 0.0050 秒
+INFO     DEFAULT:base.py:808 SUCCESS==> 判断网页标题: <测试01_百度搜索> ,实际标题<测试01_百度搜索> 花费 2.1020 秒
+INFO     DEFAULT:base.py:411 SUCCESS==> 关闭所有窗口并退出浏览器, 花费 9.9408 秒
+INFO     DEFAULT:conftest.py:46 ==========< 结束 UI自动化项目 测试 >===========

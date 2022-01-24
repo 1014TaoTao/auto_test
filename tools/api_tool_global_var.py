@@ -23,6 +23,7 @@ class global_var:
         self.test_check_sql = 16
 
     def get_id(self):
+<<<<<<< HEAD
         """
         :return:
         """
@@ -122,6 +123,56 @@ class global_var:
         """
         :return:
         """
+=======
+        return self.test_id
+
+    def get_module(self):
+        return self.test_module
+
+    def get_fuction(self):
+        return self.test_function
+
+    def get_url(self):
+        return self.test_url
+
+    def get_run(self):
+        return self.test_run
+
+    def get_run_way(self):
+        return self.test_run_way
+
+    def get_header(self):
+        return self.test_header
+
+    def get_filed_depend(self):
+        return self.test_filed_depend
+
+    def get_data(self):
+        return self.test_data
+
+    def get_expect_msg(self):
+        return self.test_expect_msg
+
+    def get_expect_data(self):
+        return self.test_expect_data
+
+    def get_result(self):
+        return self.test_result
+
+    def get_response(self):
+        return self.test_response
+
+    def get_status_code(self):
+        return self.test_status_code
+
+    def get_check_sql(self):
+        return self.test_check_sql
+
+    def get_token(self):
+        return self.test_token
+
+    def get_case_depend(self):
+>>>>>>> 全部文件提交
         return self.test_case_depend
 
 # if __name__ == '__main__':

@@ -1,0 +1,5 @@
+INFO     DEFAULT:base.py:43 SUCCESS==> 打开网址 https://www.baidu.com/, 花费 8.0106 秒
+INFO     DEFAULT:base.py:220 SUCCESS==> 定位元素: <id==kw> 输入内容: 测试03, 花费 0.2182 秒 
+INFO     DEFAULT:base.py:272 SUCCESS==> 点击元素: <id==su>, 花费 0.1195 秒
+INFO     DEFAULT:base.py:522 SUCCESS==> 取网页标题, 花费 0.0050 秒
+INFO     DEFAULT:base.py:808 SUCCESS==> 判断网页标题: <测试03_百度搜索> ,实际标题<测试03_百度搜索> 花费 2.7484 秒

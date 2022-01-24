@@ -1,0 +1,25 @@
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:test_excel.py-[信息]:==========< 开始 API自动化项目 测试 >===========
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:public_tool_project_check.py-[信息]:【Windows - ('64bit', 'WindowsPE')】
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:public_tool_project_check.py-[信息]:【python - 3.8.1】
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:test_excel.py-[信息]:【本次执行环境为:environment_115,执行人员：张涛】
+
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始请求uid】
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method:GET】
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://192.168.0.115:10005/bcs/v1/pubapi/captcha/slider】
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: None】
+[时间]:2022-01-20 12:30:53,299-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: None】
+[时间]:2022-01-20 12:31:14,383-[级别]:INFO-[文件]:api_tool_request.py-[信息]:发送请求异常:HTTPConnectionPool(host='192.168.0.115', port=10005): Max retries exceeded with url: /bcs/v1/pubapi/captcha/slider (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F657285520>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[时间]:2022-01-20 12:31:14,383-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:获取uid异常：'NoneType' object is not subscriptable
+[时间]:2022-01-20 12:31:14,383-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始请求登录】
+[时间]:2022-01-20 12:31:14,383-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method:POST】
+[时间]:2022-01-20 12:31:14,383-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://192.168.0.115:10005/am/v1/pubapi/user/signin】
+[时间]:2022-01-20 12:31:14,383-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-01-20 12:31:14,383-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {"username": "TD15382112620", "mobile": "15382112620", "grantType": "password", "accountType": "mobile", "scope": "trust", "password": "e64b78fc3bc91bcbc7dc232ba8ec59e0", "clientId": "saas_op", "clientSecret": "2c27867ba8b35dedbde7361f8ffb704d", "trails": [150], "uid": null}】
+[时间]:2022-01-20 12:31:35,420-[级别]:INFO-[文件]:api_tool_request.py-[信息]:发送请求异常:HTTPConnectionPool(host='192.168.0.115', port=10005): Max retries exceeded with url: /am/v1/pubapi/user/signin (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F6572A20D0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[时间]:2022-01-20 12:31:35,420-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:登录异常：'NoneType' object is not subscriptable
+
+[时间]:2022-01-20 12:31:35,420-[级别]:ERROR-[文件]:test_excel.py-[信息]:登录请求失败，重新请求
+[时间]:2022-01-20 19:37:59,337-[级别]:INFO-[文件]:public_tool_dingding.py-[信息]:开始发送钉钉消息
+[时间]:2022-01-20 19:38:00,434-[级别]:INFO-[文件]:public_tool_dingding.py-[信息]:钉钉消息发送成功
+[时间]:2022-01-20 19:40:26,191-[级别]:INFO-[文件]:public_tool_dingding.py-[信息]:开始发送钉钉消息
+[时间]:2022-01-20 19:40:26,774-[级别]:INFO-[文件]:public_tool_dingding.py-[信息]:钉钉消息发送成功

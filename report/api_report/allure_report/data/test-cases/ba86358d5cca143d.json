@@ -1,0 +1,323 @@
+{
+  "uid" : "ba86358d5cca143d",
+  "name" : "test_003节点详情",
+  "fullName" : "testCase.test_excel.TestExcel#test_excel",
+  "historyId" : "9e8577ab73ab4dc97ce357fc23681e8d",
+  "time" : {
+    "start" : 1642876087542,
+    "stop" : 1642876087558,
+    "duration" : 16
+  },
+  "description" : "test_003节点详情 GET http://192.168.0.115:10007/kubecluster/v1/api/node/9",
+  "descriptionHtml" : "<p>test_003节点详情 GET http://192.168.0.115:10007/kubecluster/v1/api/node/9</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "test_003节点详情 GET http://192.168.0.115:10007/kubecluster/v1/api/node/9",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1642876087542,
+        "stop" : 1642876087542,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5752db43843a24fc",
+        "name" : "测试结果",
+        "source" : "5752db43843a24fc.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "用例名称：test_003节点详情",
+      "time" : {
+        "start" : 1642876087542,
+        "stop" : 1642876087542,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b6f83bbec2d9d2f8",
+        "name" : "用例名称",
+        "source" : "b6f83bbec2d9d2f8.attach",
+        "type" : "text/plain",
+        "size" : 35
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求方式：GET",
+      "time" : {
+        "start" : 1642876087542,
+        "stop" : 1642876087558,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c3ccd172998afdda",
+        "name" : "请求方式",
+        "source" : "c3ccd172998afdda.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求地址：http://192.168.0.115:10007/kubecluster/v1/api/node/9",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cce3a406b53194f6",
+        "name" : "请求地址",
+        "source" : "cce3a406b53194f6.attach",
+        "type" : "text/plain",
+        "size" : 67
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头 ：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 8fe85bf0-db2a-4224-8b29-7e315d35d05a'}",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "12e3dbcbd8bae7dd",
+        "name" : "请求头",
+        "source" : "12e3dbcbd8bae7dd.attach",
+        "type" : "text/plain",
+        "size" : 259
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求参数：{'id': '9', 'name': 'Beijing-node-06'}",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "91f719d401581c90",
+        "name" : "请求参数",
+        "source" : "91f719d401581c90.attach",
+        "type" : "text/plain",
+        "size" : 53
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "60c743f6b3949905",
+        "name" : "code请求断言",
+        "source" : "60c743f6b3949905.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b566fe939f52468c",
+        "name" : "msg请求断言",
+        "source" : "b566fe939f52468c.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求断言：name': 'Beijing-node-06'",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5cd5fbfcdad0789e",
+        "name" : "data请求断言",
+        "source" : "5cd5fbfcdad0789e.attach",
+        "type" : "text/plain",
+        "size" : 39
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null},\"ext\":{}}', 'time_consuming': 55.615, 'time_total': 0.055615, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Sat, 22 Jan 2022 18:28:06 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5730bc517dd49ba1",
+        "name" : "响应结果",
+        "source" : "5730bc517dd49ba1.attach",
+        "type" : "text/plain",
+        "size" : 1624
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1642876087558,
+        "stop" : 1642876087558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "1540-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "result",
+    "value" : "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 8fe85bf0-db2a-4224-8b29-7e315d35d05a'}, 'data': {'id': '9', 'name': 'Beijing-node-06'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null},\"ext\":{}}', 'time_consuming': 55.615, 'time_total': 0.055615, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Sat, 22 Jan 2022 18:28:06 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba86358d5cca143d.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 8fe85bf0-db2a-4224-8b29-7e315d35d05a'}, 'data': {'id': '9', 'name': 'Beijing-node-06'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null},\"ext\":{}}', 'time_consuming': 55.615, 'time_total': 0.055615, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Sat, 22 Jan 2022 18:28:06 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+}

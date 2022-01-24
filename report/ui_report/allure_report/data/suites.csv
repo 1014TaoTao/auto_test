@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 08 21:10:50 CST 2021","Wed Dec 08 21:11:00 CST 2021","10227","testCase","test_baidu01","TestBaiDu01","","","test_01","test_01"
+"broken","Wed Jan 12 18:40:08 CST 2022","Wed Jan 12 18:40:08 CST 2022","0","testCase","test_baidu","TestBaiDu","","","test_01","test_01"
+"passed","Wed Dec 08 21:10:30 CST 2021","Wed Dec 08 21:10:39 CST 2021","9476","testCase","test_baidu","TestBaiDu","","","test_02","test_01"
+"passed","Wed Dec 08 21:10:39 CST 2021","Wed Dec 08 21:10:50 CST 2021","11100","testCase","test_baidu","TestBaiDu","","","test_03","test_03"
