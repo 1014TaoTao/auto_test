@@ -102,16 +102,16 @@
 ## allure使用说明
 - allure设置
 
-![image](.\流程图\allure设置.png)
+![allure设置](.\流程图\allure设置.png)
 
 - allure用例描述
 
-![image](.\流程图\allure用例描述.png)
+![allure用例描](.\流程图\allure用例描述.png)
 
 - allure使用方法
 
-![image](.\流程图\allure使用方法.png)
+![allure使用方](.\流程图\allure使用方法.png)
 
 - allure详细用法
 
-![image](.\流程图\allure详细用法.png)
+![allure详细用法](.\流程图\allure详细用法.png)
