@@ -27,8 +27,8 @@
         
 ## 二.工程目录：
 
-![工程目录](.\\流程图\\工程目录.png)
-![项目执行顺序](.\\流程图\\项目执行顺序.png)
+![工程目录](./流程图/工程目录.png)
+![项目执行顺序](./流程图/项目执行顺序.png)
 ```text.
 \PYTEST_AUTO_UITEST_APITEST # 项目名称
 ├─basepage      # ui自动化基础类封装目录 
@@ -102,16 +102,16 @@
 ## allure使用说明
 - allure设置
 
-![allure设置](.\\流程图\\allure设置.png)
+![allure设置](./流程图/allure设置.png)
 
 - allure用例描述
 
-![allure用例描](.\\流程图\\allure用例描述.png)
+![allure用例描](./流程图/allure用例描述.png)
 
 - allure使用方法
 
-![allure使用方](.\\流程图\\allure使用方法.png)
+![allure使用方](./流程图/allure使用方法.png)
 
 - allure详细用法
 
-![allure详细用法](.\\流程图\\allure详细用法.png)
+![allure详细用法](./流程图/allure详细用法.png)
