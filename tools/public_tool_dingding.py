@@ -5,9 +5,9 @@ import time
 
 from dingtalkchatbot.chatbot import DingtalkChatbot
 
-# from common import consts
 from common import setting, readConfigYaml
 from tools.public_tool_log import logger
+from common import consts
 
 logger = logger(log_path=setting.API_LOG_PATH)
 
@@ -15,10 +15,7 @@ logger = logger(log_path=setting.API_LOG_PATH)
 class DingTalk:
 
     # 发送钉钉消息
-    def send_dingding(self,ENVIRONMENT, TESTER):
-        """
-        :return:
-        """
+    def send_dingding(self):
         # 获取当前日期
         tile = time.strftime("%Y-%m-%d %H:%M:%S")
 
@@ -46,13 +43,13 @@ class DingTalk:
                  "项目名称：api接口数据报告 \n\n " +
                  "报告地址：[点击查看](%s)" % report_url + "\n\n" +
                  "构建地址：[点击查看](%s)" % jenkins_url + "\n\n" +
-                 "执行环境：%s" % ENVIRONMENT + "\n\n" +
+                 "执行环境：%s" % consts.ENVIRONMENT + "\n\n" +
                  "运行总数：%s" % retries_run + "\n\n" +
                  "通过数量：%s" % status_passed + "\n\n" +
                  "异常数量：%s" % status_broken + "\n\n" +
                  "跳过数量：%s" % status_skipped + "\n\n" +
                  "失败数量：%s" % status_failed + "\n\n" +
-                 "执行人员：@%s" % TESTER + "\n\n" +
+                 "执行人员：@%s" % consts.TESTER + "\n\n" +
                  "</font> \n\n --- \n\n  **运行时间：** %s" % tile,
             at_dingtalk_ids=[15382112620]
         )

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-#
-import glob
+
 import os
 
 # ------------------ 项目的根目录 -----------------------
@@ -19,9 +19,8 @@ CONFIG_YAML = os.path.join(BASE_PATH, "config", "Config.yaml")
 
 # ------------------ 项目数据文件 -----------------------
 DATA_PATH = os.path.join(BASE_PATH, "case")
-TEST_CASE_LIST = glob.glob(f"{DATA_PATH}/api/excel_data/*.xls")
-API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "kube.xls")
 
+API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "demo01.xls")
 sheet_id = 0
 API_SQL_FILE = os.path.join(DATA_PATH, "api", 'sql_data', 'test.sql')
 API_YAML_PATH = os.path.join(DATA_PATH, "api", 'yaml_data', 'test.yaml')
@@ -43,7 +42,6 @@ UI_REPORT_PATH = os.path.join(BASE_PATH, "report", "ui_report")
 # ------------------ api项目测试报告 -----------------------
 API_REPORT_RESULT_PATH = os.path.join(API_REPORT_PATH, "allure_result")
 API_REPORT_END_PATH = os.path.join(API_REPORT_PATH, "allure_report")
-html_reposrt_path = os.path.join(API_REPORT_END_PATH, 'index.html')
 API_REPORT_HISTORY_PATH = os.path.join(API_REPORT_PATH, "allure_report", "history")
 API_RESULT_HISTORY_PATH = os.path.join(API_REPORT_PATH, "allure_result", "history")
 API_FILE_LIST_PATH = os.path.join(API_REPORT_PATH, "zip", "report.zip")  # 要压缩文件名称
@@ -81,6 +79,5 @@ chrome_reg = r"SOFTWARE\Google\Chrome\BLBeacon"  # win chrome注册表地址
 PRF_CONFIG_PATH = os.path.join(BASE_PATH, "performance", "locust.conf")
 
 TOKEN_FILE = os.path.join(DATA_PATH, "api", "token.txt")
-PYQT5_FILE = os.path.join(DATA_PATH, "api", "pyqt5.txt")
 
 PROMETHEUSDATA = os.path.join(API_REPORT_END_PATH, "export", "prometheusData.txt")

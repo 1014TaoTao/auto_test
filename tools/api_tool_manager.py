@@ -15,10 +15,6 @@ class TestManager:
         self.logger = logger(setting.API_LOG_PATH)
 
     def run_bat(self, file):
-        """
-        :param file:
-        :return:
-        """
         self.logger.info("【开始执行run_bat】")
         p = subprocess.Popen("cmd.exe /c" + file, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         curline = p.stdout.readline()
@@ -29,17 +25,11 @@ class TestManager:
         print(p.returncode)
 
     def del_old_result(self):
-        """
-        :return:
-        """
         self.logger.info("【开始删除旧的结果集……】")
         if os.path.exists(setting.API_REPORT_RESULT_PATH):
             shutil.rmtree(setting.API_REPORT_RESULT_PATH)
 
     def generate_report(self):
-        """
-        :return:
-        """
         self.logger.info("【开始生成报告……】")
         if not os.path.exists(setting.API_REPORT_RESULT_PATH):
             os.mkdir(setting.API_REPORT_RESULT_PATH)
@@ -65,8 +55,5 @@ class TestManager:
         shutil.copy(setting.API_StartExcutorJson, setting.API_EndExcutorJson)
 
     def run_allure_server(self):
-        """
-        :return:
-        """
         self.logger.info("【启动allure服务！】")
         os.system(f"allure open {setting.API_REPORT_RESULT_PATH}")

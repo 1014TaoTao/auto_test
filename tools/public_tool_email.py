@@ -16,12 +16,6 @@ from tools.public_tool_log import logger
 class EmailPack:
     # 初始化发件人，密码，收件人列表
     def __init__(self, server_host=None, fromaddr=None, password=None, toaddrs=None):
-        """
-        :param server_host:
-        :param fromaddr:
-        :param password:
-        :param toaddrs:
-        """
         if fromaddr is None:
             self.fromaddr = Config().get_email_info().get('sender')
             self.password = Config().get_email_info().get('password')
@@ -43,13 +37,6 @@ class EmailPack:
 
     # 设置发件人名称，主题，内容，附件
     def set_message(self, name, title, content, filelist):
-        """
-        :param name:
-        :param title:
-        :param content:
-        :param filelist:
-        :return:
-        """
         tm = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
         self.message['From'] = Header(f"{name}<{self.fromaddr}>", 'utf-8')  # 发件人名称和地址
         self.message['Subject'] = Header(title + "_" + tm, 'utf-8')  # 邮件主题
@@ -62,10 +49,6 @@ class EmailPack:
 
     # 发送邮件
     def send_message(self, log_path):
-        """
-        :param log_path:
-        :return:
-        """
         logger(log_path).info("【开始发送邮件……】")
         try:
             self.server.login(self.fromaddr, self.password)
@@ -77,11 +60,6 @@ class EmailPack:
 
     # 默认发送邮件
     def send_default_email(self, log_path, FILE_LIST):
-        """
-        :param log_path:
-        :param FILE_LIST:
-        :return:
-        """
         my_email = EmailPack()
         my_email.set_message(
             name="接口自动化测试",

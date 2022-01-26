@@ -1,20 +1,29 @@
 {
-  "fc62e6d13d181d697d054a0cfbed7d2e" : {
+  "57baa726299b2a61c44abda498a2a6ac" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
-      "uid" : "59cc48fc24e6c96b",
+      "uid" : "d89cae8f3fd5581c",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/d89cae8f3fd5581c",
       "status" : "passed",
       "time" : {
-        "start" : 1645025248792,
-        "stop" : 1645025248796,
-        "duration" : 4
+        "start" : 1643165667714,
+        "stop" : 1643165667719,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "b74e20c8cbce28a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643165438105,
+        "stop" : 1643165438110,
+        "duration" : 5
       }
     } ]
   },
@@ -23,17 +32,26 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
-      "uid" : "9feb50a3eb07b1ee",
+      "uid" : "b376ef0a00c3c7a7",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/b376ef0a00c3c7a7",
       "status" : "passed",
       "time" : {
-        "start" : 1645025248775,
-        "stop" : 1645025248781,
-        "duration" : 6
+        "start" : 1643165667722,
+        "stop" : 1643165667726,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "84e245131d191de5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643165438113,
+        "stop" : 1643165438117,
+        "duration" : 4
       }
     } ]
   },
@@ -42,36 +60,26 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
-      "uid" : "88d26bf51fe199a4",
+      "uid" : "8eff932c3f755cf3",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/8eff932c3f755cf3",
       "status" : "passed",
       "time" : {
-        "start" : 1645025248785,
-        "stop" : 1645025248789,
+        "start" : 1643165667730,
+        "stop" : 1643165667734,
         "duration" : 4
       }
-    } ]
-  },
-  "57baa726299b2a61c44abda498a2a6ac" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1178bc3d783dc5fd",
+    }, {
+      "uid" : "d6507254871634bd",
       "status" : "passed",
       "time" : {
-        "start" : 1645025248768,
-        "stop" : 1645025248772,
-        "duration" : 4
+        "start" : 1643165438120,
+        "stop" : 1643165438123,
+        "duration" : 3
       }
     } ]
   }

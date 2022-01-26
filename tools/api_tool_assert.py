@@ -9,7 +9,6 @@ class Assert:
         self.pass_num = 0
         self.fail_num = 0
 
-
     def assert_code(self, expected_code, code):
         try:
             assert code == expected_code

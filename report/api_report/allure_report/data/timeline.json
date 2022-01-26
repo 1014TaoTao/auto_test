@@ -4,49 +4,87 @@
   "children" : [ {
     "name" : "DESKTOP-J8M8QM5",
     "children" : [ {
-      "name" : "9832-MainThread",
+      "name" : "12744-MainThread",
       "children" : [ {
-        "name" : "test_004算子删除",
-        "uid" : "59cc48fc24e6c96b",
-        "parentUid" : "0a52596b1d0f5bd207ec68571bb23365",
+        "name" : "test_002节点查询",
+        "uid" : "b376ef0a00c3c7a7",
+        "parentUid" : "d124bdc5b4cd8612f4f380aed578eabc",
         "status" : "passed",
         "time" : {
-          "start" : 1645025248792,
-          "stop" : 1645025248796,
+          "start" : 1643165667722,
+          "stop" : 1643165667726,
           "duration" : 4
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 0,
+        "retriesCount" : 1,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'pass', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'DELETE', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 9512333f-ad88-4d2a-9dc5-828276f36169'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': None}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":null}', 'time_consuming': 41.577, 'time_total': 0.041577, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 16 Feb 2022 15:27:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
-      }, {
-        "name" : "test_003节点详情",
-        "uid" : "88d26bf51fe199a4",
-        "parentUid" : "0a52596b1d0f5bd207ec68571bb23365",
-        "status" : "passed",
-        "time" : {
-          "start" : 1645025248785,
-          "stop" : 1645025248789,
-          "duration" : 4
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 9512333f-ad88-4d2a-9dc5-828276f36169'}, 'data': {'id': '9', 'name': 'Beijing-node-06'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null},\"ext\":{}}', 'time_consuming': 39.583, 'time_total': 0.039583, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 16 Feb 2022 15:27:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+        "parameters" : [ "{'result': 'pass', 'title': 'test_002节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 13d5bf99-6ea5-41ea-96a6-8cfd458da77c'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"total\":1,\"list\":[{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null}]},\"ext\":{}}', 'time_consuming': 40.571, 'time_total': 0.040571, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 26 Jan 2022 02:54:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
       }, {
         "name" : "test_001节点查询",
-        "uid" : "1178bc3d783dc5fd",
-        "parentUid" : "0a52596b1d0f5bd207ec68571bb23365",
+        "uid" : "d89cae8f3fd5581c",
+        "parentUid" : "d124bdc5b4cd8612f4f380aed578eabc",
         "status" : "passed",
         "time" : {
-          "start" : 1645025248768,
-          "stop" : 1645025248772,
+          "start" : 1643165667714,
+          "stop" : 1643165667719,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'pass', 'title': 'test_001节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 13d5bf99-6ea5-41ea-96a6-8cfd458da77c'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"total\":1,\"list\":[{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null}]},\"ext\":{}}', 'time_consuming': 137.857, 'time_total': 0.137857, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 26 Jan 2022 02:54:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+      }, {
+        "name" : "test_003节点详情",
+        "uid" : "8eff932c3f755cf3",
+        "parentUid" : "d124bdc5b4cd8612f4f380aed578eabc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643165667730,
+          "stop" : 1643165667734,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 13d5bf99-6ea5-41ea-96a6-8cfd458da77c'}, 'data': {'id': '9', 'name': 'Beijing-node-06'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null},\"ext\":{}}', 'time_consuming': 39.356, 'time_total': 0.039356, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 26 Jan 2022 02:54:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+      } ],
+      "uid" : "d124bdc5b4cd8612f4f380aed578eabc"
+    }, {
+      "name" : "2976-MainThread",
+      "children" : [ {
+        "name" : "test_001节点查询",
+        "uid" : "d13613e967dcca18",
+        "parentUid" : "51f0bf19526504ee09d1278682ca5f46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643165438105,
+          "stop" : 1643165438110,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'pass', 'title': 'test_001节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 13d5bf99-6ea5-41ea-96a6-8cfd458da77c'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"total\":1,\"list\":[{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null}]},\"ext\":{}}', 'time_consuming': 93.307, 'time_total': 0.093307, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 26 Jan 2022 02:50:37 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+      }, {
+        "name" : "test_002节点查询",
+        "uid" : "fc29c2a17f7b3d60",
+        "parentUid" : "51f0bf19526504ee09d1278682ca5f46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643165438113,
+          "stop" : 1643165438117,
           "duration" : 4
         },
         "flaky" : false,
@@ -55,16 +93,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'pass', 'title': 'test_001节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 9512333f-ad88-4d2a-9dc5-828276f36169'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"total\":1,\"list\":[{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null}]},\"ext\":{}}', 'time_consuming': 121.23, 'time_total': 0.12123, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 16 Feb 2022 15:27:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+        "parameters" : [ "{'result': 'pass', 'title': 'test_002节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 13d5bf99-6ea5-41ea-96a6-8cfd458da77c'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"total\":1,\"list\":[{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null}]},\"ext\":{}}', 'time_consuming': 42.426, 'time_total': 0.042426, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 26 Jan 2022 02:50:37 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
       }, {
-        "name" : "test_002节点查询",
-        "uid" : "9feb50a3eb07b1ee",
-        "parentUid" : "0a52596b1d0f5bd207ec68571bb23365",
+        "name" : "test_003节点详情",
+        "uid" : "edf36f07754ac4a2",
+        "parentUid" : "51f0bf19526504ee09d1278682ca5f46",
         "status" : "passed",
         "time" : {
-          "start" : 1645025248775,
-          "stop" : 1645025248781,
-          "duration" : 6
+          "start" : 1643165438120,
+          "stop" : 1643165438123,
+          "duration" : 3
         },
         "flaky" : false,
         "newFailed" : false,
@@ -72,9 +110,9 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'pass', 'title': 'test_002节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 9512333f-ad88-4d2a-9dc5-828276f36169'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"total\":1,\"list\":[{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null}]},\"ext\":{}}', 'time_consuming': 61.196, 'time_total': 0.061196, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 16 Feb 2022 15:27:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
+        "parameters" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'GET', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 13d5bf99-6ea5-41ea-96a6-8cfd458da77c'}, 'data': {'id': '9', 'name': 'Beijing-node-06'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'text': '{\"code\":1,\"msg\":\"成功\",\"data\":{\"id\":9,\"name\":\"Beijing-node-06\",\"code\":\"KN000009\",\"userName\":\"root\",\"specData\":{\"vendor\":\"Intel\",\"cpuModel\":\"Xeon\",\"cpuSpeed\":\"3.00GHz\",\"cpuCores\":64.0,\"memory\":\"252GB\",\"disk\":\"300.0GB\",\"os\":\"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64\"},\"ip\":\"192.168.0.35\",\"monitorUrl\":\"http://192.168.0.30:30090\",\"linkClusterId\":3,\"linkClusterName\":\"Beijing-cluster-01\",\"monitorStatus\":3,\"status\":2,\"enableFlag\":1,\"tenantId\":null,\"createUser\":null,\"updateUser\":null},\"ext\":{}}', 'time_consuming': 44.918, 'time_total': 0.044918, 'headers': {'Server': 'nginx/1.17.0', 'Date': 'Wed, 26 Jan 2022 02:50:37 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Encoding': 'gzip'}}}" ]
       } ],
-      "uid" : "0a52596b1d0f5bd207ec68571bb23365"
+      "uid" : "51f0bf19526504ee09d1278682ca5f46"
     } ],
     "uid" : "5177fcdf61b67806e1dba788f5f98170"
   } ]
