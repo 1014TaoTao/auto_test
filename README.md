@@ -27,8 +27,8 @@
         
 ## 二.工程目录：
 
-![image](.\流程图\工程目录.png)
-![image](.\流程图\项目执行顺序.png)
+![工程目录](.\流程图\工程目录.png)
+![项目执行顺序](.\流程图\项目执行顺序.png)
 ```text.
 \PYTEST_AUTO_UITEST_APITEST # 项目名称
 ├─basepage      # ui自动化基础类封装目录 
