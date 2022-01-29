@@ -12,51 +12,72 @@ from tools.public_tool_log import logger
 class Requests:
     def __init__(self):
         self.logger = logger(setting.API_LOG_PATH)
-        self.session = requests.Session()
+        # 源码中最新版requests内做了Session前置，所以此处无需做前置处理了
+        # self.session = requests.Session()
 
-    def send_get(self, url, params, headers):
-        if headers is None:
-            res = self.session.get(url=url, params=params)
-        elif params is None:
-            res = self.session.get(url=url, headers=headers)
-        elif headers is None and params is None:
-            res = self.session.get(url=url)
-        else:
-            res = self.session.get(url=url, params=params, headers=headers)
-        return res
+    def send_get(self, url, data=None, headers=None):
+        # if headers is None:
+        #     res = self.session.get(url=url, params=params)
+        # elif params is None:
+        #     res = self.session.get(url=url, headers=headers)
+        # elif headers is None and params is None:
+        #     res = self.session.get(url=url)
+        # else:
+        #     res = self.session.get(url=url, params=params, headers=headers)
+        # return res
+        try:
+            res = requests.get(url=url, params=data, headers=headers)
+            return res
+        except Exception as e:
+            raise f"GET请求异常:{e}"
 
-    def send_post(self, url, data, headers=None, json=None):
-        if headers is None:
-            res = self.session.post(url=url, data=data, json=None)
-        elif data is None:
-            res = self.session.post(url=url, headers=headers, json=None)
-        elif headers is None and data is None:
-            res = self.session.post(url=url)
-        else:
-            res = self.session.post(url=url, data=data, headers=headers, json=None)
-        return res
+    def send_post(self, url, data=None, headers=None):
+        # if headers is None:
+        #     res = self.session.post(url=url, data=data, json=None)
+        # elif data is None:
+        #     res = self.session.post(url=url, headers=headers, json=None)
+        # elif headers is None and data is None:
+        #     res = self.session.post(url=url)
+        # else:
+        #     res = self.session.post(url=url, data=data, headers=headers, json=None)
+        # return res
+        try:
+            res = requests.post(url=url, data=data, headers=headers, json=data, files=data)
+            return res
+        except Exception as e:
+            raise f"POST请求异常:{e}"
 
-    def send_put(self, url, data, headers=None):
-        if headers is None:
-            res = self.session.put(url=url, data=data)
-        elif data is None:
-            res = self.session.put(url=url, headers=headers)
-        elif headers is None and data is None:
-            res = self.session.put(url=url)
-        else:
-            res = self.session.put(url=url, data=data, headers=headers)
-        return res
+    def send_put(self, url, data=None, headers=None):
+        # if headers is None:
+        #     res = self.session.put(url=url, data=data)
+        # elif data is None:
+        #     res = self.session.put(url=url, headers=headers)
+        # elif headers is None and data is None:
+        #     res = self.session.put(url=url)
+        # else:
+        #     res = self.session.put(url=url, data=data, headers=headers)
+        # return res
+        try:
+            res = requests.put(url=url, data=data, headers=headers, json=data, files=data)
+            return res
+        except Exception as e:
+            raise f"PUT请求异常:{e}"
 
     def send_delete(self, url, data, headers=None):
-        if headers is None:
-            res = self.session.delete(url=url, data=data)
-        elif data is None:
-            res = self.session.delete(url=url, headers=headers)
-        elif headers is None and data is None:
-            res = self.session.delete(url=url)
-        else:
-            res = self.session.delete(url=url, data=data, headers=headers)
-        return res
+        # if headers is None:
+        #     res = self.session.delete(url=url, data=data)
+        # elif data is None:
+        #     res = self.session.delete(url=url, headers=headers)
+        # elif headers is None and data is None:
+        #     res = self.session.delete(url=url)
+        # else:
+        #     res = self.session.delete(url=url, data=data, headers=headers)
+        # return res
+        try:
+            res = requests.delete(url=url, data=data, headers=headers, json=data, files=data)
+            return res
+        except Exception as e:
+            raise f"DELETE请求异常:{e}"
 
     def send_request(self, method, url, data, headers):
         try:
@@ -69,9 +90,9 @@ class Requests:
             if not url.startswith('http:'):
                 url = '%s%s' % ('http://', url)
             if method == 'GET':
-                res = self.send_get(url=url, params=data, headers=headers)
+                res = self.send_get(url=url, data=data, headers=headers)
             elif method == 'POST':
-                res = self.send_post(url=url, data=data, headers=headers, json=None)
+                res = self.send_post(url=url, data=data, headers=headers)
             elif method == 'PUT':
                 res = self.send_put(url=url, data=data, headers=headers)
             elif method == 'DELETE':
@@ -106,7 +127,6 @@ class Requests:
             return response_dicts
         except Exception as e:
             return f"发送请求异常:{e}"
-
 
 # if __name__ == '__main__':
 #     url = "http://192.168.0.122:18603/uaa/oauth/token"
