@@ -1,29 +1,29 @@
 [ {
-  "uid" : "7c9165931ba10fc3",
-  "name" : "test_002节点查询",
-  "time" : {
-    "start" : 1643442348136,
-    "stop" : 1643442348141,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "6debc783846f04e6",
-  "name" : "test_003节点详情",
-  "time" : {
-    "start" : 1643442348146,
-    "stop" : 1643442348151,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "5129d50c6f4c39b3",
+  "uid" : "23b162473268d27c",
   "name" : "test_001节点查询",
   "time" : {
-    "start" : 1643442348128,
-    "stop" : 1643442348132,
+    "start" : 1643449345095,
+    "stop" : 1643449345100,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d3d7c99accefb085",
+  "name" : "test_003节点详情",
+  "time" : {
+    "start" : 1643449345112,
+    "stop" : 1643449345115,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ab93e4757ed4df11",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1643449345104,
+    "stop" : 1643449345108,
     "duration" : 4
   },
   "status" : "passed",

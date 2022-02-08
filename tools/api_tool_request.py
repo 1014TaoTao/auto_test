@@ -13,7 +13,7 @@ class Requests:
     def __init__(self):
         self.logger = logger(setting.API_LOG_PATH)
         # 源码中最新版requests内做了Session前置，所以此处无需做前置处理了
-        # self.session = requests.Session()
+        self.session = requests.Session()
 
     def send_get(self, url, data=None, headers=None):
         # if headers is None:
@@ -26,7 +26,7 @@ class Requests:
         #     res = self.session.get(url=url, params=params, headers=headers)
         # return res
         try:
-            res = requests.get(url=url, params=data, headers=headers)
+            res = self.session.get(url=url, params=data, headers=headers)
             return res
         except Exception as e:
             raise f"GET请求异常:{e}"
@@ -42,7 +42,7 @@ class Requests:
         #     res = self.session.post(url=url, data=data, headers=headers, json=None)
         # return res
         try:
-            res = requests.post(url=url, data=data, headers=headers, json=data, files=data)
+            res = self.session.post(url=url, data=data, headers=headers, json=data, files=data)
             return res
         except Exception as e:
             raise f"POST请求异常:{e}"
@@ -58,7 +58,7 @@ class Requests:
         #     res = self.session.put(url=url, data=data, headers=headers)
         # return res
         try:
-            res = requests.put(url=url, data=data, headers=headers, json=data, files=data)
+            res = self.session.put(url=url, data=data, headers=headers, json=data, files=data)
             return res
         except Exception as e:
             raise f"PUT请求异常:{e}"
@@ -74,7 +74,7 @@ class Requests:
         #     res = self.session.delete(url=url, data=data, headers=headers)
         # return res
         try:
-            res = requests.delete(url=url, data=data, headers=headers, json=data, files=data)
+            res = self.session.delete(url=url, data=data, headers=headers, json=data, files=data)
             return res
         except Exception as e:
             raise f"DELETE请求异常:{e}"

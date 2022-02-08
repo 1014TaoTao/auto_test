@@ -42,4 +42,4 @@ OPEN_REPORY_ON_OFF = C.get_open_report_on_off()[1]
 # 控制台输出日志
 LOG_CONTROL_ON_OFF = C.get_log_control_on_off()[0]
 # 发送钉钉
-DINGDING_NEWS_ON_OFF = C.get_send_dingding_news_on_off()[1]
+DINGDING_NEWS_ON_OFF = C.get_send_dingding_news_on_off()[0]
