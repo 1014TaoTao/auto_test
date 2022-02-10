@@ -63,6 +63,13 @@ class Requests:
         except Exception as e:
             raise f"PUT请求异常:{e}"
 
+    def send_patch(self, url, data=None, headers=None):
+        try:
+            res = self.session.patch(url=url, data=data, headers=headers, json=data, files=data)
+            return res
+        except Exception as e:
+            raise f"PUT请求异常:{e}"
+
     def send_delete(self, url, data, headers=None):
         # if headers is None:
         #     res = self.session.delete(url=url, data=data)
@@ -97,6 +104,8 @@ class Requests:
                 res = self.send_put(url=url, data=data, headers=headers)
             elif method == 'DELETE':
                 res = self.send_delete(url=url, data=data, headers=headers)
+            elif method == 'PATCH':
+                res = self.send_patch(url=url, data=data, headers=headers)
 
             self.logger.info(f"【请求结束，开始处理响应结果...】")
 
