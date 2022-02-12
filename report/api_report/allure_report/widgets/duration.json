@@ -1,30 +1,40 @@
 [ {
-  "uid" : "ab93e4757ed4df11",
-  "name" : "test_002节点查询",
+  "uid" : "cd6246085ba93360",
+  "name" : "test_004算子删除",
   "time" : {
-    "start" : 1643449345104,
-    "stop" : 1643449345108,
-    "duration" : 4
+    "start" : 1644644962536,
+    "stop" : 1644644962542,
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "23b162473268d27c",
+  "uid" : "bc0020bf8cb42cb5",
   "name" : "test_001节点查询",
   "time" : {
-    "start" : 1643449345095,
-    "stop" : 1643449345100,
+    "start" : 1644644962510,
+    "stop" : 1644644962515,
     "duration" : 5
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "d3d7c99accefb085",
+  "uid" : "888413806b1b02b0",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1644644962518,
+    "stop" : 1644644962524,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "485ce14d2b9dcee3",
   "name" : "test_003节点详情",
   "time" : {
-    "start" : 1643449345112,
-    "stop" : 1643449345115,
-    "duration" : 3
+    "start" : 1644644962527,
+    "stop" : 1644644962532,
+    "duration" : 5
   },
   "status" : "passed",
   "severity" : "blocker"

@@ -17,10 +17,6 @@ class Response:
         self.logger = logger(setting.API_LOG_PATH)
 
     def result(self, res):
-        """
-        :param res:
-        :return:
-        """
         try:
             response_dicts = dict()
             # 响应状态码

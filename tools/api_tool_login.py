@@ -23,7 +23,9 @@ class Login:
 
     def api_login(self):
         try:
-            res = Requests().send_request(method="GET", url=self.url, data=self.data_dict, headers=self.headers)
+            from tools.api_tool_reponse import Response
+            res = Response().result(
+                Requests().send_request(method="GET", url=self.url, data=self.data_dict, headers=self.headers))
             # print(res) 调试
             # 断言用户名使用参数化，在配置文件中的username字段
             if Assert().assert_code(200, res['code']):
@@ -37,5 +39,6 @@ class Login:
         except Exception as e:
             logger.error(f"登录异常，请检查平台连接情况：{e}\n")  # 'NoneType' object is not subscriptable 平台连接不上
 
-# if __name__ == '__main__':
-#     Login().api_login()
+
+if __name__ == '__main__':
+    Login().api_login()

@@ -9,14 +9,15 @@ import xlrd
 import xlwt
 from xlutils.copy import copy
 
+from common import consts
 from common import setting
 from tools.api_tool_assert import Assert
 from tools.api_tool_global_var import global_var
 from tools.api_tool_headers import headersPack, read_token
+from tools.api_tool_login import Login
+from tools.api_tool_reponse import Response
 from tools.api_tool_request import Requests
 from tools.public_tool_log import logger
-from common import consts
-from tools.api_tool_login import Login
 
 
 class ExcelPack:
@@ -217,9 +218,10 @@ class ExcelPack:
         # 处理data,如果依赖不为空，说明有需要得依赖，加入到入参中。
         if self.get_cell_data(row, global_var().get_case_depend()) != "":
             data = self.get_case_json(row)
+
         else:
             # dict,字符串str转为字典dict
-            data = eval(str_data)
+            data = str_data
         return data
 
     # 处理headers
@@ -310,7 +312,7 @@ class ExcelPack:
                 expected_data = self.get_expected_data(row)
 
                 # 发请求
-                res = self.runs.send_request(method=method, url=url, data=data, headers=headers)
+                res = Response().result(self.runs.send_request(method=method, url=url, data=data, headers=headers))
 
                 try:
                     if res['body']['msg'] != '未经授权的访问':
@@ -348,13 +350,10 @@ class ExcelPack:
         self.write_test_summary()  # 输出测试结果
         return all_case
 
-
 # 测试
-if __name__ == '__main__':
-    from common.setting import API_EXCEL_FILE
-
-    excel = ExcelPack(API_EXCEL_FILE, 0)
-    # 批量执行
-    excel.run_excel_case()
-    # 执行单条
-    # excel.single_excel_case(3)
+# if __name__ == '__main__':
+#     from common.setting import API_EXCEL_FILE
+#
+#     excel = ExcelPack(API_EXCEL_FILE, 0)
+#     # 批量执行
+#     excel.run_excel_case()
