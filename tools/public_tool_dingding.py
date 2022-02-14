@@ -5,9 +5,9 @@ import time
 
 from dingtalkchatbot.chatbot import DingtalkChatbot
 
+from common import consts
 from common import setting, readConfigYaml
 from tools.public_tool_log import logger
-from common import consts
 
 logger = logger(log_path=setting.API_LOG_PATH)
 
@@ -16,6 +16,9 @@ class DingTalk:
 
     # 发送钉钉消息
     def send_dingding(self):
+        """
+        :return:
+        """
         # 获取当前日期
         tile = time.strftime("%Y-%m-%d %H:%M:%S")
 

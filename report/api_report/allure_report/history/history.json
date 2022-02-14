@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f73feddee0729e4b",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/f73feddee0729e4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644644962536,
+        "stop" : 1644644962542,
+        "duration" : 6
+      }
+    }, {
       "uid" : "cd6246085ba93360",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/cd6246085ba93360",
       "status" : "passed",
@@ -24,11 +33,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "79874a4e8be5f1bc",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/79874a4e8be5f1bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644644962510,
+        "stop" : 1644644962515,
+        "duration" : 5
+      }
+    }, {
       "uid" : "bc0020bf8cb42cb5",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/bc0020bf8cb42cb5",
       "status" : "passed",
@@ -106,11 +124,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "63fda987d14bf3c9",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/63fda987d14bf3c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644644962518,
+        "stop" : 1644644962524,
+        "duration" : 6
+      }
+    }, {
       "uid" : "888413806b1b02b0",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/888413806b1b02b0",
       "status" : "passed",
@@ -188,11 +215,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "c0835cb54079876e",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/c0835cb54079876e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644644962527,
+        "stop" : 1644644962532,
+        "duration" : 5
+      }
+    }, {
       "uid" : "485ce14d2b9dcee3",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/485ce14d2b9dcee3",
       "status" : "passed",

@@ -3,6 +3,7 @@
 from common import consts, setting
 from tools.api_tool_assert import Assert
 from tools.api_tool_headers import headersPack
+from tools.api_tool_reponse import Response
 from tools.api_tool_request import Requests
 from tools.public_tool_log import logger
 
@@ -22,11 +23,13 @@ class Login:
         self.assert_username = consts.USERNAME
 
     def api_login(self):
+        """
+        :return:
+        """
+        res = Response().result(
+            Requests().send_request(method="GET", url=self.url, data=self.data_dict, headers=self.headers))
         try:
-            from tools.api_tool_reponse import Response
-            res = Response().result(
-                Requests().send_request(method="GET", url=self.url, data=self.data_dict, headers=self.headers))
-            # print(res) 调试
+
             # 断言用户名使用参数化，在配置文件中的username字段
             if Assert().assert_code(200, res['code']):
                 if Assert().assert_in_body(f'{self.assert_username}', res['body']['user_name']):
@@ -39,6 +42,5 @@ class Login:
         except Exception as e:
             logger.error(f"登录异常，请检查平台连接情况：{e}\n")  # 'NoneType' object is not subscriptable 平台连接不上
 
-
-if __name__ == '__main__':
-    Login().api_login()
+# if __name__ == '__main__':
+#     Login().api_login()

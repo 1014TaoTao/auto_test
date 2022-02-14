@@ -1,30 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "NameError: 没有找到 Chrome 浏览器,请确认 'ie','firefox','chrome','RChrome','RIe' or 'RFirefox'是否存在或名称是否正确.",
-      "children" : [ {
-        "name" : "test_01",
-        "uid" : "f75a0c7266592c0e",
-        "parentUid" : "46f27b3686f863491c3a3d2221776235",
-        "status" : "broken",
-        "time" : {
-          "start" : 1641984008235,
-          "stop" : 1641984008235,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : true,
-        "retriesCount" : 8,
-        "retriesStatusChange" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "46f27b3686f863491c3a3d2221776235"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }
