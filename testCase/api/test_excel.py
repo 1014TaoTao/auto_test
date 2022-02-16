@@ -4,7 +4,6 @@ import allure
 import pytest
 
 from common import setting, consts
-from tools import public_tool_project_check
 from tools.api_tool_excel import ExcelPack
 from tools.api_tool_login import Login
 from tools.public_tool_log import logger
@@ -16,16 +15,12 @@ def run_setup():
     """
     :return:
     """
-    with allure.step("检查系统信息"):
-        logger.info('==========< 开始 API自动化项目 测试 >===========')
-        # 打印系统和python的版本信息
-        public_tool_project_check.api_sys_project(log_path=setting.API_LOG_PATH)
-        logger.info(f"【本次执行环境为:{consts.ENVIRONMENT},执行人员：{consts.TESTER}】")
+    with allure.step("token执行初始化"):
         try:
             Login().api_login()
         except Exception as e:
             logger.error(f"【登录写入token异常：{e}】")
-        result = ExcelPack(file_name=setting.API_EXCEL_FILE, sheet_id=setting.sheet_id).run_excel_case()
+        result = ExcelPack(file_name=consts.TESTCASEPATH, sheet_id=setting.sheet_id).run_excel_case()
         return result
 
 

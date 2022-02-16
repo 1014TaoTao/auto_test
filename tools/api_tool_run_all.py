@@ -40,20 +40,13 @@ class API_Run:
         self.logger.info("【完成==>生成测试报告】")
         return allure_report
 
-    # 压缩报告
-    def run_zip(self):
-        """
-        :return:
-        """
-        send_zip = zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)
-        self.logger.info("【完成==>压缩报告】")
-        return send_zip
-
     # 发送邮件
     def run_email(self):
         """
         :return:
         """
+        zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)
+        self.logger.info("【完成==>压缩报告】")
         send_email = EmailPack().send_default_email(setting.API_LOG_PATH, setting.API_FILE_LIST)
         self.logger.info("【完成==>发送邮件】")
         return send_email

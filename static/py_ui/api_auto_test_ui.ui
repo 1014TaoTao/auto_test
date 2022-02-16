@@ -285,38 +285,6 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="loginButton">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 170, 255);</string>
-        </property>
-        <property name="text">
-         <string>登录</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="testRunButton">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(170, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>调试</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="runButton">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">

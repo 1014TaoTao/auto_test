@@ -4,118 +4,17 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "f73feddee0729e4b",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/f73feddee0729e4b",
+      "uid" : "59cc48fc24e6c96b",
       "status" : "passed",
       "time" : {
-        "start" : 1644644962536,
-        "stop" : 1644644962542,
-        "duration" : 6
-      }
-    }, {
-      "uid" : "cd6246085ba93360",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/cd6246085ba93360",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644644962536,
-        "stop" : 1644644962542,
-        "duration" : 6
-      }
-    } ]
-  },
-  "57baa726299b2a61c44abda498a2a6ac" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 9,
-      "unknown" : 0,
-      "total" : 9
-    },
-    "items" : [ {
-      "uid" : "79874a4e8be5f1bc",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/79874a4e8be5f1bc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644644962510,
-        "stop" : 1644644962515,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "bc0020bf8cb42cb5",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/bc0020bf8cb42cb5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644644962510,
-        "stop" : 1644644962515,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "35c0535fe9846887",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/35c0535fe9846887",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644636294753,
-        "stop" : 1644636294758,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "5d5f5976e74b17ea",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/5d5f5976e74b17ea",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644487177196,
-        "stop" : 1644487177200,
+        "start" : 1645025248792,
+        "stop" : 1645025248796,
         "duration" : 4
-      }
-    }, {
-      "uid" : "23b162473268d27c",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/23b162473268d27c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643449345095,
-        "stop" : 1643449345100,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "295746649ea6be7a",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/295746649ea6be7a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643449283950,
-        "stop" : 1643449283954,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "5129d50c6f4c39b3",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/5129d50c6f4c39b3",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643442348128,
-        "stop" : 1643442348132,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "d89cae8f3fd5581c",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/d89cae8f3fd5581c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643165667714,
-        "stop" : 1643165667719,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "b74e20c8cbce28a6",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643165438105,
-        "stop" : 1643165438110,
-        "duration" : 5
       }
     } ]
   },
@@ -124,89 +23,17 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 9
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "63fda987d14bf3c9",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/63fda987d14bf3c9",
+      "uid" : "9feb50a3eb07b1ee",
       "status" : "passed",
       "time" : {
-        "start" : 1644644962518,
-        "stop" : 1644644962524,
+        "start" : 1645025248775,
+        "stop" : 1645025248781,
         "duration" : 6
-      }
-    }, {
-      "uid" : "888413806b1b02b0",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/888413806b1b02b0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644644962518,
-        "stop" : 1644644962524,
-        "duration" : 6
-      }
-    }, {
-      "uid" : "e40dab9ebe0c8e7a",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/e40dab9ebe0c8e7a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644636294761,
-        "stop" : 1644636294765,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "3a09a4dfac548aa0",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/3a09a4dfac548aa0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644487177204,
-        "stop" : 1644487177208,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "ab93e4757ed4df11",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/ab93e4757ed4df11",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643449345104,
-        "stop" : 1643449345108,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "940e60321abacfd8",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/940e60321abacfd8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643449283959,
-        "stop" : 1643449283962,
-        "duration" : 3
-      }
-    }, {
-      "uid" : "7c9165931ba10fc3",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/7c9165931ba10fc3",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643442348136,
-        "stop" : 1643442348141,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "b376ef0a00c3c7a7",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/b376ef0a00c3c7a7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643165667722,
-        "stop" : 1643165667726,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "84e245131d191de5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643165438113,
-        "stop" : 1643165438117,
-        "duration" : 4
       }
     } ]
   },
@@ -215,89 +42,36 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 9
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "c0835cb54079876e",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/c0835cb54079876e",
+      "uid" : "88d26bf51fe199a4",
       "status" : "passed",
       "time" : {
-        "start" : 1644644962527,
-        "stop" : 1644644962532,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "485ce14d2b9dcee3",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/485ce14d2b9dcee3",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644644962527,
-        "stop" : 1644644962532,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "1268c74bc24132e8",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/1268c74bc24132e8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1644636294768,
-        "stop" : 1644636294772,
+        "start" : 1645025248785,
+        "stop" : 1645025248789,
         "duration" : 4
       }
-    }, {
-      "uid" : "af0cf3c6d7651bbc",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/af0cf3c6d7651bbc",
+    } ]
+  },
+  "57baa726299b2a61c44abda498a2a6ac" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1178bc3d783dc5fd",
       "status" : "passed",
       "time" : {
-        "start" : 1644487177212,
-        "stop" : 1644487177216,
+        "start" : 1645025248768,
+        "stop" : 1645025248772,
         "duration" : 4
-      }
-    }, {
-      "uid" : "d3d7c99accefb085",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/d3d7c99accefb085",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643449345112,
-        "stop" : 1643449345115,
-        "duration" : 3
-      }
-    }, {
-      "uid" : "ab8c5201dc3ab7d1",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/ab8c5201dc3ab7d1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643449283965,
-        "stop" : 1643449283970,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "6debc783846f04e6",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/6debc783846f04e6",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643442348146,
-        "stop" : 1643442348151,
-        "duration" : 5
-      }
-    }, {
-      "uid" : "8eff932c3f755cf3",
-      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/8eff932c3f755cf3",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643165667730,
-        "stop" : 1643165667734,
-        "duration" : 4
-      }
-    }, {
-      "uid" : "d6507254871634bd",
-      "status" : "passed",
-      "time" : {
-        "start" : 1643165438120,
-        "stop" : 1643165438123,
-        "duration" : 3
       }
     } ]
   }

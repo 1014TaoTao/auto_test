@@ -1,6 +1,7 @@
 # coding:utf8
 
-from common import consts, setting
+
+from common import setting, consts
 from tools.api_tool_assert import Assert
 from tools.api_tool_headers import headersPack
 from tools.api_tool_reponse import Response
@@ -10,17 +11,17 @@ from tools.public_tool_log import logger
 logger = logger(setting.API_LOG_PATH)
 
 
-class Login:
+class Login():
 
     def __init__(self):
-        # 例如：http://192.168.0.115:10005 + /uaa/oauth/token
+        # 登录地址
         self.url = consts.BASEHOST + consts.LOGINHOST
         # 登录入参,读取到str转为dict
         self.data_dict = consts.LOGINDATA
-        # 请求头
-        self.headers = {'Content-Type': 'application/json;charset=UTF-8'}
         # 登录用户username
         self.assert_username = consts.USERNAME
+        # 请求头
+        self.headers = {'Content-Type': 'application/json;charset=UTF-8'}
 
     def api_login(self):
         """

@@ -80,21 +80,34 @@ class Config:
         return login_host
 
     # 获取登录入参
-    def get_login_info(self, environment_name):
+    def get_login_data(self, environment_name, title_user):
         """
+        :param title_user:
         :param environment_name:
         :return:
         """
-        login_info = self.get_environment_info()[environment_name]['loginInfo']
+        login_info = self.get_environment_info()[environment_name]['loginInfo'][title_user]
         return login_info
 
     # 获取登录入参
-    def get_login_username(self, environment_name):
+    def get_login_user_title(self, environment_name):
         """
         :param environment_name:
         :return:
         """
-        login_username = self.get_environment_info()[environment_name]['username']
+        title_list = []
+        for title in self.get_environment_info()[environment_name]['loginInfo']:
+            title_list.append(title)
+        return title_list
+
+    # 获取登录入参
+    def get_login_username(self, environment_name, title_user):
+        """
+        :param user:
+        :param environment_name:
+        :return:
+        """
+        login_username = self.get_environment_info()[environment_name]['loginInfo'][title_user]['username']
         return login_username
 
     # 是否删除旧的测试数据
@@ -112,14 +125,6 @@ class Config:
         """
         run_report_on_off = self.data['run_report_on_off']
         return run_report_on_off
-
-    # 是否压缩测试报告
-    def get_zip__report_on_off(self):
-        """
-        :return:
-        """
-        zip__report_on_off = self.data['zip__report_on_off']
-        return zip__report_on_off
 
     # 是否发送邮件
     def get_send_email_on_off(self):

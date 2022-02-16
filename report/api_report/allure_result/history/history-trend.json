@@ -1,7 +1,4 @@
 [ {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
   "data" : {
     "failed" : 0,
     "broken" : 0,
@@ -9,86 +6,5 @@
     "passed" : 4,
     "unknown" : 0,
     "total" : 4
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
   }
 } ]
