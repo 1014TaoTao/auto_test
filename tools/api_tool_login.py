@@ -11,7 +11,7 @@ from tools.public_tool_log import logger
 logger = logger(setting.API_LOG_PATH)
 
 
-class Login():
+class Login:
 
     def __init__(self):
         # 登录地址

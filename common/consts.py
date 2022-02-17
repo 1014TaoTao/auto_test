@@ -1,37 +1,30 @@
 # -*- coding: utf-8 -*-
 
-from tools.api_tool_read_pyqt_txt import read_pyqt5_txt
-
-all_data = read_pyqt5_txt()
-# print(all_data)
-TESTCASEPATH = all_data.get('testcase_path')
-ENVIRONMENT = all_data.get('emvironment')
-LOGINUSER = all_data.get('login_user')
-APIHOST = all_data.get('api_host')
-BASEHOST = all_data.get('base_host')
-LOGINHOST = all_data.get('login_host')
-USERNAME = all_data.get('login_usernaem')
-LOGINDATA = all_data.get('login_data')
-TESTER = all_data.get('tester')
-
-# print(TESTCASEPATH)
-# print(ENVIRONMENT)
-# print(LOGINUSER)
-# print(APIHOST)
-# print(BASEHOST)
-# print(LOGINHOST)
-# print(USERNAME)
-# print(LOGINDATA)
+from tools.api_tool_read_pyqt_txt import PyqtTxtPack
 
 
+all_data = PyqtTxtPack().read_pyqt5_txt()
+if all_data:
+    TESTCASEPATH = all_data.get('testcase_path')
+    ENVIRONMENT = all_data.get('emvironment')
+    ENVIRONMENTPORT = all_data.get('emvironment_port')
+    LOGINUSER = all_data.get('login_user')
+    APIHOST = all_data.get('api_host')
+    BASEHOST = all_data.get('base_host')
+    LOGINHOST = all_data.get('login_host')
+    USERNAME = all_data.get('login_usernaem')
+    LOGINDATA = all_data.get('login_data')
+    TESTER = all_data.get('tester')
 
-# # 接口响应时间list，单位毫秒
-# from common.readConfigYaml import Config
-#
+# 接口响应时间list，单位毫秒
 STRESS_LIST = []
-
 # 接口执行结果list
 RESULT_LIST = []
+
+"""
+旧版本
+"""
+# from common.readConfigYaml import Config
 #
 # C = Config()
 # # 选择执行环境:['environment_195', 'environment_115', 'environment_120', 'environment_43_13']

@@ -103,8 +103,8 @@ class Config:
     # 获取登录入参
     def get_login_username(self, environment_name, title_user):
         """
-        :param user:
         :param environment_name:
+        :param title_user:
         :return:
         """
         login_username = self.get_environment_info()[environment_name]['loginInfo'][title_user]['username']
@@ -189,6 +189,11 @@ class Config:
         """
         dingding_webhook = self.data['dingding']['webhook']
         return dingding_webhook
+
+    # 获取端口号
+    def get_environment_port(self, environment_name):
+        port_list = self.get_environment_info()[environment_name]['port']
+        return port_list
 
 # 测试
 # if __name__ == '__main__':

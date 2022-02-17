@@ -61,10 +61,10 @@ class API_Run:
         return open_allure_report
 
     # 发送钉钉消息
-    def send_dingding(self):
+    def send_dingding(self,ENVIRONMENT, TESTER):
         """
         :return:
         """
         self.logger.info("【开始==>发送钉钉消息】")
-        send_dingding_news = DingTalk().send_dingding()
+        send_dingding_news = DingTalk().send_dingding(ENVIRONMENT, TESTER)
         return send_dingding_news

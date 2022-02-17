@@ -169,7 +169,7 @@ class ExcelPack(ReadExcel):
         :return:
         """
         api_url = self.get_url_api(row)
-        url = consts.APIHOST + api_url
+        url = consts.APIHOST +consts.ENVIRONMENTPORT + api_url
 
         try:
             # 如果url中有{{}}类符号被识别为变量，获取所依赖得值到url中
