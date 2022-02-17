@@ -203,14 +203,23 @@ class ExcelPack(ReadExcel):
         global data
         str_data = self.get_data_info(row)
         # 处理data,如果依赖不为空，说明有需要得依赖，加入到入参中。
-        if self.get_case_depend_info(row) != "":
-            data = self.get_case_json(row)
+        if str_data != "":
+            if self.get_case_depend_info(row) != "":
+                if type(eval(str_data)) == dict:
+                    data = self.get_case_json(row)
+                elif type(eval(str_data)) == list:
+                    self.logger.error("列表类型入参，且有依赖情况没有做，遇到具体问题再处理。") # 列表类型入参，依赖暂时没有做,
+                    data = str_data
+            else:
+                if type(eval(str_data)) == dict:
+                    data = eval(str_data)
+                elif type(eval(str_data)) == list:
+                    data = str_data
         else:
-            if type(eval(str_data)) == dict:
-                # dict,字符串str转为字典dict
-                data = eval(str_data)
-            elif type(eval(str_data)) == list:
-                data = str_data
+            if self.get_case_depend_info(row) != "":
+                data = self.get_case_json(row)
+            else:
+                data = None
         return data
 
     # 处理headers
