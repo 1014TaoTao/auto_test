@@ -16,6 +16,24 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
+      yemingxincp:
+        username: yemingxin
+        mobile: 18810733561
+        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_cp
+      yemingxinop:
+        username: 运营账号
+        mobile: 17600668960
+        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_op
 
   environment_115:
     environment: 115环境
@@ -34,7 +52,7 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
-      yemingxin:
+      yemingxincp:
         username: 北京晶科瑞特科技发展有限公司
         mobile: 15045783203
         password: e64b78fc3bc91bcbc7dc232ba8ec59e0
@@ -43,6 +61,15 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_cp
+      yemingxinop:
+        username: 运营账号
+        mobile: 17600000001
+        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_op
 
   environment_122:
     environment: 122环境
