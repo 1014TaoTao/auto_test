@@ -38,41 +38,6 @@ class ExcelPack(ReadExcel):
             case_depend_list = case_depend.split(";")
         return case_depend_list
 
-    # 返回加入依赖后的json
-    def get_case_json(self, row):
-        """
-        :param row:
-        :return:
-        """
-        str_data = self.get_data_info(row)  # 获取入参。并由str转为dict
-        if str_data == '':
-            str_data = '{}'
-            json_dict = eval(str_data)
-        else:
-            json_dict = eval(str_data)
-        depend_list = self.get_case_list(row)  # 获取依赖列表
-        revise_list = self.get_revise_list(row)  # 获取依赖字段
-        for i in range(len(depend_list)):
-            case_str_list = depend_list[i].split(":")[1].split(",")
-            case_id = depend_list[i].split(":")[0]
-            revise_str = revise_list[i]
-            for case_str in case_str_list:
-                self.sheet_data = self.get_sheet_data()
-                response = self.get_case_line(case_id, row)
-                if response != u"【excel无法找到对应依赖的响应内容】":
-                    try:
-                        res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
-                        json_dict[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
-
-                    except Exception as e:
-                        self.logger.error(f'【在响应中获取依赖异常：{e}】')
-                else:
-                    self.logger.error('【excel无法找到对应依赖的响应内容】')
-        # 写入返回数据
-        deal_str = str(json_dict).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
-        self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
-        return json_dict
-
     # 获取所依赖的用例响应值
     def get_case_line(self, case_str, row):
         """
@@ -203,24 +168,69 @@ class ExcelPack(ReadExcel):
         global data
         str_data = self.get_data_info(row)
         # 处理data,如果依赖不为空，说明有需要得依赖，加入到入参中。
+        # 入参不为空
         if str_data != "":
+            # 有依赖
             if self.get_case_depend_info(row) != "":
+                # 字典依赖
                 if type(eval(str_data)) == dict:
                     data = self.get_case_json(row)
+                # 列表依赖
                 elif type(eval(str_data)) == list:
                     self.logger.error("列表类型入参，且有依赖情况没有做，遇到具体问题再处理。") # 列表类型入参，依赖暂时没有做,
                     data = str_data
+            # 无依赖
             else:
+                # 字典入参
                 if type(eval(str_data)) == dict:
                     data = eval(str_data)
+                # 列表入参
                 elif type(eval(str_data)) == list:
                     data = str_data
+        # 入参为空
         else:
+            # 有依赖（目前统一按字典处理）
             if self.get_case_depend_info(row) != "":
                 data = self.get_case_json(row)
+            # 无依赖
             else:
                 data = None
         return data
+
+    # 返回加入依赖后的json
+    def get_case_json(self, row):
+        """
+        :param row:
+        :return:
+        """
+        str_data = self.get_data_info(row)  # 获取入参。并由str转为dict
+        if str_data == '':
+            str_data = '{}'
+            json_dict = eval(str_data)
+        else:
+            json_dict = eval(str_data)
+        depend_list = self.get_case_list(row)  # 获取依赖列表
+        revise_list = self.get_revise_list(row)  # 获取依赖字段
+        for i in range(len(depend_list)):
+            case_str_list = depend_list[i].split(":")[1].split(",")
+            case_id = depend_list[i].split(":")[0]
+            revise_str = revise_list[i]
+            for case_str in case_str_list:
+                self.sheet_data = self.get_sheet_data()
+                response = self.get_case_line(case_id, row)
+                if response != u"【excel无法找到对应依赖的响应内容】":
+                    try:
+                        res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
+                        json_dict[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
+
+                    except Exception as e:
+                        self.logger.error(f'【在响应中获取依赖异常：{e}】')
+                else:
+                    self.logger.error('【excel无法找到对应依赖的响应内容】')
+        # 写入返回数据
+        deal_str = str(json_dict).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
+        self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
+        return json_dict
 
     # 处理headers
     def get_new_headers(self, row):
@@ -229,19 +239,35 @@ class ExcelPack(ReadExcel):
         :return:
         """
         # 处理header,字符串str转为字典dict
-        headers_dict = eval(self.get_headers(row))
-
-        # 处理headers,如果是yes，说明headers中需要加入token
-        if self.get_statue_token(row) == 'yes':  # 读cookie
-            self.logger.info(f"【该用例需要加入token】")
-            try:
-                token = read_token()
-                headers_dict["Authorization"] = token
-                self.logger.info(f"【读取token于./data/api/token.txt文件，并加入headers成功】")
-            except Exception as e:
-                self.logger.error(f"【读取token错误！{e}】】")
+        global headers_dict
+        headers_str = self.get_headers(row)
+        if headers_str != '':
+            headers_dict = eval(headers_str)
+            # 处理headers, 如果是yes，说明headers中需要加入token
+            if self.get_statue_token(row) == 'yes':  # 读cookie
+                self.logger.info(f"【该用例需要加入token】")
+                try:
+                    token = read_token()
+                    headers_dict["Authorization"] = token
+                    self.logger.info(f"【读取token于./data/api/token.txt文件，并加入headers成功】")
+                except Exception as e:
+                    self.logger.error(f"【读取token错误！{e}】】")
+            else:
+                headers_dict = headers_dict
         else:
-            headers_dict = headers_dict
+            if self.get_statue_token(row) == 'yes':  # 读cookie
+                headers_str = '{}'
+                headers_dict = eval(headers_str)
+                self.logger.info(f"【该用例需要加入token】")
+                try:
+                    token = read_token()
+                    headers_dict["Authorization"] = token
+                    self.logger.info(f"【读取token于./data/api/token.txt文件，并加入headers成功】")
+                except Exception as e:
+                    self.logger.error(f"【读取token错误！{e}】】")
+            else:
+                headers_dict = None
+
         return headers_dict
 
     # 批量执行，执行excel测试用例
