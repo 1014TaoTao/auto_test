@@ -20,7 +20,7 @@ CONFIG_YAML = os.path.join(BASE_PATH, "config", "Config.yaml")
 # ------------------ 项目数据文件 -----------------------
 DATA_PATH = os.path.join(BASE_PATH, "case")
 TEST_CASE_LIST = glob.glob(f"{DATA_PATH}/api/excel_data/*.xls")
-API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "demo01.xls")
+API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "kube.xls")
 
 sheet_id = 0
 API_SQL_FILE = os.path.join(DATA_PATH, "api", 'sql_data', 'test.sql')
