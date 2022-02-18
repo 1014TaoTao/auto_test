@@ -13,8 +13,7 @@
 
 - 2.1创建虚拟环境：
     - python -m venv venv
-    - cd venv/Scripts/activate.bat
-
+    - venv/Scripts/activate
     - 回车激活环境
 - 2.2pip更换源：
     - pip install pqi 安装一次就够了
