@@ -7,4 +7,7 @@
     <orderEntry type="jdk" jdkName="Python 3.8 (pytest_auto_uitest_apitest)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="ReSTService">
+    <option name="TXT_IS_RST" value="true" />
+  </component>
 </module>
