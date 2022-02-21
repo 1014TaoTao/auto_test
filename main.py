@@ -11,4 +11,4 @@ if __name__ == '__main__':
     ui = UiApiAutoTool()
     ui.setupUi(MainWindow)
     MainWindow.show()
-    exit(apps.exec_())
+    sys.exit(apps.exec_())

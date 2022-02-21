@@ -8,7 +8,7 @@
 @Software: PyCharm
 """
 
-from common import setting, consts
+from common import setting
 from tools.public_tool_log import logger
 
 
@@ -40,7 +40,7 @@ class Response:
             time_total = res.elapsed.total_seconds()  # 秒为单位
             response_dicts['time_total'] = time_total
 
-            consts.STRESS_LIST.append(time_consuming)
+            # consts.STRESS_LIST.append(time_consuming)
             # 响应头
             response_dicts['headers'] = res.headers
             # 响应cookie

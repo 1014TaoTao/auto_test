@@ -396,21 +396,37 @@ class UiApiAutoTool(object):
         :return:
         """
         # 执行文件
+        ENVIRONMENT = self.get_emvironmentBox_info()
+        LOGINUSER = self.get_loginTitleBox_info()
         TESTCASEPATH = self.get_testCasePathBox_info()
+        ENVIRONMENTPORT = self.get_emvironment_port_Box_info()
+        APIHOST = Config().get_apihoet(ENVIRONMENT)
+        BASEHOST = Config().get_basehost(ENVIRONMENT)
+        LOGINHOST = Config().get_loginHost(ENVIRONMENT)
+        LOGINDATA = Config().get_login_data(ENVIRONMENT, LOGINUSER)
+        USERNAME = Config().get_login_username(ENVIRONMENT, LOGINUSER)
+
+
         from tools.api_tool_excel import ExcelPack
         excel = ExcelPack(file_name=TESTCASEPATH, sheet_id=0)
         # 批量执行
-        excel.run_excel_case()
+        excel.run_excel_case(APIHOST, ENVIRONMENTPORT, BASEHOST, LOGINHOST, LOGINDATA, USERNAME)
 
     def longin_get_token(self):
-        self.all_info()
         from tools.api_tool_login import Login
-        Login().api_login()
+        BASEHOST = Config().get_basehost(self.get_emvironmentBox_info())
+        LOGINHOST = Config().get_loginHost(self.get_emvironmentBox_info())
+        LOGINDATA = Config().get_login_data(self.get_emvironmentBox_info(),
+                                            self.get_loginTitleBox_info())
+        USERNAME = Config().get_login_username(self.get_emvironmentBox_info(),
+                                               self.get_loginTitleBox_info())
+        Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
 
     def all_info(self):
         """
         :return:
         """
+        PyqtTxtPack().clear_pyqt5_txt()
         info_dict = {'testcase_path': self.get_testCasePathBox_info(), 'emvironment': self.get_emvironmentBox_info(),
                      'emvironment_port': self.get_emvironment_port_Box_info(),
                      'login_user': self.get_loginTitleBox_info(),
@@ -454,7 +470,6 @@ class UiApiAutoTool(object):
         logger.info(f"【本次执行环境为:{ENVIRONMENT},执行人员：{TESTER}】")
 
         self.all_info()
-
         try:
             if DELETE_ON_OFF == 'on':
                 # 删除旧的测试结果数据
@@ -504,7 +519,6 @@ class UiApiAutoTool(object):
         except Exception as e:
             logger.error(f"判断是否开启发送钉钉消息功能异常：{e}")
 
-        PyqtTxtPack().clear_pyqt5_txt()
         logger.info('==========< 结束 API自动化项目 测试 >===========')
 
         # =================UI测试====================#
@@ -543,4 +557,4 @@ class UiApiAutoTool(object):
         # 发送钉钉
         DINGDING_NEWS_ON_OFF = self.get_sendDingDingBox_info()
         self.runAll_info(ENVIRONMENT, TESTER, DELETE_ON_OFF, SAVE_ON_OFF, EMAIL_ON_OFF, OPEN_REPORY_ON_OFF,
-                    DINGDING_NEWS_ON_OFF)
+                         DINGDING_NEWS_ON_OFF)

@@ -2,10 +2,8 @@
 # ==============================
 #       EXCEL读取出来的数据处理封装
 # ==============================
-import json
 import re
 
-from common import consts
 from common import setting
 from tools.api_tool_assert import Assert
 from tools.api_tool_global_var import global_var
@@ -128,13 +126,13 @@ class ExcelPack(ReadExcel):
         return case_name
 
     # 处理url,获取需要匹配的字符串并返回url
-    def get_new_url(self, row):
+    def get_new_url(self, row, APIHOST, ENVIRONMENTPORT):
         """
         :param row:
         :return:
         """
         api_url = self.get_url_api(row)
-        url = consts.APIHOST +consts.ENVIRONMENTPORT + api_url
+        url = APIHOST + ENVIRONMENTPORT + api_url
 
         try:
             # 如果url中有{{}}类符号被识别为变量，获取所依赖得值到url中
@@ -177,7 +175,7 @@ class ExcelPack(ReadExcel):
                     data = self.get_case_json(row)
                 # 列表依赖
                 elif type(eval(str_data)) == list:
-                    self.logger.error("列表类型入参，且有依赖情况没有做，遇到具体问题再处理。") # 列表类型入参，依赖暂时没有做,
+                    self.logger.error("列表类型入参，且有依赖情况没有做，遇到具体问题再处理。")  # 列表类型入参，依赖暂时没有做,
                     data = str_data
             # 无依赖
             else:
@@ -271,7 +269,7 @@ class ExcelPack(ReadExcel):
         return headers_dict
 
     # 批量执行，执行excel测试用例
-    def run_excel_case(self):
+    def run_excel_case(self, APIHOST, ENVIRONMENTPORT, BASEHOST, LOGINHOST, LOGINDATA, USERNAME):
         """
         :return:
         """
@@ -288,22 +286,20 @@ class ExcelPack(ReadExcel):
                 # 获取data
                 data = self.get_new_data(row)
                 # 处理url
-                url = self.get_new_url(row)
+                url = self.get_new_url(row, APIHOST, ENVIRONMENTPORT)
                 # 处理header,字符串str转为字典dict
                 headers = self.get_new_headers(row)
                 # 处理断言
                 expected_status_code = self.get_expected_status_code(row)
                 expected_msg = self.get_expected_msg(row)
                 expected_data = self.get_expected_data(row)
-
                 # 发请求
                 res = Response().result(self.runs.send_request(method=method, url=url, data=data, headers=headers))
-
                 try:
                     if res['body']['msg'] != '未经授权的访问':
                         pass
                     elif res['body']['msg'] == '未经授权的访问':
-                        Login().api_login()
+                        Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
                         headers = self.get_new_headers(row)
                         res = self.runs.send_request(method=method, url=url, data=data, headers=headers)
                 except Exception as e:
@@ -311,7 +307,6 @@ class ExcelPack(ReadExcel):
 
                 # 结果写入excel测试结果()==》断言
                 result = self.assert_eq_write_result(row, res)
-
                 case = {
                     "result": result,
                     "title": case_name,

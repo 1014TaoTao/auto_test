@@ -26,7 +26,7 @@ class PyqtTxtPack:
             with open(setting.PYQT5_FILE, "w", encoding="utf-8") as f:
                 f.write(str(info_dict))
                 logger.info(f"【写入pyqt5_txt成功：{info_dict}】")
-            return str(info_dict)
+            f.close()
         except Exception as e:
             logger.error(f"【写入pyqt5_txt异常！{e}】")
 
@@ -41,6 +41,7 @@ class PyqtTxtPack:
                     return eval(info_str)
                 else:
                     logger.error(f"【读取pyqt5_txt为:空】")
+            f.close()
         except Exception as e:
             logger.error(f"【读取pyqt5_txt异常！{e}】")
 

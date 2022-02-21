@@ -160,7 +160,7 @@ class Requests:
             elif method == 'PATCH':
                 res = self.send_patch(url=url, data=data, headers=headers)
             self.logger.info(f"【请求结束...end】")
-            print(res.status_code)
+            # print(res.status_code)
             return res
 
         except Exception as e:
