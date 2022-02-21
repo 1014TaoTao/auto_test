@@ -48,13 +48,13 @@ class Requests:
         """
         try:
             if headers is None:
-                response = self.session.post(url=url, data=data, json=None)
+                response = self.session.post(url=url, json=data)
             elif data is None:
-                response = self.session.post(url=url, headers=headers, json=None)
+                response = self.session.post(url=url, headers=headers)
             elif headers is None and data is None:
                 response = self.session.post(url=url)
             else:
-                response = self.session.post(url=url, data=data, headers=headers, json=None)
+                response = self.session.post(url=url, json=data, headers=headers)
             return response
         except Exception as e:
             raise f"POST请求异常:{e}"
@@ -160,23 +160,22 @@ class Requests:
             elif method == 'PATCH':
                 res = self.send_patch(url=url, data=data, headers=headers)
             self.logger.info(f"【请求结束...end】")
+            print(res.status_code)
             return res
 
         except Exception as e:
             return f"发送请求异常:{e}"
 
+
 # if __name__ == '__main__':
-#     url = "http://192.168.0.115:10007/kubecluster/v1/api/node"
-#
-#     headers = {
-#         'Content-Type': 'application/json;charset=UTF-8',
-#         'Authorization': 'Bearer 7ff74042-8433-4d86-95ee-82f456d6f82e'
-#     }
-#
-#     data = {
-#         'name': 'Beijing-node-06',
-#         'pageNo': 1,
-#         'pageSize': 10
-#     }
-#     res = Requests().send_request(method="GET", url=url, data=data, headers=headers)
-#     print(res.json())
+    # url = "http://192.168.0.115:10007/kuberegistry/v1/api/repository"
+    #
+    # headers = {
+    #     'Content-Type': 'application/json;charset=UTF-8',
+    #     'Authorization': 'Bearer a5244cdb-d41e-4046-bf62-bd4ca5511d8c'
+    # }
+    #
+    # data = {"tagSet": ["分析工具"], "imageName": "zhangtao_test_001", "groupId": 495, "tenantId": 1, "description": "张涛测试"}
+    #
+    # res = Requests().send_post(url=url, data=data, headers=headers)
+    # print(res.status_code)

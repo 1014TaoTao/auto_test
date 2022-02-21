@@ -2,7 +2,7 @@
 # ==============================
 #       EXCEL读取出来的数据处理封装
 # ==============================
-
+import json
 import re
 
 from common import consts
@@ -206,9 +206,9 @@ class ExcelPack(ReadExcel):
         str_data = self.get_data_info(row)  # 获取入参。并由str转为dict
         if str_data == '':
             str_data = '{}'
-            json_dict = eval(str_data)
+            dict_data = eval(str_data)
         else:
-            json_dict = eval(str_data)
+            dict_data = eval(str_data)
         depend_list = self.get_case_list(row)  # 获取依赖列表
         revise_list = self.get_revise_list(row)  # 获取依赖字段
         for i in range(len(depend_list)):
@@ -221,16 +221,16 @@ class ExcelPack(ReadExcel):
                 if response != u"【excel无法找到对应依赖的响应内容】":
                     try:
                         res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
-                        json_dict[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
+                        dict_data[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
 
                     except Exception as e:
                         self.logger.error(f'【在响应中获取依赖异常：{e}】')
                 else:
                     self.logger.error('【excel无法找到对应依赖的响应内容】')
         # 写入返回数据
-        deal_str = str(json_dict).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
+        deal_str = str(dict_data).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
         self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
-        return json_dict
+        return dict_data
 
     # 处理headers
     def get_new_headers(self, row):
