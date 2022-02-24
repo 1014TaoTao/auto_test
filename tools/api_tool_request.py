@@ -92,13 +92,13 @@ class Requests:
         """
         try:
             if headers is None:
-                res = self.session.patch(url=url, data=data)
+                res = self.session.patch(url=url, json=data)
             elif data is None:
                 res = self.session.patch(url=url, headers=headers)
             elif headers is None and data is None:
                 res = self.session.patch(url=url)
             else:
-                res = self.session.patch(url=url, data=data, headers=headers)
+                res = self.session.patch(url=url, json=data, headers=headers)
             return res
         except Exception as e:
             raise f"PATCH请求异常:{e}"
