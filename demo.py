@@ -10,33 +10,78 @@
 import json
 import re
 
-resp = {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [
-    {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root',
-     'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB',
-                  'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35',
-     'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01',
-     'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]},
-                              'ext': {}},
-        'text': '{"code":1,"msg":"成功","data":{"total":1,"list":[{"id":9,"name":"Beijing-node-06","code":"KN000009","userName":"root","specData":{"vendor":"Intel","cpuModel":"Xeon","cpuSpeed":"3.00GHz","cpuCores":64.0,"memory":"252GB","disk":"300.0GB","os":"CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64"},"ip":"192.168.0.35","monitorUrl":"http://192.168.0.30:30090","linkClusterId":3,"linkClusterName":"Beijing-cluster-01","monitorStatus":3,"status":2,"enableFlag":1,"tenantId":null,"createUser":null,"updateUser":null}]},"ext":{}}',
-        'time_consuming': 72.999, 'time_total': 0.072999,
-        'headers': {'Server': 'nginx/1.17.0', 'Date': 'Mon, 21 Feb 2022 13:53:06 GMT',
-                    'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked',
-                    'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff',
-                    'X-XSS-Protection': '1; mode=block',
-                    'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache',
-                    'Expires': '0', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer',
-                    'Content-Encoding': 'gzip'}}
+resp = {"code": 1, "msg": "成功",
+        "data": {"id": 4164, "name": "消息中心", "label": "消息中心", "authFlag": 1, "type": 1, "funcType": 1,
+                 "funcCategory": -1, "code": "message_center_tenant", "url": "http://192.168.0.115:20012",
+                 "icon": "icon-xiaoxi300", "sequence": 195, "tags": "", "children": [
+                {"id": 7547, "name": "公告管理", "label": "公告管理", "authFlag": 1, "type": 2, "funcType": 2,
+                 "funcCategory": -1, "code": "announcement_management", "url": "/notice", "icon": "", "sequence": 199,
+                 "tags": "", "children": [
+                    {"id": 7548, "name": "查看公告", "label": "查看公告", "authFlag": 1, "type": 2, "funcType": 2,
+                     "funcCategory": -1, "code": "view_announcement_management", "url": "/check-notice", "icon": "",
+                     "sequence": 200, "tags": "", "children": [
+                        {"id": 7550, "name": "公告详情", "label": "公告详情", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "detail_view_announcement", "url": "", "icon": "", "sequence": 200,
+                         "tags": ""}]},
+                    {"id": 7549, "name": "发布公告", "label": "发布公告", "authFlag": 1, "type": 2, "funcType": 2,
+                     "funcCategory": -1, "code": "publish_announcement_management", "url": "/send-notice", "icon": "",
+                     "sequence": 199, "tags": "", "children": [
+                        {"id": 7552, "name": "新建公告", "label": "新建", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "add_publish_announcement", "url": "", "icon": "", "sequence": 200,
+                         "tags": ""},
+                        {"id": 7553, "name": "修改公告", "label": "修改", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "update_publish_announcement", "url": "", "icon": "",
+                         "sequence": 199, "tags": ""},
+                        {"id": 7551, "name": "公告详情", "label": "公告详情", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "detail_publish_announcement", "url": "", "icon": "",
+                         "sequence": 198, "tags": ""},
+                        {"id": 7554, "name": "上下线公告", "label": "发布,下线", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "on-offline_publish_announcement", "url": "", "icon": "",
+                         "sequence": 197, "tags": ""},
+                        {"id": 7645, "name": "删除公告", "label": "删除", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "del_publish_announcement", "url": "", "icon": "", "sequence": 1,
+                         "tags": ""}]}]},
+                {"id": 4299, "name": "消息管理", "label": "消息管理", "authFlag": 1, "type": 2, "funcType": 2,
+                 "funcCategory": -1, "code": "message_management_menu_tenant", "url": "/news",
+                 "icon": "icon-shuxingchaxun", "sequence": 199, "tags": "", "children": [
+                    {"id": 7537, "name": "我的消息", "label": "我的消息", "authFlag": 1, "type": 2, "funcType": 2,
+                     "funcCategory": -1, "code": "my_message_management", "url": "/total", "icon": "", "sequence": 200,
+                     "tags": "", "children": [
+                        {"id": 7539, "name": "全部消息tab", "label": "全部消息", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "all_my_message", "url": "", "icon": "", "sequence": 200,
+                         "tags": ""},
+                        {"id": 7540, "name": "未读消息tab", "label": "未读消息", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "unread_my_message", "url": "/unread", "icon": "", "sequence": 199,
+                         "tags": ""},
+                        {"id": 7541, "name": "已读消息tab", "label": "已读消息", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "read_my_message", "url": "/read", "icon": "", "sequence": 198,
+                         "tags": ""},
+                        {"id": 7542, "name": "标记已读", "label": "标记已读", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "mark_read_my_message", "url": "", "icon": "", "sequence": 197,
+                         "tags": ""},
+                        {"id": 7543, "name": "删除消息", "label": "删除", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "del_my_message", "url": "", "icon": "", "sequence": 196,
+                         "tags": ""}]},
+                    {"id": 7538, "name": "发送消息", "label": "发送消息", "authFlag": 1, "type": 2, "funcType": 2,
+                     "funcCategory": -1, "code": "send_message_management", "url": "/manager", "icon": "",
+                     "sequence": 199, "tags": "", "children": [
+                        {"id": 7544, "name": "新建消息", "label": "新建", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "add_message_send", "url": "", "icon": "", "sequence": 200,
+                         "tags": ""},
+                        {"id": 7546, "name": "消息详情", "label": "消息详情", "authFlag": 1, "type": 3, "funcType": 3,
+                         "funcCategory": -1, "code": "detail_message_send", "url": "", "icon": "", "sequence": 198,
+                         "tags": ""}]}]}]}}
 
 # str_list_01 = 'list'
 # str_list_02 = 'id'
 
 # print(resp['body']['data'][str_list_01][0][str_list_02])
 # json_resp = json.dumps(resp)
-json_resp = str(resp['body'])
+json_resp = str(resp)
 # print(json_resp)
 # print(type(json_resp))
 try:
-    str_info = 'id '
+    str_info = r'children": [{"id'
     value = re.search(f'{str_info:}.*?(?=,)', json_resp).group().replace(f"{str_info}", "").replace("': ", "")
     print(value)
 except:

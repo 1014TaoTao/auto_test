@@ -210,3 +210,11 @@ class ReadExcel:
         :return:
         """
         return self.get_cell_data(row, global_var().get_response())
+
+    # 获取base_url
+    def get_base_url_info(self, row):
+        """
+        :param row:
+        :return:
+        """
+        return self.get_cell_data(row, global_var().get_base_url())

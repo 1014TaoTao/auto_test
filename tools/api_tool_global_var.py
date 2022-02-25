@@ -8,19 +8,20 @@ class global_var:
         self.test_module = 1
         self.test_function = 2
         self.test_run = 3
-        self.test_url = 4
-        self.test_data = 5
-        self.test_run_way = 6
-        self.test_header = 7
-        self.test_token = 8
-        self.test_case_depend = 9
-        self.test_filed_depend = 10
-        self.test_status_code = 11
-        self.test_expect_msg = 12
-        self.test_expect_data = 13
-        self.test_result = 14
-        self.test_response = 15
-        self.test_check_sql = 16
+        self.base_url = 4
+        self.test_url = 5
+        self.test_data = 6
+        self.test_run_way = 7
+        self.test_header = 8
+        self.test_token = 9
+        self.test_case_depend = 10
+        self.test_filed_depend = 11
+        self.test_status_code = 12
+        self.test_expect_msg = 13
+        self.test_expect_data = 14
+        self.test_result = 15
+        self.test_response = 16
+        self.test_check_sql = 17
 
     def get_id(self):
         """
@@ -123,6 +124,12 @@ class global_var:
         :return:
         """
         return self.test_case_depend
+
+    def get_base_url(self):
+        """
+        :return:
+        """
+        return self.base_url
 
 # if __name__ == '__main__':
 #     print(global_var.get_data)
