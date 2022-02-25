@@ -144,11 +144,17 @@ class ExcelPack(ReadExcel):
             response = self.get_case_line(case_id, row)
             if response != u"【excel无法找到对应依赖的响应内容】":
                 try:
-                    new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
-                    url = url.replace(value, str(new_str))
-                    self.logger.info(f'【url处理完成...】')
+                    # new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
+                    # url = url.replace(value, str(new_str))
+
+                    new_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}", "").replace(
+                        "': ", "")
+                    url = url.replace(value, new_str)
+                    self.logger.info(f'【url依赖处理完成...】')
+
                     return url
                 except Exception as e:
+                    self.logger.error(f'【url依赖处理失败，无法匹配...】')
                     return url, e
             else:
                 self.logger.error('【excel无法找到url所需依赖字段】')
@@ -218,8 +224,13 @@ class ExcelPack(ReadExcel):
                 response = self.get_case_line(case_id, row)
                 if response != u"【excel无法找到对应依赖的响应内容】":
                     try:
-                        res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
-                        dict_data[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
+                        # res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
+                        # dict_data[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
+
+                        res_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}", "").replace(
+                            "': ", "")
+                        dict_data[revise_str] = res_str  # {id:9},在response获取得字段加入json_data字典中
+
 
                     except Exception as e:
                         self.logger.error(f'【在响应中获取依赖异常：{e}】')

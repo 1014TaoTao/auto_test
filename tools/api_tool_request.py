@@ -114,13 +114,13 @@ class Requests:
         """
         try:
             if headers is None:
-                res = self.session.delete(url=url, json=data)
+                res = self.session.delete(url=url, data=data)
             elif data is None:
                 res = self.session.delete(url=url, headers=headers)
             elif headers is None and data is None:
                 res = self.session.delete(url=url)
             else:
-                res = self.session.delete(url=url, json=data, headers=headers)
+                res = self.session.delete(url=url, data=data, headers=headers)
             return res
         except Exception as e:
             raise f"DELETE请求异常:{e}"
