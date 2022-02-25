@@ -81,7 +81,7 @@ class ExcelPack(ReadExcel):
         try:
             if Assert().assert_code(int(self.get_expected_status_code(row)), res['code']) and \
                     Assert().assert_msg(self.get_expected_msg(row), res['body']['msg']) and \
-                    Assert().assert_in_body(self.get_expected_data(row), str(res['body']['data'])):
+                    Assert().assert_in_body(self.get_expected_data(row), str(res['body'])):
                 self.write_cell_data(row, global_var().get_result(), "PASS", cell_style=3)
                 self.logger.info(
                     f"【测试用例：{self.get_new_case_name(row)}】===============>> 【PASS！】\n")
