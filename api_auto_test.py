@@ -292,7 +292,7 @@ class UiApiAutoTool(object):
     def retranslateUi(self, ApiAutoTool):
         _translate = QtCore.QCoreApplication.translate
         ApiAutoTool.setWindowTitle(_translate("ApiAutoTool", "接口自动化测试工具"))
-        self.testCasePathBox.setCurrentIndex(1)  # 设定默认值:demo01
+        self.testCasePathBox.setCurrentIndex(0)  # 设定默认值:demo01
         self.testerBox.setCurrentIndex(0)  # 设定默认值:张涛
         self.reportRunBox.setCurrentIndex(1)  # 设定默认值:默认不生成测试报告
         self.deleteReportBox.setCurrentIndex(1)  # 设定默认值:默认不删除旧报告
