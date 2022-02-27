@@ -521,23 +521,6 @@ class UiApiAutoTool(object):
 
         logger.info('==========< 结束 API自动化项目 测试 >===========')
 
-        # =================UI测试====================#
-        # U = UI_Run()
-        # 删除旧的测试结果数据
-        # U.delete_old_file()
-        # 删除旧的测截图
-        # U.del_old_img()
-        # 执行测试
-        # U.run_test()
-        # # 生成测试报告
-        # U.run_allure_report()
-        # 压缩报告
-        # U.run_zip()
-        # 发送邮件
-        # U.run_email()
-        # 打卡allure报告
-        # U.open_report()
-
     def runButton_info(self):
         """
         :return:

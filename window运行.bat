@@ -29,5 +29,5 @@ if exist requirements.txt pip install -r requirements.txt
 if not exist requirements.txt echo requirements.txt does not exist
 
 REM 运行脚本
-python run_all.py
+python main.py
 pause >nul
