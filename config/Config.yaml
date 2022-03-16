@@ -140,6 +140,8 @@ databases:
   charset: utf8
 testers:
   - 王静静
+  - 张涛
+  - 叶明鑫
 delete_report_on_off:
   - 'on'
   - 'off'
