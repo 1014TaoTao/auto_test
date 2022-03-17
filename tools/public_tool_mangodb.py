@@ -156,29 +156,42 @@ class MongodbHandle:
 #     import uuid
 #     import bson
 #     from dateutil import parser
-
-    # host = '10.0.34.13'
-    # port = 37017
-    # db_name = 'potato_kube'
-    # user = 'potatokube'
-    # password = 'ecbe95b861'
-    #
-    # M = MongodbHandle(host, port, db_name, user, password)
-    #
-    # table_list = M.get_connections()
+#
+#     host = '10.0.34.13'
+#     port = 37017
+#     db_name = 'potato_kube'
+#     user = 'potatokube'
+#     password = 'ecbe95b861'
+#
+#     M = MongodbHandle(host, port, db_name, user, password)
+#
+#     table_list = M.get_connections()
     # ['tekton_task', 'argo_operator', 'argo_workflow', 'potato_kube', 'tekton_pipeline']
 
-    # 删除
+    # # 删除流程
     # M.delete_batch_collection(collection_name='argo_workflow',
-    #                           search_col={"name": {"$regex": "^workflow-code-"}})
+    #                           search_col={"name": {"$regex": "^workflow-form-"}})
     #
     # operator = M.select_all_collection(collection_name='argo_workflow',
-    #                                    search_col={"name": {"$regex": "^workflow-code-"}})
+    #                                    search_col={"name": {"$regex": "^workflow-form-"}})
     # # {"name": { $regex: / operator - form - /}}
     # operator_count = M.select_count_collection(collection_name='argo_workflow',
-    #                                            search_col={"name": {"$regex": "^workflow-code-"}})
+    #                                            search_col={"name": {"$regex": "^workflow-form-"}})
     # print(operator)
     # print(operator_count)
+
+    # 删除算子
+    # M.delete_batch_collection(collection_name='argo_operator',
+    #                           search_col={"name": {"$regex": "^operator-code-"}})
+    #
+    # operator = M.select_all_collection(collection_name='argo_operator',
+    #                                    search_col={"name": {"$regex": "^operator-code-"}})
+    # # {"name": { $regex: / operator - form - /}}
+    # operator_count = M.select_count_collection(collection_name='argo_operator',
+    #                                            search_col={"name": {"$regex": "^operator-code-"}})
+    # print(operator)
+    # print(operator_count)
+
 
     """
     案例：
