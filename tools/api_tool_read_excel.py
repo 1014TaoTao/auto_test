@@ -87,11 +87,17 @@ class ReadExcel:
             font.bold = True  # 设置粗体
             font.colour_index = 4  # 设置紫色 # 参考：http://www.javashuo.com/article/p-sfvgazwx-c.html
         style.alignment = al
+
         style.font = font
+
         book = xlrd.open_workbook(self.file_name, formatting_info=True)
+
         book_copy = copy(book)
+
         sheet = book_copy.get_sheet(self.sheet_id)
+
         sheet.write(row, col, value, style)
+
         book_copy.save(self.file_name)
 
     # 获取用例id

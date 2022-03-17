@@ -1,61 +1,41 @@
 [ {
-  "uid" : "2195739a2f1a5fa8",
-  "name" : "test_002节点查询",
+  "uid" : "75c9b1e53e556bfa",
+  "name" : "test_004区域权限查询",
   "time" : {
-    "start" : 1645425136543,
-    "stop" : 1645425136548,
+    "start" : 1647511395192,
+    "stop" : 1647511395197,
     "duration" : 5
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "c361b1123d95107",
-  "name" : "test_001节点查询",
+  "uid" : "7b3daa83e2d8db9f",
+  "name" : "test_002业务板块查询",
   "time" : {
-    "start" : 1645425136535,
-    "stop" : 1645425136539,
+    "start" : 1647511395179,
+    "stop" : 1647511395183,
     "duration" : 4
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "8c0d564ea555460",
-  "name" : "test_005节点全部查询",
+  "uid" : "cfbc2f593bae1430",
+  "name" : "test_003业务版本功能信息查询",
   "time" : {
-    "start" : 1645425136567,
-    "stop" : 1645425136572,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "5cbcd92bb780bede",
-  "name" : "test_004算子删除",
-  "time" : {
-    "start" : 1645425136560,
-    "stop" : 1645425136564,
+    "start" : 1647511395185,
+    "stop" : 1647511395189,
     "duration" : 4
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "ac39342ddb92d81f",
-  "name" : "test_003节点详情",
+  "uid" : "581052adfc2f7bf5",
+  "name" : "test_001业务模块查询",
   "time" : {
-    "start" : 1645425136552,
-    "stop" : 1645425136557,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "ddb1e8e50c6d94a1",
-  "name" : "test_006镜像资源-我的仓库",
-  "time" : {
-    "start" : 1645425136576,
-    "stop" : 1645425136582,
+    "start" : 1647511395170,
+    "stop" : 1647511395176,
     "duration" : 6
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "blocker"
 } ]

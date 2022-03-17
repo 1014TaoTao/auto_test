@@ -32,7 +32,7 @@ class Response:
                 self.logger.error("【获取响应data异常: {0}】".format(e))
                 response_dicts['body'] = ''
             # 响应txt
-            response_dicts['text'] = res.text
+            # response_dicts['text'] = res.text
             # 响应毫秒时间
             time_consuming = res.elapsed.microseconds / 1000  # 毫秒为单位
             response_dicts['time_consuming'] = time_consuming
@@ -42,7 +42,7 @@ class Response:
 
             # consts.STRESS_LIST.append(time_consuming)
             # 响应头
-            response_dicts['headers'] = res.headers
+            # response_dicts['headers'] = res.headers
             # 响应cookie
             # response_dicts['cookie'] = res.cookies
             self.logger.info(f"【请求响应结果为: {response_dicts}】")

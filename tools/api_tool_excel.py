@@ -71,13 +71,11 @@ class ExcelPack(ReadExcel):
         """
         # 在excel中写入结果
         try:
-            print(type(res))
             write_str = str(res)
         except Exception as e:
             write_str = str(u"响应结果转字符串格式错误！")
             self.logger.error(f'响应结果转字符串格式错误:{e}')
         self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
-        print("c")
         self.logger.info(f"【响应结果写入excel：{res}】")
         # 断言加入列表，遍历列表
         try:
@@ -137,35 +135,36 @@ class ExcelPack(ReadExcel):
         base_url = self.get_base_url_info(row)
         if base_url == '':
             url = APIHOST + ENVIRONMENTPORT + api_url
-            self.logger.info(f"{url}")
         else:
             url = base_url + api_url
         try:
             # 如果url中有{{}}类符号被识别为变量，获取所依赖得值到url中
             value = re.search("{{(.+?)}}", url).group()
-            self.logger.info('【url中存在依赖关系，开始处理...】')
-            list_url_params = value.replace("{{", "").replace("}}", "").split(":")
-            case_id = list_url_params[0]
-            case_str = list_url_params[1]
-            response = self.get_case_line(case_id, row)
+            if value:
+                self.logger.info('【url中存在依赖关系，开始处理...】')
+                list_url_params = value.replace("{{", "").replace("}}", "").split(":")
+                case_id = list_url_params[0]
+                response = self.get_case_line(case_id, row)
 
-            if response != u"【excel无法找到对应依赖的响应内容】":
+                if response != u"【excel无法找到对应依赖的响应内容】":
 
-                try:
-                    # new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
-                    # url = url.replace(value, str(new_str))
+                    try:
+                        # new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
+                        # url = url.replace(value, str(new_str))
+                        case_str = list_url_params[1]
+                        new_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}", "").replace(
+                            "': ", "")
+                        url = url.replace(value, new_str)
+                        self.logger.info(f'【url依赖处理完成...】')
 
-                    new_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}", "").replace(
-                        "': ", "")
-                    url = url.replace(value, new_str)
-                    self.logger.info(f'【url依赖处理完成...】')
-
-                    return url
-                except Exception as e:
-                    self.logger.error(f'【url依赖处理失败，无法匹配...】')
-                    return url, e
+                        return url
+                    except Exception as e:
+                        self.logger.error(f'【url依赖处理失败，无法匹配...】')
+                        return url, e
+                else:
+                    self.logger.error('【excel无法找到url所需依赖字段】')
             else:
-                self.logger.error('【excel无法找到url所需依赖字段】')
+                pass
         except AttributeError:
             self.logger.info(f'【url中没有依赖正常执行...】')
             return url
@@ -235,7 +234,8 @@ class ExcelPack(ReadExcel):
                         # res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
                         # dict_data[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
 
-                        res_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}", "").replace(
+                        res_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}",
+                                                                                              "").replace(
                             "': ", "")
                         dict_data[revise_str] = res_str  # {id:9},在response获取得字段加入json_data字典中
 
@@ -346,7 +346,8 @@ class ExcelPack(ReadExcel):
         self.write_test_summary()  # 输出测试结果
         return all_case
 
-# 测试
+
+# # 测试
 # if __name__ == '__main__':
 #     from common.setting import API_EXCEL_FILE
 #
