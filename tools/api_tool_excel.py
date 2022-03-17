@@ -71,11 +71,13 @@ class ExcelPack(ReadExcel):
         """
         # 在excel中写入结果
         try:
+            print(type(res))
             write_str = str(res)
         except Exception as e:
             write_str = str(u"响应结果转字符串格式错误！")
             self.logger.error(f'响应结果转字符串格式错误:{e}')
         self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
+        print("c")
         self.logger.info(f"【响应结果写入excel：{res}】")
         # 断言加入列表，遍历列表
         try:
@@ -135,6 +137,7 @@ class ExcelPack(ReadExcel):
         base_url = self.get_base_url_info(row)
         if base_url == '':
             url = APIHOST + ENVIRONMENTPORT + api_url
+            self.logger.info(f"{url}")
         else:
             url = base_url + api_url
         try:
@@ -145,7 +148,9 @@ class ExcelPack(ReadExcel):
             case_id = list_url_params[0]
             case_str = list_url_params[1]
             response = self.get_case_line(case_id, row)
+
             if response != u"【excel无法找到对应依赖的响应内容】":
+
                 try:
                     # new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
                     # url = url.replace(value, str(new_str))
