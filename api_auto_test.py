@@ -517,7 +517,7 @@ class UiApiAutoTool(object):
             else:
                 logger.info("【DINGDING_NEWS_ON_OFF == off】，不开启发送钉钉消息功能")
         except Exception as e:
-            logger.error(f"判断是否开启发送钉钉消息功能异常：{e}")
+            logger.error(f"发送钉钉消息功能异常：{e}")
 
         logger.info('==========< 结束 API自动化项目 测试 >===========')
 

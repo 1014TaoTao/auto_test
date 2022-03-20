@@ -4,10 +4,10 @@
     "uid" : "47df804136b2bf0b864dd9bfca6f3eb9",
     "name" : "excel接口测试",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

@@ -131,6 +131,7 @@ email:
   sender: 948080782@qq.com
   password: gboboxzhptgubcag
   receiver: 948080782@qq.com
+
 databases:
   host: 127.0.0.1
   user: root
@@ -138,10 +139,12 @@ databases:
   passwd: 123456
   db: pytest_auto_uitest_apitest
   charset: utf8
+
 testers:
   - 王静静
   - 张涛
   - 叶明鑫
+
 delete_report_on_off:
   - 'on'
   - 'off'

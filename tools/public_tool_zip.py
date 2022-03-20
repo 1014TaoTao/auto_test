@@ -22,7 +22,9 @@ class zip_path:
                 zp.write(os.path.join(path, filename), os.path.join(fpath, filename))
         zp.close()
 
+
 # 测试
-# if __name__ == "__main__":
-#     from config import config
-#     zip_path().zipDir(config.REPORT_END_PATH.FILE_LIST_PATH)
+if __name__ == "__main__":
+    from common import setting
+
+    zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)

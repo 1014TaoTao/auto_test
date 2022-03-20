@@ -10,6 +10,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from common.readConfigYaml import Config
+from tools.public_tool_allurereport import AllureFileClean, CaseCount
 from tools.public_tool_log import logger
 
 
@@ -40,6 +41,15 @@ class EmailPack:
         else:
             self.server = smtplib.SMTP(server_host)
         self.message = MIMEMultipart()  # 邮件体
+
+        self.allureData = CaseCount()
+        self.PASS = self.allureData.passCount()
+        self.FAILED = self.allureData.failedCount()
+        self.BROKEN = self.allureData.brokenCount()
+        self.SKIP = self.allureData.skippedCount()
+        self.TOTAL = self.allureData.totalCount()
+        self.RATE = self.allureData.passRate()
+        self.CaseDetail = AllureFileClean().getFailedCasesDetail()
 
     # 设置发件人名称，主题，内容，附件
     def set_message(self, name, title, content, filelist):
@@ -87,7 +97,22 @@ class EmailPack:
             name="接口自动化测试",
             title="Hi！测试执行完毕提醒！",
             content='''
-                您的自动化测试报告附件已生成，请注意查收！\n
+                各位同事, 大家好:
+                自动化用例执行完成，执行结果如下:
+                用例运行总数: {} 个
+                通过用例个数: {} 个
+                失败用例个数: {} 个
+                异常用例个数: {} 个
+                跳过用例个数: {} 个
+                成  功   率: {} %
+                
+            {}
+    
+            **********************************
+            jenkins地址：https://121.xx.xx.47:8989/login
+            详细情况可登录jenkins平台查看，非相关负责人员可忽略此消息。谢谢。
+            """.format(self.TOTAL, self.PASS, self.FAILED, self.BROKEN, self.SKIP, self.RATE, self.CaseDetail)
+
                 ''',
             filelist=FILE_LIST
         )

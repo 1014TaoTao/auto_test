@@ -2,60 +2,116 @@
 
 # 钉钉发送消息模块
 import time
+from typing import Any
 
-from dingtalkchatbot.chatbot import DingtalkChatbot
+from dingtalkchatbot.chatbot import DingtalkChatbot, FeedLink
+
+from common import setting, readConfigYaml
+from tools.public_tool_allurereport import CaseCount
+from tools.public_tool_log import logger
 
 # from common import consts
-from common import setting, readConfigYaml
-from tools.public_tool_log import logger
 
 logger = logger(log_path=setting.API_LOG_PATH)
 
 
 class DingTalk:
 
-    # 发送钉钉消息
-    def send_dingding(self,ENVIRONMENT, TESTER):
+    def __init__(self):
+        self.timeStamp = str(round(time.time() * 1000))
+
+        self.secret = readConfigYaml.Config().get_dingding_secret()
+        self.webhook = readConfigYaml.Config().get_dingding_webhook()
+        self.ding_news = DingtalkChatbot(webhook=self.webhook, secret=self.secret, pc_slide=False, fail_notice=False)
+
+        self.allureData = CaseCount()
+        self.PASS = self.allureData.passCount()
+        self.FAILED = self.allureData.failedCount()
+        self.BROKEN = self.allureData.brokenCount()
+        self.SKIP = self.allureData.skippedCount()
+        self.TOTAL = self.allureData.totalCount()
+        self.RATE = self.allureData.passRate()
+
+    def send_text(self, msg: str, mobiles=None) -> None:
         """
+        发送文本信息
+        :param msg: 文本内容
+        :param mobiles: 艾特用户电话
         :return:
         """
-        # 获取当前日期
-        tile = time.strftime("%Y-%m-%d %H:%M:%S")
+        if not mobiles:
+            self.ding_news.send_text(msg=msg, is_at_all=True)
+        else:
+            if isinstance(mobiles, list):
+                self.ding_news.send_text(msg=msg, at_mobiles=mobiles)
+            else:
+                raise TypeError("mobiles类型错误 不是list类型.")
 
-        secret = readConfigYaml.Config().get_dingding_secret()
-        webhook = readConfigYaml.Config().get_dingding_webhook()
-        ding_news = DingtalkChatbot(webhook=webhook, secret=secret, pc_slide=False, fail_notice=False)
-        d = {}  # 先声明，后边用哪了自己看
-        file = setting.PROMETHEUSDATA
-        with open(file, "r") as file:  # 打卡刚说的监控数据文件
-            for lines in file:  # 遍历他的值
-                launch_name = lines.strip('\n').split(' ')[0]  # 他是个文本肯定有换行符用strip干掉他，干掉后用split根据空格进行切割，取第一个值
-                num = lines.strip('\n').split(' ')[1]  # 这个就取第二个值
-                d.update({launch_name: num})  # 现在把娶到的俩值以词典的方式给到d
-            retries_run = d.get('launch_retries_run')  # 之后通过key把他们统计的值拿出来，这行是运行总数
-            status_passed = d.get('launch_status_passed')  # 这行是通过数
-            status_failed = d.get('launch_status_failed')  # 这行是失败数
-            status_skipped = d.get('launch_status_skipped')  # 这行是跳过数
-            status_broken = d.get('launch_status_broken')  # 异常数量
+    def send_link(self, title: str, text: str, message_url: str, pic_url: str) -> None:
+        """
+        发送link通知
+        :return:
+        """
+        try:
+            self.ding_news.send_link(title=title, text=text, message_url=message_url, pic_url=pic_url)
+        except Exception:
+            raise
+
+    def send_markdown(self, title: str, msg: str, mobiles=None) -> None:
+        """
+        :param mobiles:
+        :param title:
+        :param msg:
+        markdown 格式
+        """
+
+        if mobiles is None:
+            self.ding_news.send_markdown(title=title, text=msg, is_at_all=True)
+        else:
+            if isinstance(mobiles, list):
+                self.ding_news.send_markdown(title=title, text=msg, at_mobiles=mobiles)
+            else:
+                raise TypeError("mobiles类型错误 不是list类型.")
+
+    @staticmethod
+    def feed_link(title: str, message_url: str, pic_url: str) -> Any:
+
+        return FeedLink(title=title, message_url=message_url, pic_url=pic_url)
+
+    def send_feed_link(self, *arg) -> None:
+        try:
+            self.ding_news.send_feed_card(list(arg))
+        except Exception:
+            raise
+
+    # 发送钉钉消息
+    def send_dingding(self, ENVIRONMENT, TESTER):
+        """
+        发送钉钉通知
+        :return:
+        """
+
         jenkins_url = "http://250.25.250.250:9000/"
-        report_url = r"http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html?_ijt=vhdrkjvgm0pd5tspa77fg7a987"  # 拼接allure报告地址
+        reprot_url = r"http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html"
 
-        ding_news.send_markdown(
-            title='接口测试报告',
+        self.ding_news.send_markdown(
+            title='**【接口测试报告】**',
             text="<font color=\'#FFA500\'>[通知] </font>API平台接口自动化...执行完成 \n\n --- \n\n" +
-                 "项目名称：api接口数据报告 \n\n " +
-                 "报告地址：[点击查看](%s)" % report_url + "\n\n" +
-                 "构建地址：[点击查看](%s)" % jenkins_url + "\n\n" +
-                 "执行环境：%s" % ENVIRONMENT + "\n\n" +
-                 "运行总数：%s" % retries_run + "\n\n" +
-                 "通过数量：%s" % status_passed + "\n\n" +
-                 "异常数量：%s" % status_broken + "\n\n" +
-                 "跳过数量：%s" % status_skipped + "\n\n" +
-                 "失败数量：%s" % status_failed + "\n\n" +
-                 "执行人员：@%s" % TESTER + "\n\n" +
-                 "</font> \n\n --- \n\n  **运行时间：** %s" % tile,
+                 "项目名称：**api接口数据报告** \n\n " +
+                 "执行环境：<font color=\"#1d953f\">%s</font>" % ENVIRONMENT + "\n\n" +
+                 "运行总数：<font color=\"#d71345\">%s 个</font>" % self.TOTAL + "\n\n" +
+                 "通过数量：<font color=\"#1d953f\">%s 个</font>" % self.PASS + "\n\n" +
+                 "异常数量：<font color=\"#fdb933\">%s 个</font>" % self.BROKEN + "\n\n" +
+                 "跳过数量：<font color=\"#2585a6\">%s 个</font>" % self.SKIP + "\n\n" +
+                 "失败数量：<font color=\"#c63c26\">%s 个</font>" % self.FAILED + "\n\n" +
+                 "成功率为：<font color=\"#1d953f\">%s </font>" % self.RATE + "\n\n" +
+                 "执行人员：<font color=\"#130c0e\">@%s</font>" % TESTER + "\n\n --- \n\n" +
+                 "报告详情：[点击查看](%s)" % reprot_url + "\n\n" +
+                 "构建地址：[点击查看，暂未开通](%s)" % jenkins_url + "\n\n" +
+                 "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font>" % time.strftime("%Y-%m-%d %H:%M:%S"),
             at_dingtalk_ids=[15382112620]
         )
+
 
 # if __name__ == "__main__":
 #     # 发送钉钉推送消息

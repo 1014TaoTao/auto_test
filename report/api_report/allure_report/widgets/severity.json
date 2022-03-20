@@ -1,39 +1,69 @@
 [ {
-  "uid" : "581052adfc2f7bf5",
-  "name" : "test_001业务模块查询",
+  "uid" : "5e58013ee452f853",
+  "name" : "test_007修改算子分组名称",
   "time" : {
-    "start" : 1647511395170,
-    "stop" : 1647511395176,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "75c9b1e53e556bfa",
-  "name" : "test_004区域权限查询",
-  "time" : {
-    "start" : 1647511395192,
-    "stop" : 1647511395197,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "cfbc2f593bae1430",
-  "name" : "test_003业务版本功能信息查询",
-  "time" : {
-    "start" : 1647511395185,
-    "stop" : 1647511395189,
+    "start" : 1647769882075,
+    "stop" : 1647769882079,
     "duration" : 4
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "7b3daa83e2d8db9f",
-  "name" : "test_002业务板块查询",
+  "uid" : "e919faac891ef15d",
+  "name" : "test_003节点详情",
   "time" : {
-    "start" : 1647511395179,
-    "stop" : 1647511395183,
+    "start" : 1647769881946,
+    "stop" : 1647769881949,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9d979094c8c91831",
+  "name" : "test_006镜像资源-我的仓库（已存在）",
+  "time" : {
+    "start" : 1647769881967,
+    "stop" : 1647769881974,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d9bcfb6b0810cb56",
+  "name" : "test_005节点全部查询",
+  "time" : {
+    "start" : 1647769881960,
+    "stop" : 1647769881964,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f5073c2b0c5c4b1",
+  "name" : "test_004算子删除",
+  "time" : {
+    "start" : 1647769881953,
+    "stop" : 1647769881957,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "255b2d528b29da76",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1647769881939,
+    "stop" : 1647769881943,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "fa3212505aaa8f0a",
+  "name" : "test_001节点查询",
+  "time" : {
+    "start" : 1647769881931,
+    "stop" : 1647769881935,
     "duration" : 4
   },
   "status" : "passed",

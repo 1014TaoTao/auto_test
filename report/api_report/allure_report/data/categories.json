@@ -1,5 +1,30 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+      "children" : [ {
+        "name" : "test_006镜像资源-我的仓库（已存在）",
+        "uid" : "9d979094c8c91831",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1647769881967,
+          "stop" : 1647769881974,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'POST', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 94116634-9fad-44c4-8381-29aa87cf12f8'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 44.74, 'time_total': 0.04474}}" ]
+      } ],
+      "uid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

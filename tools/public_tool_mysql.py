@@ -1,5 +1,6 @@
 # coding: utf-8
 import pymysql
+from pymysql import cursors
 
 
 class toolMyDB:
@@ -20,7 +21,7 @@ class toolMyDB:
             database=db,
             charset=charset
         )
-        self.cursor = self.cnn.cursor(cursor=pymysql.cursors.DictCursor)  # 结果使用dict返回
+        self.cursor = self.cnn.cursor(cursor=cursors.DictCursor)  # 结果使用dict返回
 
     def __del__(self):
         """
