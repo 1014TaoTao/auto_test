@@ -89,31 +89,28 @@ class EmailPack:
     def send_default_email(self, log_path, FILE_LIST):
         """
         :param log_path:
-        :param FILE_LIST:
+        :param FILE_LIST: 邮件附件
         :return:
         """
         my_email = EmailPack()
         my_email.set_message(
             name="接口自动化测试",
             title="Hi！测试执行完毕提醒！",
-            content='''
+            content=f'''
                 各位同事, 大家好:
                 自动化用例执行完成，执行结果如下:
-                用例运行总数: {} 个
-                通过用例个数: {} 个
-                失败用例个数: {} 个
-                异常用例个数: {} 个
-                跳过用例个数: {} 个
-                成  功   率: {} %
-                
-            {}
-    
-            **********************************
-            jenkins地址：https://121.xx.xx.47:8989/login
-            详细情况可登录jenkins平台查看，非相关负责人员可忽略此消息。谢谢。
-            """.format(self.TOTAL, self.PASS, self.FAILED, self.BROKEN, self.SKIP, self.RATE, self.CaseDetail)
-
-                ''',
+                    **********************************
+                    用例运行总数: {self.TOTAL} 个
+                    通过用例个数: {self.PASS} 个
+                    失败用例个数: {self.FAILED} 个
+                    异常用例个数: {self.BROKEN} 个
+                    跳过用例个数: {self.SKIP} 个
+                    成  功   率: {self.RATE} %
+                    失败详情信息: {self.CaseDetail}
+                    **********************************
+                    jenkins地址：https://121.xx.xx.47:8989/login
+                    详细情况可登录jenkins平台查看，非相关负责人员可忽略此消息。谢谢。
+                    ''',
             filelist=FILE_LIST
         )
         my_email.send_message(log_path)

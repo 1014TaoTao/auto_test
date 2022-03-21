@@ -18,7 +18,6 @@ logger = logger(log_path=setting.API_LOG_PATH)
 class DingTalk:
 
     def __init__(self):
-        self.timeStamp = str(round(time.time() * 1000))
 
         self.secret = readConfigYaml.Config().get_dingding_secret()
         self.webhook = readConfigYaml.Config().get_dingding_webhook()
