@@ -152,7 +152,8 @@ class ExcelPack(ReadExcel):
                         # new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
                         # url = url.replace(value, str(new_str))
                         case_str = list_url_params[1]
-                        new_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}", "").replace(
+                        new_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}",
+                                                                                              "").replace(
                             "': ", "")
                         url = url.replace(value, new_str)
                         self.logger.info(f'【url依赖处理完成...】')
@@ -273,8 +274,7 @@ class ExcelPack(ReadExcel):
                 headers_dict = headers_dict
         else:
             if self.get_statue_token(row) == 'yes':  # 读cookie
-                headers_str = '{}'
-                headers_dict = eval(headers_str)
+                headers_dict = {}
                 self.logger.info(f"【该用例需要加入token】")
                 try:
                     token = read_token()
@@ -302,8 +302,12 @@ class ExcelPack(ReadExcel):
                 self.logger.info(f"【测试用例：{case_name}】===============>> 【start】")
                 # 处理method
                 method = self.get_new_method(row)
+                # 获取参数类型
+                parametric_key = self.get_excel_type_data(row)
                 # 获取data
                 data = self.get_new_data(row)
+                # 获取file路径
+                file = self.get_upload_file_path(row)
                 # 处理url
                 url = self.get_new_url(row, APIHOST, ENVIRONMENTPORT)
                 # 处理header,字符串str转为字典dict
@@ -313,19 +317,38 @@ class ExcelPack(ReadExcel):
                 expected_msg = self.get_expected_msg(row)
                 expected_data = self.get_expected_data(row)
                 # 发请求
-                res = Response().result(self.runs.send_request(method=method, url=url, data=data, headers=headers))
+                res = Response().result(
+                    self.runs.send_request(method=method, url=url, data=data, headers=headers, file=file,
+                                           parametric_key=parametric_key))
                 try:
-                    if res['body']['msg'] != '未经授权的访问':
-                        pass
-                    elif res['body']['msg'] == '未经授权的访问':
-                        Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
-                        headers = self.get_new_headers(row)
-                        res = self.runs.send_request(method=method, url=url, data=data, headers=headers)
+                    if res['body'] != 'response获取响应data异常':
+
+                        if res['body']['msg'] != '未经授权的访问':
+                            pass
+                        else:
+                            Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
+                            headers = self.get_new_headers(row)
+                            res = self.runs.send_request(method=method, url=url, data=data, headers=headers, file=file,
+                                                         parametric_key=parametric_key)
+                        # 结果写入excel测试结果()==》断言
+                        result = self.assert_eq_write_result(row, res)
+                    else:
+                        # 在excel中写入结果
+                        try:
+                            write_str = str(res)
+                        except Exception as e:
+                            write_str = str(u"响应结果转字符串格式错误！")
+                            self.logger.error(f'响应结果转字符串格式错误:{e}')
+                        self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
+                        self.logger.info(f"【响应结果写入excel：{res}】")
+                        self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
+                        self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
+                        self.fail_num += 1
+                        result = "fail"
+
                 except Exception as e:
                     return f'更新token异常：{e}'
 
-                # 结果写入excel测试结果()==》断言
-                result = self.assert_eq_write_result(row, res)
                 case = {
                     "result": result,
                     "title": case_name,
@@ -339,13 +362,14 @@ class ExcelPack(ReadExcel):
                     "res": res
                 }
                 all_case.append(case)
-            else:
+            elif self.get_run_status(row) == "no":
                 self.logger.info(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【不执行】\n")
                 self.write_cell_data(row, global_var().get_result(), "SKIP", cell_style=5)  # excel结果列写入跳过
                 # self.write_cell_data(row, global_var().get_response(), "", cell_style=2)  # 清空响应
+            else:
+                self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【请确认执行状态是yes或no】\n")
         self.write_test_summary()  # 输出测试结果
         return all_case
-
 
 # # 测试
 # if __name__ == '__main__':

@@ -27,8 +27,10 @@ class Login:
         """
         :return:
         """
+        logger.info('【开始获取token...start】')
         res = Response().result(
-            Requests().send_request(method="GET", url=self.url, data=self.data_dict, headers=self.headers))
+            Requests().send_request(method="get", url=self.url, data=self.data_dict, headers=self.headers,
+                                    parametric_key='params', file=None))
         try:
 
             # 断言用户名使用参数化，在配置文件中的username字段

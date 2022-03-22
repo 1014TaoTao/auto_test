@@ -30,7 +30,7 @@ class Response:
                 response_dicts['body'] = res.json()
             except Exception as e:
                 self.logger.error("【获取响应data异常: {0}】".format(e))
-                response_dicts['body'] = ''
+                response_dicts['body'] = 'response获取响应data异常'
             # 响应txt
             # response_dicts['text'] = res.text
             # 响应毫秒时间
@@ -48,4 +48,4 @@ class Response:
             self.logger.info(f"【请求响应结果为: {response_dicts}】")
             return response_dicts
         except Exception as e:
-            self.logger.error(f"处理数据异常：{e}")
+            self.logger.error(f"response处理数据异常：{e}")

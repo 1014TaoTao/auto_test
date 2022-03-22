@@ -224,3 +224,27 @@ class ReadExcel:
         :return:
         """
         return self.get_cell_data(row, global_var().get_base_url())
+
+    # 获取参数类型
+    def get_excel_type_data(self, row):
+        """
+        :param row:
+        :return:
+        """
+        return self.get_cell_data(row, global_var().get_type_data())
+
+    # 获取上传文件地址
+    def get_upload_file_path(self, row):
+        """
+        :param row:
+        :return:
+        """
+        file_path = self.get_cell_data(row, global_var().get_upload_path())
+        if file_path != '':
+            file = {
+                'file': open(file_path, 'rb'),
+            }
+        else:
+            file = None
+        return file
+

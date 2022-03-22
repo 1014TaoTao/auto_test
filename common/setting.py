@@ -45,3 +45,7 @@ TOKEN_FILE = os.path.join(DATA_PATH, "api", "token.txt")
 PYQT5_FILE = os.path.join(DATA_PATH, "api", "pyqt5.txt")
 
 PROMETHEUSDATA = os.path.join(API_REPORT_END_PATH, "export", "prometheusData.txt")
+
+
+# 上传文件路径
+upload_file = os.path.join(BASE_PATH, "data")
