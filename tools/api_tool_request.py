@@ -2,6 +2,8 @@
 # ==============================
 #         请求的封装
 # ==============================
+import json
+
 import requests
 
 from common import setting
@@ -70,7 +72,7 @@ class Requests:
             return f"发送请求异常:{e}"
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # url = "http://192.168.0.115:10007/kuberegistry/v1/api/repository"
     #
     # headers = {
@@ -111,15 +113,30 @@ if __name__ == '__main__':
     # }
     # res = Requests().send_post(url=url, data=data, headers=headers)
     # print(res.json())
-    url = 'http://10.0.34.13:10007/kube/v1/api/helmChart/import'
-    headers = {
-        'Authorization': 'Bearer d536d274-5b6c-4c4a-bba4-10622b6c8bbd'
-    }
-    import os
-    from common.setting import upload_file
 
-    file = {
-        "file": open(r'G:\pytest_auto_uitest_apitest\data\gitea-1.9.1.tgz', 'rb'),
-    }
-    res = Requests().send_request(url=url, method='post', parametric_key='json', headers=headers, file=file, data=None)
-    print(res.json())
+    # url = 'http://10.0.34.13:10007/kube/v1/api/helmChart/import'
+    # headers = {
+    #     'Authorization': 'Bearer 223cc23c-d43b-4e9c-926f-f9336da26997'
+    # }
+    # file = [
+    #     ('file', (
+    #         'gitea-1.9.1.tgz', open('G:\pytest_auto_uitest_apitest\data\gitea-1.9.1.tgz', 'rb'),
+    #         'application/gzip'))
+    # ]
+    # res = Requests().send_request(url=url, method='post', parametric_key='data', headers=headers, file=file, data=None)
+    # print(res.json())
+
+    # url = 'http://10.0.34.13:10007/fp/v1/file/upload'
+    # headers = {
+    #     'Authorization': 'Bearer 223cc23c-d43b-4e9c-926f-f9336da26997',
+    # }
+    # file = [
+    #     ('file', ('gitea_image.png', open('G:/pytest_auto_uitest_apitest/data/gitea_image.png', 'rb'), 'image/png'))
+    # ]
+    # data = {
+    #     "appCode": "kube",
+    #     "appBiz": "picture",
+    #     "path": 0
+    # }
+    # res = Requests().send_request(url=url, method='post', parametric_key='data', headers=headers, data=data, file=file)
+    # print(res.json())

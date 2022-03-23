@@ -10,10 +10,14 @@
 @File    : api_tool_read_excel.py
 @Software: PyCharm
 """
+import os.path
+
 import xlrd
 import xlwt
 from xlutils.copy import copy
+import filetype  # 判断上传文件类型
 
+from common.setting import upload_file
 from tools.api_tool_global_var import global_var
 
 
@@ -239,12 +243,15 @@ class ReadExcel:
         :param row:
         :return:
         """
-        file_path = self.get_cell_data(row, global_var().get_upload_path())
+        file_name = self.get_cell_data(row, global_var().get_upload_path())
+        file_path = os.path.join(upload_file, file_name)
         if file_path != '':
-            file = {
-                'file': open(file_path, 'rb'),
-            }
+            file = [
+                ('file', (file_name, open(file_path, 'rb'), filetype.guess(file_path)))
+            ]
         else:
             file = None
         return file
+
+
 

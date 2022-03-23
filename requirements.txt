@@ -72,3 +72,4 @@ zope.interface==5.4.0
 
 jsonpath~=0.82
 Faker~=13.3.2
+filetype~=1.0.10
