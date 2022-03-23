@@ -96,7 +96,7 @@ class DingTalk:
         self.ding_news.send_markdown(
             title='**【接口测试报告】**',
             text="<font color=\'#FFA500\'>[通知] </font>API平台接口自动化...执行完成 \n\n --- \n\n" +
-                 "项目名称：**api接口数据报告** \n\n " +
+                 "项目名称：api接口测试报告 \n\n " +
                  "执行环境：<font color=\"#1d953f\">%s</font>" % ENVIRONMENT + "\n\n" +
                  "运行总数：<font color=\"#d71345\">%s 个</font>" % self.TOTAL + "\n\n" +
                  "通过数量：<font color=\"#1d953f\">%s 个</font>" % self.PASS + "\n\n" +
