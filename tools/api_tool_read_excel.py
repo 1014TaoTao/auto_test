@@ -245,6 +245,7 @@ class ReadExcel:
         """
         file_name = self.get_cell_data(row, global_var().get_upload_path())
         file_path = os.path.join(upload_file, file_name)
+        # 暂时只是单文件上传，待优化为多文件上传
         if file_path != '':
             file = [
                 ('file', (file_name, open(file_path, 'rb'), filetype.guess(file_path)))
