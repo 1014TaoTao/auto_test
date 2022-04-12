@@ -1,20 +1,172 @@
 {
-  "e9dfafed8142afa5bcec4bf4f44c03e7" : {
+  "fc62e6d13d181d697d054a0cfbed7d2e" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
-      "uid" : "36b4405fed2b5bf3",
+      "uid" : "1687406d67d1061d",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/1687406d67d1061d",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "time" : {
-        "start" : 1647960718961,
-        "stop" : 1647960718966,
+        "start" : 1649754923708,
+        "stop" : 1649754923714,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "aa104356dea3e61e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+      "time" : {
+        "start" : 1649754923708,
+        "stop" : 1649754923714,
+        "duration" : 6
+      }
+    } ]
+  },
+  "e9dfafed8142afa5bcec4bf4f44c03e7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "901770cf1c5c3cee",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/901770cf1c5c3cee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754986671,
+        "stop" : 1649754986676,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "a230f2f3de8c822e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923691,
+        "stop" : 1649754923696,
+        "duration" : 5
+      }
+    } ]
+  },
+  "b54e6dde10103ecb38428ceb0ff549dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "bf491fa02f3ab096",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/bf491fa02f3ab096",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923700,
+        "stop" : 1649754923705,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "56de02abf941cb5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923700,
+        "stop" : 1649754923705,
+        "duration" : 5
+      }
+    } ]
+  },
+  "f3876ba371ed248e8e56e9ff96eb95cf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "cfc81478840e8d67",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/cfc81478840e8d67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923724,
+        "stop" : 1649754923730,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "230ce2cd6fd76cdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923724,
+        "stop" : 1649754923730,
+        "duration" : 6
+      }
+    } ]
+  },
+  "dbc73698580485f08e6d049538936a76" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "2a54de629b0e8362",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/2a54de629b0e8362",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+      "time" : {
+        "start" : 1649754923734,
+        "stop" : 1649754923740,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "256039c9a63b4cab",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+      "time" : {
+        "start" : 1649754923734,
+        "stop" : 1649754923740,
+        "duration" : 6
+      }
+    } ]
+  },
+  "05844c1202034a22ead5cf0349f58c9b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "fab3dbc0aa191329",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/fab3dbc0aa191329",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923754,
+        "stop" : 1649754923759,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "c65767efe2f83413",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923754,
+        "stop" : 1649754923759,
         "duration" : 5
       }
     } ]
@@ -24,16 +176,25 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
-      "uid" : "e3924e442e514c5d",
+      "uid" : "3683f46d2ae2880d",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/3683f46d2ae2880d",
       "status" : "passed",
       "time" : {
-        "start" : 1647960718954,
-        "stop" : 1647960718958,
+        "start" : 1649754986659,
+        "stop" : 1649754986665,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d2dbdb7912de3b44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649754923682,
+        "stop" : 1649754923686,
         "duration" : 4
       }
     } ]

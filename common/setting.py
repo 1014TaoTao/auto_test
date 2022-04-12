@@ -32,20 +32,23 @@ API_REPORT_END_PATH = os.path.join(API_REPORT_PATH, "allure_report")
 html_reposrt_path = os.path.join(API_REPORT_END_PATH, 'index.html')
 API_REPORT_HISTORY_PATH = os.path.join(API_REPORT_PATH, "allure_report", "history")
 API_RESULT_HISTORY_PATH = os.path.join(API_REPORT_PATH, "allure_result", "history")
-API_FILE_LIST_PATH = os.path.join(API_REPORT_PATH, "report.zip")  # 要压缩文件名称
+
+API_FILE_LIST_PATH = os.path.join(API_REPORT_PATH, "API_report.zip")  # 要压缩文件名称
 API_REPORT_DIR = os.path.join(API_REPORT_PATH, "report", "allure_report")  # 要压缩文件路径
-API_FILE_LIST = [os.path.join(API_REPORT_PATH, "report.zip")]  # 邮件附件列表，格式为列表
-API_StartEnvironmentFilePath = os.path.join(BASE_PATH, "environment.properties")
-API_StartExcutorJson = os.path.join(BASE_PATH, "executor.json")
+API_FILE_LIST = [os.path.join(API_REPORT_PATH, "API_report.zip")]  # 邮件附件列表，格式为列表
+
+API_StartEnvironmentFilePath = os.path.join(BASE_PATH, "report", "environment.properties")
+API_StartEnvironmentFileXMLPath = os.path.join(BASE_PATH, "report", "environment.xml")
+API_StartExcutorJson = os.path.join(BASE_PATH, "report", "executor.json")
+
+API_EndEnvironmentXMLFile = os.path.join(API_REPORT_PATH, "allure_result", "environment.xml")
 API_EndEnvironmentFile = os.path.join(API_REPORT_PATH, "allure_result", "environment.properties")
 API_EndExcutorJson = os.path.join(API_REPORT_PATH, "allure_result", "executor.json")
-
 
 TOKEN_FILE = os.path.join(DATA_PATH, "api", "token.txt")
 PYQT5_FILE = os.path.join(DATA_PATH, "api", "pyqt5.txt")
 
 PROMETHEUSDATA = os.path.join(API_REPORT_END_PATH, "export", "prometheusData.txt")
-
 
 # 上传文件路径
 upload_file = os.path.join(BASE_PATH, "data")

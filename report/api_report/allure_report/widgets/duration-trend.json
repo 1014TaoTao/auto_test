@@ -1,5 +1,12 @@
 [ {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
   "data" : {
-    "duration" : 12
+    "duration" : 62976
+  }
+}, {
+  "data" : {
+    "duration" : 77
   }
 } ]

@@ -6,14 +6,14 @@
     "children" : [ {
       "name" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "children" : [ {
-        "name" : "test_003上传应用图标",
-        "uid" : "36b4405fed2b5bf3",
+        "name" : "test_004算子删除",
+        "uid" : "1687406d67d1061d",
         "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
         "status" : "failed",
         "time" : {
-          "start" : 1647960718961,
-          "stop" : 1647960718966,
-          "duration" : 5
+          "start" : 1649754923708,
+          "stop" : 1649754923714,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,7 +21,24 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'fail', 'title': 'test_003上传应用图标', 'url': 'http://10.0.34.13:10007/fp/v1/file/upload', 'method': 'post', 'headers': {'Authorization': 'Bearer 6b560b5b-ee65-4c66-964a-28aa76f13def'}, 'data': {'tenantId': 1, 'appCode': 'kube', 'appBiz': 'picture', 'bucketType': 1, 'lastModifyTime': 1647944008830, 'path': 0}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 14001, 'msg': 'appCode参数为空，操作失败', 'data': None}, 'time_consuming': 17.316, 'time_total': 0.017316}}" ]
+        "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 34.431, 'time_total': 0.034431}}" ]
+      }, {
+        "name" : "test_006镜像资源-我的仓库（已存在）",
+        "uid" : "2a54de629b0e8362",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1649754923734,
+          "stop" : 1649754923740,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 40.476, 'time_total': 0.040476}}" ]
       } ],
       "uid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7"
     } ],

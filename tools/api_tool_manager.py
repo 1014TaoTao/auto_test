@@ -59,6 +59,7 @@ class TestManager:
         # 复制environment.properties文件夹，在本地生成测试环境
         self.logger.info("【开始复制 environment.properties文件到allure_result下】")
         shutil.copy(setting.API_StartEnvironmentFilePath, setting.API_EndEnvironmentFile)
+        shutil.copy(setting.API_StartEnvironmentFileXMLPath, setting.API_EndEnvironmentXMLFile)
 
         # 复制 executor.json文件夹，在本地生成测试环境
         self.logger.info("【开始复制 executor.json文件到allure_result下】")

@@ -55,7 +55,7 @@ class UiApiAutoTool(object):
         ApiAutoTool.setSizeIncrement(QtCore.QSize(640, 520))
         ApiAutoTool.setBaseSize(QtCore.QSize(640, 520))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("./static/ico/win.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../static/ico/win.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         ApiAutoTool.setWindowIcon(icon)
         ApiAutoTool.setStyleSheet("font: 12pt \"微软雅黑\";")
 
