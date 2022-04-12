@@ -10,7 +10,6 @@
 
 from tools.api_tool_request import Requests
 
-
 headers = {
     'Authorization': 'Bearer 6b37084a-bc09-4982-9eba-900b1ef8287c'
 }
