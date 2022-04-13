@@ -7,20 +7,24 @@
 @File    : saas_app.py
 @Software: PyCharm
 """
+"""
+应用管理-查询应用下线状态，并改为上线状态
+"""
+
 
 from tools.api_tool_request import Requests
 
 headers = {
     'Authorization': 'Bearer 6b37084a-bc09-4982-9eba-900b1ef8287c'
 }
-
+base_url = 'http://10.0.34.13:10000'
 down_app_data = {}
 
 
 # saas应用中心-应用管理 根据应用id查询应用
 def query_app(id: int) -> list:
     # 查询kube下线应用
-    url = 'http://10.0.34.13:10000/uaa/v1/api/app'
+    url = f'{base_url}/uaa/v1/api/app'
     data = {
         # "id": 2500,
         "id": id,
@@ -47,7 +51,7 @@ def query_down_app(data_list: list) -> dict:
 
 # saas应用中心-应用管理 单个应用下线
 def single_down_app(app_id: int) -> str:
-    url = f'http://10.0.34.13:10000/uaa/v1/api/app/{app_id}/enable'
+    url = f'{base_url}/uaa/v1/api/app/{app_id}/enable'
     data = {
         "enableFlag": 0,
     }
@@ -59,7 +63,7 @@ def single_down_app(app_id: int) -> str:
 
 # saas应用中心-应用管理 单个应用上线
 def single_up_app(app_id: int) -> str:
-    url = f'http://10.0.34.13:10000/uaa/v1/api/app/{app_id}/enable'
+    url = f'{base_url}/uaa/v1/api/app/{app_id}/enable'
     data = {
         "enableFlag": 1,
     }
