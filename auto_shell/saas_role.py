@@ -31,13 +31,16 @@ def query_role_id(base_url: str) -> int:
     }
     res = Requests().send_request(url=url, method='get', parametric_key='params', headers=headers, data=data,
                                   file=None, )
-    for i in res.json()['data']['list']:
-        role_id = i['id']
-        return role_id
+    if res.json()['msg'] != '未经授权的访问':
+        for i in res.json()['data']['list']:
+            role_id = i['id']
+            return role_id
+    else:
+        return res.json()['msg']
 
 
 # 获取分配菜单
-def get_role_menu_tree(role_id: int) -> list:
+def get_role_menu_tree(base_url: str, role_id: int) -> list:
     url = f'{base_url}/uaa/v1/api/role/{role_id}/func/tree'
 
     res = Requests().send_request(url=url, method='get', parametric_key='json', headers=headers, data=None,
@@ -60,17 +63,9 @@ def get_role_menu_tree_id_list(menu_data_list: list):
 
 
 # 分配菜单功能
-def commit_role_menu(role_id: int, menu_id_list: list):
+def commit_role_menu(base_url: str, role_id: int, menu_id_list: list):
     url = f'{base_url}/uaa/v1/api/role/{role_id}/func'
 
     res = Requests().send_request(url=url, method='post', parametric_key='json', headers=headers, data=menu_id_list,
                                   file=None, )
     return res.json()
-
-
-if __name__ == '__main__':
-    base_url = 'http://10.0.34.13:10000'
-    role_id = query_role_id(base_url)
-    menu_data_list = get_role_menu_tree(role_id)
-    menu_id_list = get_role_menu_tree_id_list(menu_data_list)
-    print(commit_role_menu(role_id, menu_id_list))

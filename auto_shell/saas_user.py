@@ -13,13 +13,9 @@
 """
 from tools.api_tool_request import Requests
 
-headers = {
-    'Authorization': 'Bearer 5e319bec-9d82-440b-93d5-612ca3e5a29d'
-}
-
 
 # saas用户中心-用户管理 根据用户名称查询应用
-def query_user_list(base_url: str, user_name: str) -> int:
+def query_user_list(base_url: str, user_name: str, headers: dict) -> int:
     # 查询kube下线应用
     url = f'{base_url}/am/v1/api/user'
     data = {
@@ -37,7 +33,7 @@ def query_user_list(base_url: str, user_name: str) -> int:
 
 
 # saas用户中心-用户管理-授权 获取授权列表
-def get_auth_user_list(base_url: str, user_id: int) -> list:
+def get_auth_user_list(base_url: str, user_id: int, headers: dict) -> list:
     # 查询kube下线应用
     url = f'{base_url}/uaa/v1/api/role/user/{user_id}/assign'
     res = Requests().send_request(url=url, method='get', parametric_key='params', headers=headers, data=None,
@@ -49,7 +45,7 @@ def get_auth_user_list(base_url: str, user_id: int) -> list:
 
 
 # saas用户中心-用户管理-授权 取消授权
-def cancel_auth_user_list(base_url: str, auth_id_list: list, user_id: int):
+def cancel_auth_user_list(base_url: str, auth_id_list: list, user_id: int, headers: dict):
     # 查询kube下线应用
     url = f'{base_url}/uaa/v1/api/role/user/{user_id}'
     data = auth_id_list
@@ -59,7 +55,7 @@ def cancel_auth_user_list(base_url: str, auth_id_list: list, user_id: int):
 
 
 # saas用户中心-用户管理-授权 确认授权
-def confirm_auth_user_list(base_url: str, auth_id_list: list, user_id: int):
+def confirm_auth_user_list(base_url: str, auth_id_list: list, user_id: int, headers: dict):
     # 查询kube下线应用
     url = f'{base_url}/uaa/v1/api/role/user/{user_id}'
     data = auth_id_list
@@ -68,9 +64,4 @@ def confirm_auth_user_list(base_url: str, auth_id_list: list, user_id: int):
     return res.json()
 
 
-if __name__ == '__main__':
-    base_url = 'http://10.0.34.13:10000'
-    user_name = '张涛'
-    user_id = query_user_list(base_url, user_name)
-    # auth_id_list = get_auth_user_list(base_url, user_id)
-    # print(confirm_auth_user_list(base_url, auth_id_list, user_id))
+
