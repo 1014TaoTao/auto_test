@@ -1,0 +1,359 @@
+{
+  "uid" : "fab3dbc0aa191329",
+  "name" : "test_007修改算子分组名称",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "05844c1202034a22ead5cf0349f58c9b",
+  "time" : {
+    "start" : 1649754923754,
+    "stop" : 1649754923759,
+    "duration" : 5
+  },
+  "description" : "test_007修改算子分组名称 patch http://192.168.0.115:10007/kube/v1/api/operator/group",
+  "descriptionHtml" : "<p>test_007修改算子分组名称 patch http://192.168.0.115:10007/kube/v1/api/operator/group</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1649754923626,
+      "stop" : 1649754923681,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_007修改算子分组名称 patch http://192.168.0.115:10007/kube/v1/api/operator/group",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1649754923754,
+        "stop" : 1649754923755,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6592dfd052b1e17",
+        "name" : "测试结果",
+        "source" : "6592dfd052b1e17.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "用例名称：test_007修改算子分组名称",
+      "time" : {
+        "start" : 1649754923755,
+        "stop" : 1649754923755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8c3ed9e1c82c23e9",
+        "name" : "用例名称",
+        "source" : "8c3ed9e1c82c23e9.attach",
+        "type" : "text/plain",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求方式：patch",
+      "time" : {
+        "start" : 1649754923755,
+        "stop" : 1649754923756,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8b6d2304338cca84",
+        "name" : "请求方式",
+        "source" : "8b6d2304338cca84.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求地址：http://192.168.0.115:10007/kube/v1/api/operator/group",
+      "time" : {
+        "start" : 1649754923756,
+        "stop" : 1649754923756,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "66cfd056652afaeb",
+        "name" : "请求地址",
+        "source" : "66cfd056652afaeb.attach",
+        "type" : "text/plain",
+        "size" : 68
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}",
+      "time" : {
+        "start" : 1649754923756,
+        "stop" : 1649754923756,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "da669be79fb3fc55",
+        "name" : "请求头",
+        "source" : "da669be79fb3fc55.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求参数：{'id': 115, 'name': '张涛test001'}",
+      "time" : {
+        "start" : 1649754923756,
+        "stop" : 1649754923757,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "aa53eea23ff6b4fa",
+        "name" : "请求参数",
+        "source" : "aa53eea23ff6b4fa.attach",
+        "type" : "text/plain",
+        "size" : 51
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1649754923757,
+        "stop" : 1649754923757,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "af4d274169b1036a",
+        "name" : "code请求断言",
+        "source" : "af4d274169b1036a.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1649754923757,
+        "stop" : 1649754923758,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c9b161b2d4eba6cf",
+        "name" : "msg请求断言",
+        "source" : "c9b161b2d4eba6cf.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：id': 115",
+      "time" : {
+        "start" : 1649754923758,
+        "stop" : 1649754923758,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b775a02aa743e051",
+        "name" : "data请求断言",
+        "source" : "b775a02aa743e051.attach",
+        "type" : "text/plain",
+        "size" : 23
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 115}}, 'time_consuming': 37.17, 'time_total': 0.03717}",
+      "time" : {
+        "start" : 1649754923758,
+        "stop" : 1649754923759,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "aeac8e8ebf1037eb",
+        "name" : "响应结果",
+        "source" : "aeac8e8ebf1037eb.attach",
+        "type" : "text/plain",
+        "size" : 135
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1649754923759,
+        "stop" : 1649754923759,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-J8M8QM5"
+  }, {
+    "name" : "thread",
+    "value" : "17280-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "result",
+    "value" : "{'result': 'pass', 'title': 'test_007修改算子分组名称', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator/group', 'method': 'patch', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': {'id': 115, 'name': '张涛test001'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"id': 115\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 115}}, 'time_consuming': 37.17, 'time_total': 0.03717}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c65767efe2f83413",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649754923754,
+          "stop" : 1649754923759,
+          "duration" : 5
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fab3dbc0aa191329.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_007修改算子分组名称', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator/group', 'method': 'patch', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': {'id': 115, 'name': '张涛test001'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"id': 115\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 115}}, 'time_consuming': 37.17, 'time_total': 0.03717}}" ]
+}

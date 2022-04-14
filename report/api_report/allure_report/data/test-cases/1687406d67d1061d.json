@@ -1,0 +1,370 @@
+{
+  "uid" : "1687406d67d1061d",
+  "name" : "test_004算子删除",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "fc62e6d13d181d697d054a0cfbed7d2e",
+  "time" : {
+    "start" : 1649754923708,
+    "stop" : 1649754923714,
+    "duration" : 6
+  },
+  "description" : "test_004算子删除 delete http://192.168.0.115:10007/kube/v1/api/operator",
+  "descriptionHtml" : "<p>test_004算子删除 delete http://192.168.0.115:10007/kube/v1/api/operator</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+  "statusTrace" : "self = <testCase.api.test_excel.TestExcel object at 0x000001B8D6C02208>\nresult = {'data': '[649]', 'expected_data': '', 'expected_msg': '成功', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, ...}\n\n    @pytest.mark.parametrize(\"result\", run_setup())\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.epic('excel接口测试')\n    def test_excel(self, result):\n        \"\"\"\n        :param result:\n        :return:\n        \"\"\"\n        allure.dynamic.description(f\"{str(result['title'])} {str(result['method'])} {str(result['url'])}\")\n        allure.dynamic.title(str(result['title']))\n        with allure.step(u\"测试结果：{0}\".format(str(result['result']))):\n            allure.attach(u\"测试结果：{0}\".format(str(result['result'])), \"测试结果\")\n    \n        with allure.step(u\"用例名称：{0}\".format(str(result['title']))):\n            allure.attach(u\"用例名称：{0}\".format(str(result['title'])), \"用例名称\")\n    \n        with allure.step(u\"请求方式：{0}\".format(str(result['method']))):\n            allure.attach(u\"请求方式：{0}\".format(str(result['method'])), \"请求方式\")\n    \n        with allure.step(u\"请求地址：{0}\".format(str(result['url']))):\n            allure.attach(u\"请求地址：{0}\".format(str(result['url'])), \"请求地址\")\n    \n        with allure.step(u\"请求头 ：{0}\".format(str(result['headers']))):\n            allure.attach(u\"请求头 ：{0}\".format(str(result['headers'])), \"请求头\")\n    \n        with allure.step(u\"请求参数：{0}\".format(str(result['data']))):\n            allure.attach(u\"请求参数：{0}\".format(str(result['data'])), \"请求参数\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(result['status_code']))):\n            allure.attach(u\"请求断言：{0}\".format(str(result['status_code'])), \"code请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(result['expected_msg']))):\n            allure.attach(u\"请求断言：{0}\".format(str(result['expected_msg'])), \"msg请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(result['expected_data']))):\n            allure.attach(u\"请求断言：{0}\".format(str(result['expected_data'])), \"data请求断言\")\n    \n        with allure.step(u\"响应结果：{0}\".format(str(result['res']))):\n            allure.attach(u\"响应结果：{0}\".format(str(result['res'])), \"响应结果\")\n    \n        with allure.step(\"断言\"):\n>           assert result[\"result\"] == \"pass\"\nE           AssertionError: assert 'fail' == 'pass'\nE             - pass\nE             + fail\n\ntestCase\\api\\test_excel.py:86: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1649754923626,
+      "stop" : 1649754923681,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_004算子删除 delete http://192.168.0.115:10007/kube/v1/api/operator",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+    "statusTrace" : "self = <testCase.api.test_excel.TestExcel object at 0x000001B8D6C02208>\nresult = {'data': '[649]', 'expected_data': '', 'expected_msg': '成功', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, ...}\n\n    @pytest.mark.parametrize(\"result\", run_setup())\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.epic('excel接口测试')\n    def test_excel(self, result):\n        \"\"\"\n        :param result:\n        :return:\n        \"\"\"\n        allure.dynamic.description(f\"{str(result['title'])} {str(result['method'])} {str(result['url'])}\")\n        allure.dynamic.title(str(result['title']))\n        with allure.step(u\"测试结果：{0}\".format(str(result['result']))):\n            allure.attach(u\"测试结果：{0}\".format(str(result['result'])), \"测试结果\")\n    \n        with allure.step(u\"用例名称：{0}\".format(str(result['title']))):\n            allure.attach(u\"用例名称：{0}\".format(str(result['title'])), \"用例名称\")\n    \n        with allure.step(u\"请求方式：{0}\".format(str(result['method']))):\n            allure.attach(u\"请求方式：{0}\".format(str(result['method'])), \"请求方式\")\n    \n        with allure.step(u\"请求地址：{0}\".format(str(result['url']))):\n            allure.attach(u\"请求地址：{0}\".format(str(result['url'])), \"请求地址\")\n    \n        with allure.step(u\"请求头 ：{0}\".format(str(result['headers']))):\n            allure.attach(u\"请求头 ：{0}\".format(str(result['headers'])), \"请求头\")\n    \n        with allure.step(u\"请求参数：{0}\".format(str(result['data']))):\n            allure.attach(u\"请求参数：{0}\".format(str(result['data'])), \"请求参数\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(result['status_code']))):\n            allure.attach(u\"请求断言：{0}\".format(str(result['status_code'])), \"code请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(result['expected_msg']))):\n            allure.attach(u\"请求断言：{0}\".format(str(result['expected_msg'])), \"msg请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(result['expected_data']))):\n            allure.attach(u\"请求断言：{0}\".format(str(result['expected_data'])), \"data请求断言\")\n    \n        with allure.step(u\"响应结果：{0}\".format(str(result['res']))):\n            allure.attach(u\"响应结果：{0}\".format(str(result['res'])), \"响应结果\")\n    \n        with allure.step(\"断言\"):\n>           assert result[\"result\"] == \"pass\"\nE           AssertionError: assert 'fail' == 'pass'\nE             - pass\nE             + fail\n\ntestCase\\api\\test_excel.py:86: AssertionError",
+    "steps" : [ {
+      "name" : "测试结果：fail",
+      "time" : {
+        "start" : 1649754923709,
+        "stop" : 1649754923709,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "92b899b1af33f6e3",
+        "name" : "测试结果",
+        "source" : "92b899b1af33f6e3.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "用例名称：test_004算子删除",
+      "time" : {
+        "start" : 1649754923709,
+        "stop" : 1649754923710,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "500b7572cabfb929",
+        "name" : "用例名称",
+        "source" : "500b7572cabfb929.attach",
+        "type" : "text/plain",
+        "size" : 35
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求方式：delete",
+      "time" : {
+        "start" : 1649754923710,
+        "stop" : 1649754923710,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9e5f59062ae75312",
+        "name" : "请求方式",
+        "source" : "9e5f59062ae75312.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求地址：http://192.168.0.115:10007/kube/v1/api/operator",
+      "time" : {
+        "start" : 1649754923710,
+        "stop" : 1649754923711,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cf59b0f310c509e2",
+        "name" : "请求地址",
+        "source" : "cf59b0f310c509e2.attach",
+        "type" : "text/plain",
+        "size" : 62
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}",
+      "time" : {
+        "start" : 1649754923711,
+        "stop" : 1649754923711,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cafeb68bf0eeb730",
+        "name" : "请求头",
+        "source" : "cafeb68bf0eeb730.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求参数：[649]",
+      "time" : {
+        "start" : 1649754923711,
+        "stop" : 1649754923712,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "415874482e8efdee",
+        "name" : "请求参数",
+        "source" : "415874482e8efdee.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1649754923712,
+        "stop" : 1649754923712,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bdb0665bf76b3273",
+        "name" : "code请求断言",
+        "source" : "bdb0665bf76b3273.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1649754923712,
+        "stop" : 1649754923712,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e49d609f3cd8d7fd",
+        "name" : "msg请求断言",
+        "source" : "e49d609f3cd8d7fd.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：",
+      "time" : {
+        "start" : 1649754923712,
+        "stop" : 1649754923713,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4c21133f1dbf7076",
+        "name" : "data请求断言",
+        "source" : "4c21133f1dbf7076.attach",
+        "type" : "text/plain",
+        "size" : 15
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "响应结果：{'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 34.431, 'time_total': 0.034431}",
+      "time" : {
+        "start" : 1649754923713,
+        "stop" : 1649754923713,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8cff5d134da8f0a7",
+        "name" : "响应结果",
+        "source" : "8cff5d134da8f0a7.attach",
+        "type" : "text/plain",
+        "size" : 460
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1649754923713,
+        "stop" : 1649754923713,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail\n",
+      "statusTrace" : "  File \"G:\\pytest_auto_uitest_apitest\\testCase\\api\\test_excel.py\", line 86, in test_excel\n    assert result[\"result\"] == \"pass\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-J8M8QM5"
+  }, {
+    "name" : "thread",
+    "value" : "17280-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "result",
+    "value" : "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 34.431, 'time_total': 0.034431}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "aa104356dea3e61e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+        "time" : {
+          "start" : 1649754923708,
+          "stop" : 1649754923714,
+          "duration" : 6
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1687406d67d1061d.json",
+  "parameterValues" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 34.431, 'time_total': 0.034431}}" ]
+}
