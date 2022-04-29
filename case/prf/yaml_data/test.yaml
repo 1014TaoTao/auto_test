@@ -1,0 +1,36 @@
+Case:
+    - Test:
+        name: pipeline列表页查询
+        request:
+            method: GET
+            url: $host/kube/v1/api/tekton/pipeline
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36
+                Content-Type: application/json;charset=UTF-8
+                Authorization: $token
+            data:
+                pageNo: 1
+                pageSize: 10
+                name: zt
+        expected:
+            status_code: 200
+            code: 1
+            msg: 成功
+
+    - Test:
+          name: task列表页查询
+          request:
+              method: GET
+              url: $host/kube/v1/api/tekton/task/list
+              headers:
+                  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36
+                  Content-Type: application/json;charset=UTF-8
+                  Authorization: $token
+              data:
+                  pageNo: 1
+                  pageSize: 10
+                  name: zt
+          expected:
+              status_code: 200
+              code: 1
+              msg: 成功

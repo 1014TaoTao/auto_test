@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-
+from common import setting
 from tools.api_tool_read_pyqt_txt import PyqtTxtPack
-
 
 all_data = PyqtTxtPack().read_pyqt5_txt()
 if all_data:
@@ -36,12 +35,9 @@ RESULT_LIST = []
 # USERNAME = C.get_login_username(ENVIRONMENT, 'zhangtao115')
 # LOGINDATA = C.get_login_data(ENVIRONMENT, 'zhangtao115')  # 不同的测试人员需要修改对应得data的key
 #
-# """
-# 接口全局变量
-# [0]为开启
-# [1]为关闭
-# """
+
 # # 登录人名称
 # TESTER = C.get_testers()[0]
 # # 控制台输出日志
 # LOG_CONTROL_ON_OFF = C.get_log_control_on_off()[0]
+

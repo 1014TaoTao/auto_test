@@ -41,7 +41,10 @@ def query_down_app(data_list: list) -> dict:
             down_app_data[i['id']] = i['name']
         if 'children' in i.keys():
             query_down_app(i['children'])
-    return down_app_data
+    if len(down_app_data) != 0:
+        return down_app_data
+    else:
+        exit('没有可以下下线得应用')
 
 
 # saas应用中心-应用管理 单个应用下线
@@ -64,17 +67,17 @@ def single_up_app(base_url: str, app_id: int, headers: dict) -> str:
     }
     res = Requests().send_request(url=url, method='patch', parametric_key='params', headers=headers, data=data,
                                   file=None, )
-    print(f"{app_id} 应用下线成功 \n")
+    print(f"{app_id} 应用上线成功 \n")
     return res.json()
 
 
-# saas应用中心-应用管理 单个应用下线
+# saas应用中心-应用管理 多个应用下线
 def some_down_app(base_url: str, down_dict: dict, headers: dict):
     for app_id in down_dict.keys():
         single_down_app(base_url, app_id, headers)
 
 
-# saas应用中心-应用管理 单个应用上线
+# saas应用中心-应用管理 多个应用上线
 def some_up_app(base_url: str, down_dict: dict, headers: dict):
     for app_id in down_dict.keys():
         single_up_app(base_url, app_id, headers)
@@ -82,10 +85,12 @@ def some_up_app(base_url: str, down_dict: dict, headers: dict):
 
 if __name__ == '__main__':
     headers = {
-        'Authorization': 'Bearer e24ff395-ff7c-4802-9a17-9e9cdcd0602e'
+        'Authorization': 'Bearer 5b97e461-bc87-4a70-b430-7bbbc7e328a5'
     }
     base_url = 'http://10.0.34.13:10000'
     id = 2500
+
+
     # 查询id为2500应用下所有的已下线应用
     print(query_down_app(query_app(base_url, id, headers)))
 

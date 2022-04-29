@@ -1,0 +1,618 @@
+[时间]:2022-04-28 11:37:56,580-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:37:56,580-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:37:56,580-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:37:56,580-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:37:56,580-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试01', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'queueName': 'test_queue', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 11:37:56,581-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:09,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:09,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:09,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:09,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:09,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-1', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:09,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,008-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,009-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,009-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,009-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,009-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-2', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,009-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,054-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,054-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,054-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,054-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,054-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-3', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,055-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,138-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,138-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,138-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,138-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,138-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-4', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,138-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,212-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,212-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,212-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,212-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,212-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-5', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,212-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,271-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,271-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,271-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,271-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,271-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-6', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,271-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,321-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,322-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,322-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,322-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,322-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-7', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,322-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,418-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,418-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,418-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,419-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,419-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-8', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,419-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:10,884-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:10,885-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:10,885-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:10,885-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:10,886-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-9', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:10,886-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:11,994-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:11,994-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:11,994-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:11,994-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:11,995-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-10', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:11,995-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,431-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,431-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,432-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,432-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,432-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-11', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,432-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,489-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,490-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,490-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,490-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,490-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-12', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,490-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,582-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,583-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,583-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,583-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,583-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-13', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,584-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,657-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,657-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,658-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,658-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,658-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-14', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,658-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,731-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,731-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,731-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,731-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,731-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-15', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,732-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,794-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,794-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,794-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,794-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,794-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-16', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,794-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,855-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-17', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:12,934-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:12,934-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:12,934-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:12,934-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:12,934-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-18', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:12,935-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:13,015-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:13,016-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:13,016-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:13,016-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:13,016-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-19', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:13,016-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:13,056-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:13,056-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:13,056-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:13,056-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:13,056-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-20', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:13,057-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:14,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:14,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:14,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:14,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:14,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-21', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:14,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:14,567-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:14,568-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:14,568-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:14,568-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:14,568-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-22', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:14,569-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:14,654-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:14,654-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:14,654-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:14,654-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:14,654-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-23', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:14,654-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:14,736-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:14,736-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:14,736-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:14,736-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:14,736-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-24', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:14,737-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:14,798-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:14,798-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:14,798-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:14,798-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:14,798-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-25', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:14,799-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:15,143-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:15,143-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:15,143-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:15,143-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:15,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-26', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:15,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:15,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:15,854-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:15,854-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:15,854-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:15,854-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-27', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:15,855-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:15,985-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:15,986-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:15,986-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:15,986-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:15,986-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-28', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:15,986-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:16,042-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:16,042-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:16,042-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:16,042-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:16,042-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-29', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:16,042-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:16,131-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:16,131-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:16,131-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:16,131-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:16,131-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-30', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:16,131-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:16,167-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:16,167-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:16,167-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:16,167-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:16,167-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-31', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:16,167-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:17,449-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:17,449-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:17,450-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:17,450-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:17,450-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-32', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:17,450-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:18,032-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:18,032-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:18,033-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:18,033-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:18,033-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-33', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:18,034-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:18,102-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:18,102-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:18,102-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:18,102-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:18,102-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-34', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:18,102-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:18,252-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:18,252-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:18,253-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:18,253-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:18,253-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-35', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:18,253-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:18,897-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:18,897-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:18,897-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:18,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:18,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-36', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:18,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:19,960-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:19,960-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:19,960-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:19,961-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:19,961-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-37', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:19,961-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:20,064-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:20,064-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:20,064-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:20,064-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:20,065-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-38', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:20,065-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:20,133-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:20,133-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:20,133-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:20,133-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:20,133-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-39', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:20,134-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:20,208-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:20,208-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:20,208-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:20,208-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:20,208-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-40', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:20,208-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:20,300-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:20,300-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:20,300-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:20,300-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:20,300-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-41', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:20,301-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:21,740-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:21,741-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:21,741-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:21,741-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:21,742-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-42', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:21,742-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,460-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,460-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,460-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,460-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,460-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-43', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,460-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,531-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,531-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,532-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,532-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,532-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-44', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,532-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,579-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,579-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,579-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,579-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,579-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-45', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,579-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,630-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,630-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,630-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,630-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,631-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-46', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,631-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,709-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,709-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,709-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,709-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,709-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-47', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,709-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,759-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,759-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,759-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,759-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,759-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-48', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,759-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:22,808-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:22,808-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:22,808-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:22,808-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:22,808-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-49', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:22,808-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:40:23,083-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:40:23,083-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:40:23,083-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:40:23,083-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:40:23,083-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': 'zt-test-50', 'flowId': 'da0a067baedd4d4481e3ab2913e3b9bf', 'priority': 1000, 'description': '', 'originalName': 'kube', 'paramList': []}】
+[时间]:2022-04-28 11:40:23,084-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 11:45:55,928-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 11:45:55,928-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 11:45:55,928-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 11:45:55,929-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 3cc2b156-d3a7-403c-acfd-e27ce4fc068e'}】
+[时间]:2022-04-28 11:45:55,929-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试0', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': 'kube_ai', 'appBiz': 'kube_algorithm_tran', 'key': 'JwwZSERfPvALkljRVWGvXvuMtDQvFInVibbJcwJmWkdcvfjEOx', 'queueName': 'potato.ai.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 11:45:55,929-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 13:53:52,136-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 13:53:52,136-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 13:53:52,136-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 13:53:52,136-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 13:53:52,136-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试0', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 13:53:52,136-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:51,621-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:51,622-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:51,622-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:51,622-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:51,622-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试1', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:51,622-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:51,835-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:51,836-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:51,837-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:51,837-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:51,838-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试2', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:51,838-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:51,908-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:51,908-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:51,908-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:51,909-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:51,909-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试3', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:51,909-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:51,982-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:51,983-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:51,983-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:51,983-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:51,983-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试4', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:51,983-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,049-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,049-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,049-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,049-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,049-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试5', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,049-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,107-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,107-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,107-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,107-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,107-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试6', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,108-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,163-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,163-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,163-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,163-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,163-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试7', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,163-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,317-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试8', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,317-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,771-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,771-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,771-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,772-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,772-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试9', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,773-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,855-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,855-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试10', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,856-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,915-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,915-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,915-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,915-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,915-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试11', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,915-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:52,981-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:52,981-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:52,981-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:52,981-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:52,982-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试12', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:52,982-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,031-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,031-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,031-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,031-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,031-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试13', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,031-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,121-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,121-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,121-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,121-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,121-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试14', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,121-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,193-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,193-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,193-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,193-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,193-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试15', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,193-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,293-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,293-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,293-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,293-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,293-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试16', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,293-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,349-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,349-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,349-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,349-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,349-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试17', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,349-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试18', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,525-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,525-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,525-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,525-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,525-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试19', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,525-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,617-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,617-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,618-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试20', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,619-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,760-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,761-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,761-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,761-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,761-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试21', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,761-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,822-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,822-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,822-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,822-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,823-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试22', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,823-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:53,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:53,946-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:53,946-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:53,946-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:53,946-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试23', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:53,946-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试24', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,453-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,551-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,551-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,551-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,551-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,552-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试25', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,552-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,659-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,659-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,659-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,660-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,660-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试26', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,660-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,727-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,727-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,727-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,727-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,727-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试27', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,727-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,777-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,777-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,777-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,777-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,777-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试28', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,777-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,851-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,851-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,851-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,851-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,851-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试29', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,852-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:54,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:54,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:54,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:54,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:54,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试30', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:54,945-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:55,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:55,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:55,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:55,029-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:55,029-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试31', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:55,029-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:55,132-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:55,132-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:55,132-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:55,132-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:55,132-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试32', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:55,132-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:55,223-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:55,223-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:55,223-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:55,223-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:55,223-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试33', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:55,223-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:55,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:55,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:55,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:55,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:55,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试34', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:55,316-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:55,719-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:55,719-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:55,719-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:55,719-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:55,719-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试35', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:55,720-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:56,999-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:56,999-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:56,999-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:56,999-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:57,000-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试36', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:57,000-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:57,387-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:57,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:57,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:57,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:57,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试37', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:57,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:58,439-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:58,439-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:58,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:58,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:58,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试38', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:58,440-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:58,535-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:58,535-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:58,535-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:58,536-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:58,536-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试39', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:58,536-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:58,597-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:58,597-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:58,598-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:58,598-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:58,598-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试40', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:58,598-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:58,687-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:58,688-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:58,688-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:58,688-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:58,688-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试41', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:58,688-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:58,829-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:58,829-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:58,829-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:58,829-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:58,829-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试42', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:58,829-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:58,997-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:58,997-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:58,998-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:58,998-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:58,998-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试43', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:58,998-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:30:59,954-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:30:59,954-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:30:59,954-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:30:59,954-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:30:59,955-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试44', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:30:59,955-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:31:00,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:31:00,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:31:00,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:31:00,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:31:00,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试45', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:31:00,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:31:00,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:31:00,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:31:00,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:31:00,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:31:00,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试46', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:31:00,144-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:31:00,196-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:31:00,197-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:31:00,197-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:31:00,197-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:31:00,197-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试47', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:31:00,197-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:31:00,345-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:31:00,345-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:31:00,345-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:31:00,345-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:31:00,345-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试48', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:31:00,345-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:31:00,404-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:31:00,405-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:31:00,405-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:31:00,405-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:31:00,405-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试49', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:31:00,405-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-04-28 14:31:00,537-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-04-28 14:31:00,537-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: post】
+[时间]:2022-04-28 14:31:00,537-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/argo/task】
+[时间]:2022-04-28 14:31:00,537-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'}】
+[时间]:2022-04-28 14:31:00,537-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'name': '张涛创建三方测试50', 'flowId': '5b0786e4751848c7a4c8be859085b9d4', 'originalId': 'oj.task.i.287036935841771520', 'originalName': '三维', 'description': '张涛创建三方测试01', 'appCode': '3D_modeling', 'appBiz': 'kube_3dmodel', 'key': 'lUAmQPKIxUEBYspSFGyouctwDjRScznvdtyOCptDpGWpisYQbF', 'queueName': 'model.kube.updatetask', 'priority': '100', 'paramList': [{'name': 'msg', 'value': 'hello', 'description': '打印信息'}, {'name': 'time', 'value': '10', 'description': '时间'}], 'extensions': {'app_code': 'KF00001', 'app_code_biz': 'KF00002'}}】
+[时间]:2022-04-28 14:31:00,538-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
