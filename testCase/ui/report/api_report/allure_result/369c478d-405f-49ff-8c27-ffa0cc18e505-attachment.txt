@@ -1,5 +1,0 @@
-INFO     DEFAULT:conftest.py:32 ==========< 开始 UI自动化项目 测试 >===========
-INFO     DEFAULT:public_tool_project_check.py:23 【Windows - ('64bit', 'WindowsPE')】
-INFO     DEFAULT:public_tool_project_check.py:42 【Chrome - 100.0.4896.127】
-INFO     DEFAULT:public_tool_project_check.py:43 【chromedriver.exe - G:\pytest_auto_uitest_apitest\driver\chromedriver.exe】
-INFO     DEFAULT:public_tool_project_check.py:32 【python - 3.7.4】

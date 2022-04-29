@@ -22,8 +22,8 @@ C = Config(setting.CONFIG_INI)
 
 ENVIRONMENT = 'test环境'
 TESTER = C.testers
-DELETE_ON_OFF = C.delete_on_off[1]
-SAVE_ON_OFF = C.save_on_off[1]
-EMAIL_ON_OFF = C.send_on_off[1]
-OPEN_REPORY_ON_OFF = C.open_on_off[1]
-DINGDING_NEWS_ON_OFF = C.log_control_on_off[1]
+DELETE_ON_OFF = C.delete_on_off
+SAVE_ON_OFF = C.save_on_off
+EMAIL_ON_OFF = C.send_on_off
+OPEN_REPORY_ON_OFF = C.open_on_off
+DINGDING_NEWS_ON_OFF = C.log_control_on_off

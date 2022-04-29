@@ -90,8 +90,10 @@ UI_REPORT_DIR = os.path.join(UI_REPORT_PATH, "report", "allure_report")  # 要�
 UI_FILE_LIST = [os.path.join(UI_REPORT_PATH, "zip", "report.zip")]  # 邮件附件列表，格式为列表
 
 UI_StartEnvironmentFilePath = os.path.join(BASE_PATH, "report", "environment.properties")
+UI_StartEnvironmentFileXMLPath = os.path.join(BASE_PATH, "report", "environment.xml")
 UI_StartExcutorJson = os.path.join(BASE_PATH, "report", "executor.json")
 UI_EndEnvironmentFile = os.path.join(UI_REPORT_PATH, "allure_result", "environment.properties")
+UI_EndEnvironmentXMLFile = os.path.join(API_REPORT_PATH, "allure_result", "environment.xml")
 UI_EndExcutorJson = os.path.join(UI_REPORT_PATH, "allure_result", "executor.json")
 
 UI_IMG_PATH = os.path.join(UI_REPORT_PATH, "img")
