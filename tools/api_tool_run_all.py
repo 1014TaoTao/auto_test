@@ -47,7 +47,7 @@ class API_Run:
         """
         zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)
         self.logger.info("【完成==>压缩报告】")
-        send_email = EmailPack().send_default_email(setting.API_LOG_PATH, setting.API_FILE_LIST)
+        send_email = EmailPack(setting.API_REPORT_END_PATH).send_default_email(setting.API_LOG_PATH, setting.API_FILE_LIST,setting.API_REPORT_END_PATH)
         self.logger.info("【完成==>发送邮件】")
         return send_email
 

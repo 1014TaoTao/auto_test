@@ -21,7 +21,7 @@ class AllureFileClean:
         """ 获取所有 test-case 中的 json 文件 """
         filename = []
         # 获取所有文件下的子文件名称
-        for root, dirs, files in os.walk(API_REPORT_END_PATH + '/html/data/test-cases'):
+        for root, dirs, files in os.walk(API_REPORT_END_PATH + '/data/test-cases'):
             for filePath in files:
                 path = os.path.join(root, filePath)
                 filename.append(path)

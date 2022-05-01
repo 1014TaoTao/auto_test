@@ -84,16 +84,17 @@ UI_REPORT_END_PATH = os.path.join(UI_REPORT_PATH, "allure_report")
 UI_REPORT_HISTORY_PATH = os.path.join(UI_REPORT_PATH, "allure_report", "history")
 UI_RESULT_HISTORY_PATH = os.path.join(UI_REPORT_PATH, "allure_result", "history")
 
-UI_FILE_LIST_PATH = os.path.join(UI_REPORT_PATH, "zip", "report.zip")  # 要压缩文件名称
+UI_FILE_LIST_PATH = os.path.join(UI_REPORT_PATH, "UI_report.zip")  # 要压缩文件名称
 UI_REPORT_DIR = os.path.join(UI_REPORT_PATH, "report", "allure_report")  # 要压缩文件路径
 
-UI_FILE_LIST = [os.path.join(UI_REPORT_PATH, "zip", "report.zip")]  # 邮件附件列表，格式为列表
+UI_FILE_LIST = [os.path.join(UI_REPORT_PATH, "UI_report.zip")]  # 邮件附件列表，格式为列表
 
 UI_StartEnvironmentFilePath = os.path.join(BASE_PATH, "report", "environment.properties")
 UI_StartEnvironmentFileXMLPath = os.path.join(BASE_PATH, "report", "environment.xml")
 UI_StartExcutorJson = os.path.join(BASE_PATH, "report", "executor.json")
+
 UI_EndEnvironmentFile = os.path.join(UI_REPORT_PATH, "allure_result", "environment.properties")
-UI_EndEnvironmentXMLFile = os.path.join(API_REPORT_PATH, "allure_result", "environment.xml")
+UI_EndEnvironmentXMLFile = os.path.join(UI_REPORT_PATH, "allure_result", "environment.xml")
 UI_EndExcutorJson = os.path.join(UI_REPORT_PATH, "allure_result", "executor.json")
 
 UI_IMG_PATH = os.path.join(UI_REPORT_PATH, "img")
@@ -108,6 +109,7 @@ DRIVER = os.path.join(BASE_PATH, "driver", "chromedriver.exe")
 BROWSER = "Chrome"
 chrome_app = r"C:\Program Files\Google\Chrome\Application"  # 需要修改
 chrome_reg = r"SOFTWARE\Google\Chrome\BLBeacon"  # win chrome注册表地址
+
 
 # ===================PRE配置======================
 # 日志地址

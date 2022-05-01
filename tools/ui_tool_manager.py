@@ -54,6 +54,7 @@ class ReportManager:
         # 复制environment.properties文件夹，在本地生成测试环境
         self.logger.info("开始复制 environment.properties文件到allure_result下")
         shutil.copy(setting.UI_StartEnvironmentFilePath, setting.UI_EndEnvironmentFile)
+
         self.logger.info("开始复制 environment.xml文件到allure_result下")
         shutil.copy(setting.UI_StartEnvironmentFileXMLPath, setting.UI_EndEnvironmentXMLFile)
 
@@ -64,3 +65,4 @@ class ReportManager:
     def run_allure_server(self):
         self.logger.info("启动allure服务！")
         os.system(f"allure open {setting.UI_REPORT_END_PATH}")
+
