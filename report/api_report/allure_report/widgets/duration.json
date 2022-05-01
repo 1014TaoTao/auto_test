@@ -1,70 +1,80 @@
 [ {
-  "uid" : "cfc81478840e8d67",
-  "name" : "test_005节点全部查询",
-  "time" : {
-    "start" : 1649754923724,
-    "stop" : 1649754923730,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "901770cf1c5c3cee",
-  "name" : "test_003上传应用图标",
-  "time" : {
-    "start" : 1649754986671,
-    "stop" : 1649754986676,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "2a54de629b0e8362",
-  "name" : "test_006镜像资源-我的仓库（已存在）",
-  "time" : {
-    "start" : 1649754923734,
-    "stop" : 1649754923740,
-    "duration" : 6
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "fab3dbc0aa191329",
-  "name" : "test_007修改算子分组名称",
-  "time" : {
-    "start" : 1649754923754,
-    "stop" : 1649754923759,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "1687406d67d1061d",
+  "uid" : "98d6ec88ab89c586",
   "name" : "test_004算子删除",
   "time" : {
-    "start" : 1649754923708,
-    "stop" : 1649754923714,
-    "duration" : 6
+    "start" : 1651418447709,
+    "stop" : 1651418447724,
+    "duration" : 15
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "bf491fa02f3ab096",
+  "uid" : "b4443c9f6c0d835c",
   "name" : "test_003节点详情",
   "time" : {
-    "start" : 1649754923700,
-    "stop" : 1649754923705,
-    "duration" : 5
+    "start" : 1651418447678,
+    "stop" : 1651418447709,
+    "duration" : 31
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "3683f46d2ae2880d",
-  "name" : "test_001上传应用模板文件",
+  "uid" : "f7c62d1fbfd6acfe",
+  "name" : "test_007修改算子分组名称",
   "time" : {
-    "start" : 1649754986659,
-    "stop" : 1649754986665,
-    "duration" : 6
+    "start" : 1651418448508,
+    "stop" : 1651418448508,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f2290c1ab1dbe26c",
+  "name" : "test_006镜像资源-我的仓库（已存在）",
+  "time" : {
+    "start" : 1651418448477,
+    "stop" : 1651418448493,
+    "duration" : 16
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7c74207800a31dec",
+  "name" : "test_001节点查询",
+  "time" : {
+    "start" : 1651418447630,
+    "stop" : 1651418447646,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d3190cd4f016f319",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1651418447661,
+    "stop" : 1651418447678,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e617173acde8ae6a",
+  "name" : "test_01",
+  "time" : {
+    "start" : 1651417674234,
+    "stop" : 1651417693014,
+    "duration" : 18780
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6be707fffb31645c",
+  "name" : "test_005节点全部查询",
+  "time" : {
+    "start" : 1651418448446,
+    "stop" : 1651418448461,
+    "duration" : 15
   },
   "status" : "passed",
   "severity" : "blocker"

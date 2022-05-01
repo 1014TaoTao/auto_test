@@ -1,5 +1,5 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
     "uid" : "77621dcedaace14da6a0d5dca6d0efff",
     "name" : "testCase.api",
@@ -10,6 +10,17 @@
       "passed" : 5,
       "unknown" : 0,
       "total" : 7
+    }
+  }, {
+    "uid" : "e81e6f2bec5e0e012c0a1cc7ab6e644c",
+    "name" : "testCase.ui",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

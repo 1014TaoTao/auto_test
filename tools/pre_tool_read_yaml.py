@@ -24,7 +24,7 @@ class YamlPack:
             'host': Config(setting.CONFIG_INI).apihost_43_13,
             'token': read_token()
         }
-        self.yaml_path = setting.PRF_YAML_PATH
+        self.yaml_path = setting.PER_YAML_PATH
         with open(self.yaml_path, encoding="utf-8") as f:
             re = Template(f.read()).substitute(variable)
             self.data = yaml.safe_load(re)

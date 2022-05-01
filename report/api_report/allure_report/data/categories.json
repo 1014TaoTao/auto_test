@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "children" : [ {
         "name" : "test_004算子删除",
-        "uid" : "1687406d67d1061d",
+        "uid" : "98d6ec88ab89c586",
         "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
         "status" : "failed",
         "time" : {
-          "start" : 1649754923708,
-          "stop" : 1649754923714,
-          "duration" : 6
+          "start" : 1651418447709,
+          "stop" : 1651418447724,
+          "duration" : 15
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,16 +21,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 34.431, 'time_total': 0.034431}}" ]
+        "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer 22c79be8-b1bf-48ec-bee5-7d6b436abd4a'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 173.928, 'time_total': 0.173928}}" ]
       }, {
         "name" : "test_006镜像资源-我的仓库（已存在）",
-        "uid" : "2a54de629b0e8362",
+        "uid" : "f2290c1ab1dbe26c",
         "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
         "status" : "failed",
         "time" : {
-          "start" : 1649754923734,
-          "stop" : 1649754923740,
-          "duration" : 6
+          "start" : 1651418448477,
+          "stop" : 1651418448493,
+          "duration" : 16
         },
         "flaky" : false,
         "newFailed" : false,
@@ -38,7 +38,7 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer 8a644894-85eb-47e0-b8d7-707784b91f53'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 40.476, 'time_total': 0.040476}}" ]
+        "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer 22c79be8-b1bf-48ec-bee5-7d6b436abd4a'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 119.21, 'time_total': 0.11921}}" ]
       } ],
       "uid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7"
     } ],

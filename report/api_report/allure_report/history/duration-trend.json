@@ -3,6 +3,27 @@
   "reportUrl" : "http://helloqa.com#1/AllureReport",
   "reportName" : "iTesting Allure Report",
   "data" : {
+    "duration" : 774274
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 666288
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 587992
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
     "duration" : 62976
   }
 }, {
