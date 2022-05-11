@@ -9,8 +9,6 @@
       <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/plugins/xctest" />
       <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/plugins/xray" />
       <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/plugins/xunit-xml" />
-      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report" />
-      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/img" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (pytest_auto_uitest_apitest)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

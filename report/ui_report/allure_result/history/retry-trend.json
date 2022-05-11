@@ -4,6 +4,22 @@
   "reportName" : "iTesting Allure Report",
   "data" : {
     "run" : 2,
+    "retry" : 2
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "run" : 2,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "run" : 2,
     "retry" : 0
   }
 }, {

@@ -19,8 +19,8 @@ if __name__ == '__main__':
         'Authorization': 'Bearer 1ea2a075-eff7-40e4-b418-76dfc17d038d'
     }
 
-    url = base_url+'/kube/v1/api/argo/task'
-    for i in range(1,51):
+    url = base_url + '/kube/v1/api/argo/task'
+    for i in range(1, 51):
         # KUBE的任务
         # data = {
         #   "name": f"zt-test-{i}",
@@ -62,5 +62,6 @@ if __name__ == '__main__':
                 "app_code_biz": "KF00002"
             }
         }
-        res = Requests().send_request(url=url, method='post', parametric_key='json', data=data, headers=headers, file=None)
+        res = Requests().send_request(url=url, method='post', parametric_key='json', data=data, headers=headers,
+                                      file=None)
         print(res.json())
