@@ -1,80 +1,80 @@
 [ {
-  "uid" : "d3190cd4f016f319",
-  "name" : "test_002节点查询",
-  "time" : {
-    "start" : 1651418447661,
-    "stop" : 1651418447678,
-    "duration" : 17
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "98d6ec88ab89c586",
-  "name" : "test_004算子删除",
-  "time" : {
-    "start" : 1651418447709,
-    "stop" : 1651418447724,
-    "duration" : 15
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "b4443c9f6c0d835c",
-  "name" : "test_003节点详情",
-  "time" : {
-    "start" : 1651418447678,
-    "stop" : 1651418447709,
-    "duration" : 31
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "7c74207800a31dec",
-  "name" : "test_001节点查询",
-  "time" : {
-    "start" : 1651418447630,
-    "stop" : 1651418447646,
-    "duration" : 16
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f2290c1ab1dbe26c",
-  "name" : "test_006镜像资源-我的仓库（已存在）",
-  "time" : {
-    "start" : 1651418448477,
-    "stop" : 1651418448493,
-    "duration" : 16
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "e617173acde8ae6a",
+  "uid" : "1fe2f019f5c392a6",
   "name" : "test_01",
   "time" : {
-    "start" : 1651417674234,
-    "stop" : 1651417693014,
-    "duration" : 18780
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f7c62d1fbfd6acfe",
-  "name" : "test_007修改算子分组名称",
-  "time" : {
-    "start" : 1651418448508,
-    "stop" : 1651418448508,
+    "start" : 1651227817173,
+    "stop" : 1651227817173,
     "duration" : 0
   },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "16ebb90fce829d02",
+  "name" : "test_001节点查询",
+  "time" : {
+    "start" : 1652684604622,
+    "stop" : 1652684604652,
+    "duration" : 30
+  },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "6be707fffb31645c",
+  "uid" : "a22a1a8d7fbd7acb",
+  "name" : "test_004算子删除",
+  "time" : {
+    "start" : 1652684604715,
+    "stop" : 1652684604766,
+    "duration" : 51
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2cf0a316e42b154d",
+  "name" : "test_006镜像资源-我的仓库（已存在）",
+  "time" : {
+    "start" : 1652684604848,
+    "stop" : 1652684604860,
+    "duration" : 12
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "dd0cb64ddb96e824",
   "name" : "test_005节点全部查询",
   "time" : {
-    "start" : 1651418448446,
-    "stop" : 1651418448461,
+    "start" : 1652684604831,
+    "stop" : 1652684604845,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "1699387b97429b90",
+  "name" : "test_003节点详情",
+  "time" : {
+    "start" : 1652684604696,
+    "stop" : 1652684604711,
     "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "eb825dcde5df8001",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1652684604656,
+    "stop" : 1652684604691,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "1cb79875abf751cf",
+  "name" : "test_007修改算子分组名称",
+  "time" : {
+    "start" : 1652684604872,
+    "stop" : 1652684604889,
+    "duration" : 17
   },
   "status" : "passed",
   "severity" : "blocker"
