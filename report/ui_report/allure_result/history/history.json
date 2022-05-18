@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "d88d97022db7d50f",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/d88d97022db7d50f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652851017395,
+        "stop" : 1652851019978,
+        "duration" : 2583
+      }
+    }, {
       "uid" : "ead16b969eed343e",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/ead16b969eed343e",
       "status" : "passed",
@@ -42,11 +51,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "e41f12d7715c9fc1",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/e41f12d7715c9fc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652851019980,
+        "stop" : 1652851021533,
+        "duration" : 1553
+      }
+    }, {
       "uid" : "5ca28ee26ab64274",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/5ca28ee26ab64274",
       "status" : "passed",
