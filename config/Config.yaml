@@ -34,8 +34,15 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
-
-
+      ranxiaomin:
+        username: ranxiaomin
+        mobile: 17319901852
+        password: 737cec5e3ca2a2fb367fbedf4965fbc6
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_cp
   environment_115:
     environment: 115环境
     versionCode: v1.0
@@ -89,7 +96,15 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
-
+      ranxiaomin:
+        username: ranxiaomin
+        mobile: 17319901852
+        password: 737cec5e3ca2a2fb367fbedf4965fbc6
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_cp
   environment_122:
     environment: 122环境
     versionCode: v1.0
@@ -153,6 +168,7 @@ testers:
   - 王静静
   - 张涛
   - 叶明鑫
+  - 冉晓敏
 
 delete_report_on_off:
   - 'on'
