@@ -15,7 +15,7 @@
 from tools.api_tool_request import Requests
 
 headers = {
-    'Authorization': 'Bearer e24ff395-ff7c-4802-9a17-9e9cdcd0602e'
+    'Authorization': 'Bearer 03f4369f-fccf-43f4-a7e8-bda282f84569'
 }
 
 
@@ -80,6 +80,3 @@ def bind_user_id(base_url: str, group_id_list: list, user_id_list: list):
         num += 1
         print(f"=============={num}=================")
         print(res.json())
-
-
-

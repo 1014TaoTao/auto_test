@@ -18,8 +18,11 @@ headers = {
     'Authorization': 'Bearer e24ff395-ff7c-4802-9a17-9e9cdcd0602e'
 }
 base_url = 'http://10.0.34.13:10000'
+# 2500是查的kube应用
 id = 2500
+# 授权用户的名称
 user_name = '张涛'
+# 授权的用户组
 user_group_name_list = ['SAAS', 'kube']
 
 
