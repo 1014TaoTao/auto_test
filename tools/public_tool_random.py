@@ -327,24 +327,24 @@ def SqlRegular(value, res=None):
 if __name__ == '__main__':
     C = Context()
     # 简单随机数据
-    print(C.random_str(16))
-    print(C.random_int("100,200"))
-    print(C.random_float("200,100,5"))
-    print(C.random_choice("aaa,bbb,ccc"))
-
-    # 生成日期数据
-    print(C.generate_date())
-    print(C.generate_datetime())
-    print(C.generate_date('m+3'))
-    print(C.generate_datetime('d+3'))
-    print(C.generate_timestamp('s+100'))
-    print(C.generate_noid('y-18'))
+    # print(C.random_str(16))
+    # print(C.random_int("100,200"))
+    # print(C.random_float("200,100,5"))
+    # print(C.random_choice("aaa,bbb,ccc"))
+    #
+    # # 生成日期数据
+    # print(C.generate_date())
+    # print(C.generate_datetime())
+    # print(C.generate_date('m+3'))
+    # print(C.generate_datetime('d+3'))
+    # print(C.generate_timestamp('s+100'))
+    # print(C.generate_noid('y-18'))
 
     # 生成常用数据
     print(C.generate_guid())
-    print(C.generate_wxid())
-    print(C.generate_noid())
-    print(C.generate_phone())
-
-    print(C.generate_email())
-    print(C.generate_bank_card())
+    # print(C.generate_wxid())
+    # print(C.generate_noid())
+    # print(C.generate_phone())
+    #
+    # print(C.generate_email())
+    # print(C.generate_bank_card())
