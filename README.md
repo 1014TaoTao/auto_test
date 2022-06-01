@@ -11,22 +11,53 @@
 
 2.搭建步骤
 
-- 2.1创建虚拟环境：
+- 2.1拉取代码
+  
+  > git clone http://gitlab.e-tudou.com/tudou-autotest-project/pytest_auto_uitest_apitest.git
+  
+  查看本地和远程所有分支
+  
+  > git branch -a
+  
+  切换分支
+  
+  > git checkout [branch-name]
+
+- 2.2创建虚拟环境：
     - python -m venv venv
     - venv/Scripts/activate
     - 回车激活环境
-- 2.2pip更换源：
+- 2.3pip更换源：
     - pip install pqi 安装一次就够了
     - pqi ls
     - pqi use aliyun 更换阿里云源
 
-- 2.3安装项目依赖包
+- 2.4安装项目依赖包
     - pip install -r requirements.txt
+
+3.git提交规范
+  - feat:新增feature，新增功能 业务
+  
+  - fix:修复bug
+  
+  - docs:仅仅修改了文档
+  
+  - style：仅仅修改了代码空格 格式 缩进 逗号等，没有改动代码逻辑
+  
+  - refactor：代码重构，没有新功能或修复bug
+  
+  - perf:优化相关，比如提升性能，优化体验
+  
+  - test：测试用例，单元测试，集成测试等
+  
+  - chore：改变构建流程，或增加依赖库，工具等
+  
+  - revert：回滚到上一个版本
 
 ## 二.工程目录：
 
-![工程目录](./流程图/工程目录.png)
-![项目执行顺序](./流程图/项目执行顺序.png)
+![工程目录](./框架文件/工程目录.png)
+![项目执行顺序](./框架文件/项目执行顺序.png)
 
 ```text.
 \PYTEST_AUTO_UITEST_APITEST # 项目名称
@@ -106,16 +137,16 @@
 
 - allure设置
 
-![allure设置](./流程图/allure设置.png)
+![allure设置](./框架文件/allure设置.png)
 
 - allure用例描述
 
-![allure用例描](./流程图/allure用例描述.png)
+![allure用例描](./框架文件/allure用例描述.png)
 
 - allure使用方法
 
-![allure使用方](./流程图/allure使用方法.png)
+![allure使用方](./框架文件/allure使用方法.png)
 
 - allure详细用法
 
-![allure详细用法](./流程图/allure详细用法.png)
+![allure详细用法](./框架文件/allure详细用法.png)

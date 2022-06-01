@@ -10,10 +10,14 @@
 @File    : api_tool_read_excel.py
 @Software: PyCharm
 """
+import os.path
+
 import xlrd
 import xlwt
 from xlutils.copy import copy
+import filetype  # 判断上传文件类型
 
+from common.setting import upload_file
 from tools.api_tool_global_var import global_var
 
 
@@ -87,11 +91,17 @@ class ReadExcel:
             font.bold = True  # 设置粗体
             font.colour_index = 4  # 设置紫色 # 参考：http://www.javashuo.com/article/p-sfvgazwx-c.html
         style.alignment = al
+
         style.font = font
+
         book = xlrd.open_workbook(self.file_name, formatting_info=True)
+
         book_copy = copy(book)
+
         sheet = book_copy.get_sheet(self.sheet_id)
+
         sheet.write(row, col, value, style)
+
         book_copy.save(self.file_name)
 
     # 获取用例id
@@ -210,3 +220,42 @@ class ReadExcel:
         :return:
         """
         return self.get_cell_data(row, global_var().get_response())
+
+    # 获取base_url
+    def get_base_url_info(self, row):
+        """
+        :param row:
+        :return:
+        """
+        return self.get_cell_data(row, global_var().get_base_url())
+
+    # 获取参数类型
+    def get_excel_type_data(self, row):
+        """
+        :param row:
+        :return:
+        """
+        return self.get_cell_data(row, global_var().get_type_data())
+
+    # 获取上传文件地址
+    def get_upload_file_path(self, row):
+        """
+        :param row:
+        :return:
+        """
+        file_name = self.get_cell_data(row, global_var().get_upload_path())
+        if file_name != '':
+            file_path = os.path.join(upload_file, file_name)
+            # 暂时只是单文件上传，待优化为多文件上传
+            if file_path != '':
+                file = [
+                    ('file', (file_name, open(file_path, 'rb'), filetype.guess(file_path)))
+                ]
+            else:
+                file = None
+        else:
+            file = None
+        return file
+
+
+

@@ -44,6 +44,15 @@ class OperationSystemPython:
         return version
 
 
+def api_sys_project(log_path=None):
+    """
+    :param log_path:
+    :return:
+    """
+    OperationSystemPython(log_path).platform_system()
+    OperationSystemPython(log_path).python_version()
+
+
 def system_project(log_path=None):
     """
     :param log_path:
@@ -51,13 +60,4 @@ def system_project(log_path=None):
     """
     OperationSystemPython(log_path).platform_system()
     OperationSystemPython(log_path).chrome_ersion()
-    OperationSystemPython(log_path).python_version()
-
-
-def api_sys_project(log_path=None):
-    """
-    :param log_path:
-    :return:
-    """
-    OperationSystemPython(log_path).platform_system()
     OperationSystemPython(log_path).python_version()

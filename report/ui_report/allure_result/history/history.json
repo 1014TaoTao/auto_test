@@ -1,1 +1,96 @@
-{ }
+{
+  "cafdc1e2b84c36682f7492c461018890" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "d88d97022db7d50f",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/d88d97022db7d50f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652851017395,
+        "stop" : 1652851019978,
+        "duration" : 2583
+      }
+    }, {
+      "uid" : "ead16b969eed343e",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/ead16b969eed343e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652188545356,
+        "stop" : 1652188559529,
+        "duration" : 14173
+      }
+    }, {
+      "uid" : "e804551097d50028",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/e804551097d50028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651731650380,
+        "stop" : 1651731652787,
+        "duration" : 2407
+      }
+    }, {
+      "uid" : "e2df80743ba944ed",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/e2df80743ba944ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651417907489,
+        "stop" : 1651417923721,
+        "duration" : 16232
+      }
+    } ]
+  },
+  "5f3ee31dcb39f0d13b301aa770598494" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "e41f12d7715c9fc1",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/e41f12d7715c9fc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652851019980,
+        "stop" : 1652851021533,
+        "duration" : 1553
+      }
+    }, {
+      "uid" : "5ca28ee26ab64274",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/5ca28ee26ab64274",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652188559531,
+        "stop" : 1652188561126,
+        "duration" : 1595
+      }
+    }, {
+      "uid" : "d43254a8818f6329",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/d43254a8818f6329",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651731652789,
+        "stop" : 1651731654504,
+        "duration" : 1715
+      }
+    }, {
+      "uid" : "68aab0b3add53fdc",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/68aab0b3add53fdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651417923729,
+        "stop" : 1651417926259,
+        "duration" : 2530
+      }
+    } ]
+  }
+}

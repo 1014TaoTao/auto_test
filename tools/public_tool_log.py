@@ -54,7 +54,6 @@ class LoggerHandler(object):
             f_stream.setFormatter(formatter)  # 控制台输出格式
             self.logger.addHandler(f_stream)
 
-
     @property
     def get_logger(self):
         """

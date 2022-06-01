@@ -1,7 +1,7 @@
 # coding:utf8
 
 
-from common import setting, consts
+from common import setting
 from tools.api_tool_assert import Assert
 from tools.api_tool_headers import headersPack
 from tools.api_tool_reponse import Response
@@ -13,13 +13,13 @@ logger = logger(setting.API_LOG_PATH)
 
 class Login:
 
-    def __init__(self):
+    def __init__(self, BASEHOST, LOGINHOST, LOGINDATA, USERNAME):
         # 登录地址
-        self.url = consts.BASEHOST + consts.LOGINHOST
+        self.url = BASEHOST + LOGINHOST
         # 登录入参,读取到str转为dict
-        self.data_dict = consts.LOGINDATA
+        self.data_dict = LOGINDATA
         # 登录用户username
-        self.assert_username = consts.USERNAME
+        self.assert_username = USERNAME
         # 请求头
         self.headers = {'Content-Type': 'application/json;charset=UTF-8'}
 
@@ -27,8 +27,10 @@ class Login:
         """
         :return:
         """
+        logger.info('【开始获取token...start】')
         res = Response().result(
-            Requests().send_request(method="GET", url=self.url, data=self.data_dict, headers=self.headers))
+            Requests().send_request(method="get", url=self.url, data=self.data_dict, headers=self.headers,
+                                    parametric_key='params', file=None))
         try:
 
             # 断言用户名使用参数化，在配置文件中的username字段

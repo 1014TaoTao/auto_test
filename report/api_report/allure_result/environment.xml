@@ -1,0 +1,36 @@
+<environment>
+    <parameter>
+        <key>ProjectName</key>
+        <value>pytest_auto_uitest_apitest</value>
+    </parameter>
+
+    <parameter>
+        <key>SystemVersion</key>
+        <value>Windows10-64bit</value>
+    </parameter>
+
+    <parameter>
+        <key>Browser</key>
+        <value>Chrome-94.0.4606.81</value>
+    </parameter>
+
+    <parameter>
+        <key>PythonVersion</key>
+        <value>python-3.8.10</value>
+    </parameter>
+
+    <parameter>
+        <key>AllureVersion</key>
+        <value>allure-2.16.1</value>
+    </parameter>
+
+    <parameter>
+        <key>测试人员</key>
+        <value>张涛</value>
+    </parameter>
+
+    <parameter>
+        <key>测试环境</key>
+        <value>TEST</value>
+    </parameter>
+</environment>

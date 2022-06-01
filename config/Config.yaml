@@ -34,12 +34,20 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
-
+      ranxiaomin:
+        username: ranxiaomin
+        mobile: 17319901852
+        password: 737cec5e3ca2a2fb367fbedf4965fbc6
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_cp
   environment_115:
     environment: 115环境
     versionCode: v1.0
     apihost: 'http://192.168.0.115:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
+    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','11000','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
     basehost: 'http://192.168.0.115:18603'
     loginHost: /uaa/oauth/token
     loginInfo:
@@ -70,12 +78,38 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
-
+      wangjingjingcp:
+        username: TD18709293556
+        mobile: 18709293556
+        password: e4b122e04d83b12518393d63dccdc1b9
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_cp
+      wangjingjingop:
+        username: 弗雷云西安管理员
+        mobile: xian@i-tudou.com
+        password: eede6d66c93b0340342c18f8c5c76a87
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_op
+      ranxiaomin:
+        username: ranxiaomin
+        mobile: 17319901852
+        password: 737cec5e3ca2a2fb367fbedf4965fbc6
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_cp
   environment_122:
     environment: 122环境
     versionCode: v1.0
     apihost: 'http://192.168.0.120:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
+    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','11000','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
     basehost: 'http://192.168.0.120:18603'
     loginHost: /uaa/oauth/token
     loginInfo:
@@ -97,10 +131,19 @@ environment:
     basehost: 'http://10.0.34.13:18603'
     loginHost: /uaa/oauth/token
     loginInfo:
-      zhangtao34_13:
+      kubeamdin:
         username: 18192408293
         mobile: 18192408293
         password: eede6d66c93b0340342c18f8c5c76a87
+        account_type: mobile
+        grant_type: password
+        scope: trust
+        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
+        client_id: saas_op
+      zhangtao34_13:
+        username: 张涛
+        mobile: 15382112620
+        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
         account_type: mobile
         grant_type: password
         scope: trust
@@ -112,6 +155,7 @@ email:
   sender: 948080782@qq.com
   password: gboboxzhptgubcag
   receiver: 948080782@qq.com
+
 databases:
   host: 127.0.0.1
   user: root
@@ -119,10 +163,13 @@ databases:
   passwd: 123456
   db: pytest_auto_uitest_apitest
   charset: utf8
+
 testers:
+  - 王静静
   - 张涛
   - 叶明鑫
-  - 强驰
+  - 冉晓敏
+
 delete_report_on_off:
   - 'on'
   - 'off'

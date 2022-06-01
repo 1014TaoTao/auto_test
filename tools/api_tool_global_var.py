@@ -8,19 +8,23 @@ class global_var:
         self.test_module = 1
         self.test_function = 2
         self.test_run = 3
-        self.test_url = 4
-        self.test_data = 5
-        self.test_run_way = 6
-        self.test_header = 7
-        self.test_token = 8
-        self.test_case_depend = 9
-        self.test_filed_depend = 10
-        self.test_status_code = 11
-        self.test_expect_msg = 12
-        self.test_expect_data = 13
-        self.test_result = 14
-        self.test_response = 15
-        self.test_check_sql = 16
+        self.base_url = 4
+        self.test_url = 5
+        self.test_data = 6
+        self.test_method = 7
+        self.type_data = 8
+        self.test_header = 9
+        self.test_token = 10
+        self.upload_path = 11
+        self.test_case_depend = 12
+        self.test_filed_depend = 13
+        self.test_status_code = 14
+        self.test_expect_msg = 15
+        self.test_expect_data = 16
+        self.test_result = 17
+        self.test_response = 18
+        self.test_check_sql = 19
+
 
     def get_id(self):
         """
@@ -56,7 +60,7 @@ class global_var:
         """
         :return:
         """
-        return self.test_run_way
+        return self.test_method
 
     def get_header(self):
         """
@@ -124,5 +128,22 @@ class global_var:
         """
         return self.test_case_depend
 
+    def get_base_url(self):
+        """
+        :return:
+        """
+        return self.base_url
+
+    def get_type_data(self):
+        """
+        :return:
+        """
+        return self.type_data
+
+    def get_upload_path(self):
+        """
+        :return:
+        """
+        return self.upload_path
 # if __name__ == '__main__':
 #     print(global_var.get_data)

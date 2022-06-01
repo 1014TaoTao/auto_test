@@ -3,11 +3,10 @@
 import allure
 import pytest
 
-from common import setting
-from tools.public_tool_log import logger
 from basepage.base import Page
 from basepage.browser import select_browser
-from tools import public_tool_project_check
+from common import setting
+from tools.public_tool_log import logger
 from tools.ui_tool_elenium_check import inspect_element
 
 logger = logger(setting.UI_LOG_PATH)
@@ -28,11 +27,7 @@ fixture的作用范围:
 @pytest.fixture(scope="session", autouse=True)
 def init_project():
     global driver
-    with allure.step("检查系统信息"):
-        logger.info('==========< 开始 UI自动化项目 测试 >===========')
-        # 打印系统和python的版本信息
-        public_tool_project_check.system_project(log_path=setting.UI_LOG_PATH)
-    with allure.step("打开游览器并最大化"):
+    with allure.step("打开浏览器并最大化"):
         if driver is None:
             driver = select_browser()
             Page(driver).max_window()
@@ -43,7 +38,6 @@ def init_project():
         yield driver
     with allure.step("关闭浏览器"):
         Page(driver).quit()
-        logger.info('==========< 结束 UI自动化项目 测试 >===========')
 
 
 # 失败截图放在allure报告中

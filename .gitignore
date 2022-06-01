@@ -1,7 +1,7 @@
-/report/
 /.idea/
 /.pytest_cache/
-/logs/
-/performance/
-/pages/
 /venv/
+/report/api_report/
+/report/per_report/
+/report/ui_report/
+/logs/
