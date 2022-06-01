@@ -12,7 +12,7 @@ import time
 from datetime import datetime
 
 
-def countMilliseconds():
+def countMilliseconds() -> int:
     """
     计算时间
     :return:
@@ -80,6 +80,6 @@ def get_now_time() -> int:
     return int(time.time()) * 1000
 
 
-if __name__ == '__main__':
-    print(NowTime())
-    Time_conversion(1547450538000)
+# if __name__ == '__main__':
+#     print(NowTime())
+#     Time_conversion(1547450538000)

@@ -31,7 +31,7 @@ class DingTalk:
         self.TOTAL = self.allureData.totalCount()
         self.RATE = self.allureData.passRate()
 
-    def send_text(self, msg: str, mobiles=None) -> None:
+    def send_text(self, msg: str, mobiles: list = None) -> None:
         """
         发送文本信息
         :param msg: 文本内容
@@ -56,7 +56,7 @@ class DingTalk:
         except Exception:
             raise
 
-    def send_markdown(self, title: str, msg: str, mobiles=None) -> None:
+    def send_markdown(self, title: str, msg: str, mobiles: list = None) -> None:
         """
         :param mobiles:
         :param title:
@@ -84,14 +84,14 @@ class DingTalk:
             raise
 
     # 发送钉钉消息
-    def send_dingding(self, ENVIRONMENT, TESTER):
+    def send_dingding(self, ENVIRONMENT: str, TESTER: str):
         """
         发送钉钉通知
         :return:
         """
 
-        jenkins_url = "http://250.25.250.250:9000/"
-        reprot_url = r"http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html"
+        jenkins_url = setting.jenkins_url
+        reprot_url = setting.reprot_url
 
         self.ding_news.send_markdown(
             title='**【接口测试报告】**',
@@ -107,10 +107,20 @@ class DingTalk:
                  "执行人员：<font color=\"#130c0e\">@%s</font>" % TESTER + "\n\n --- \n\n" +
                  "报告详情：[点击查看](%s)" % reprot_url + "\n\n" +
                  "构建地址：[点击查看，暂未开通](%s)" % jenkins_url + "\n\n" +
-                 "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font>" % time.strftime("%Y-%m-%d %H:%M:%S"),
-            at_dingtalk_ids=[15382112620]
+                 "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font>" % time.strftime("%Y-%m-%d "
+                                                                                                      "%H:%M:%S"),
+            at_mobiles=setting.at_mobiles_list
         )
-
+        """
+        markdown类型
+        :param title: 首屏会话透出的展示内容
+        :param text: markdown格式的消息内容
+        :param is_at_all: @所有人时：true，否则为：false（可选）
+        :param at_mobiles: 被@人的手机号（默认自动添加在text内容末尾，可取消自动化添加改为自定义设置，可选）
+        :param at_dingtalk_ids: 被@人的dingtalkId（可选）
+        :param is_auto_at: 是否自动在text内容末尾添加@手机号，默认自动添加，可设置为False取消（可选）        
+        :return: 返回消息发送结果
+        """
 
 # if __name__ == "__main__":
 #     # 发送钉钉推送消息

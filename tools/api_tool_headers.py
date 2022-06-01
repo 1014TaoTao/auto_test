@@ -5,15 +5,16 @@ from tools.public_tool_log import logger
 logger = logger(setting.API_LOG_PATH)
 
 
+# 请求头处理
 class headersPack:
-    def __init__(self, res):
+    def __init__(self, res: dict):
         """
         :param res:
         """
         self.res = res
 
     # 获取登录的cookie
-    def _get_login_token(self):
+    def _get_login_token(self) -> str:
         """
         :return:
         """
@@ -35,7 +36,7 @@ class headersPack:
 
 
 # 读取token
-def read_token():
+def read_token() -> str:
     """
     :return:
     """

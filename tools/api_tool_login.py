@@ -13,7 +13,7 @@ logger = logger(setting.API_LOG_PATH)
 
 class Login:
 
-    def __init__(self, BASEHOST, LOGINHOST, LOGINDATA, USERNAME):
+    def __init__(self, BASEHOST: str, LOGINHOST: str, LOGINDATA: str, USERNAME: str):
         # 登录地址
         self.url = BASEHOST + LOGINHOST
         # 登录入参,读取到str转为dict

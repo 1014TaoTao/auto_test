@@ -120,3 +120,9 @@ PER_YAML_PATH = os.path.join(DATA_PATH, "prf", 'yaml_data', 'test.yaml')
 
 # per配置文件路径
 PER_CONFIG_PATH = os.path.join(BASE_PATH, "locust.conf")
+
+
+# ===================public配置======================
+jenkins_url = "http://250.25.250.250:9000/"
+reprot_url = "http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html"
+at_mobiles_list = [15382112620]

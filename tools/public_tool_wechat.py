@@ -17,7 +17,7 @@ from tools.allureDataControl import CaseCount
 from tools.gettimeControl import NowTime
 from tools.localIpControl import get_host_ip
 
-
+# 企业微信工具类
 class WeChatSend:
     """
     企业微信消息通知

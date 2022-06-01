@@ -9,7 +9,7 @@ class Assert:
         self.pass_num = 0
         self.fail_num = 0
 
-    def assert_code(self, expected_code, code):
+    def assert_code(self, expected_code: int, code: int) -> bool:
         """
         :param expected_code:
         :param code:
@@ -23,7 +23,7 @@ class Assert:
             self.logger.error(f"【断言status_code:failed】期望状态码: {expected_code} 【!=】 实际状态码: {code}")
             return False
 
-    def assert_msg(self, expected_msg, msg):
+    def assert_msg(self, expected_msg: str, msg: str) -> bool:
         """
         :param expected_msg:
         :param msg:
@@ -37,7 +37,7 @@ class Assert:
             self.logger.error(f"【断言msg:failed】期望msg: {expected_msg} 【!=】 实际msg: {msg}")
             return False
 
-    def assert_in_body(self, expected_msg, body):
+    def assert_in_body(self, expected_msg: str, body: str) -> bool:
         """
         :param expected_msg:
         :param body:
@@ -51,7 +51,7 @@ class Assert:
             self.logger.error(f"【断言msg:failed】期望msg: {expected_msg} 【not in】 实际body: {body}")
             return False
 
-    def assert_body(self, expected_msg, body):
+    def assert_body(self, expected_msg: str, body: str) -> bool:
         """
         :param expected_msg:
         :param body:
@@ -65,7 +65,7 @@ class Assert:
             self.logger.error(f"【断言msg:failed】期望状态码: {expected_msg} 【!=】 实际状态码: {body}")
             return False
 
-    def assert_time(self, expected_time, time):
+    def assert_time(self, expected_time: float, time: float) -> bool:
         """
         :param expected_time:
         :param time:

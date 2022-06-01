@@ -29,7 +29,7 @@ class PyTimer:
         th.setDaemon(True)
         th.start()
 
-    def _start(self, interval, once):
+    def _start(self, interval: float, once: bool):
         """启动定时器的线程函数"""
 
         if interval < 0.010:
@@ -61,7 +61,7 @@ class PyTimer:
                 if self.running:
                     self._run_func()
 
-    def start(self, interval, once=False):
+    def start(self, interval: float, once: bool = False):
         """启动定时器
 
         interval    - 定时间隔，浮点型，以秒为单位，最高精度10毫秒
@@ -79,8 +79,8 @@ class PyTimer:
 
 
 def do_something(name, gender='male'):
-    print(time.time(), '定时时间到，执行特定任务' )
-    print('name:%s, gender:%s'%(name, gender))
+    print(time.time(), '定时时间到，执行特定任务')
+    print('name:%s, gender:%s' % (name, gender))
     time.sleep(5)
     print(time.time(), '完成特定任务')
 

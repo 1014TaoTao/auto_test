@@ -25,122 +25,121 @@ class global_var:
         self.test_response = 18
         self.test_check_sql = 19
 
-
-    def get_id(self):
+    def get_id(self) -> int:
         """
         :return:
         """
         return self.test_id
 
-    def get_module(self):
+    def get_module(self) -> int:
         """
         :return:
         """
         return self.test_module
 
-    def get_fuction(self):
+    def get_fuction(self) -> int:
         """
         :return:
         """
         return self.test_function
 
-    def get_url(self):
+    def get_url(self) -> int:
         """
         :return:
         """
         return self.test_url
 
-    def get_run(self):
+    def get_run(self) -> int:
         """
         :return:
         """
         return self.test_run
 
-    def get_run_way(self):
+    def get_run_way(self) -> int:
         """
         :return:
         """
         return self.test_method
 
-    def get_header(self):
+    def get_header(self) -> int:
         """
         :return:
         """
         return self.test_header
 
-    def get_filed_depend(self):
+    def get_filed_depend(self) -> int:
         """
         :return:
         """
         return self.test_filed_depend
 
-    def get_data(self):
+    def get_data(self) -> int:
         """
         :return:
         """
         return self.test_data
 
-    def get_expect_msg(self):
+    def get_expect_msg(self) -> int:
         """
         :return:
         """
         return self.test_expect_msg
 
-    def get_expect_data(self):
+    def get_expect_data(self) -> int:
         """
         :return:
         """
         return self.test_expect_data
 
-    def get_result(self):
+    def get_result(self) -> int:
         """
         :return:
         """
         return self.test_result
 
-    def get_response(self):
+    def get_response(self) -> int:
         """
         :return:
         """
         return self.test_response
 
-    def get_status_code(self):
+    def get_status_code(self) -> int:
         """
         :return:
         """
         return self.test_status_code
 
-    def get_check_sql(self):
+    def get_check_sql(self) -> int:
         """
         :return:
         """
         return self.test_check_sql
 
-    def get_token(self):
+    def get_token(self) -> int:
         """
         :return:
         """
         return self.test_token
 
-    def get_case_depend(self):
+    def get_case_depend(self) -> int:
         """
         :return:
         """
         return self.test_case_depend
 
-    def get_base_url(self):
+    def get_base_url(self) -> int:
         """
         :return:
         """
         return self.base_url
 
-    def get_type_data(self):
+    def get_type_data(self) -> int:
         """
         :return:
         """
         return self.type_data
 
-    def get_upload_path(self):
+    def get_upload_path(self) -> int:
         """
         :return:
         """

@@ -1,4 +1,6 @@
 # coding:utf-8
+from typing import Any
+
 import yaml
 
 from common import setting
@@ -12,21 +14,21 @@ class Config:
             self.data = yaml.safe_load(f)
 
     # 获取所有数据
-    def all_data(self):
+    def all_data(self) -> dict:
         """
         :return:
         """
         all_data_dict = self.data
         return all_data_dict
 
-    def get_email_info(self):
+    def get_email_info(self) -> dict:
         """
         :return:
         """
         email_info = self.data['email']
         return email_info
 
-    def get_databases_info(self):
+    def get_databases_info(self) -> dict:
         """
         :return:
         """
@@ -34,7 +36,7 @@ class Config:
         return databases_info
 
     # 获取环境名称
-    def get_environment(self):
+    def get_environment(self) -> list:
         """
         :return:
         """
@@ -45,7 +47,7 @@ class Config:
         return environment_list
 
     # 获取环境下所有信息
-    def get_environment_info(self):
+    def get_environment_info(self) -> dict:
         """
         :return:
         """
@@ -53,7 +55,7 @@ class Config:
         return environment
 
     # 获取apihost
-    def get_apihoet(self, environment_name):
+    def get_apihoet(self, environment_name: str) -> str:
         """
         :param environment_name:
         :return:
@@ -62,7 +64,7 @@ class Config:
         return api_host
 
     # 获取basehost
-    def get_basehost(self, environment_name):
+    def get_basehost(self, environment_name: str) -> str:
         """
         :param environment_name:
         :return:
@@ -71,7 +73,7 @@ class Config:
         return base_host
 
     # 获取登录地址
-    def get_loginHost(self, environment_name):
+    def get_loginHost(self, environment_name: str) -> str:
         """
         :param environment_name:
         :return:
@@ -80,7 +82,7 @@ class Config:
         return login_host
 
     # 获取登录入参
-    def get_login_data(self, environment_name, title_user):
+    def get_login_data(self, environment_name: str, title_user: str) -> dict:
         """
         :param title_user:
         :param environment_name:
@@ -90,7 +92,7 @@ class Config:
         return login_info
 
     # 获取登录入参
-    def get_login_user_title(self, environment_name):
+    def get_login_user_title(self, environment_name: str) -> list:
         """
         :param environment_name:
         :return:
@@ -101,7 +103,7 @@ class Config:
         return title_list
 
     # 获取登录入参
-    def get_login_username(self, environment_name, title_user):
+    def get_login_username(self, environment_name: str, title_user: str) -> str:
         """
         :param environment_name:
         :param title_user:
@@ -111,7 +113,7 @@ class Config:
         return login_username
 
     # 是否删除旧的测试数据
-    def get_delete_report_on_off(self):
+    def get_delete_report_on_off(self) -> str:
         """
         :return:
         """
@@ -119,7 +121,7 @@ class Config:
         return delete_report_on_off
 
     # 是否生成测试报告
-    def get_run_report_on_off(self):
+    def get_run_report_on_off(self) -> str:
         """
         :return:
         """
@@ -127,7 +129,7 @@ class Config:
         return run_report_on_off
 
     # 是否发送邮件
-    def get_send_email_on_off(self):
+    def get_send_email_on_off(self) -> str:
         """
         :return:
         """
@@ -135,7 +137,7 @@ class Config:
         return send_email_on_off
 
     # 是否结束测试自动打开测试报告html
-    def get_open_report_on_off(self):
+    def get_open_report_on_off(self) -> str:
         """
         :return:
         """
@@ -143,7 +145,7 @@ class Config:
         return open_report_on_off
 
     # 是否开启控制台输出日志
-    def get_log_control_on_off(self):
+    def get_log_control_on_off(self) -> str:
         """
         :return:
         """
@@ -151,7 +153,7 @@ class Config:
         return log_control_on_off
 
     # 是否开启数据库
-    def get_databases_on_off(self):
+    def get_databases_on_off(self) -> str:
         """
         :return:
         """
@@ -159,7 +161,7 @@ class Config:
         return get_databases_on_off
 
     # 获取执行测试人员信息
-    def get_testers(self):
+    def get_testers(self) -> str:
         """
         :return:
         """
@@ -167,7 +169,7 @@ class Config:
         return testers
 
     # 钉钉
-    def get_send_dingding_news_on_off(self):
+    def get_send_dingding_news_on_off(self) -> str:
         """
         :return:
         """
@@ -175,7 +177,7 @@ class Config:
         return send_dingding_news_on_off
 
     # 钉钉secret
-    def get_dingding_secret(self):
+    def get_dingding_secret(self) -> str:
         """
         :return:
         """
@@ -183,7 +185,7 @@ class Config:
         return dingding_secre
 
     # 钉钉secret
-    def get_dingding_webhook(self):
+    def get_dingding_webhook(self) -> str:
         """
         :return:
         """
@@ -191,15 +193,17 @@ class Config:
         return dingding_webhook
 
     # 获取端口号
-    def get_environment_port(self, environment_name):
+    def get_environment_port(self, environment_name: str) -> list:
         port_list = self.get_environment_info()[environment_name]['port']
         return port_list
+
 
 # 测试
 # if __name__ == '__main__':
 #     from common import setting
 #
 #     C = Config()
+
 
 # 如果要切换环境，只需要修改索引下标值['environment_195', 'environment_115', 'environment_122', 'environment_34_13']
 # ENVIRONMENT = C.get_environment()[1]

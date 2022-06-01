@@ -18,7 +18,7 @@ class PyqtTxtPack:
     def __init__(self):
         pass
 
-    def write_pyqt5_txt(self, info_dict):
+    def write_pyqt5_txt(self, info_dict: dict):
         """
         :return:
         """

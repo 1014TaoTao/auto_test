@@ -4,6 +4,7 @@ import os
 import zipfile
 
 
+# 解压缩工具类
 class zip_path:
 
     def zipDir(self, dirpath, outFullName):
@@ -24,7 +25,7 @@ class zip_path:
 
 
 # 测试
-if __name__ == "__main__":
-    from common import setting
-
-    zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)
+# if __name__ == "__main__":
+#     from common import setting
+#
+#     zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)

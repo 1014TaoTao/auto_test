@@ -27,7 +27,7 @@ class AllureFileClean:
                 filename.append(path)
         return filename
 
-    def getTestCases(self):
+    def getTestCases(self) -> list:
         """ 获取所有 allure 报告中执行用例的情况"""
         # 将所有数据都收集到files中
         files = []
@@ -37,7 +37,7 @@ class AllureFileClean:
                 files.append(date)
         return files
 
-    def getFailedCase(self):
+    def getFailedCase(self) -> list:
         """ 获取到所有失败的用例标题和用例代码路径"""
         errorCase = []
         for i in self.getTestCases():
@@ -45,7 +45,7 @@ class AllureFileClean:
                 errorCase.append((i['name'], i['fullName']))
         return errorCase
 
-    def getFailedCasesDetail(self):
+    def getFailedCasesDetail(self) -> str:
         """ 返回所有失败的测试用例相关内容 """
         Data = self.getFailedCase()
         # 判断有失败用例，则返回内容
@@ -60,10 +60,10 @@ class AllureFileClean:
             return ""
 
     @classmethod
-    def getCaseCount(cls):
+    def getCaseCount(cls) -> dict:
         """ 统计用例数量 """
-        fileName = API_REPORT_END_PATH + '/history/history-trend.json'
-        with open(fileName, 'r', encoding='utf-8') as fp:
+        file_name = API_REPORT_END_PATH + '/history/history-trend.json'
+        with open(file_name, 'r', encoding='utf-8') as fp:
             date = json.load(fp)[0]['data']
         return date
 
@@ -103,6 +103,6 @@ class CaseCount:
             return "0.00%"
 
 
-if __name__ == '__main__':
-    data = AllureFileClean().getCaseCount()
-    print(data)
+# if __name__ == '__main__':
+#     data = AllureFileClean().getCaseCount()
+#     print(data)

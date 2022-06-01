@@ -16,7 +16,7 @@ from tools.public_tool_log import logger
 
 class EmailPack:
     # 初始化发件人，密码，收件人列表
-    def __init__(self, server_host=None, fromaddr=None, password=None, toaddrs=None):
+    def __init__(self, server_host: str = None, fromaddr: str = None, password: str = None, toaddrs: str = None):
         """
         :param server_host:
         :param fromaddr:
@@ -52,7 +52,7 @@ class EmailPack:
         self.CaseDetail = AllureFileClean().getFailedCasesDetail()
 
     # 设置发件人名称，主题，内容，附件
-    def set_message(self, name, title, content, filelist):
+    def set_message(self, name: str, title: str, content: str, filelist: list):
         """
         :param name:
         :param title:
@@ -71,7 +71,7 @@ class EmailPack:
                 self.message.attach(fileApart)
 
     # 发送邮件
-    def send_message(self, log_path):
+    def send_message(self, log_path: str):
         """
         :param log_path:
         :return:
@@ -86,10 +86,10 @@ class EmailPack:
             logger(log_path).error(f'【邮件发送异常！{e}】')
 
     # 默认发送邮件
-    def send_default_email(self, log_path, FILE_LIST):
+    def send_default_email(self, log_path: str, file_list: list):
         """
+        :param file_list: 邮件附件
         :param log_path:
-        :param FILE_LIST: 邮件附件
         :return:
         """
         my_email = EmailPack()
@@ -111,7 +111,7 @@ class EmailPack:
                     jenkins地址：https://121.xx.xx.47:8989/login
                     详细情况可登录jenkins平台查看，非相关负责人员可忽略此消息。谢谢。
                     ''',
-            filelist=FILE_LIST
+            filelist=file_list
         )
         my_email.send_message(log_path)
 

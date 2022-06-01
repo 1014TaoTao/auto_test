@@ -119,7 +119,7 @@ class Context:
         phone = random.choice(['100', '110', '120']) + ''.join(random.choice('0123456789') for _ in range(8))
         return phone
 
-    def random_str(self, str_len):
+    def random_str(self, str_len: int) -> str:
         """从a-zA-Z0-9生成制定数量的随机字符
 
         :param str_len: 字符串长度
@@ -132,7 +132,7 @@ class Context:
         strings = ''.join(random.sample(string.hexdigits, +str_len))
         return strings
 
-    def random_int(self, scope):
+    def random_int(self, scope) -> int:
         """获取随机整型数据
 
         :param scope: 数据范围
@@ -150,7 +150,7 @@ class Context:
             number = random.randint(end_num, start_num)
         return number
 
-    def random_float(self, data):
+    def random_float(self, data) -> float:
         """获取随机浮点数据
 
         :param data: 数组
@@ -231,7 +231,7 @@ class Context:
         else:
             return now
 
-    def generate_timestamp(self, expr=''):
+    def generate_timestamp(self, expr='') -> int:
         """生成时间戳(13位)
 
         :param expr: 日期表达式，如"d-1"代表日期减1
@@ -240,7 +240,7 @@ class Context:
         datetime_obj = self.generate_datetime(expr)
         return int(datetime.datetime.timestamp(datetime_obj)) * 1000
 
-    def generate_guid(self):
+    def generate_guid(self) -> str:
         """基于MAC地址+时间戳+随机数来生成GUID
 
         :param:

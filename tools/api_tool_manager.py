@@ -14,7 +14,7 @@ class TestManager:
     def __init__(self):
         self.logger = logger(setting.API_LOG_PATH)
 
-    def run_bat(self, file):
+    def run_bat(self, file: str):
         """
         :param file:
         :return:
@@ -74,13 +74,13 @@ class TestManager:
         os.system(f"allure open {setting.API_REPORT_RESULT_PATH}")
 
 
-if __name__ == '__main__':
-    # 复制environment.properties文件夹，在本地生成测试环境
-    print("【开始复制 environment.properties文件到allure_result下】")
-    shutil.copy(setting.API_StartEnvironmentFilePath, setting.API_EndEnvironmentFile)
-    print("开始复制 environment.xml文件到allure_result下")
-    shutil.copy(setting.API_StartEnvironmentFileXMLPath, setting.API_EndEnvironmentXMLFile)
-
-    # 复制 executor.json文件夹，在本地生成测试环境
-    print("【开始复制 executor.json文件到allure_result下】")
-    shutil.copy(setting.API_StartExcutorJson, setting.API_EndExcutorJson)
+# if __name__ == '__main__':
+#     # 复制environment.properties文件夹，在本地生成测试环境
+#     print("【开始复制 environment.properties文件到allure_result下】")
+#     shutil.copy(setting.API_StartEnvironmentFilePath, setting.API_EndEnvironmentFile)
+#     print("开始复制 environment.xml文件到allure_result下")
+#     shutil.copy(setting.API_StartEnvironmentFileXMLPath, setting.API_EndEnvironmentXMLFile)
+#
+#     # 复制 executor.json文件夹，在本地生成测试环境
+#     print("【开始复制 executor.json文件到allure_result下】")
+#     shutil.copy(setting.API_StartExcutorJson, setting.API_EndExcutorJson)
