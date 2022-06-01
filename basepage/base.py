@@ -31,7 +31,7 @@ class Page:
         self.fail_num = 0
 
     # 打开网址
-    def open_url(self, url):
+    def open_url(self, url: str):
         """
         打开网址.
         用法:
@@ -51,7 +51,7 @@ class Page:
         return self.driver.current_url
 
     # 失败截图
-    def fail_img(self):
+    def fail_img(self) -> str:
         file_name = 'fail%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
         file_path = setting.UI_FAIL_IMG_PATH + "\\" + file_name
         if not os.path.exists(setting.UI_FAIL_IMG_PATH):
@@ -60,7 +60,7 @@ class Page:
         return file_path
 
     # 断言截图
-    def assert_img(self):
+    def assert_img(self) -> str:
         file_name = 'assert%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
         file_path = setting.UI_ASS_IMG_PATH + "\\" + file_name
         if not os.path.exists(setting.UI_ASS_IMG_PATH):
@@ -69,7 +69,7 @@ class Page:
         return file_path
 
     # 获取当前窗口截图
-    def take_nowpage_screenshot(self):
+    def take_nowpage_screenshot(self) -> str:
         """
         获取当前窗口截图.
 
@@ -806,13 +806,15 @@ class Page:
             WebDriverWait(self.driver, self.timeout, 0.5).until(
                 ec.title_is(title))
             self.logger.info("{0}==> 判断网页标题: <{1}> ,实际标题<{2}> 花费 {3} 秒".format(success,
-                                                                      title, self.get_title(), "%.4f" % (time.time() - start_time)))
+                                                                               title, self.get_title(),
+                                                                               "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
         except TimeoutException:
             self.logger.error("{0}==> 判断网页标题: <{1}> ,实际标题<{2}> 花费 {3} 秒".format(fail,
-                                                                       title, self.get_title(), "%.4f" % (time.time() - start_time)))
+                                                                                title, self.get_title(),
+                                                                                "%.4f" % (time.time() - start_time)))
             self.fail_img()
             self.fail_num += 1
             result = "fail"
