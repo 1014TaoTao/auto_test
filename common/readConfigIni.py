@@ -2,11 +2,12 @@
 
 import os
 from configparser import ConfigParser
+from typing import Any
 
 
 class Config:
 
-    def __init__(self, conf_path):
+    def __init__(self, conf_path: str):
         """
         :param conf_path:
         """
@@ -85,7 +86,7 @@ class Config:
         # 是否发送钉钉消息
         self.send_dingding_news_on_off = self.get_conf("send_dingding_news", "send_dingding_news_on_off")
 
-    def get_conf(self, title, value):
+    def get_conf(self, title: str, value: str) -> Any:
         """
         配置文件读取
         :param title:
@@ -94,7 +95,7 @@ class Config:
         """
         return self.config.get(title, value)
 
-    def set_conf(self, title, value, text):
+    def set_conf(self, title: str, value, text: str) -> Any:
         """
         配置文件修改
         :param title:
@@ -106,7 +107,7 @@ class Config:
         with open(self.conf_path, "w+") as f:
             return self.config.write(f)
 
-    def add_conf(self, title):
+    def add_conf(self, title: str) -> Any:
         """
         配置文件添加
         :param title:
@@ -116,7 +117,7 @@ class Config:
         with open(self.conf_path, "w+") as f:
             return self.config.write(f)
 
-    def get_options_key_value(self, title):
+    def get_options_key_value(self, title: str) -> Any:
         """
         以列表(name,value)的形式返回section中的每个值
         :param title: 某个section
@@ -130,14 +131,13 @@ class Config:
         """
         return self.config.sections()
 
-    def get_options_by_section(self, title):
+    def get_options_by_section(self, title: str) -> Any:
         """
         获取section下所有可用options
         """
 
         keys = self.config.options(title)
         return keys
-
 
 # if __name__ == '__main__':
 #     from common import setting
