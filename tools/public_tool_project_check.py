@@ -8,14 +8,14 @@ from tools.public_tool_log import logger
 
 
 class OperationSystemPython:
-    def __init__(self, log_path):
+    def __init__(self, log_path: str):
         """
         :param log_path:
         """
         self.logger = logger(log_path)
 
     # 检测操作系统
-    def platform_system(self):
+    def platform_system(self) -> str:
         """
         :return:
         """
@@ -24,7 +24,7 @@ class OperationSystemPython:
         return oper_system
 
     # python 版本号
-    def python_version(self):
+    def python_version(self) -> str:
         """
         :return:
         """
@@ -33,7 +33,7 @@ class OperationSystemPython:
         return python_version
 
     # chrome 版本号
-    def chrome_ersion(self):
+    def chrome_ersion(self) -> str:
         """
         :return:
         """
@@ -44,7 +44,7 @@ class OperationSystemPython:
         return version
 
 
-def api_sys_project(log_path=None):
+def api_sys_project(log_path: str = None):
     """
     :param log_path:
     :return:
@@ -53,7 +53,7 @@ def api_sys_project(log_path=None):
     OperationSystemPython(log_path).python_version()
 
 
-def system_project(log_path=None):
+def system_project(log_path: str = None):
     """
     :param log_path:
     :return:

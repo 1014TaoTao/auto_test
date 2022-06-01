@@ -30,7 +30,7 @@ class YamlPack:
             self.data = yaml.safe_load(re)
 
     # Test目录下的全部用例
-    def _get_case(self):
+    def _get_case(self) -> list:
         test_list = []
         case = self.data["Case"]
         for a in case:
@@ -40,7 +40,7 @@ class YamlPack:
         return test_list
 
     # 获取用例名称
-    def _get_case_name(self):
+    def _get_case_name(self) -> list:
         data = self._get_case()
         url_li = []
         for i in data:
@@ -52,7 +52,7 @@ class YamlPack:
         return url_li
 
     # 获取请求方式
-    def _get_method(self):
+    def _get_method(self) -> list:
         data = self._get_case()
         method_li = []
         for i in data:
@@ -63,7 +63,7 @@ class YamlPack:
         return method_li
 
     # 获取请求地址
-    def _get_url(self):
+    def _get_url(self) -> list:
         data = self._get_case()
         url_li = []
         for i in data:
@@ -74,7 +74,7 @@ class YamlPack:
         return url_li
 
     # 获取请求headers信息
-    def _get_headers(self):
+    def _get_headers(self) -> list:
         data = self._get_case()
         headers_li = []
         for i in data:
@@ -85,7 +85,7 @@ class YamlPack:
         return headers_li
 
     # 获取请求参数
-    def _get_data(self):
+    def _get_data(self) -> list:
         data = self._get_case()
         params_li = []
         for i in data:
@@ -96,7 +96,7 @@ class YamlPack:
         return params_li
 
     # 获取验证全部内容
-    def _get_expected(self):
+    def _get_expected(self) -> list:
         data = self._get_case()
         validate_li = []
         for i in data:
@@ -105,7 +105,7 @@ class YamlPack:
         return validate_li
 
     # 列表转为字典dict(zip(list1,list2))
-    def test_data(self):
+    def test_data(self) -> list:
         name = self._get_case_name()
         method = self._get_method()
         url = self._get_url()

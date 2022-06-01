@@ -10,6 +10,7 @@
 import socket
 
 
+# 获取本机ip
 def get_host_ip() -> str:
     """
     查询本机ip地址
@@ -26,5 +27,5 @@ def get_host_ip() -> str:
     return ip
 
 
-if __name__ == '__main__':
-    print(get_host_ip())
+# if __name__ == '__main__':
+#     print(get_host_ip())

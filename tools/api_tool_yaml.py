@@ -18,7 +18,7 @@ class YamlPack:
             yaml.safe_load(f)
 
     # Test目录下的全部用例
-    def get_case(self):
+    def get_case(self) -> list:
         """
         :return:
         """
@@ -33,7 +33,7 @@ class YamlPack:
         return test_list
 
     # 获取用例名称
-    def get_case_name(self):
+    def get_case_name(self) -> list:
         """
         :return:
         """
@@ -48,7 +48,7 @@ class YamlPack:
         return url_li
 
     # 获取请求方式
-    def get_method(self):
+    def get_method(self) -> list:
         """
         :return:
         """
@@ -62,7 +62,7 @@ class YamlPack:
         return method_li
 
     # 获取请求地址
-    def get_url(self):
+    def get_url(self) -> list:
         """
         :return:
         """
@@ -76,7 +76,7 @@ class YamlPack:
         return url_li
 
     # 获取请求headers信息
-    def get_headers(self):
+    def get_headers(self) -> list:
         """
         :return:
         """
@@ -90,7 +90,7 @@ class YamlPack:
         return headers_li
 
     # 获取请求参数
-    def get_data(self):
+    def get_data(self) -> list:
         """
         :return:
         """
@@ -104,7 +104,7 @@ class YamlPack:
         return params_li
 
     # 获取验证全部内容
-    def get_expected(self):
+    def get_expected(self) -> list:
         """
         :return:
         """
@@ -116,7 +116,7 @@ class YamlPack:
         return validate_li
 
     # 列表转为字典dict(zip(list1,list2))
-    def test_data(self):
+    def test_data(self) -> list:
         """
         :return:
         """
@@ -131,7 +131,7 @@ class YamlPack:
                     zip(name, method, url, headers, data, validate)]  # 长度相同的几个列表组合成一个
         return all_data
 
-    def req_yaml(self):
+    def req_yaml(self) -> list:
         """
         :return:
         """

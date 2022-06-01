@@ -3,6 +3,9 @@
 #       EXCEL读取出来的数据处理封装
 # ==============================
 import re
+from typing import Tuple, Union, Any, List, Dict
+
+from requests import Response
 
 from common import setting
 from tools.api_tool_assert import Assert
@@ -16,7 +19,7 @@ from tools.public_tool_log import logger
 
 
 class ExcelPack(ReadExcel):
-    def __init__(self, file_name, sheet_id):
+    def __init__(self, file_name: str, sheet_id: int):
         super().__init__(file_name, sheet_id)
         self.logger = logger(setting.API_LOG_PATH)
         self.runs = Requests()
@@ -25,7 +28,7 @@ class ExcelPack(ReadExcel):
         self.fail_num = 0
 
     # 生成依赖列表
-    def get_case_list(self, row):
+    def get_case_list(self, row: int) -> list:
         """
         :param row:
         :return:
@@ -36,8 +39,8 @@ class ExcelPack(ReadExcel):
             case_depend_list = case_depend.split(";")
         return case_depend_list
 
-    # 获取所依赖的用例响应值
-    def get_case_line(self, case_str, row):
+    # 获取所依赖的用例响response
+    def get_case_line(self, case_str: str, row: int) -> any:
         """
         :param case_str:
         :param row:
@@ -50,7 +53,7 @@ class ExcelPack(ReadExcel):
         return u"【excel无法找到对应依赖的响应内容】"
 
     # 生成要修改的值列表
-    def get_revise_list(self, row):
+    def get_revise_list(self, row: int) -> list:
         """
         :param row:
         :return:
@@ -63,7 +66,7 @@ class ExcelPack(ReadExcel):
         return case_depend_list
 
     # 断言相等并写测试结果
-    def assert_eq_write_result(self, row, res):
+    def assert_eq_write_result(self, row: int, res: dict) -> str:
         """
         :param row:
         :param res:
@@ -116,7 +119,7 @@ class ExcelPack(ReadExcel):
         return res_str
 
     # 处理用例名称
-    def get_new_case_name(self, row):
+    def get_new_case_name(self, row: int) -> str:
         """
         :param row:
         :return:
@@ -126,7 +129,8 @@ class ExcelPack(ReadExcel):
         return case_name
 
     # 处理url,获取需要匹配的字符串并返回url
-    def get_new_url(self, row, APIHOST, ENVIRONMENTPORT):
+    def get_new_url(self, row: int, APIHOST: str, ENVIRONMENTPORT: str) -> Union[
+        Union[str, Tuple[Union[str, Any], Exception]], Any]:
         """
         :param row:
         :return:
@@ -171,7 +175,7 @@ class ExcelPack(ReadExcel):
             return url
 
     # 处理data
-    def get_new_data(self, row):
+    def get_new_data(self, row: int) -> Any:
         """
         :param row:
         :return:
@@ -210,7 +214,7 @@ class ExcelPack(ReadExcel):
         return data
 
     # 返回加入依赖后的json
-    def get_case_json(self, row):
+    def get_case_json(self, row: int) -> Any:
         """
         :param row:
         :return:
@@ -251,7 +255,7 @@ class ExcelPack(ReadExcel):
         return dict_data
 
     # 处理headers
-    def get_new_headers(self, row):
+    def get_new_headers(self, row: int) -> Any:
         """
         :param row:
         :return:
@@ -288,7 +292,9 @@ class ExcelPack(ReadExcel):
         return headers_dict
 
     # 批量执行，执行excel测试用例
-    def run_excel_case(self, APIHOST, ENVIRONMENTPORT, BASEHOST, LOGINHOST, LOGINDATA, USERNAME):
+    def run_excel_case(self, APIHOST: str, ENVIRONMENTPORT: str, BASEHOST: str, LOGINHOST: str, LOGINDATA: str,
+                       USERNAME: str) -> Union[
+        str, List[Dict[str, Union[Union[str, Tuple[Union[str, Any], Exception]], Any]]]]:
         """
         :return:
         """

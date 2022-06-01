@@ -2,12 +2,12 @@
 # ==============================
 #         请求的封装
 # ==============================
-import json
+from typing import MutableMapping
 
 import requests
+from typing.io import IO
 
 from common import setting
-
 from tools.public_tool_log import logger
 
 
@@ -22,20 +22,20 @@ class Requests:
         self.session = requests.Session()
 
     def send_request(self,
-                     url,
-                     method,
-                     parametric_key,
-                     headers=None,
-                     data=None,
-                     file=None):
+                     url: str,
+                     method: str,
+                     parametric_key: str,
+                     headers: dict = None,
+                     data: dict = None,
+                     file: MutableMapping[str, IO] = None):
         """
-            :param method: 请求方法
-            :param url: 请求url
-            :param parametric_key: 入参关键字， params(查询参数类型，明文传输，一般在url?参数名=参数值), data(一般用于form表单类型参数), json(一般用于json类型请求参数)
-            :param data: 参数数据，默认等于None
-            :param file: 文件对象
-            :param header: 请求头
-            :return: 返回res对象
+        :param url: 请求url
+        :param method: 请求方法
+        :param parametric_key: 入参关键字， params(查询参数类型，明文传输，一般在url?参数名=参数值), data(一般用于form表单类型参数), json(一般用于json类型请求参数)
+        :param headers: 请求头
+        :param data: 参数数据，默认等于None
+        :param file: 文件对象
+        :return: 返回res对象
         """
         try:
             self.logger.info(u"【请求开始...start】")
@@ -65,9 +65,8 @@ class Requests:
                     files=file,
                     headers=headers)
             else:
-                self.logger.error(ValueError('可选关键字为params, json, data'))
-                raise ValueError('可选关键字为params, json, data')
+                self.logger.error(ValueError('parametric_key为params, json, data,不可以是其他类型'))
+                res = None
             return res
         except Exception as e:
-            return f"发送请求异常:{e}"
-
+            self.logger.error(f"发送请求异常:{e}")

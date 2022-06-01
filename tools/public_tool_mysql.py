@@ -4,7 +4,7 @@ from pymysql import cursors
 
 
 class toolMyDB:
-    def __init__(self, host, user, port, passwd, db, charset):
+    def __init__(self, host: str, user: str, port: int, passwd: str, db: str, charset: str):
         """
         :param host:
         :param user:
@@ -40,7 +40,7 @@ class toolMyDB:
     def insert(self, table, insert_data):
         """
         :param table:
-        :param insert_data  type:[{},{}]:
+        :param insert_data: type:[{},{}]:
         :return:effect_row 1 影响的行数
         """
         try:
@@ -53,7 +53,7 @@ class toolMyDB:
                 self.cnn.commit()
                 return effect_row
         except Exception as e:
-            print(e)
+            raise e
         finally:
             # self.close_db()
             pass
@@ -199,6 +199,7 @@ class toolMyDB:
             print('执行失败sql: %s' % sql_item)
             return False
         return True
+
 
 # if __name__ == '__main__':
 #     host = "127.0.0.1"

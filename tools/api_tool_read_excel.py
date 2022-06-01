@@ -22,7 +22,7 @@ from tools.api_tool_global_var import global_var
 
 
 class ReadExcel:
-    def __init__(self, file_name, sheet_id):
+    def __init__(self, file_name: str, sheet_id: int):
         """
         :param file_name:
         :param sheet_id:
@@ -37,7 +37,7 @@ class ReadExcel:
         """
         :return:
         """
-        book = xlrd.open_workbook(self.file_name, formatting_info=True)
+        book= xlrd.open_workbook(self.file_name, formatting_info=True)
         sheet = book.sheet_by_index(self.sheet_id)
         return sheet
 
@@ -49,7 +49,7 @@ class ReadExcel:
         return self.sheet_data.nrows
 
     # 获取某个单元格内容
-    def get_cell_data(self, row, col):
+    def get_cell_data(self, row: int, col: int):
         """
         :param row:
         :param col:
@@ -58,7 +58,7 @@ class ReadExcel:
         return self.sheet_data.cell(row, col).value
 
     # 向单元格写内容
-    def write_cell_data(self, row, col, value, cell_style=0):
+    def write_cell_data(self, row: int, col: int, value: str, cell_style: int = 0):
         """
         :param row:
         :param col:
@@ -105,7 +105,7 @@ class ReadExcel:
         book_copy.save(self.file_name)
 
     # 获取用例id
-    def get_case_id(self, row):
+    def get_case_id(self, row: int):
         """
         :param row:
         :return:
@@ -113,7 +113,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_id())
 
     # 获取用例模块名称
-    def get_case_title(self, row):
+    def get_case_title(self, row: int):
         """
         :param row:
         :return:
@@ -121,7 +121,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_fuction())
 
     # 获取method
-    def get_new_method(self, row):
+    def get_new_method(self, row: int):
         """
         :param row:
         :return:
@@ -130,7 +130,7 @@ class ReadExcel:
         return method
 
     # 获取header
-    def get_headers(self, row):
+    def get_headers(self, row: int):
         """
         :param row:
         :return:
@@ -138,7 +138,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_header())
 
     # 获取是否执行
-    def get_run_status(self, row):
+    def get_run_status(self, row: int):
         """
         :param row:
         :return:
@@ -147,7 +147,7 @@ class ReadExcel:
         return run_status
 
     # 获取断言status_code
-    def get_expected_status_code(self, row):
+    def get_expected_status_code(self, row: int):
         """
         :param row:
         :return:
@@ -156,7 +156,7 @@ class ReadExcel:
         return expected_status_code
 
     # 获取断言msg
-    def get_expected_msg(self, row):
+    def get_expected_msg(self, row: int):
         """
         :param row:
         :return:
@@ -165,7 +165,7 @@ class ReadExcel:
         return expected_msg
 
     # 获取断言data
-    def get_expected_data(self, row):
+    def get_expected_data(self, row: int):
         """
         :param row:
         :return:
@@ -174,7 +174,7 @@ class ReadExcel:
         return expected_data
 
     # 获取是否写、读token
-    def get_statue_token(self, row):
+    def get_statue_token(self, row: int):
         """
         :param row:
         :return:
@@ -182,7 +182,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_token())
 
     # 获取请求data
-    def get_data_info(self, row):
+    def get_data_info(self, row: int):
         """
         :param row:
         :return:
@@ -190,7 +190,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_data())
 
     # 获取url
-    def get_url_api(self, row):
+    def get_url_api(self, row: int):
         """
         :param row:
         :return:
@@ -198,7 +198,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_url())
 
     # 获取依赖
-    def get_case_depend_info(self, row):
+    def get_case_depend_info(self, row: int):
         """
         :param row:
         :return:
@@ -206,7 +206,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_case_depend())
 
     # 获取修改的依赖列表
-    def get_case_filed_depend(self, row):
+    def get_case_filed_depend(self, row: int):
         """
         :param row:
         :return:
@@ -214,7 +214,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_filed_depend())
 
     # 获取响应结果列
-    def get_response_info(self, row):
+    def get_response_info(self, row: int):
         """
         :param row:
         :return:
@@ -222,7 +222,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_response())
 
     # 获取base_url
-    def get_base_url_info(self, row):
+    def get_base_url_info(self, row: int):
         """
         :param row:
         :return:
@@ -230,7 +230,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_base_url())
 
     # 获取参数类型
-    def get_excel_type_data(self, row):
+    def get_excel_type_data(self, row: int):
         """
         :param row:
         :return:
@@ -238,7 +238,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_type_data())
 
     # 获取上传文件地址
-    def get_upload_file_path(self, row):
+    def get_upload_file_path(self, row: int) -> list:
         """
         :param row:
         :return:
@@ -256,6 +256,3 @@ class ReadExcel:
         else:
             file = None
         return file
-
-
-

@@ -16,7 +16,7 @@ class Response:
     def __init__(self):
         self.logger = logger(setting.API_LOG_PATH)
 
-    def result(self, res):
+    def result(self, res) -> dict:
         """
         :param res:
         :return:
