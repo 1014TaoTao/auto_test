@@ -16,7 +16,7 @@ from tools.public_tool_log import logger
 
 class EmailPack:
     # 初始化发件人，密码，收件人列表
-    def __init__(self, server_host: str = None, fromaddr: str = None, password: str = None, toaddrs: str = None):
+    def __init__(self, server_host=None, fromaddr=None, password=None, toaddrs=None):
         """
         :param server_host:
         :param fromaddr:
@@ -88,12 +88,12 @@ class EmailPack:
     # 默认发送邮件
     def send_default_email(self, log_path: str, file_list: list):
         """
+        :rtype: object
         :param file_list: 邮件附件
         :param log_path:
         :return:
         """
-        my_email = EmailPack()
-        my_email.set_message(
+        self.set_message(
             name="接口自动化测试",
             title="Hi！测试执行完毕提醒！",
             content=f'''
@@ -113,9 +113,14 @@ class EmailPack:
                     ''',
             filelist=file_list
         )
-        my_email.send_message(log_path)
+        self.send_message(log_path)
+
 
 # 测试
-# if __name__ == '__main__':
-#     H = EmailPack()
-#     H.send_default_email()
+if __name__ == '__main__':
+    H = EmailPack()
+    from common import setting
+
+    log_path = setting.API_LOG_PATH
+    file_list = setting.API_FILE_LIST
+    H.send_default_email(log_path, file_list)

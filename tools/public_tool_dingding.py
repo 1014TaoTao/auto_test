@@ -94,7 +94,7 @@ class DingTalk:
         reprot_url = setting.reprot_url
 
         self.ding_news.send_markdown(
-            title='**【接口测试报告】**',
+            title='【接口测试报告】',
             text="<font color=\'#FFA500\'>[通知] </font>API平台接口自动化...执行完成 \n\n --- \n\n" +
                  "项目名称：api接口测试报告 \n\n " +
                  "执行环境：<font color=\"#1d953f\">%s</font>" % ENVIRONMENT + "\n\n" +
@@ -107,8 +107,8 @@ class DingTalk:
                  "执行人员：<font color=\"#130c0e\">@%s</font>" % TESTER + "\n\n --- \n\n" +
                  "报告详情：[点击查看](%s)" % reprot_url + "\n\n" +
                  "构建地址：[点击查看，暂未开通](%s)" % jenkins_url + "\n\n" +
-                 "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font>" % time.strftime("%Y-%m-%d "
-                                                                                                      "%H:%M:%S"),
+                 "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font> \n\n --- \n\n " % time.strftime("%Y-%m-%d "
+                                                                                                            "%H:%M:%S"),
             at_mobiles=setting.at_mobiles_list
         )
         """

@@ -44,9 +44,7 @@ class API_Run:
         """
         zip_path().zipDir(setting.API_REPORT_END_PATH, setting.API_FILE_LIST_PATH)
         self.logger.info("【完成==>压缩报告】")
-        send_email = EmailPack(setting.API_REPORT_END_PATH).send_default_email(setting.API_LOG_PATH,
-                                                                               setting.API_FILE_LIST,
-                                                                               )
+        EmailPack().send_default_email(setting.API_LOG_PATH,setting.API_FILE_LIST,)
         self.logger.info("【完成==>发送邮件】")
 
     # 自动打开测试报告
@@ -65,3 +63,7 @@ class API_Run:
         self.logger.info("【开始==>发送钉钉消息】")
         DingTalk().send_dingding(ENVIRONMENT, TESTER)
 
+
+if __name__ == '__main__':
+    A = API_Run()
+    A.run_email()

@@ -487,7 +487,7 @@ class UiApiAutoTool(object):
             else:
                 logger.info("【SAVE_ON_OFF == off】，不开启生成报告功能")
         except Exception as e:
-            logger.error(f"判断是否开启生成报告功能异常：{e}")
+            logger.error(f"【判断是否开启生成报告功能异常：{e}】")
 
         # 发送邮件
         try:
@@ -497,7 +497,7 @@ class UiApiAutoTool(object):
             else:
                 logger.info("【EMAIL_ON_OFF == off】，不开启发送邮件功能")
         except Exception as e:
-            logger.error(f"判断是否开启发送邮件功能异常：{e}")
+            logger.error(f"【判断是否开启发送邮件功能异常：{e}】")
 
         # 打开报告
         try:
@@ -507,7 +507,7 @@ class UiApiAutoTool(object):
             else:
                 logger.info("【OPEN_REPORY_ON_OFF == off】，不开启自动打开报告功能")
         except Exception as e:
-            logger.error(f"判断是否开启自动打开报告功能异常：{e}")
+            logger.error(f"【判断是否开启自动打开报告功能异常：{e}】")
 
         # 发送钉钉执行消息
         try:
@@ -517,7 +517,7 @@ class UiApiAutoTool(object):
             else:
                 logger.info("【DINGDING_NEWS_ON_OFF == off】，不开启发送钉钉消息功能")
         except Exception as e:
-            logger.error(f"发送钉钉消息功能异常：{e}")
+            logger.error(f"【发送钉钉消息功能异常：{e}】")
 
         logger.info('==========< 结束 API自动化项目 测试 >===========')
 
