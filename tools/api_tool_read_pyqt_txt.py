@@ -52,7 +52,7 @@ class PyqtTxtPack:
         """
         try:
             with open(file=setting.PYQT5_FILE, mode="w+", encoding="utf-8") as f:
-                logger.error(f"【清空pyqt5_txt完成】")
+                logger.info(f"【清空pyqt5_txt完成】")
                 f.close()
         except Exception as e:
             logger.error(f"【清空pyqt5_txt异常！{e}】")

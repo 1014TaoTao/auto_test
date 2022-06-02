@@ -8,7 +8,7 @@ from tools.api_auto_test import UiApiAutoTool
 if __name__ == '__main__':
     apps = QApplication(sys.argv)
     MainWindow = QMainWindow()
-    ui = UiApiAutoTool()
-    ui.setupUi(MainWindow)
+    pyqt_ui = UiApiAutoTool()
+    pyqt_ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(apps.exec_())
