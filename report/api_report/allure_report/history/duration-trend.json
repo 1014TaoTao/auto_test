@@ -1,40 +1,5 @@
 [ {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
   "data" : {
-    "duration" : 1456787716
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "duration" : 774274
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "duration" : 666288
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "duration" : 587992
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "duration" : 62976
-  }
-}, {
-  "data" : {
-    "duration" : 77
+    "duration" : 533
   }
 } ]

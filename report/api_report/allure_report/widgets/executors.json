@@ -1,10 +1,1 @@
-[ {
-  "name" : "auto_projectg",
-  "type" : "jenkins",
-  "url" : "http://helloqa.com",
-  "buildOrder" : 3,
-  "buildName" : "allure-report_deploy#1",
-  "buildUrl" : "http://helloqa.com#1",
-  "reportName" : "iTesting Allure Report",
-  "reportUrl" : "http://helloqa.com#1/AllureReport"
-} ]
+[ ]

@@ -1,10 +1,8 @@
 /.idea/
 /.pytest_cache/
 /venv/
-/report/api_report/
-/report/per_report/
-/report/ui_report/
 /logs/
 /data/
 /driver/
 /static/
+/report/

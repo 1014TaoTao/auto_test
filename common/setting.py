@@ -116,7 +116,7 @@ chrome_reg = r"SOFTWARE\Google\Chrome\BLBeacon"  # win chrome注册表地址
 PER_LOG_PATH = os.path.join(BASE_PATH, "logs", "prf_logs")
 
 # per数据文件
-PER_YAML_PATH = os.path.join(DATA_PATH, "prf", 'yaml_data', 'test.yaml')
+PER_YAML_PATH = os.path.join(DATA_PATH, "per", 'yaml_data', 'test.yaml')
 
 # per配置文件路径
 PER_CONFIG_PATH = os.path.join(BASE_PATH, "locust.conf")
