@@ -1,0 +1,43 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testCase.ui.test_baidu",
+    "children" : [ {
+      "name" : "test_01",
+      "uid" : "b3b21462c5da2ecf",
+      "parentUid" : "6439ecff0ccaf94dbeff55c4e21fbc0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654138082526,
+        "stop" : 1654138087900,
+        "duration" : 5374
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_02",
+      "uid" : "f124036382e68a81",
+      "parentUid" : "6439ecff0ccaf94dbeff55c4e21fbc0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654138087908,
+        "stop" : 1654138091508,
+        "duration" : 3600
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testCase.ui.test_baidu"
+  } ]
+}

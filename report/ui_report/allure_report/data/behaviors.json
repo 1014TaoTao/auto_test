@@ -1,0 +1,63 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_01",
+    "children" : [ {
+      "name" : "feature一级标签:百度测试用例",
+      "children" : [ {
+        "name" : "story二级标签:test_01",
+        "children" : [ {
+          "name" : "test_01",
+          "uid" : "b3b21462c5da2ecf",
+          "parentUid" : "7f9c69bc4b15fa2ce86dc5a499076ee4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654138082526,
+            "stop" : 1654138087900,
+            "duration" : 5374
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 5,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7f9c69bc4b15fa2ce86dc5a499076ee4"
+      } ],
+      "uid" : "9170613c9645d31be514df74c8298583"
+    } ],
+    "uid" : "3e73aa63bc4423c752ca74871c509e66"
+  }, {
+    "name" : "test_02",
+    "children" : [ {
+      "name" : "feature一级标签:百度测试用例",
+      "children" : [ {
+        "name" : "story二级标签:test_02",
+        "children" : [ {
+          "name" : "test_02",
+          "uid" : "f124036382e68a81",
+          "parentUid" : "f3c5baf8de26aa5401bae0da5109afcf",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654138087908,
+            "stop" : 1654138091508,
+            "duration" : 3600
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 4,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f3c5baf8de26aa5401bae0da5109afcf"
+      } ],
+      "uid" : "c955a39d13cd70ce0245cf15b7d94a8f"
+    } ],
+    "uid" : "9a1ed594656d35eef3c8a1f5dec99fb6"
+  } ]
+}

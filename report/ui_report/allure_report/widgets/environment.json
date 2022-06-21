@@ -1,0 +1,28 @@
+[ {
+  "values" : [ "Windows10-64bit" ],
+  "name" : "SystemVersion"
+}, {
+  "values" : [ "Chrome-94.0.4606.81" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "python-3.8.10" ],
+  "name" : "PythonVersion"
+}, {
+  "values" : [ "allure-2.16.1" ],
+  "name" : "AllureVersion"
+}, {
+  "values" : [ "pytest_auto_uitest_apitest" ],
+  "name" : "ProjectName"
+}, {
+  "values" : [ "wangjingjing" ],
+  "name" : "author"
+}, {
+  "values" : [ "948080782@qq.com" ],
+  "name" : "email"
+}, {
+  "values" : [ "张涛" ],
+  "name" : "测试人员"
+}, {
+  "values" : [ "TEST" ],
+  "name" : "测试环境"
+} ]
