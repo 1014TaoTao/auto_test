@@ -2,31 +2,6 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "testCase.ui",
-    "children" : [ {
-      "name" : "test_baidu",
-      "children" : [ {
-        "name" : "TestBaiDu",
-        "children" : [ {
-          "name" : "test_01",
-          "uid" : "1fe2f019f5c392a6",
-          "parentUid" : "ec7942ba34ad5af08dda64dfb60f1b17",
-          "status" : "broken",
-          "time" : {
-            "start" : 1651227817173,
-            "stop" : 1651227817173,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "ec7942ba34ad5af08dda64dfb60f1b17"
-      } ],
-      "uid" : "cc73202fbba77ec2c30e46c6d44c1624"
-    } ],
-    "uid" : "e81e6f2bec5e0e012c0a1cc7ab6e644c"
-  }, {
     "name" : "testCase.api",
     "children" : [ {
       "name" : "test_excel",
@@ -34,95 +9,123 @@
         "name" : "TestExcel",
         "children" : [ {
           "name" : "test_001节点查询",
-          "uid" : "16ebb90fce829d02",
+          "uid" : "a5b6601a9235d1e1",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "passed",
           "time" : {
-            "start" : 1652684604622,
-            "stop" : 1652684604652,
-            "duration" : 30
+            "start" : 1654141617438,
+            "stop" : 1654141617460,
+            "duration" : 22
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'pass', 'title': 'test_001节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'get', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'time_consuming': 63.145, 'time_total': 0.063145}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'pass', 'title': 'test_001节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'get', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'time_consuming': 226.952, 'time_total': 0.226952}}" ]
         }, {
           "name" : "test_002节点查询",
-          "uid" : "eb825dcde5df8001",
+          "uid" : "80929b01adf5667a",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "passed",
           "time" : {
-            "start" : 1652684604656,
-            "stop" : 1652684604691,
-            "duration" : 35
+            "start" : 1654141617469,
+            "stop" : 1654141617485,
+            "duration" : 16
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'pass', 'title': 'test_002节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'get', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'time_consuming': 35.533, 'time_total': 0.035533}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'pass', 'title': 'test_002节点查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'get', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'name': 'Beijing-node-06', 'pageNo': 1, 'pageSize': 10}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'time_consuming': 149.896, 'time_total': 0.149896}}" ]
         }, {
           "name" : "test_003节点详情",
-          "uid" : "1699387b97429b90",
+          "uid" : "c514e12797242ab1",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "passed",
           "time" : {
-            "start" : 1652684604696,
-            "stop" : 1652684604711,
+            "start" : 1654141617485,
+            "stop" : 1654141617500,
             "duration" : 15
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'get', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': {'id': '9', 'name': \"'Beijing-node-06'\"}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'time_consuming': 52.638, 'time_total': 0.052638}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'get', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'id': '9', 'name': \"'Beijing-node-06'\"}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'time_consuming': 69.874, 'time_total': 0.069874}}" ]
         }, {
           "name" : "test_004算子删除",
-          "uid" : "a22a1a8d7fbd7acb",
+          "uid" : "89e5ee7a5c68bf00",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "failed",
           "time" : {
-            "start" : 1652684604715,
-            "stop" : 1652684604766,
-            "duration" : 51
+            "start" : 1654141617500,
+            "stop" : 1654141617516,
+            "duration" : 16
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 34.119, 'time_total': 0.034119}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 69.945, 'time_total': 0.069945}}" ]
         }, {
           "name" : "test_005节点全部查询",
-          "uid" : "dd0cb64ddb96e824",
+          "uid" : "32f5321223119985",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "passed",
           "time" : {
-            "start" : 1652684604831,
-            "stop" : 1652684604845,
-            "duration" : 14
+            "start" : 1654141617876,
+            "stop" : 1654141617897,
+            "duration" : 21
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'pass', 'title': 'test_005节点全部查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'get', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': None, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 6, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 8, 'name': 'Beijing-node-05', 'code': 'KN000008', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.34', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 7, 'name': 'Beijing-node-04', 'code': 'KN000007', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.33', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 6, 'name': 'Beijing-node-03', 'code': 'KN000006', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.32', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 5, 'name': 'Beijing-node-02', 'code': 'KN000005', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.31', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 4, 'name': 'Beijing-node-01', 'code': 'KN000004', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 8.0, 'memory': '16GB', 'disk': '100.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.30', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'time_consuming': 37.713, 'time_total': 0.037713}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'pass', 'title': 'test_005节点全部查询', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node', 'method': 'get', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': None, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 6, 'list': [{'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 8, 'name': 'Beijing-node-05', 'code': 'KN000008', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.34', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 7, 'name': 'Beijing-node-04', 'code': 'KN000007', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.33', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 6, 'name': 'Beijing-node-03', 'code': 'KN000006', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.32', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 5, 'name': 'Beijing-node-02', 'code': 'KN000005', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.31', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, {'id': 4, 'name': 'Beijing-node-01', 'code': 'KN000004', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 8.0, 'memory': '16GB', 'disk': '100.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.30', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}]}, 'ext': {}}, 'time_consuming': 49.342, 'time_total': 0.049342}}" ]
         }, {
           "name" : "test_006镜像资源-我的仓库（已存在）",
-          "uid" : "2cf0a316e42b154d",
+          "uid" : "798266728223fbe0",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "failed",
           "time" : {
-            "start" : 1652684604848,
-            "stop" : 1652684604860,
-            "duration" : 12
+            "start" : 1654141617897,
+            "stop" : 1654141617908,
+            "duration" : 11
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 50.316, 'time_total': 0.050316}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 136.969, 'time_total': 0.136969}}" ]
         }, {
           "name" : "test_007修改算子分组名称",
-          "uid" : "1cb79875abf751cf",
+          "uid" : "2cd2b9e4d545dadc",
           "parentUid" : "6d703b80cba34b4becf73fbdf58c648b",
           "status" : "passed",
           "time" : {
-            "start" : 1652684604872,
-            "stop" : 1652684604889,
-            "duration" : 17
+            "start" : 1654141617971,
+            "stop" : 1654141617971,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'result': 'pass', 'title': 'test_007修改算子分组名称', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator/group', 'method': 'patch', 'headers': {'Authorization': 'Bearer f7ae55e4-6acb-4e7e-9cc1-d4a21e81cc3f'}, 'data': {'id': 115, 'name': '张涛test001'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"id': 115\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 115}}, 'time_consuming': 70.203, 'time_total': 0.070203}}" ]
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'result': 'pass', 'title': 'test_007修改算子分组名称', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator/group', 'method': 'patch', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'id': 115, 'name': '张涛test001'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"id': 115\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 115}}, 'time_consuming': 142.186, 'time_total': 0.142186}}" ]
         } ],
         "uid" : "6d703b80cba34b4becf73fbdf58c648b"
       } ],
