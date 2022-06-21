@@ -1,0 +1,43 @@
+[ {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 8982
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 4138
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 15770
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 4124
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 18770
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : { }
+}, {
+  "data" : { }
+} ]

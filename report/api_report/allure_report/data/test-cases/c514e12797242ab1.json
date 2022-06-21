@@ -1,0 +1,340 @@
+{
+  "uid" : "c514e12797242ab1",
+  "name" : "test_003节点详情",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "b54e6dde10103ecb38428ceb0ff549dc",
+  "time" : {
+    "start" : 1654141617485,
+    "stop" : 1654141617500,
+    "duration" : 15
+  },
+  "description" : "test_003节点详情 get http://192.168.0.115:10007/kubecluster/v1/api/node/9",
+  "descriptionHtml" : "<p>test_003节点详情 get http://192.168.0.115:10007/kubecluster/v1/api/node/9</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1654141617203,
+      "stop" : 1654141617438,
+      "duration" : 235
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "test_003节点详情 get http://192.168.0.115:10007/kubecluster/v1/api/node/9",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1654141617485,
+        "stop" : 1654141617485,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "15034b10ca50866a",
+        "name" : "测试结果",
+        "source" : "15034b10ca50866a.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "用例名称：test_003节点详情",
+      "time" : {
+        "start" : 1654141617485,
+        "stop" : 1654141617485,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "95d8f57f77ab471",
+        "name" : "用例名称",
+        "source" : "95d8f57f77ab471.attach",
+        "type" : "text/plain",
+        "size" : 35
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1654141617485,
+        "stop" : 1654141617485,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "86cf90564d4ddd7e",
+        "name" : "请求方式",
+        "source" : "86cf90564d4ddd7e.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求地址：http://192.168.0.115:10007/kubecluster/v1/api/node/9",
+      "time" : {
+        "start" : 1654141617485,
+        "stop" : 1654141617500,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "93e85428f6a37678",
+        "name" : "请求地址",
+        "source" : "93e85428f6a37678.attach",
+        "type" : "text/plain",
+        "size" : 67
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4b7aeed139dc8694",
+        "name" : "请求头",
+        "source" : "4b7aeed139dc8694.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求参数：{'id': '9', 'name': \"'Beijing-node-06'\"}",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8589aa29bd5385ee",
+        "name" : "请求参数",
+        "source" : "8589aa29bd5385ee.attach",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2df966814a6cf94d",
+        "name" : "code请求断言",
+        "source" : "2df966814a6cf94d.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c7d0f939bbad55ea",
+        "name" : "msg请求断言",
+        "source" : "c7d0f939bbad55ea.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：name': 'Beijing-node-06'",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "25f8356c80a05c9b",
+        "name" : "data请求断言",
+        "source" : "25f8356c80a05c9b.attach",
+        "type" : "text/plain",
+        "size" : 39
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'time_consuming': 69.874, 'time_total': 0.069874}",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3ae233548fcb3f1",
+        "name" : "响应结果",
+        "source" : "3ae233548fcb3f1.attach",
+        "type" : "text/plain",
+        "size" : 632
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1654141617500,
+        "stop" : 1654141617500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "2984-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "result",
+    "value" : "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'get', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'id': '9', 'name': \"'Beijing-node-06'\"}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'time_consuming': 69.874, 'time_total': 0.069874}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c514e12797242ab1.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_003节点详情', 'url': 'http://192.168.0.115:10007/kubecluster/v1/api/node/9', 'method': 'get', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'id': '9', 'name': \"'Beijing-node-06'\"}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'Beijing-node-06'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'id': 9, 'name': 'Beijing-node-06', 'code': 'KN000009', 'userName': 'root', 'specData': {'vendor': 'Intel', 'cpuModel': 'Xeon', 'cpuSpeed': '3.00GHz', 'cpuCores': 64.0, 'memory': '252GB', 'disk': '300.0GB', 'os': 'CentOS 7.6.1810 3.10.0-1062.12.1.el7.x86_64'}, 'ip': '192.168.0.35', 'monitorUrl': 'http://192.168.0.30:30090', 'linkClusterId': 3, 'linkClusterName': 'Beijing-cluster-01', 'monitorStatus': 3, 'status': 2, 'enableFlag': 1, 'tenantId': None, 'createUser': None, 'updateUser': None}, 'ext': {}}, 'time_consuming': 69.874, 'time_total': 0.069874}}" ]
+}
