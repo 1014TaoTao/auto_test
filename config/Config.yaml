@@ -165,11 +165,16 @@ databases:
   charset: utf8
 
 testers:
-  - 王静静
   - 张涛
   - 叶明鑫
+  - 张卫鹏
+  - 严雪娇
+  - 王静静
   - 冉晓敏
-  - 高晓明
+  - 张哲毓
+  - 闫弯弯
+  - 尤超
+  - 武青艳
 delete_report_on_off:
   - 'on'
   - 'off'
