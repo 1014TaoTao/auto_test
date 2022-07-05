@@ -13,17 +13,16 @@ import requests
 from gevent._semaphore import Semaphore
 from locust import HttpUser, TaskSet, task, events, between
 from locust.runners import MasterRunner
+from loguru import logger
+# from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 from common import setting
-from loguru import logger
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
-
 from tools.pre_tool_read_yaml import YamlPack
 
-
 # 禁用安全请求警告
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+# 加上这行代码即可，关闭安全请求警告
+requests.packages.urllib3.disable_warnings()
+# requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 all_locusts_spawned = Semaphore()
 all_locusts_spawned.acquire()
@@ -156,13 +155,13 @@ class WebsiteUser(HttpUser):
     wait_time = between(2, 3)  # 直接把等待时间范围使用wait_time写在了自定义方法UserBehavior里
 
 
-if __name__ == '__main__':
-    import os
-
-    from common.readConfigIni import Config
-
-    os.system(f"locust -f test_locust_demo.py --host={Config(setting.CONFIG_INI).apihost_43_13} --web-host=127.0.0.1 "
-              f"--web-port=8089")
+# if __name__ == '__main__':
+#     import os
+#
+#     from common.readConfigIni import Config
+#
+#     os.system(f"locust -f test_locust_demo.py --host={Config(setting.CONFIG_INI).apihost_43_13} --web-host=127.0.0.1 "
+#               f"--web-port=8089")
 
     # os.system(
     #     f"locust -f {locust_file_path} --host={Config().host_43_13} --web-host=127.0.0.1 --web-port=8089")  # web执行方式

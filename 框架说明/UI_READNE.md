@@ -55,23 +55,25 @@
         extension - 提供的将用作创建文件的扩展名
 
 
+```python
+url = "https://www.baidu.com/"
+text = "天天向上"
+BaiduPage01().open_baidu(url, "跳转百度页面")
+screen("跳转百度页面")
+BaiduPage01().query_baidu(text, "搜索好好学习")
+screen("搜索好好学习")
 
-# url = "https://www.baidu.com/"
-# text = "天天向上"
-# BaiduPage01().open_baidu(url, "跳转百度页面")
-# screen("跳转百度页面")
-# BaiduPage01().query_baidu(text, "搜索好好学习")
-# screen("搜索好好学习")
+with allure.step('步骤1：打开网页'):
+    BaiduPage01().open_baidu(url,"跳转百度页面")
+    screen("跳转百度页面")
+    allure.attach('{}'.format(url), name='网页地址')
+with allure.step('步骤2：开始搜索'):
 
-# with allure.step('步骤1：打开网页'):
-#     BaiduPage01().open_baidu(url,"跳转百度页面")
-#     screen("跳转百度页面")
-#     allure.attach('{}'.format(url), name='网页地址')
-# with allure.step('步骤2：开始搜索'):
-#
-#     BaiduPage01().query_baidu(text,"搜索好好学习")
-#     allure.attach('{}'.format(text), name='搜索内容')
-#     screen("搜索好好学习")
+    BaiduPage01().query_baidu(text,"搜索好好学习")
+    allure.attach('{}'.format(text), name='搜索内容')
+    screen("搜索好好学习")
+```
+
 pytest学习系列_pytest-timeout插件之设置超时时间
 pip install pytest-timeout
 
