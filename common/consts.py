@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from common import setting
-from tools.api_tool_read_pyqt_txt import PyqtTxtPack
+from tools.txt_tools.api_tool_read_pyqt_txt import PyqtTxtPack
 
 all_data = PyqtTxtPack().read_pyqt5_txt()
 if all_data:
@@ -12,7 +11,7 @@ if all_data:
     BASEHOST = all_data.get('base_host')
     LOGINHOST = all_data.get('login_host')
     USERNAME = all_data.get('login_usernaem')
-    LOGINDATA = all_data.get('login_data')
+    LOGINDATA: dict = all_data.get('login_data')
     TESTER = all_data.get('tester')
 
 # 接口响应时间list，单位毫秒

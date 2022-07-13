@@ -27,7 +27,7 @@ class Config:
         self.basehost_195 = self.get_conf("environment_195", "basehost")
         self.loginHost_195 = self.get_conf("environment_195", "loginHost")
         self.loginInfo_195 = self.get_conf("environment_195", "loginInfo")
-        self.loginInfo_195 = self.get_conf("environment_195", "username")
+        self.loginusername_195 = self.get_conf("environment_195", "username")
 
         # 115环境配置
         self.environment_115 = self.get_conf("environment_115", "environment")
@@ -36,7 +36,7 @@ class Config:
         self.basehost_115 = self.get_conf("environment_115", "basehost")
         self.loginHost_115 = self.get_conf("environment_115", "loginHost")
         self.loginInfo_115 = self.get_conf("environment_115", "loginInfo")
-        self.loginInfo_195 = self.get_conf("environment_115", "username")
+        self.loginusername_115 = self.get_conf("environment_115", "username")
 
         # 120环境配置
         self.environment_120 = self.get_conf("environment_122", "environment")
@@ -45,7 +45,7 @@ class Config:
         self.basehost_120 = self.get_conf("environment_122", "basehost")
         self.loginHost_120 = self.get_conf("environment_122", "loginHost")
         self.loginInfo_120 = self.get_conf("environment_122", "loginInfo")
-        self.loginInfo_195 = self.get_conf("environment_122", "username")
+        self.loginusername_120 = self.get_conf("environment_122", "username")
 
         # 43_13环境配置
         self.environment_43_13 = self.get_conf("environment_34_13", "environment")
@@ -54,13 +54,14 @@ class Config:
         self.basehost_43_13 = self.get_conf("environment_34_13", "basehost")
         self.loginHost_43_13 = self.get_conf("environment_34_13", "loginHost")
         self.loginInfo_43_13 = self.get_conf("environment_34_13", "loginInfo")
-        self.loginInfo_195 = self.get_conf("environment_34_13", "username")
+        self.loginusername_43_13 = self.get_conf("environment_34_13", "username")
 
         # 邮件配置
         self.smtpserver = self.get_conf("email", "smtpserver")
         self.sender = self.get_conf("email", "sender")
         self.password = self.get_conf("email", "password")
         self.receiver = self.get_conf("email", "receiver")
+
         # 数据库配置
         self.databases_on_off = self.get_conf("databases", "sql_on_off")
         self.databases_host = self.get_conf("databases", "host")
@@ -69,6 +70,7 @@ class Config:
         self.databases_passwd = self.get_conf("databases", "passwd")
         self.databases_db = self.get_conf("databases", "db")
         self.databases_charset = self.get_conf("databases", "charset")
+
         # 执行人员
         self.testers = self.get_conf("testers", "tester")
         # 是否开启删除历史报告功能

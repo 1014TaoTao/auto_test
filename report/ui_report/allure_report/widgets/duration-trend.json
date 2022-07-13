@@ -3,6 +3,97 @@
   "reportUrl" : "http://helloqa.com#1/AllureReport",
   "reportName" : "iTesting Allure Report",
   "data" : {
+    "duration" : 361494507
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 361397050
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 361301599
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 361011856
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 360881424
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 359738651
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 359630256
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 352789337
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 352433458
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 352110108
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 351905271
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 6513
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
+    "duration" : 9283
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
+  "data" : {
     "duration" : 8982
   }
 }, {

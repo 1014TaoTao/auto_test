@@ -2,6 +2,23 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
+    "name" : "test_longin",
+    "uid" : "8a8443f5e020b7ea",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1657357534119,
+      "stop" : 1657357534119,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
     "name" : "test_01",
     "children" : [ {
       "name" : "feature一级标签:百度测试用例",
@@ -9,20 +26,20 @@
         "name" : "story二级标签:test_01",
         "children" : [ {
           "name" : "test_01",
-          "uid" : "b3b21462c5da2ecf",
+          "uid" : "9dabc499ed1c8230",
           "parentUid" : "7f9c69bc4b15fa2ce86dc5a499076ee4",
           "status" : "passed",
           "time" : {
-            "start" : 1654138082526,
-            "stop" : 1654138087900,
-            "duration" : 5374
+            "start" : 1657719020598,
+            "stop" : 1657719025650,
+            "duration" : 5052
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 5,
-          "retriesStatusChange" : false,
+          "retriesCount" : 28,
+          "retriesStatusChange" : true,
           "parameters" : [ ]
         } ],
         "uid" : "7f9c69bc4b15fa2ce86dc5a499076ee4"
@@ -38,20 +55,20 @@
         "name" : "story二级标签:test_02",
         "children" : [ {
           "name" : "test_02",
-          "uid" : "f124036382e68a81",
+          "uid" : "28cf6b923bfd550",
           "parentUid" : "f3c5baf8de26aa5401bae0da5109afcf",
           "status" : "passed",
           "time" : {
-            "start" : 1654138087908,
-            "stop" : 1654138091508,
-            "duration" : 3600
+            "start" : 1657719025658,
+            "stop" : 1657719028626,
+            "duration" : 2968
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 4,
-          "retriesStatusChange" : false,
+          "retriesCount" : 27,
+          "retriesStatusChange" : true,
           "parameters" : [ ]
         } ],
         "uid" : "f3c5baf8de26aa5401bae0da5109afcf"

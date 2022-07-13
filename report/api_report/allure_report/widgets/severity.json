@@ -1,70 +1,70 @@
 [ {
-  "uid" : "a5b6601a9235d1e1",
+  "uid" : "5e690bf4572e8b42",
   "name" : "test_001节点查询",
   "time" : {
-    "start" : 1654141617438,
-    "stop" : 1654141617460,
-    "duration" : 22
+    "start" : 1657719883662,
+    "stop" : 1657719883701,
+    "duration" : 39
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "89e5ee7a5c68bf00",
+  "uid" : "3b20548cacf75166",
   "name" : "test_004算子删除",
   "time" : {
-    "start" : 1654141617500,
-    "stop" : 1654141617516,
-    "duration" : 16
+    "start" : 1657719883737,
+    "stop" : 1657719883750,
+    "duration" : 13
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "c514e12797242ab1",
-  "name" : "test_003节点详情",
-  "time" : {
-    "start" : 1654141617485,
-    "stop" : 1654141617500,
-    "duration" : 15
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "32f5321223119985",
-  "name" : "test_005节点全部查询",
-  "time" : {
-    "start" : 1654141617876,
-    "stop" : 1654141617897,
-    "duration" : 21
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "2cd2b9e4d545dadc",
+  "uid" : "4b017afded7e99a2",
   "name" : "test_007修改算子分组名称",
   "time" : {
-    "start" : 1654141617971,
-    "stop" : 1654141617971,
-    "duration" : 0
+    "start" : 1657719884219,
+    "stop" : 1657719884227,
+    "duration" : 8
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "798266728223fbe0",
+  "uid" : "20e00ace0bda4267",
   "name" : "test_006镜像资源-我的仓库（已存在）",
   "time" : {
-    "start" : 1654141617897,
-    "stop" : 1654141617908,
-    "duration" : 11
+    "start" : 1657719884163,
+    "stop" : 1657719884175,
+    "duration" : 12
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "80929b01adf5667a",
+  "uid" : "3a695ae5c51cdb06",
   "name" : "test_002节点查询",
   "time" : {
-    "start" : 1654141617469,
-    "stop" : 1654141617485,
-    "duration" : 16
+    "start" : 1657719883705,
+    "stop" : 1657719883717,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8f2a426b6192381f",
+  "name" : "test_005节点全部查询",
+  "time" : {
+    "start" : 1657719884114,
+    "stop" : 1657719884155,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "66c4ff9feb9f5d5e",
+  "name" : "test_003节点详情",
+  "time" : {
+    "start" : 1657719883721,
+    "stop" : 1657719883729,
+    "duration" : 8
   },
   "status" : "passed",
   "severity" : "blocker"

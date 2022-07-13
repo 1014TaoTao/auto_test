@@ -2,6 +2,31 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
+    "name" : "demo",
+    "children" : [ {
+      "name" : "TestLongin",
+      "children" : [ {
+        "name" : "test_longin",
+        "uid" : "8a8443f5e020b7ea",
+        "parentUid" : "829bb91a80768ef72981bfe737924ddd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1657357534119,
+          "stop" : 1657357534119,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "829bb91a80768ef72981bfe737924ddd"
+    } ],
+    "uid" : "b3ab64535ad66c4ce064c5467c723836"
+  }, {
     "name" : "testCase.ui",
     "children" : [ {
       "name" : "test_baidu",
@@ -9,37 +34,37 @@
         "name" : "TestBaiDu",
         "children" : [ {
           "name" : "test_01",
-          "uid" : "b3b21462c5da2ecf",
+          "uid" : "9dabc499ed1c8230",
           "parentUid" : "ec7942ba34ad5af08dda64dfb60f1b17",
           "status" : "passed",
           "time" : {
-            "start" : 1654138082526,
-            "stop" : 1654138087900,
-            "duration" : 5374
+            "start" : 1657719020598,
+            "stop" : 1657719025650,
+            "duration" : 5052
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 5,
-          "retriesStatusChange" : false,
+          "retriesCount" : 28,
+          "retriesStatusChange" : true,
           "parameters" : [ ]
         }, {
           "name" : "test_02",
-          "uid" : "f124036382e68a81",
+          "uid" : "28cf6b923bfd550",
           "parentUid" : "ec7942ba34ad5af08dda64dfb60f1b17",
           "status" : "passed",
           "time" : {
-            "start" : 1654138087908,
-            "stop" : 1654138091508,
-            "duration" : 3600
+            "start" : 1657719025658,
+            "stop" : 1657719028626,
+            "duration" : 2968
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 4,
-          "retriesStatusChange" : false,
+          "retriesCount" : 27,
+          "retriesStatusChange" : true,
           "parameters" : [ ]
         } ],
         "uid" : "ec7942ba34ad5af08dda64dfb60f1b17"

@@ -4,9 +4,9 @@ import allure
 import pytest
 
 from common import setting, consts
-from tools.api_tool_excel import ExcelPack
-from tools.api_tool_login import Login
-from tools.public_tool_log import logger
+from tools.excel_tools.api_tool_excel import ExcelPack
+from tools.common_tools.api_tool_login import Login
+from tools.logs_tools.public_tool_log import logger
 
 logger = logger(setting.API_LOG_PATH)
 

@@ -2,10 +2,11 @@
 import allure
 import pytest
 
+from common import setting
 from pages.baidu.baidu import BaiDu
-from tools.ui_tool_read_yaml import Element
+from tools.yaml_tools.ui_tool_read_yaml import Element
 
-search = Element()
+search = Element(element_path=setting.UI_YAML_PATH)
 
 
 # 通过使用pytest.mark.usefixtures方法后，测试类包含的每个用例都会执行前置和后置内容。

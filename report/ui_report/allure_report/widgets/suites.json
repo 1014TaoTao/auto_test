@@ -1,6 +1,17 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "b3ab64535ad66c4ce064c5467c723836",
+    "name" : "demo",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "e81e6f2bec5e0e012c0a1cc7ab6e644c",
     "name" : "testCase.ui",
     "statistic" : {

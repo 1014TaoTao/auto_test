@@ -3,7 +3,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from tools.api_auto_test import UiApiAutoTool
+from tools.api_tool_run import UiApiAutoTool
 
 if __name__ == '__main__':
     apps = QApplication(sys.argv)

@@ -26,7 +26,8 @@ API_LOG_PATH = os.path.join(BASE_PATH, "logs", "api_logs")
 
 # api数据路径
 TEST_CASE_LIST = glob.glob(f"{DATA_PATH}/api/excel_data/*.xls")
-API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "kube.xls")
+# API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "kube_115.xls")
+API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "zt_test.xlsx")
 sheet_id = 0
 API_SQL_FILE = os.path.join(DATA_PATH, "api", 'sql_data', 'test.sql')
 API_YAML_PATH = os.path.join(DATA_PATH, "api", 'yaml_data', 'test.yaml')
@@ -73,6 +74,7 @@ UI_LOG_PATH = os.path.join(BASE_PATH, "logs", "ui_logs")
 UI_EXCEL_FILE = os.path.join(DATA_PATH, "ui", "excel_data", "test.xls")
 UI_SQL_FILE = os.path.join(DATA_PATH, "ui", 'sql_data', 'test.sql')
 UI_YAML_DIR = os.path.join(DATA_PATH, "ui", 'yaml_data')
+# UI_YAML_PATH = os.path.join(DATA_PATH, "ui", 'yaml_data', 'kube_login.yaml')
 UI_YAML_PATH = os.path.join(DATA_PATH, "ui", 'yaml_data', 'test.yaml')
 
 # ui测试报告路径
@@ -126,3 +128,6 @@ PER_CONFIG_PATH = os.path.join(BASE_PATH, "locust.conf")
 jenkins_url = "http://250.25.250.250:9000/"
 reprot_url = "http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html"
 at_mobiles_list = [15382112620]
+
+
+requirements_path = os.path.join(BASE_PATH, 'requirements.txt')

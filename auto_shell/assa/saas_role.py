@@ -11,7 +11,7 @@
 用户中心-角色管理-角色授权
 
 """
-from tools.api_tool_request import Requests
+from tools.requests_tools.api_tool_request import Requests
 
 headers = {
     'Authorization': 'Bearer 5e319bec-9d82-440b-93d5-612ca3e5a29d'
