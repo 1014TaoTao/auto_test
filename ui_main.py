@@ -8,7 +8,7 @@
 @Software: PyCharm
 """
 
-from tools.ui_tool_start_run import ui_run
+from tools.ui_tool_run import ui_run
 
 if __name__ == '__main__':
     ui_run()

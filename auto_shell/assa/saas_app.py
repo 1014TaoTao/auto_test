@@ -11,7 +11,7 @@
 应用管理-查询应用下线状态，并改为上线状态
 """
 
-from tools.api_tool_request import Requests
+from tools.requests_tools.api_tool_request import Requests
 
 down_app_data = {}
 

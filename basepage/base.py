@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
 
 from common import setting
-from tools.public_tool_log import logger
+from tools.logs_tools.public_tool_log import logger
 
 success = "SUCCESS"
 fail = "FAIL   "
@@ -204,7 +204,7 @@ class Page:
                                                                         "%.4f" % (time.time() - start_time)))
 
     # 输出文本
-    def type_input(self, css, text):
+    def text_input(self, css, text):
         """
         操作输入框.
 
@@ -367,6 +367,7 @@ class Page:
             self.fail_img()
             raise
 
+
     # 点击超链接内容
     def click_text(self, text):
         """
@@ -461,6 +462,15 @@ class Page:
                                                                        script, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
+
+    # def driver_add_token(self):
+    #     from tools.common_tools.api_tool_login import UiLogin
+    #     # 获取token
+    #     token = UiLogin().ui_login()
+    #     print(token)
+    #     # 添加token
+    #     js = f'window.localStorage.setItem("token", {token})'
+    #     self.js(script=js)
 
     # 获取属性
     def get_attribute(self, css, attribute):
@@ -914,7 +924,9 @@ class Page:
             raise "无法定位到元素，导致不能将目标属性处理为空"
 
 # if __name__ == '__main__':
-#     p = Page()
+#     from basepage.browser import select_browser
+#     p = Page(select_browser)
+#     p.driver_add_token()
 #     p.select_browser()
 #     p.open_url(url="https://www.baidu.com/")
 #     p.max_window()

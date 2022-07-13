@@ -7,38 +7,38 @@
       "name" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "children" : [ {
         "name" : "test_004算子删除",
-        "uid" : "89e5ee7a5c68bf00",
+        "uid" : "3b20548cacf75166",
         "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
         "status" : "failed",
         "time" : {
-          "start" : 1654141617500,
-          "stop" : 1654141617516,
-          "duration" : 16
+          "start" : 1657719883737,
+          "stop" : 1657719883750,
+          "duration" : 13
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 0,
+        "retriesCount" : 2,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 69.945, 'time_total': 0.069945}}" ]
+        "parameters" : [ "{'result': 'fail', 'title': 'test_004算子删除', 'url': 'http://192.168.0.115:10007/kube/v1/api/operator', 'method': 'delete', 'headers': {'Authorization': 'Bearer 508f1e4b-06d9-4d94-b02a-8f5b96d5bad2'}, 'data': '[649]', 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 400, 'body': {'code': -102, 'msg': '请求参数解析失败!', 'data': 'JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of VALUE_STRING token\\n at [Source: (PushbackInputStream); line: 1, column: 1]'}, 'time_consuming': 124.901, 'time_total': 0.124901}}" ]
       }, {
         "name" : "test_006镜像资源-我的仓库（已存在）",
-        "uid" : "798266728223fbe0",
+        "uid" : "20e00ace0bda4267",
         "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
         "status" : "failed",
         "time" : {
-          "start" : 1654141617897,
-          "stop" : 1654141617908,
-          "duration" : 11
+          "start" : 1657719884163,
+          "stop" : 1657719884175,
+          "duration" : 12
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 0,
+        "retriesCount" : 2,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer bd0c3a7f-5de6-416c-8f48-ccf7700c9d2c'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 136.969, 'time_total': 0.136969}}" ]
+        "parameters" : [ "{'result': 'fail', 'title': 'test_006镜像资源-我的仓库（已存在）', 'url': 'http://192.168.0.115:10007/kuberegistry/v1/api/repository', 'method': 'post', 'headers': {'Authorization': 'Bearer 508f1e4b-06d9-4d94-b02a-8f5b96d5bad2'}, 'data': {'tagSet': ['分析工具'], 'imageName': 'zhangtao_test_001', 'groupId': 495, 'tenantId': 1, 'description': '张涛测试'}, 'status_code': 201.0, 'expected_msg': '成功', 'expected_data': '', 'res': {'code': 200, 'body': {'code': 13101, 'msg': '仓库名已存在', 'data': None, 'ext': {}}, 'time_consuming': 103.514, 'time_total': 0.103514}}" ]
       } ],
       "uid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7"
     } ],

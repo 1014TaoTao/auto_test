@@ -6,7 +6,7 @@
 @Software: PyCharm
 '''
 
-from tools.api_tool_request import Requests
+from tools.requests_tools.api_tool_request import Requests
 
 # 获取token
 def get_token(base_url: str, headers: dict)-> str:

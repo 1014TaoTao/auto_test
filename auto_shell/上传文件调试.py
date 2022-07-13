@@ -7,7 +7,7 @@
 @File    : 上传文件调试.py
 @Software: PyCharm
 """
-from tools.api_tool_request import Requests
+from tools.requests_tools.api_tool_request import Requests
 
 if __name__ == '__main__':
     # 示例：kube应用中心上传应用图片和上传应用模板
