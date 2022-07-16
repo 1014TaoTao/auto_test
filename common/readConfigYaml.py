@@ -144,24 +144,8 @@ class Config:
         open_report_on_off = self.data['open_report_on_off']
         return open_report_on_off
 
-    # 是否开启控制台输出日志
-    def get_log_control_on_off(self) -> str:
-        """
-        :return:
-        """
-        log_control_on_off = self.data['log_control_on_off']
-        return log_control_on_off
-
-    # 是否开启数据库
-    def get_databases_on_off(self) -> str:
-        """
-        :return:
-        """
-        get_databases_on_off = self.data['get_databases_on_off']
-        return get_databases_on_off
-
     # 获取执行测试人员信息
-    def get_testers(self) -> str:
+    def get_testers(self) -> list:
         """
         :return:
         """
@@ -196,7 +180,6 @@ class Config:
     def get_environment_port(self, environment_name: str) -> list:
         port_list = self.get_environment_info()[environment_name]['port']
         return port_list
-
 
 # 测试
 # if __name__ == '__main__':

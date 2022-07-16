@@ -92,9 +92,9 @@ class DingTalk:
         reprot_url = setting.reprot_url
 
         self.ding_news.send_markdown(
-            title=f'【{title}测试报告】',
-            text=f"<font color=\'#FFA500\'>[通知] </font>{title}...执行完成 \n\n --- \n\n" +
-                 f"项目名称：{title}测试报告 \n\n " +
+            title=f'【{title}自动化测试报告】',
+            text=f"<font color=\'#FFA500\'>[通知] </font>{title}自动化测试...执行完成 \n\n --- \n\n" +
+                 f"项目名称：{title}自动化测试报告 \n\n " +
                  "执行环境：<font color=\"#1d953f\">%s</font>" % ENVIRONMENT + "\n\n" +
                  "运行总数：<font color=\"#d71345\">%s 个</font>" % self.TOTAL + "\n\n" +
                  "通过数量：<font color=\"#1d953f\">%s 个</font>" % self.PASS + "\n\n" +

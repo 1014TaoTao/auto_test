@@ -30,18 +30,18 @@ class OperationSystemPython:
         return python_version
 
     # chrome 版本号
-    def chrome_ersion(self,log_path) -> str:
-        """
-        :return:
-        """
-        key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, setting.chrome_reg)
-        version = winreg.QueryValueEx(key, "version")[0]  # 查询注册表chrome版本号
-        logger(log_path).info('【{0} - {1}】'.format(setting.BROWSER, version))
-        logger(log_path).info('【chromedriver.exe - {0}】'.format(setting.DRIVER))
-        return version
+    # def chrome_ersion(self,log_path) -> str:
+    #     """
+    #     :return:
+    #     """
+    #     key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, setting.chrome_reg)
+    #     version = winreg.QueryValueEx(key, "version")[0]  # 查询注册表chrome版本号
+    #     logger(log_path).info('【{0} - {1}】'.format(setting.BROWSER, version))
+    #     logger(log_path).info('【chromedriver.exe - {0}】'.format(setting.DRIVER))
+    #     return version
 
 
-def api_sys_project(log_path: str = None):
+def sys_project(log_path: str = None):
     """
     :param log_path:
     :return:
@@ -50,11 +50,11 @@ def api_sys_project(log_path: str = None):
     OperationSystemPython().python_version(log_path)
 
 
-def system_project(log_path: str = None):
-    """
-    :param log_path:
-    :return:
-    """
-    OperationSystemPython().platform_system(log_path)
-    OperationSystemPython().chrome_ersion(log_path)
-    OperationSystemPython().python_version(log_path)
+# def system_project(log_path: str = None):
+#     """
+#     :param log_path:
+#     :return:
+#     """
+#     OperationSystemPython().platform_system(log_path)
+#     OperationSystemPython().chrome_ersion(log_path)
+#     OperationSystemPython().python_version(log_path)

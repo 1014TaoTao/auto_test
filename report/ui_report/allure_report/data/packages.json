@@ -5,7 +5,7 @@
     "name" : "demo",
     "children" : [ {
       "name" : "test_longin",
-      "uid" : "8a8443f5e020b7ea",
+      "uid" : "3993111559521f7e",
       "parentUid" : "f2d7a7a6ce0de57f93b55a2cbdd78fb6",
       "status" : "broken",
       "time" : {
@@ -26,36 +26,36 @@
     "name" : "testCase.ui.test_baidu",
     "children" : [ {
       "name" : "test_01",
-      "uid" : "9dabc499ed1c8230",
+      "uid" : "6ddeffd7f012f6c4",
       "parentUid" : "6439ecff0ccaf94dbeff55c4e21fbc0c",
       "status" : "passed",
       "time" : {
-        "start" : 1657719020598,
-        "stop" : 1657719025650,
-        "duration" : 5052
+        "start" : 1657997990928,
+        "stop" : 1657997995340,
+        "duration" : 4412
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 29,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_02",
+      "uid" : "10cd6935f4133d41",
+      "parentUid" : "6439ecff0ccaf94dbeff55c4e21fbc0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1657997995346,
+        "stop" : 1657997997838,
+        "duration" : 2492
       },
       "flaky" : false,
       "newFailed" : false,
       "newPassed" : false,
       "newBroken" : false,
       "retriesCount" : 28,
-      "retriesStatusChange" : true,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_02",
-      "uid" : "28cf6b923bfd550",
-      "parentUid" : "6439ecff0ccaf94dbeff55c4e21fbc0c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1657719025658,
-        "stop" : 1657719028626,
-        "duration" : 2968
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 27,
       "retriesStatusChange" : true,
       "parameters" : [ ]
     } ],

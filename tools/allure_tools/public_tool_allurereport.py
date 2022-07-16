@@ -17,7 +17,7 @@ class AllureFileClean:
     """allure 报告数据清洗，提取业务需要得数据"""
 
     @classmethod
-    def _getAllFiles(cls, REPORT_END_PATH) -> list:
+    def _getAllFiles(cls, REPORT_END_PATH: str) -> list:
         """
         :return:
         """
@@ -31,7 +31,7 @@ class AllureFileClean:
                 filename.append(path)
         return filename
 
-    def getTestCases(self, REPORT_END_PATH) -> list:
+    def getTestCases(self, REPORT_END_PATH: str) -> list:
         """
         :return:
         """
