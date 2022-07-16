@@ -79,7 +79,9 @@
   "buildOrder" : 3,
   "reportUrl" : "http://helloqa.com#1/AllureReport",
   "reportName" : "iTesting Allure Report",
-  "data" : { }
+  "data" : {
+    "Test defects" : 1
+  }
 }, {
   "buildOrder" : 3,
   "reportUrl" : "http://helloqa.com#1/AllureReport",
@@ -116,5 +118,8 @@
   "reportName" : "iTesting Allure Report",
   "data" : { }
 }, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://helloqa.com#1/AllureReport",
+  "reportName" : "iTesting Allure Report",
   "data" : { }
 } ]

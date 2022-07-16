@@ -2,13 +2,23 @@
   "94a64a411b0cbed95405f8a7d64a1a20" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 11,
+      "broken" : 12,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 11
+      "total" : 12
     },
     "items" : [ {
+      "uid" : "3993111559521f7e",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/3993111559521f7e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "time" : {
+        "start" : 1657357534119,
+        "stop" : 1657357534119,
+        "duration" : 0
+      }
+    }, {
       "uid" : "8a8443f5e020b7ea",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/8a8443f5e020b7ea",
       "status" : "broken",
@@ -125,11 +135,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 18,
+      "passed" : 19,
       "unknown" : 0,
-      "total" : 18
+      "total" : 19
     },
     "items" : [ {
+      "uid" : "6ddeffd7f012f6c4",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/6ddeffd7f012f6c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1657997990928,
+        "stop" : 1657997995340,
+        "duration" : 4412
+      }
+    }, {
       "uid" : "9dabc499ed1c8230",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/9dabc499ed1c8230",
       "status" : "passed",
@@ -298,11 +317,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 18,
+      "passed" : 19,
       "unknown" : 0,
-      "total" : 18
+      "total" : 19
     },
     "items" : [ {
+      "uid" : "10cd6935f4133d41",
+      "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/10cd6935f4133d41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1657997995346,
+        "stop" : 1657997997838,
+        "duration" : 2492
+      }
+    }, {
       "uid" : "28cf6b923bfd550",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/28cf6b923bfd550",
       "status" : "passed",

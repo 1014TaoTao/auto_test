@@ -27,7 +27,7 @@ API_LOG_PATH = os.path.join(BASE_PATH, "logs", "api_logs")
 # api数据路径
 TEST_CASE_LIST = glob.glob(f"{DATA_PATH}/api/excel_data/*.xls")
 # API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "kube_115.xls")
-API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "zt_test.xlsx")
+API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "kube_115.xls")
 sheet_id = 0
 API_SQL_FILE = os.path.join(DATA_PATH, "api", 'sql_data', 'test.sql')
 API_YAML_PATH = os.path.join(DATA_PATH, "api", 'yaml_data', 'test.yaml')
@@ -60,8 +60,6 @@ API_EndExcutorJson = os.path.join(API_REPORT_PATH, "allure_result", "executor.js
 # token存放位置
 TOKEN_FILE = os.path.join(DATA_PATH, "api", "token.txt")
 
-# pyqt5生成的执行环境信息存放位置
-PYQT5_FILE = os.path.join(DATA_PATH, "api", "pyqt5.txt")
 
 # allure执行结果信息存放位置
 PROMETHEUSDATA = os.path.join(API_REPORT_END_PATH, "export", "prometheusData.txt")

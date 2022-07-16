@@ -292,9 +292,8 @@ class ExcelPack(ReadExcel):
         return headers_dict
 
     # 批量执行，执行excel测试用例
-    def run_excel_case(self, APIHOST: str, ENVIRONMENTPORT: str, BASEHOST: str, LOGINHOST: str, LOGINDATA: dict,
-                       USERNAME: str) -> Union[
-        str, List[Dict[str, Union[Union[str, Tuple[Union[str, Any], Exception]], Any]]]]:
+    def run_excel_case(self, APIHOST: str, APIHOSTPORT: str, BASEHOST: str, LOGINHOST: str, LOGINDATA: dict,
+                       USERNAME: str) -> list:
         """
         :return:
         """
@@ -315,7 +314,7 @@ class ExcelPack(ReadExcel):
                 # 获取file路径
                 file = self.get_upload_file_path(row)
                 # 处理url
-                url = self.get_new_url(row, APIHOST, ENVIRONMENTPORT)
+                url = self.get_new_url(row, APIHOST, APIHOSTPORT)
                 # 处理header,字符串str转为字典dict
                 headers = self.get_new_headers(row)
                 # 处理断言
@@ -353,7 +352,7 @@ class ExcelPack(ReadExcel):
                         result = "fail"
 
                 except Exception as e:
-                    return f'更新token异常：{e}'
+                    raise f'更新token异常：{e}'
 
                 case = {
                     "result": result,

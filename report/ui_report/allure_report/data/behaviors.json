@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "test_longin",
-    "uid" : "8a8443f5e020b7ea",
+    "uid" : "3993111559521f7e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
@@ -26,19 +26,19 @@
         "name" : "story二级标签:test_01",
         "children" : [ {
           "name" : "test_01",
-          "uid" : "9dabc499ed1c8230",
+          "uid" : "6ddeffd7f012f6c4",
           "parentUid" : "7f9c69bc4b15fa2ce86dc5a499076ee4",
           "status" : "passed",
           "time" : {
-            "start" : 1657719020598,
-            "stop" : 1657719025650,
-            "duration" : 5052
+            "start" : 1657997990928,
+            "stop" : 1657997995340,
+            "duration" : 4412
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 28,
+          "retriesCount" : 29,
           "retriesStatusChange" : true,
           "parameters" : [ ]
         } ],
@@ -55,19 +55,19 @@
         "name" : "story二级标签:test_02",
         "children" : [ {
           "name" : "test_02",
-          "uid" : "28cf6b923bfd550",
+          "uid" : "10cd6935f4133d41",
           "parentUid" : "f3c5baf8de26aa5401bae0da5109afcf",
           "status" : "passed",
           "time" : {
-            "start" : 1657719025658,
-            "stop" : 1657719028626,
-            "duration" : 2968
+            "start" : 1657997995346,
+            "stop" : 1657997997838,
+            "duration" : 2492
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 27,
+          "retriesCount" : 28,
           "retriesStatusChange" : true,
           "parameters" : [ ]
         } ],
