@@ -4,12 +4,12 @@
     "uid" : "77621dcedaace14da6a0d5dca6d0efff",
     "name" : "testCase.api",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 7
+      "total" : 14
     }
   } ]
 }

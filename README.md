@@ -48,37 +48,19 @@
 ```text.
 pytest_auto_uitest_apitest:   # 项目父目录
 ├─auto_shell    # 工作中涉及的脚本文件（方便工作中使用）
-│  ├─assa   # saas相关的脚本
-│  ├─kube   # kube相关的脚本
-│  ├─middleDataCenter   # 中台相关的脚本
-│  └─添加授权 # kube授权相关的脚本
 ├─basepage    # ui自动化基础类封装目录 
 ├─bat    # bat文件目录，存放bat脚本
 ├─case    # 测试用例存放目录
 │  ├─api    # 接口测试用例目录
-│  │  ├─excel_data    # excel样式测试用例（已excel为后续主要扩展方向）
-│  │  ├─sql_data    # sql相关测试用例
-│  │  └─yaml_data   # yaml格式的测试用例
 │  ├─prf    # 性能测试用例目录
-│  │  └─yaml_data   # yaml格式的测试用例
 │  └─ui   # UI测试用例目录
-│      ├─excel_data   # excel样式测试用例（已excel为后续主要扩展方向）
-│      ├─sql_data   # sql相关测试用例
-│      └─yaml_data    # yaml格式的测试用例
 ├─common    # 全局公共模块
 ├─config     # 全局配置文件
 ├─data     # 测试数据依赖文件路径
 ├─driver    # ui自动化浏览器驱动存放目录
 ├─logs    # 日志存放目录
-│  ├─api_logs   # 接口日志
-│  ├─prf_logs   # 性能日志
-│  └─ui_logs    # ui日志
 ├─pages   # ui自动化存放page所有功能封装类
 ├─report    # 测试报告
-│  ├─api_report   # 接口测试报告
-│  ├─per_report   # 性能测试报告
-│  └─ui_report    # UI测试报告
-├─static    # pyqt设计相关模板文件（与整个框架无关）
 ├─testCase    # 测试用例脚本入口目录
 │  ├─api    # 接口测试脚本入口
 │  ├─per    # 性能测试脚本入口

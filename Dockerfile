@@ -15,4 +15,4 @@ WORKDIR /www/public
 
 EXPOSE 5000
 
-ENTRYPOINT ["python","api_main.py"]
+ENTRYPOINT ["python","main.py"]
