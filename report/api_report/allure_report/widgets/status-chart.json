@@ -1,70 +1,140 @@
 [ {
-  "uid" : "3a695ae5c51cdb06",
-  "name" : "test_002节点查询",
+  "uid" : "c1874c30242dc5a0",
+  "name" : "test_004算子删除",
   "time" : {
-    "start" : 1657719883705,
-    "stop" : 1657719883717,
-    "duration" : 12
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "20e00ace0bda4267",
-  "name" : "test_006镜像资源-我的仓库（已存在）",
-  "time" : {
-    "start" : 1657719884163,
-    "stop" : 1657719884175,
-    "duration" : 12
+    "start" : 1657999588791,
+    "stop" : 1657999588809,
+    "duration" : 18
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "4b017afded7e99a2",
+  "uid" : "7de5b59cc1e39c60",
   "name" : "test_007修改算子分组名称",
   "time" : {
-    "start" : 1657719884219,
-    "stop" : 1657719884227,
+    "start" : 1658604583380,
+    "stop" : 1658604583396,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "297e2a633fd34af1",
+  "name" : "test_005节点全部查询",
+  "time" : {
+    "start" : 1658604583334,
+    "stop" : 1658604583334,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9a4467473e8244a5",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1657999588729,
+    "stop" : 1657999588737,
     "duration" : 8
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "8f2a426b6192381f",
+  "uid" : "3735aa57099b223e",
   "name" : "test_005节点全部查询",
   "time" : {
-    "start" : 1657719884114,
-    "stop" : 1657719884155,
-    "duration" : 41
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "3b20548cacf75166",
-  "name" : "test_004算子删除",
-  "time" : {
-    "start" : 1657719883737,
-    "stop" : 1657719883750,
-    "duration" : 13
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "5e690bf4572e8b42",
-  "name" : "test_001节点查询",
-  "time" : {
-    "start" : 1657719883662,
-    "stop" : 1657719883701,
+    "start" : 1657999589173,
+    "stop" : 1657999589212,
     "duration" : 39
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "66c4ff9feb9f5d5e",
+  "uid" : "11f02f7c3dffdb8b",
+  "name" : "test_004算子删除",
+  "time" : {
+    "start" : 1658604582928,
+    "stop" : 1658604582959,
+    "duration" : 31
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "47cc278ef36bc126",
+  "name" : "test_001节点查询",
+  "time" : {
+    "start" : 1658604582865,
+    "stop" : 1658604582881,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "348c7831dbf18769",
+  "name" : "test_007修改算子分组名称",
+  "time" : {
+    "start" : 1657999589243,
+    "stop" : 1657999589252,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ee45569f2748cad",
+  "name" : "test_006镜像资源-我的仓库（已存在）",
+  "time" : {
+    "start" : 1658604583349,
+    "stop" : 1658604583365,
+    "duration" : 16
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6f2c637203566584",
+  "name" : "test_006镜像资源-我的仓库（已存在）",
+  "time" : {
+    "start" : 1657999589218,
+    "stop" : 1657999589229,
+    "duration" : 11
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bac6d39c00cc5af7",
+  "name" : "test_002节点查询",
+  "time" : {
+    "start" : 1658604582896,
+    "stop" : 1658604582896,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "3b0a4307e542d290",
   "name" : "test_003节点详情",
   "time" : {
-    "start" : 1657719883721,
-    "stop" : 1657719883729,
-    "duration" : 8
+    "start" : 1658604582912,
+    "stop" : 1658604582928,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b92860d6351b892b",
+  "name" : "test_001节点查询",
+  "time" : {
+    "start" : 1657999588713,
+    "stop" : 1657999588722,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "3a1dae176959a1cc",
+  "name" : "test_003节点详情",
+  "time" : {
+    "start" : 1657999588743,
+    "stop" : 1657999588785,
+    "duration" : 42
   },
   "status" : "passed",
   "severity" : "blocker"

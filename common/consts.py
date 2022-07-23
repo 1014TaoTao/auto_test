@@ -28,7 +28,7 @@ TESTER: str = C.get_testers()[0]
 
 DELETE_ON_OFF: str = C.get_delete_report_on_off()[1]
 SAVE_ON_OFF: str = C.get_run_report_on_off()[0]
-EMAIL_ON_OFF: str = C.get_send_email_on_off()[0]
+EMAIL_ON_OFF: str = C.get_send_email_on_off()[1]
 OPEN_REPORY_ON_OFF: str = C.get_open_report_on_off()[1]
 DINGDING_NEWS_ON_OFF: str = C.get_send_dingding_news_on_off()[1]
 # 接口响应时间list，单位毫秒
