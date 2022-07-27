@@ -126,12 +126,12 @@ class RunTest:
         # )
 
         # 发送钉钉消息
-        # R.send_dingding(
-        #     REPORT_END_PATH=self.REPORT_END_PATH,
-        #     log_path=self.log_path,
-        #     title=self.title,
-        #     ENVIRONMENT=self.ENVIRONMENT,
-        #     TESTER=self.TESTER
-        # )
+        R.send_dingding(
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            log_path=self.log_path,
+            title=self.title,
+            ENVIRONMENT=self.ENVIRONMENT,
+            TESTER=self.TESTER
+        )
 
         self.logger.info(f'==========< 结束 {self.title}自动化 测试 >===========')
