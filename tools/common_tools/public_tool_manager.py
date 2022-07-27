@@ -72,17 +72,6 @@ class Manager:
         :param EndExcutorJson:
         :return:
         """
-        # 复制environment.properties文件夹，在本地生成测试环境
-        logger(log_path).info("开始复制 environment.properties文件到allure_result下")
-        shutil.copy(StartEnvironmentFilePath, EndEnvironmentFile)
-
-        logger(log_path).info("开始复制 environment.xml文件到allure_result下")
-        shutil.copy(StartEnvironmentFileXMLPath, EndEnvironmentXMLFile)
-
-        # 复制 executor.json文件夹，在本地生成测试环境
-        logger(log_path).info("开始复制 executor.json文件到allure_result下")
-        shutil.copy(StartExcutorJson, EndExcutorJson)
-
         logger(log_path).info("开始==>生成测试报告")
         if not os.path.exists(REPORT_RESULT_PATH):
             os.mkdir(REPORT_RESULT_PATH)
@@ -94,11 +83,22 @@ class Manager:
         files = os.listdir(REPORT_HISTORY_PATH)
 
         # 如果不存在则先创建文件夹
-        if not os.path.exists(RESULT_HISTORY_PATH):
-            os.mkdir(RESULT_HISTORY_PATH)
-        logger(log_path).info("复制history文件夹")
-        for file in files:
-            shutil.copy(os.path.join(REPORT_HISTORY_PATH, file), RESULT_HISTORY_PATH)
+        # if not os.path.exists(RESULT_HISTORY_PATH):
+        #     os.mkdir(RESULT_HISTORY_PATH)
+        # logger(log_path).info("复制history文件夹")
+        # for file in files:
+        #     shutil.copy(os.path.join(REPORT_HISTORY_PATH, file), RESULT_HISTORY_PATH)
+
+        # 复制environment.properties文件夹，在本地生成测试环境
+        logger(log_path).info("开始复制 environment.properties文件到allure_result下")
+        shutil.copy(StartEnvironmentFilePath, EndEnvironmentFile)
+
+        logger(log_path).info("开始复制 environment.xml文件到allure_result下")
+        shutil.copy(StartEnvironmentFileXMLPath, EndEnvironmentXMLFile)
+
+        # 复制 executor.json文件夹，在本地生成测试环境
+        logger(log_path).info("开始复制 executor.json文件到allure_result下")
+        shutil.copy(StartExcutorJson, EndExcutorJson)
 
         logger(log_path).info("完成==>生成测试报告")
 
