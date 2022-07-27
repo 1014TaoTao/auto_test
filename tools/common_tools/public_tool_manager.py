@@ -72,9 +72,6 @@ class Manager:
         :param EndExcutorJson:
         :return:
         """
-        logger(log_path).info("开始==>生成测试报告")
-
-
         # 复制environment.properties文件夹，在本地生成测试环境
         logger(log_path).info("开始复制 environment.properties文件到allure_result下")
         shutil.copy(StartEnvironmentFilePath, EndEnvironmentFile)
@@ -86,11 +83,12 @@ class Manager:
         logger(log_path).info("开始复制 executor.json文件到allure_result下")
         shutil.copy(StartExcutorJson, EndExcutorJson)
 
+        logger(log_path).info("开始==>生成测试报告")
         if not os.path.exists(REPORT_RESULT_PATH):
             os.mkdir(REPORT_RESULT_PATH)
         if not os.path.exists(REPORT_END_PATH):
             os.mkdir(REPORT_END_PATH)
-        os.system(f"allure generate {REPORT_RESULT_PATH} -o {REPORT_END_PATH}")
+        os.system(f"allure generate {REPORT_RESULT_PATH} -o {REPORT_END_PATH} --clean")
 
         # 复制history文件夹，在本地生成趋势图
         files = os.listdir(REPORT_HISTORY_PATH)
