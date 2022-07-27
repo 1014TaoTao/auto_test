@@ -77,6 +77,16 @@ RUN pqi use douban
 
 RUN touch requirements.txt
 
+RUN wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.17.3/allure-commandline-2.17.3.tgz
+RUN tar -zxvf allure-commandline-2.17.3.tgz
+RUN chmod -R 777 allure-2.17.3
+# 配置 allure (记得一行一个回车哦，不然就直接复制粘贴)
+RUN cat >> /root/.bashrc << "EOF"
+RUN export PATH=/var/jenkins_home/allure-2.17.3/bin:$PATH
+RUN EOF
+# 更新环境变量配置文件
+RUN source /root/.bashrc
+
 
 #容器启动时需要执行的命令
 RUN java --version
