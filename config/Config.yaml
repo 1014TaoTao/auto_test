@@ -122,7 +122,6 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_op
-
   environment_34_13:
     environment: 34.13环境
     versionCode: v1.0
