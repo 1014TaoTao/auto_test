@@ -96,28 +96,28 @@ class RunTest:
         R.run_test(log_path=self.log_path)
 
         # 生成测试报告
-        R.run_allure_report(
-            log_path=self.log_path,
-            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
-            REPORT_END_PATH=self.REPORT_END_PATH,
-            REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
-            RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
-            StartEnvironmentFilePath=self.StartEnvironmentFilePath,
-            EndEnvironmentFile=self.EndEnvironmentFile,
-            StartEnvironmentFileXMLPath=self.StartEnvironmentFileXMLPath,
-            EndEnvironmentXMLFile=self.EndEnvironmentXMLFile,
-            StartExcutorJson=self.StartExcutorJson,
-            EndExcutorJson=self.EndExcutorJson
-        )
+        # R.run_allure_report(
+        #     log_path=self.log_path,
+        #     REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
+        #     REPORT_END_PATH=self.REPORT_END_PATH,
+        #     REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
+        #     RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
+        #     StartEnvironmentFilePath=self.StartEnvironmentFilePath,
+        #     EndEnvironmentFile=self.EndEnvironmentFile,
+        #     StartEnvironmentFileXMLPath=self.StartEnvironmentFileXMLPath,
+        #     EndEnvironmentXMLFile=self.EndEnvironmentXMLFile,
+        #     StartExcutorJson=self.StartExcutorJson,
+        #     EndExcutorJson=self.EndExcutorJson
+        # )
 
         # 发送邮件
-        R.run_email(
-            REPORT_END_PATH=self.REPORT_END_PATH,
-            dirpath=self.dirpath,
-            outFullName=self.outFullName,
-            log_path=self.log_path,
-            file_list=self.file_list
-        )
+        # R.run_email(
+        #     REPORT_END_PATH=self.REPORT_END_PATH,
+        #     dirpath=self.dirpath,
+        #     outFullName=self.outFullName,
+        #     log_path=self.log_path,
+        #     file_list=self.file_list
+        # )
 
         # 打开allure报告
         # R.open_report(
@@ -126,12 +126,12 @@ class RunTest:
         # )
 
         # 发送钉钉消息
-        R.send_dingding(
-            REPORT_END_PATH=self.REPORT_END_PATH,
-            log_path=self.log_path,
-            title=self.title,
-            ENVIRONMENT=self.ENVIRONMENT,
-            TESTER=self.TESTER
-        )
+        # R.send_dingding(
+        #     REPORT_END_PATH=self.REPORT_END_PATH,
+        #     log_path=self.log_path,
+        #     title=self.title,
+        #     ENVIRONMENT=self.ENVIRONMENT,
+        #     TESTER=self.TESTER
+        # )
 
         self.logger.info(f'==========< 结束 {self.title}自动化 测试 >===========')
