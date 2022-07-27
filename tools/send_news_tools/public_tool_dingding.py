@@ -102,7 +102,8 @@ class DingTalk:
                  "跳过数量：<font color=\"#2585a6\">%s 个</font>" % self.SKIP + "\n\n" +
                  "失败数量：<font color=\"#c63c26\">%s 个</font>" % self.FAILED + "\n\n" +
                  "成功率为：<font color=\"#1d953f\">%s </font>" % self.RATE + "\n\n" +
-                 "执行人员：<font color=\"#130c0e\">@%s</font>" % TESTER + "\n\n --- \n\n" +
+                 # "执行人员：<font color=\"#130c0e\">@%s</font>" % TESTER + "\n\n --- \n\n" +
+                 "执行人员：<font color=\"#f2eada\">@%s</font>" % TESTER + "\n\n --- \n\n" +
                  "报告详情：[点击查看](%s)" % reprot_url + "\n\n" +
                  "构建地址：[点击查看，暂未开通](%s)" % jenkins_url + "\n\n" +
                  "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font> \n\n --- \n\n " % time.strftime(

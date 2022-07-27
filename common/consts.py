@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
+import os
 
 from common import setting
 from common.readConfigYaml import Config
+
+TEST_TYPE = os.environ[u'测试类型']
+print(TEST_TYPE)
 
 TESTCASEPATH = setting.API_EXCEL_FILE
 
@@ -10,6 +14,7 @@ C = Config()
 # 选择执行环境:['environment_195', 'environment_115', 'environment_120', 'environment_43_13']
 # 如果要切换环境，只需要修改索引下标值
 ENVIRONMENT: str = C.get_environment()[1]
+# ENVIRONMENT: str = os.environ['']
 
 APIHOST: str = C.get_apihoet(ENVIRONMENT)
 
@@ -24,32 +29,25 @@ LOGINDATA: dict = C.get_login_data(ENVIRONMENT, LOGINUSER)  # 不同的测试人
 # 登录人名称
 TESTER: str = C.get_testers()[0]
 
-# ['on', 'off']
-
-DELETE_ON_OFF: str = C.get_delete_report_on_off()[0]
-SAVE_ON_OFF: str = C.get_run_report_on_off()[0]
-EMAIL_ON_OFF: str = C.get_send_email_on_off()[1]
-OPEN_REPORY_ON_OFF: str = C.get_open_report_on_off()[1]
-DINGDING_NEWS_ON_OFF: str = C.get_send_dingding_news_on_off()[1]
 # 接口响应时间list，单位毫秒
 STRESS_LIST = []
 # 接口执行结果list
 RESULT_LIST = []
 
 # if __name__ == '__main__':
-#     print('TESTCASEPATH', (TESTCASEPATH))
-#     print('ENVIRONMENT', (ENVIRONMENT))
-#     print('LOGINUSER', LOGINUSER)
-#     print('APIHOSTPORT', APIHOSTPORT)
-#     print('APIHOST', (APIHOST))
-#     print('BASEHOST', (BASEHOST))
-#     print('LOGINHOST', (LOGINHOST))
-#     print('USERNAME', (USERNAME))
-#     print('LOGINDATA', (LOGINDATA))
-#     print('TESTER', TESTER)
+# print('TESTCASEPATH', (TESTCASEPATH))
+# print('ENVIRONMENT', (ENVIRONMENT))
+# print('LOGINUSER', LOGINUSER)
+# print('APIHOSTPORT', APIHOSTPORT)
+# print('APIHOST', (APIHOST))
+# print('BASEHOST', (BASEHOST))
+# print('LOGINHOST', (LOGINHOST))
+# print('USERNAME', (USERNAME))
+# print('LOGINDATA', (LOGINDATA))
+# print('TESTER', TESTER)
 #
-#     print(DELETE_ON_OFF)
-#     print(SAVE_ON_OFF)
-#     print(EMAIL_ON_OFF)
-#     print(OPEN_REPORY_ON_OFF)
-#     print(DINGDING_NEWS_ON_OFF)
+# print(DELETE_ON_OFF)
+# print(SAVE_ON_OFF)
+# print(EMAIL_ON_OFF)
+# print(OPEN_REPORY_ON_OFF)
+# print(DINGDING_NEWS_ON_OFF)

@@ -75,101 +75,63 @@ class RunTest:
 
         self.ENVIRONMENT: str = consts.ENVIRONMENT
         self.TESTER: str = consts.TESTER
-        self.DELETE_ON_OFF: str = consts.DELETE_ON_OFF
-        self.SAVE_ON_OFF: str = consts.SAVE_ON_OFF
-        self.EMAIL_ON_OFF: str = consts.EMAIL_ON_OFF
-        self.OPEN_REPORY_ON_OFF: str = consts.OPEN_REPORY_ON_OFF
-        self.DINGDING_NEWS_ON_OFF: str = consts.DINGDING_NEWS_ON_OFF
 
     def run(self):
+        self.logger.info(f'==========< 开始 {self.title}自动化 测试 >===========')
+
         R = Run()
 
-        self.logger.info(f'==========< 开始 {self.title}自动化 测试 >===========')
         # 打印系统和python的版本信息
         public_tool_project_check.sys_project(log_path=self.log_path)
 
         self.logger.info(f"【本次执行环境为:{self.ENVIRONMENT},执行人员：{self.TESTER}】")
 
-        try:
-            if self.DELETE_ON_OFF == 'on':
-                self.logger.info("打开删除旧报告功能")
-                # 删除旧的测试结果数据
-                R.delete_old_file(
-                    log_path=self.log_path,
-                    REPORT_RESULT_PATH=self.REPORT_RESULT_PATH
-                )
-            else:
-                self.logger.info("【DELETE_ON_OFF == off】，不开启删除旧的测试结果数据")
-        except Exception as e:
-            raise f"判断是否开启删除测试结果数据功能异常：{e}"
+        # 删除旧的测试结果数据
+        R.delete_old_file(
+            log_path=self.log_path,
+            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH
+        )
 
         # 执行测试
         R.run_test(log_path=self.log_path)
 
-        try:
-            if self.SAVE_ON_OFF == 'on':
-                # 生成测试报告
-                R.run_allure_report(
-                    log_path=self.log_path,
-                    REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
-                    REPORT_END_PATH=self.REPORT_END_PATH,
-                    REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
-                    RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
-                    StartEnvironmentFilePath=self.StartEnvironmentFilePath,
-                    EndEnvironmentFile=self.EndEnvironmentFile,
-                    StartEnvironmentFileXMLPath=self.StartEnvironmentFileXMLPath,
-                    EndEnvironmentXMLFile=self.EndEnvironmentXMLFile,
-                    StartExcutorJson=self.StartExcutorJson,
-                    EndExcutorJson=self.EndExcutorJson
-                )
-            else:
-                self.logger.info("【SAVE_ON_OFF == off】，不开启生成报告功能")
-        except Exception as e:
-            raise f"判断是否开启生成报告功能异常：{e}"
+        # 生成测试报告
+        R.run_allure_report(
+            log_path=self.log_path,
+            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
+            RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
+            StartEnvironmentFilePath=self.StartEnvironmentFilePath,
+            EndEnvironmentFile=self.EndEnvironmentFile,
+            StartEnvironmentFileXMLPath=self.StartEnvironmentFileXMLPath,
+            EndEnvironmentXMLFile=self.EndEnvironmentXMLFile,
+            StartExcutorJson=self.StartExcutorJson,
+            EndExcutorJson=self.EndExcutorJson
+        )
 
         # 发送邮件
-        try:
-            if self.EMAIL_ON_OFF == 'on':
-                # 发送邮件
-                R.run_email(
-                    REPORT_END_PATH=self.REPORT_END_PATH,
-                    dirpath=self.dirpath,
-                    outFullName=self.outFullName,
-                    log_path=self.log_path,
-                    file_list=self.file_list
-                )
-            else:
-                self.logger.info("【EMAIL_ON_OFF == off】，不开启发送邮件功能")
-        except Exception as e:
-            self.logger.error(f"【判断是否开启发送邮件功能异常：{e}】")
+        R.run_email(
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            dirpath=self.dirpath,
+            outFullName=self.outFullName,
+            log_path=self.log_path,
+            file_list=self.file_list
+        )
 
-        # 打开报告
-        try:
-            if self.OPEN_REPORY_ON_OFF == 'on':
-                # 打开allure报告
-                R.open_report(
-                    log_path=self.log_path,
-                    REPORT_END_PATH=self.REPORT_END_PATH
-                )
-            else:
-                self.logger.info("【OPEN_REPORY_ON_OFF == off】，不开启自动打开报告功能")
-        except Exception as e:
-            raise f"判断是否开启自动打开报告功能异常：{e}"
+        # 打开allure报告
+        # R.open_report(
+        #     log_path=self.log_path,
+        #     REPORT_END_PATH=self.REPORT_END_PATH
+        # )
 
-        # 发送钉钉执行消息
-        try:
-            if self.DINGDING_NEWS_ON_OFF == 'on':
-                # 发送钉钉消息
-                R.send_dingding(
-                    REPORT_END_PATH=self.REPORT_END_PATH,
-                    log_path=self.log_path,
-                    title=self.title,
-                    ENVIRONMENT=self.ENVIRONMENT,
-                    TESTER=self.TESTER
-                )
-            else:
-                self.logger.info("【DINGDING_NEWS_ON_OFF == off】，不开启发送钉钉消息功能")
-        except Exception as e:
-            raise f"【发送钉钉消息功能异常：{e}】"
+        # 发送钉钉消息
+        R.send_dingding(
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            log_path=self.log_path,
+            title=self.title,
+            ENVIRONMENT=self.ENVIRONMENT,
+            TESTER=self.TESTER
+        )
 
         self.logger.info(f'==========< 结束 {self.title}自动化 测试 >===========')
