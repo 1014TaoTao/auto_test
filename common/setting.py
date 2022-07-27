@@ -123,8 +123,8 @@ PER_CONFIG_PATH = os.path.join(BASE_PATH, "locust.conf")
 
 
 # ===================public配置======================
-jenkins_url = "http://250.25.250.250:9000/"
-reprot_url = "http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html"
+jenkins_url = "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/"
+reprot_url = "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/"
 at_mobiles_list = [15382112620]
 
 

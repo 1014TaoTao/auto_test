@@ -9,11 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9a7db981d7f7fadd",
+      "uid" : "8b67623b96968a13",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/8b67623b96968a13",
       "status" : "passed",
       "time" : {
-        "start" : 1658893713786,
-        "stop" : 1658893713786,
+        "start" : 1658930774997,
+        "stop" : 1658930774997,
         "duration" : 0
       }
     } ]
@@ -28,11 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "36f5fd01b7ea9569",
+      "uid" : "4b4d2241040679",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/4b4d2241040679",
       "status" : "passed",
       "time" : {
-        "start" : 1658893713723,
-        "stop" : 1658893713739,
+        "start" : 1658930774934,
+        "stop" : 1658930774950,
         "duration" : 16
       }
     } ]
@@ -47,12 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "25aafce433dae637",
+      "uid" : "519caf68d90cf609",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/519caf68d90cf609",
       "status" : "passed",
       "time" : {
-        "start" : 1658893713739,
-        "stop" : 1658893713755,
-        "duration" : 16
+        "start" : 1658930774966,
+        "stop" : 1658930774966,
+        "duration" : 0
       }
     } ]
   },
@@ -66,12 +69,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "89fa1371a6f95700",
+      "uid" : "5b5bcc2506c7ac92",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/5b5bcc2506c7ac92",
       "status" : "passed",
       "time" : {
-        "start" : 1658893713677,
-        "stop" : 1658893713723,
-        "duration" : 46
+        "start" : 1658930774887,
+        "stop" : 1658930774934,
+        "duration" : 47
       }
     } ]
   },
@@ -85,12 +89,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fd0f2fdc92f22506",
+      "uid" : "cb6d5a48001291dd",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/cb6d5a48001291dd",
       "status" : "passed",
       "time" : {
-        "start" : 1658893713755,
-        "stop" : 1658893713770,
-        "duration" : 15
+        "start" : 1658930774981,
+        "stop" : 1658930774981,
+        "duration" : 0
       }
     } ]
   }
