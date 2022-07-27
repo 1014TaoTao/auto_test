@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://10.1.5.26:9091/",
+  "buildOrder" : 1,
+  "buildName" : "pytest_auto_uitest_apitest #10",
+  "buildUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/"
+} ]

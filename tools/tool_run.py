@@ -87,10 +87,10 @@ class RunTest:
         self.logger.info(f"【本次执行环境为:{self.ENVIRONMENT},执行人员：{self.TESTER}】")
 
         # 删除旧的测试结果数据
-        R.delete_old_file(
-            log_path=self.log_path,
-            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH
-        )
+        # R.delete_old_file(
+        #     log_path=self.log_path,
+        #     REPORT_RESULT_PATH=self.REPORT_RESULT_PATH
+        # )
 
         # 执行测试
         R.run_test(log_path=self.log_path)
