@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Jul 27 22:06:14 CST 2022","Wed Jul 27 22:06:14 CST 2022","0","testCase.api","test_excel","TestExcel","","","test_007修改算子分组名称","test_007修改算子分组名称 patch http://192.168.0.115:10007/kube/v1/api/operator/group"
-"passed","Wed Jul 27 22:06:14 CST 2022","Wed Jul 27 22:06:14 CST 2022","0","testCase.api","test_excel","TestExcel","","","test_003节点详情","test_003节点详情 get http://192.168.0.115:10007/kubecluster/v1/api/node/9"
-"passed","Wed Jul 27 22:06:14 CST 2022","Wed Jul 27 22:06:14 CST 2022","0","testCase.api","test_excel","TestExcel","","","test_005节点全部查询","test_005节点全部查询 get http://192.168.0.115:10007/kubecluster/v1/api/node"
-"passed","Wed Jul 27 22:06:14 CST 2022","Wed Jul 27 22:06:14 CST 2022","16","testCase.api","test_excel","TestExcel","","","test_002节点查询","test_002节点查询 get http://192.168.0.115:10007/kubecluster/v1/api/node"
-"passed","Wed Jul 27 22:06:14 CST 2022","Wed Jul 27 22:06:14 CST 2022","47","testCase.api","test_excel","TestExcel","","","test_001节点查询","test_001节点查询 get http://192.168.0.115:10007/kubecluster/v1/api/node"

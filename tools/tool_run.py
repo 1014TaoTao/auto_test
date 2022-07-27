@@ -96,19 +96,19 @@ class RunTest:
         R.run_test(log_path=self.log_path)
 
         # 生成测试报告
-        # R.run_allure_report(
-        #     log_path=self.log_path,
-        #     REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
-        #     REPORT_END_PATH=self.REPORT_END_PATH,
-        #     REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
-        #     RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
-        #     StartEnvironmentFilePath=self.StartEnvironmentFilePath,
-        #     EndEnvironmentFile=self.EndEnvironmentFile,
-        #     StartEnvironmentFileXMLPath=self.StartEnvironmentFileXMLPath,
-        #     EndEnvironmentXMLFile=self.EndEnvironmentXMLFile,
-        #     StartExcutorJson=self.StartExcutorJson,
-        #     EndExcutorJson=self.EndExcutorJson
-        # )
+        R.run_allure_report(
+            log_path=self.log_path,
+            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
+            RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
+            StartEnvironmentFilePath=self.StartEnvironmentFilePath,
+            EndEnvironmentFile=self.EndEnvironmentFile,
+            StartEnvironmentFileXMLPath=self.StartEnvironmentFileXMLPath,
+            EndEnvironmentXMLFile=self.EndEnvironmentXMLFile,
+            StartExcutorJson=self.StartExcutorJson,
+            EndExcutorJson=self.EndExcutorJson
+        )
 
         # 发送邮件
         # R.run_email(
