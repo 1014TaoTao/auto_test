@@ -4,8 +4,8 @@ import os
 from common import setting
 from common.readConfigYaml import Config
 
-TEST_TYPE = os.environ[u'测试类型']
-print(TEST_TYPE)
+# TEST_TYPE = os.environ[u'测试类型']
+# print(TEST_TYPE)
 
 TESTCASEPATH = setting.API_EXCEL_FILE
 
