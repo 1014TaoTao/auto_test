@@ -122,11 +122,4 @@ class YamlPack:
 #
 #     G = YamlPack()
 #
-#     # print(G.get_case())
-#     # print(G.get_case_name())
-#     # print(G.get_method())
-#     # print(G.get_url())
-#     # print(G.get_headers())
-#     # print(G.get_data())
-#     # print(G.get_expected())
 #     print(G.test_data())
