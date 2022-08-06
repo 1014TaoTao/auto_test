@@ -10,6 +10,7 @@ TESTCASEPATH = setting.API_EXCEL_FILE
 
 C = Config()
 
+
 # 选择执行环境:['environment_195', 'environment_115', 'environment_120', 'environment_43_13']
 # 如果要切换环境，只需要修改索引下标值
 ENVIRONMENT: str = C.get_environment()[1]

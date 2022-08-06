@@ -79,8 +79,15 @@ class RunTest:
 
     def run(self):
         self.logger.info(f'==========< 开始 {self.title}自动化 测试 >===========')
+
         # 获取Jenkins选项参数
         self.logger.info(os.environ['branch'])
+        self.logger.info(os.environ['测试类型'])
+        self.logger.info(os.environ['测试环境'])
+        self.logger.info(os.environ['API端口'])
+        self.logger.info(os.environ['API登陆账号'])
+
+
         R = Run()
 
         # 打印系统和python的版本信息
