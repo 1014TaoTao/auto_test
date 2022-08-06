@@ -36,8 +36,6 @@ class Run:
                           RESULT_HISTORY_PATH,
                           StartEnvironmentFilePath,
                           EndEnvironmentFile,
-                          StartEnvironmentFileXMLPath,
-                          EndEnvironmentXMLFile,
                           StartExcutorJson,
                           EndExcutorJson
                           ):
@@ -53,8 +51,6 @@ class Run:
             RESULT_HISTORY_PATH,
             StartEnvironmentFilePath,
             EndEnvironmentFile,
-            StartEnvironmentFileXMLPath,
-            EndEnvironmentXMLFile,
             StartExcutorJson,
             EndExcutorJson
         )  # 生成测试报告

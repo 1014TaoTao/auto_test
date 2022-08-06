@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Jul 17 02:59:50 CST 2022","Sun Jul 17 02:59:55 CST 2022","4412","testCase.ui","test_baidu","TestBaiDu","","","test_01","test_01"
-"passed","Sun Jul 17 02:59:55 CST 2022","Sun Jul 17 02:59:57 CST 2022","2492","testCase.ui","test_baidu","TestBaiDu","","","test_02","test_02"
+"passed","Sat Aug 06 21:54:04 CST 2022","Sat Aug 06 21:54:07 CST 2022","3461","testCase.ui","test_baidu","TestBaiDu","","","test_02","test_02"
 "broken","Sat Jul 09 17:05:34 CST 2022","Sat Jul 09 17:05:34 CST 2022","0","","demo","TestLongin","","","test_longin",""
+"passed","Sat Aug 06 21:53:59 CST 2022","Sat Aug 06 21:54:04 CST 2022","4780","testCase.ui","test_baidu","TestBaiDu","","","test_01","test_01"
