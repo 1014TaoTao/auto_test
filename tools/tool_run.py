@@ -80,8 +80,7 @@ class RunTest:
     def run(self):
         self.logger.info(f'==========< 开始 {self.title}自动化 测试 >===========')
         # 获取Jenkins选项参数
-        test_branch = os.environ['branch']
-        self.logger.info('构建分支为：',test_branch)
+        self.logger.info(os.environ['branch'])
         R = Run()
 
         # 打印系统和python的版本信息
