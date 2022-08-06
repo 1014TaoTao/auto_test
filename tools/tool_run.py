@@ -82,10 +82,10 @@ class RunTest:
 
         # 获取Jenkins选项参数
         self.logger.info(os.environ['branch'])
-        self.logger.info(os.environ['测试类型'])
-        self.logger.info(os.environ['测试环境'])
-        self.logger.info(os.environ['API端口'])
-        self.logger.info(os.environ['API登陆账号'])
+        self.logger.info(os.environ[u'测试类型'])
+        self.logger.info(os.environ[u'测试环境'])
+        self.logger.info(os.environ[u'API端口'])
+        self.logger.info(os.environ[u'API登陆账号'])
 
 
         R = Run()
