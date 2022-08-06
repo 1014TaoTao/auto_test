@@ -10,8 +10,8 @@ from tools.tool_run import RunTest
 """
 
 if __name__ == '__main__':
-    # type_test = 'UI'
-    type_test = 'API'
+    type_test = 'UI'
+    # type_test = 'API'
 
     Go = RunTest(type_test=type_test)
     Go.run()

@@ -105,23 +105,7 @@ environment:
         scope: trust
         client_secret: 2c27867ba8b35dedbde7361f8ffb704d
         client_id: saas_cp
-  environment_122:
-    environment: 122环境
-    versionCode: v1.0
-    apihost: 'http://192.168.0.120:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','11000','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
-    basehost: 'http://192.168.0.120:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      zhangtao122:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
+
   environment_34_13:
     environment: 34.13环境
     versionCode: v1.0
@@ -198,5 +182,5 @@ redis:
   port: 6379
 
 dingding:
-  secret: 'SECf8815f0a111a94769adb673465f3761cb7fb38924aa5ddbab8d77a8e20913177'
-  webhook: 'https://oapi.dingtalk.com/robot/send?access_token=eafaa8fc545ae9f0baace9ac3e8e2f4455c4f9291c4e60736f8a143724de17ce'
+  secret: 'SEC14d75e31de633eaec66f15267ff75f1def52bd32d961798750cca780ff88dafe'
+  webhook: 'https://oapi.dingtalk.com/robot/send?access_token=50d6b1a92b4db2f06419e621978e8b47fe01b23d17e11f93e407ec2bab7100e8'

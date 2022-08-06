@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 59
+  }
+}, {
   "buildOrder" : 3,
   "reportUrl" : "http://helloqa.com#1/AllureReport",
   "reportName" : "iTesting Allure Report",
@@ -148,14 +156,6 @@
   "reportName" : "iTesting Allure Report",
   "data" : {
     "run" : 2,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "run" : 0,
     "retry" : 0
   }
 } ]

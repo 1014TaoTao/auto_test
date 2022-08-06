@@ -1,10 +1,10 @@
 [ {
-  "name" : "auto_projectg",
+  "name" : "Jenkins",
   "type" : "jenkins",
-  "url" : "http://helloqa.com",
-  "buildOrder" : 3,
-  "buildName" : "allure-report_deploy#1",
-  "buildUrl" : "http://helloqa.com#1",
-  "reportName" : "iTesting Allure Report",
-  "reportUrl" : "http://helloqa.com#1/AllureReport"
+  "url" : "http://10.1.5.26:9091/",
+  "buildOrder" : 1,
+  "buildName" : "pytest_auto_uitest_apitest #10",
+  "buildUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/"
 } ]

@@ -1,4 +1,11 @@
 [ {
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 2436513574
+  }
+}, {
   "buildOrder" : 3,
   "reportUrl" : "http://helloqa.com#1/AllureReport",
   "reportName" : "iTesting Allure Report",
@@ -131,9 +138,4 @@
   "data" : {
     "duration" : 18770
   }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : { }
 } ]

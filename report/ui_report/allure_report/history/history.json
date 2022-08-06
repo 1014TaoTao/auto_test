@@ -2,13 +2,23 @@
   "94a64a411b0cbed95405f8a7d64a1a20" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 12,
+      "broken" : 13,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 12
+      "total" : 13
     },
     "items" : [ {
+      "uid" : "8cf4d90086020005",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/8cf4d90086020005",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "time" : {
+        "start" : 1657357534119,
+        "stop" : 1657357534119,
+        "duration" : 0
+      }
+    }, {
       "uid" : "3993111559521f7e",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/3993111559521f7e",
       "status" : "broken",
@@ -135,11 +145,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 19,
+      "passed" : 20,
       "unknown" : 0,
-      "total" : 19
+      "total" : 20
     },
     "items" : [ {
+      "uid" : "f8d00a06ef5f2e52",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/f8d00a06ef5f2e52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659794039448,
+        "stop" : 1659794044228,
+        "duration" : 4780
+      }
+    }, {
       "uid" : "6ddeffd7f012f6c4",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/6ddeffd7f012f6c4",
       "status" : "passed",
@@ -317,11 +336,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 19,
+      "passed" : 20,
       "unknown" : 0,
-      "total" : 19
+      "total" : 20
     },
     "items" : [ {
+      "uid" : "5f3cb563770e4216",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/5f3cb563770e4216",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659794044232,
+        "stop" : 1659794047693,
+        "duration" : 3461
+      }
+    }, {
       "uid" : "10cd6935f4133d41",
       "reportUrl" : "http://helloqa.com#1/AllureReport/#testresult/10cd6935f4133d41",
       "status" : "passed",
