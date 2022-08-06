@@ -10,24 +10,27 @@ TESTCASEPATH = setting.API_EXCEL_FILE
 
 C = Config()
 
+# 获取Jenkins选项参数(切记参数名称不可以使用中文)
+ENVIRONMENT: str = os.environ['ENVIRONMENT']
+APIHOSTPORT: str = os.environ['APIHOSTPORT']
+LOGINUSER=os.environ['LOGINUSER']
+TESTER=os.environ['TESTER']
 
 # 选择执行环境:['environment_195', 'environment_115', 'environment_120', 'environment_43_13']
 # 如果要切换环境，只需要修改索引下标值
-ENVIRONMENT: str = C.get_environment()[1]
-# ENVIRONMENT: str = os.environ['']
+# ENVIRONMENT: str = C.get_environment()[1]
+# APIHOSTPORT: str = C.get_environment_port(ENVIRONMENT)[7]
+# LOGINUSER: str = C.get_login_user_title(ENVIRONMENT)[0]
+
 
 APIHOST: str = C.get_apihoet(ENVIRONMENT)
-
-APIHOSTPORT: str = C.get_environment_port(ENVIRONMENT)[7]
 BASEHOST: str = C.get_basehost(ENVIRONMENT)
 LOGINHOST: str = C.get_loginHost(ENVIRONMENT)
-
-LOGINUSER: str = C.get_login_user_title(ENVIRONMENT)[0]
 USERNAME: str = C.get_login_username(ENVIRONMENT, LOGINUSER)
 LOGINDATA: dict = C.get_login_data(ENVIRONMENT, LOGINUSER)  # 不同的测试人员需要修改对应得data的key
 
 # 登录人名称
-TESTER: str = C.get_testers()[0]
+# TESTER: str = C.get_testers()[0]
 
 # 接口响应时间list，单位毫秒
 STRESS_LIST = []
