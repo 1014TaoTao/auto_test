@@ -13,9 +13,7 @@ from tools.tool_run import RunTest
 if __name__ == '__main__':
     # type_test = 'UI'
     type_test = 'API'
-    # 获取Jenkins选项参数
-    test_branch = os.environ['branch']
-    print(test_branch)
+
 
     Go = RunTest(type_test=type_test)
     Go.run()

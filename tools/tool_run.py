@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 
 from common import setting, consts
 from tools.common_tools.public_tool_run_all import Run
@@ -78,7 +79,9 @@ class RunTest:
 
     def run(self):
         self.logger.info(f'==========< 开始 {self.title}自动化 测试 >===========')
-
+        # 获取Jenkins选项参数
+        test_branch = os.environ['branch']
+        self.logger.info('构建分支为：',test_branch)
         R = Run()
 
         # 打印系统和python的版本信息
