@@ -4,6 +4,7 @@ FROM jenkins/jenkins:latest
 # 2.镜像维护者的姓名和邮箱地址
 MAINTAINER zt <948080782@qq.com>
 
+
 # 3.指定当前工作目录
 WORKDIR /var/jenkins_home
 
@@ -22,6 +23,9 @@ RUN sed -i 's#http://deb.debian.org#https://mirrors.aliyun.com#g' /etc/apt/sourc
 
 RUN cd /var/jenkins_home
 
+# 设定镜像当前时间，否则发送得钉钉消息执行得时候获取到得时间不准备。设置完成可以用date命令查看当前时间
+RUN rm -rf /etc/localtime
+RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 # 1.centos获取最新的软件包
 #yum update
