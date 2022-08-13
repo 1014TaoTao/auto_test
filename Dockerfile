@@ -51,46 +51,39 @@ RUN apt-get -y install openssl libssl-dev
 RUN apt-get -y install sudo
 # RUN apt-get install vim
 
-
 # 5.将当前目录文件夹下的所有文件拷贝到指定目录
 # 5.1安装python
 RUN apt -y install python3
 RUN apt -y install python3-pip
 RUN apt -y install python3-venv
 
-# 下载allure
-RUN wget https://github.com/allure-framework/allure2/releases/download/2.17.3/allure-2.17.3.tgz
-# 解压缩包allure
-RUN tar -zxvf allure-2.17.3.tgz
-RUN mv allure-2.17.3 allure
-RUN chmod -R 777 allure
-
-
 # 6.添加软连接
 RUN ln -s /usr/local/bin/python3
 RUN ln -s /var/jenkins_home/py3.8/bin/pip3/usr/bin/pip3
 
 
+RUN pip3 instaill pqi
+RUN pqi use douban
+
+RUN touch requirements.txt
+
+# 下载allure
+RUN wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.17.3/allure-commandline-2.17.3.tgz
+RUN tar -zxvf allure-commandline-2.17.3.tgz
+RUN mv allure-2.17.3 allure
+RUN chmod -R 777 allure
+
+## 配置 allure (记得一行一个回车哦，不然就直接复制粘贴)
+#RUN cat >> /root/.bashrc << "EOF"
+#RUN export PATH=/var/jenkins_home/allure/bin:$PATH
+#RUN EOF
+
 #配置环境变量
 ENV PATH=/usr/local/bin/:$PATH
 ENV PATH=/var/jenkins_home/allure/bin:$PATH
 
-RUN pip3 instaill pqi
-RUN pqi use douban
-
-
-RUN touch requirements.txt
-
-RUN wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.17.3/allure-commandline-2.17.3.tgz
-RUN tar -zxvf allure-commandline-2.17.3.tgz
-RUN chmod -R 777 allure-2.17.3
-# 配置 allure (记得一行一个回车哦，不然就直接复制粘贴)
-RUN cat >> /root/.bashrc << "EOF"
-RUN export PATH=/var/jenkins_home/allure-2.17.3/bin:$PATH
-RUN EOF
 # 更新环境变量配置文件
 RUN source /root/.bashrc
-
 
 #容器启动时需要执行的命令
 RUN java --version
