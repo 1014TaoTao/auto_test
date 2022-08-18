@@ -1,10 +1,16 @@
 pipeline {
-    agent {label 'release/0.0.3'}
+    parameters {
+        string defaultValue: 'AMD-desktop', name: 'node_name'        /*参数化构建*/
+    }
+
+    agent {label 'master'}
+
     tools{
         maven 'maven'
     }
+
     environment {
-        GIT_PROJECT_ADDR="git@gitee.com:tao__tao/pytest_auto_uitest_apitest.git" //项目的git地址
+        GIT_PROJECT_ADDR="git@gitee.com:uncleqiao/springboot-test.git" //项目的git地址
         JENKINS_WORKSPACE="/root/.jenkins/workspace"    //jenkins存放文件的地址
         PROJECT_NAME="${JOB_NAME}"                      // 项目名
         JAR_NAME="sample-tezst-0.0.1-SNAPSHOT.jar"   // 项目生成的jar的名字
@@ -12,6 +18,7 @@ pipeline {
         IMAGE_ADDR="repository/qiao_namespace/${IMAGE_NAME}"    // 镜像的位置
         VERSION_ID="${BUILD_ID}"
     }
+
     stages {
         stage('pullCode'){
             steps{
