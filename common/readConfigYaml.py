@@ -176,11 +176,6 @@ class Config:
         dingding_webhook = self.data['dingding']['webhook']
         return dingding_webhook
 
-    # 获取端口号
-    def get_environment_port(self, environment_name: str) -> list:
-        port_list = self.get_environment_info()[environment_name]['port']
-        return port_list
-
 # 测试
 # if __name__ == '__main__':
 #     from common import setting

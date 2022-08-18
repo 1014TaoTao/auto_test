@@ -31,6 +31,7 @@ class Login:
         res = Response().result(
             Requests().send_request(method="get", url=self.url, data=self.data_dict, headers=self.headers,
                                     parametric_key='params', file=None))
+        print(res)
         try:
 
             # 断言用户名使用参数化，在配置文件中的username字段
@@ -45,5 +46,18 @@ class Login:
         except Exception as e:
             raise f"登录异常，请检查平台连接情况：{e}\n"  # 'NoneType' object is not subscriptable 平台连接不上
 
-# if __name__ == '__main__':
-#     Login().api_login()
+if __name__ == '__main__':
+    BASEHOST='http://10.0.34.13:18603'
+    LOGINHOST='/uaa/oauth/token'
+    LOGINDATA={
+      "grantType": "password",
+      "accountType": "mobile",
+      "scope": "trust",
+      "password": "eede6d66c93b0340342c18f8c5c76a87",
+      "mobile": "18192408293",
+      "clientId": "saas_op",
+      "clientSecret": "dc278c7ba8b3ddedbde7361fcedb70ee",
+      "username": "18192408293",
+    }
+    USERNAME='18192408293'
+    Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
