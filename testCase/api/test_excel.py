@@ -18,20 +18,13 @@ def run_setup() -> list:
     """
     with allure.step("token执行初始化"):
         TESTCASEPATH: str = consts.TESTCASEPATH
-        APIHOST: str = consts.APIHOST
-        APIHOSTPORT: str = consts.APIHOSTPORT
-        BASEHOST: str = consts.BASEHOST
-        LOGINHOST: str = consts.LOGINHOST
-        USERNAME: str = consts.USERNAME
-        LOGINDATA: dict = consts.LOGINDATA
+        APIHOST: str = consts.API_HOST
 
         try:
-            Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
+            Login().api_login()
         except Exception as e:
             logger.error(f"【登录写入token异常：{e}】")
-        result = ExcelPack(file_name=TESTCASEPATH, sheet_id=setting.sheet_id).run_excel_case(APIHOST, APIHOSTPORT,
-                                                                                             BASEHOST, LOGINHOST,
-                                                                                             LOGINDATA, USERNAME)
+        result = ExcelPack(file_name=TESTCASEPATH, sheet_id=setting.sheet_id).run_excel_case(APIHOST)
         return result
 
 

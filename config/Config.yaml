@@ -1,133 +1,40 @@
 environment:
-  environment_195:
-    environment: 195环境
-    versionCode: v1.0
-    apihost: 'http://kubeos.tudoucloud.com'
-    basehost: 'http://192.168.0.195:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      zhangtao195:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      yemingxincp:
-        username: yemingxin
-        mobile: 18810733561
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-      yemingxinop:
-        username: 运营账号
-        mobile: 17600668960
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      ranxiaomin:
-        username: ranxiaomin
-        mobile: 17319901852
-        password: 737cec5e3ca2a2fb367fbedf4965fbc6
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
+  op:
+    url: "http://op-wb.tudoucloud.com/uaa/oauth/token"
+    headers:
+      Content-Type: "application/json;charset=UTF-8"
+    # 请勿修改key，会导致登陆失败
+    data:
+      account_type: "mobile"
+      client_id: "saas_op"
+      client_secret: "dc278c7ba8b3ddedbde7361fcedb70ee"
+      grant_type: "password"
+      mobile: "18192408293"
+      password: "eede6d66c93b0340342c18f8c5c76a87"
+      scope: "trust"
+      username: "18192408293"
+  cp:
+    url: "http://wb.tudoucloud.com/uaa/oauth/token"
+    headers:
+      Content-Type: "application/json;charset=UTF-8"
+    # 请勿修改key，会导致登陆失败
+    data:
+      accountType: "mobile"
+      clientId: "saas_cp"
+      clientSecret: "cd342c7baed3dd3b55e7361fcedb88eh"
+      grantType: "password"
+      mobile: "18603015137"
+      password: "737cec5e3ca2a2fb367fbedf4965fbc6"
+      scope: "trust"
+      username: "18603015137"
 
-  environment_115:
-    environment: 115环境
-    apihost: 'http://kubeos.tudoucloud.com'
-    basehost: 'http://192.168.0.115:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      zhangtao115:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      yemingxincp:
-        username: 北京晶科瑞特科技发展有限公司
-        mobile: 15045783203
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-      yemingxinop:
-        username: 运营账号
-        mobile: 17600000001
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      wangjingjingcp:
-        username: TD18709293556
-        mobile: 18709293556
-        password: e4b122e04d83b12518393d63dccdc1b9
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-      wangjingjingop:
-        username: 弗雷云西安管理员
-        mobile: xian@i-tudou.com
-        password: eede6d66c93b0340342c18f8c5c76a87
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      ranxiaomin:
-        username: ranxiaomin
-        mobile: 17319901852
-        password: 737cec5e3ca2a2fb367fbedf4965fbc6
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
+api_host:
+  - http://kubeos.tudoucloud.com
+  - http://kube.tudoucloud.com
+  - http://datagaea.tudoucloud.com
+  - http://ai.tudoucloud.com
+  - http://3dm.tudoucloud.com
 
-  environment_34_13:
-    environment: 34.13环境
-    apihost: 'http://kubeos.tudoucloud.com'
-    basehost: 'http://10.0.34.13:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      kubeamdin:
-        username: 18192408293
-        mobile: 18192408293
-        password: eede6d66c93b0340342c18f8c5c76a87
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      zhangtao34_13:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
 
 email:
   smtpserver: smtp.qq.com

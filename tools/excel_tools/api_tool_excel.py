@@ -125,11 +125,11 @@ class ExcelPack(ReadExcel):
         :return:
         """
         # 拼接用例名称为：id+title
-        case_name = self.get_case_id(row) + self.get_case_title(row)
+        case_name = self.get_case_id(row) + '-' + self.get_case_mode(row) + '-' + self.get_case_title(row)
         return case_name
 
     # 处理url,获取需要匹配的字符串并返回url
-    def get_new_url(self, row: int, APIHOST: str, ENVIRONMENTPORT: str) -> Union[
+    def get_new_url(self, row: int, APIHOST: str) -> Union[
         Union[str, Tuple[Union[str, Any], Exception]], Any]:
         """
         :param row:
@@ -138,7 +138,7 @@ class ExcelPack(ReadExcel):
         api_url = self.get_url_api(row)
         base_url = self.get_base_url_info(row)
         if base_url == '':
-            url = APIHOST + ENVIRONMENTPORT + api_url
+            url = APIHOST + api_url
         else:
             url = base_url + api_url
         try:
@@ -180,10 +180,12 @@ class ExcelPack(ReadExcel):
         :param row:
         :return:
         """
+        # 先判断是否有依赖，再判断是否有data
         # 获取data,类型是str
         global data
         str_data = self.get_data_info(row)
         # 处理data,如果依赖不为空，说明有需要得依赖，加入到入参中。
+
         # 入参不为空
         if str_data != "":
             # 有依赖
@@ -193,7 +195,7 @@ class ExcelPack(ReadExcel):
                     data = self.get_case_json(row)
                 # 列表依赖
                 elif type(eval(str_data)) == list:
-                    self.logger.error("列表类型入参，且有依赖情况没有做，遇到具体问题再处理。")  # 列表类型入参，依赖暂时没有做,
+                    self.logger.error("列表类型入参，且有依赖情况开发中...，遇到具体问题再处理。")  # 列表类型入参，依赖暂时没有做,
                     data = str_data
             # 无依赖
             else:
@@ -225,23 +227,23 @@ class ExcelPack(ReadExcel):
             dict_data = eval(str_data)
         else:
             dict_data = eval(str_data)
-        depend_list = self.get_case_list(row)  # 获取依赖列表
-        revise_list = self.get_revise_list(row)  # 获取依赖字段
+        depend_list: list = self.get_case_list(row)  # 获取依赖列表
+        revise_list: list = self.get_revise_list(row)  # 获取依赖字段
         for i in range(len(depend_list)):
             case_str_list = depend_list[i].split(":")[1].split(",")
-            case_id = depend_list[i].split(":")[0]
+            case_depend = depend_list[i].split(":")[0]
             revise_str = revise_list[i]
             for case_str in case_str_list:
                 self.sheet_data = self.get_sheet_data()
-                response = self.get_case_line(case_id, row)
+                response = self.get_case_line(case_depend, row)
                 if response != u"【excel无法找到对应依赖的响应内容】":
                     try:
                         # res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
                         # dict_data[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
 
-                        res_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}",
-                                                                                              "").replace(
-                            "': ", "")
+                        res_str = eval(re.search(f'{case_str: }.*?(?=,)', response).group().replace(f'{case_str}',
+                                                                                                    '').replace(
+                            ": '", ''))
                         dict_data[revise_str] = res_str  # {id:9},在response获取得字段加入json_data字典中
 
 
@@ -292,8 +294,7 @@ class ExcelPack(ReadExcel):
         return headers_dict
 
     # 批量执行，执行excel测试用例
-    def run_excel_case(self, APIHOST: str, APIHOSTPORT: str, BASEHOST: str, LOGINHOST: str, LOGINDATA: dict,
-                       USERNAME: str) -> list:
+    def run_excel_case(self, APIHOST: str) -> list:
         """
         :return:
         """
@@ -314,7 +315,7 @@ class ExcelPack(ReadExcel):
                 # 获取file路径
                 file = self.get_upload_file_path(row)
                 # 处理url
-                url = self.get_new_url(row, APIHOST, APIHOSTPORT)
+                url = self.get_new_url(row, APIHOST)
                 # 处理header,字符串str转为字典dict
                 headers = self.get_new_headers(row)
                 # 处理断言
@@ -331,7 +332,7 @@ class ExcelPack(ReadExcel):
                         if res['body']['msg'] != '未经授权的访问':
                             pass
                         else:
-                            Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
+                            Login().api_login()
                             headers = self.get_new_headers(row)
                             res = self.runs.send_request(method=method, url=url, data=data, headers=headers, file=file,
                                                          parametric_key=parametric_key)

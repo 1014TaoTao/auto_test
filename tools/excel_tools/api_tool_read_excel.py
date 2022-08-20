@@ -113,6 +113,15 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_id())
 
     # 获取用例模块名称
+    def get_case_mode(self,row:int):
+        """
+        :param row:
+        :return:
+        """
+        case_mode = self.get_cell_data(row, global_var().get_module())
+        return case_mode
+
+    # 获取用例功能名称
     def get_case_title(self, row: int):
         """
         :param row:
