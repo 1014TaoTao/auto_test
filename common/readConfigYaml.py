@@ -21,6 +21,7 @@ class Config:
         all_data_dict = self.data
         return all_data_dict
 
+    # 获取邮件配置信息
     def get_email_info(self) -> dict:
         """
         :return:
@@ -28,23 +29,13 @@ class Config:
         email_info = self.data['email']
         return email_info
 
+    # 获取数据库配置信息
     def get_databases_info(self) -> dict:
         """
         :return:
         """
         databases_info = self.data['databases']
         return databases_info
-
-    # 获取环境名称
-    def get_environment(self) -> list:
-        """
-        :return:
-        """
-        environment_list = []
-        environment = self.data['environment']
-        for k, v in environment.items():
-            environment_list.append(k)
-        return environment_list
 
     # 获取环境下所有信息
     def get_environment_info(self) -> dict:
@@ -54,63 +45,62 @@ class Config:
         environment = self.data['environment']
         return environment
 
-    # 获取apihost
-    def get_apihoet(self, environment_name: str) -> str:
+    # 获取环境名称
+    def get_environment_type(self) -> list:
         """
-        :param environment_name:
         :return:
         """
-        api_host = self.get_environment_info()[environment_name]['apihost']
-        return api_host
+        environment_list = []
+        environment = self.data['environment']
+        for k, v in environment.items():
+            environment_list.append(k)
+        return environment_list
 
-    # 获取basehost
-    def get_basehost(self, environment_name: str) -> str:
+    # 获取登陆地址
+    def get_login_url(self, environment_type: str) -> str:
         """
-        :param environment_name:
+        :param environment_type:
         :return:
         """
-        base_host = self.get_environment_info()[environment_name]['basehost']
+        base_host = self.get_environment_info()[environment_type]['url']
         return base_host
 
-    # 获取登录地址
-    def get_loginHost(self, environment_name: str) -> str:
+    # 获取请求头
+    def get_login_headers(self, environment_type: str) -> dict:
         """
-        :param environment_name:
+        :param environment_type:
         :return:
         """
-        login_host = self.get_environment_info()[environment_name]['loginHost']
-        return login_host
+        headers = self.get_environment_info()[environment_type]['headers']
+        return headers
 
     # 获取登录入参
-    def get_login_data(self, environment_name: str, title_user: str) -> dict:
+    def get_login_data(self, environment_type: str) -> dict:
         """
-        :param title_user:
-        :param environment_name:
+        :param environment_type:
         :return:
         """
-        login_info = self.get_environment_info()[environment_name]['loginInfo'][title_user]
+        login_info = self.get_environment_info()[environment_type]['data']
         return login_info
 
     # 获取登录入参
-    def get_login_user_title(self, environment_name: str) -> list:
+    def get_login_username(self, environment_type: str) -> str:
         """
-        :param environment_name:
+        :param environment_type:
         :return:
         """
-        title_list = []
-        for title in self.get_environment_info()[environment_name]['loginInfo']:
-            title_list.append(title)
-        return title_list
+        username = self.get_environment_info()[environment_type]['data']['username']
 
-    # 获取登录入参
-    def get_login_username(self, environment_name: str, title_user: str) -> str:
+        return username
+
+    # 获取接口基础域名
+    def get_api_host(self) -> list:
         """
-        :param environment_name:
-        :param title_user:
         :return:
         """
-        login_username = self.get_environment_info()[environment_name]['loginInfo'][title_user]['username']
-        return login_username
+        base_host = self.data['api_host']
+        return base_host
+
 
     # 是否删除旧的测试数据
     def get_delete_report_on_off(self) -> str:
@@ -181,11 +171,10 @@ class Config:
 #     from common import setting
 #
 #     C = Config()
-
-
-# 如果要切换环境，只需要修改索引下标值['environment_195', 'environment_115', 'environment_122', 'environment_34_13']
-# ENVIRONMENT = C.get_environment()[1]
-# print(ENVIRONMENT)
-# all_ENVIRONMENT = C.get_apihoet(ENVIRONMENT)
-# print(all_ENVIRONMENT)
-# print(C.get_dingding_webhook())
+#     print(C.get_login_url('op'))
+#     print(C.get_login_data('op'))
+#     print(C.get_login_username('op'))
+#
+#     print(C.get_login_url('cp'))
+#     print(C.get_login_data('cp'))
+#     print(C.get_login_username('cp'))

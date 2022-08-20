@@ -108,13 +108,13 @@ class RunTest:
                             EndExcutorJson=self.EndExcutorJson)
 
         # 发送邮件
-        # R.run_email(
-        #     REPORT_END_PATH=self.REPORT_END_PATH,
-        #     dirpath=self.dirpath,
-        #     outFullName=self.outFullName,
-        #     log_path=self.log_path,
-        #     file_list=self.file_list
-        # )
+        R.run_email(
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            dirpath=self.dirpath,
+            outFullName=self.outFullName,
+            log_path=self.log_path,
+            file_list=self.file_list
+        )
 
         # 打开allure报告
         # R.open_report(
