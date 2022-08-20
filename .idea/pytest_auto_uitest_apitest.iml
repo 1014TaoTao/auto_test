@@ -23,10 +23,6 @@
       <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/xray" />
       <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/xunit-xml" />
       <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
-      <excludeFolder url="file://$MODULE_DIR$/report" />
-      <excludeFolder url="file://$MODULE_DIR$/logs" />
-      <excludeFolder url="file://$MODULE_DIR$/driver" />
-      <excludeFolder url="file://$MODULE_DIR$/data" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (pytest_auto_uitest_apitest)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

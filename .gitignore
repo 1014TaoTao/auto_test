@@ -1,8 +1,4 @@
 /.idea/
 /.pytest_cache/
 /venv/
-/logs/
-/data/
-/driver/
-/static/
-/report/
+
