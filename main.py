@@ -12,9 +12,9 @@ from tools.tool_run import RunTest
 
 if __name__ == '__main__':
     # type_test = 'UI'
-    # type_test = 'API'
+    type_test = 'API'
 
-    type_test: str = os.environ['TESTTYPE']
+    # type_test: str = os.environ['TESTTYPE']
 
     Go = RunTest(type_test=type_test)
     Go.run()
