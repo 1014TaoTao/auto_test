@@ -66,7 +66,49 @@ class ExcelPack(ReadExcel):
         return case_depend_list
 
     # 断言相等并写测试结果
-    def assert_eq_write_result(self, row: int, res: dict) -> str:
+    def assert_eq_result(self, row: int, res: dict) -> str:
+        """
+        :param row:
+        :param res:
+        :return:
+        """
+        # 断言加入列表，遍历列表
+        try:
+            if Assert().assert_code(int(self.get_expected_status_code(row)), res['code']) and \
+                    Assert().assert_msg(self.get_expected_msg(row), res['body']['msg']) and \
+                    Assert().assert_in_body(self.get_expected_data(row), str(res['body'])):
+                try:
+                    self.write_cell_data(row, global_var().get_result(), "PASS", cell_style=3)
+                except Exception as e:
+                    raise f'写入result结果异常,{e}'
+                self.logger.info(
+                    f"【测试用例：{self.get_new_case_name(row)}】===============>> 【PASS！】\n")
+                self.pass_num += 1
+                result = "pass"
+                return result
+
+            else:
+                try:
+                    self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
+                except Exception as e:
+                    raise f'写入result结果异常,{e}'
+                self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
+                self.fail_num += 1
+                result = "fail"
+                return result
+        except Exception as e:
+            self.logger.info(f'【响应内容格式有误，无法断言，断言异常：{e}】')
+            try:
+                self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
+            except Exception as e:
+                raise f'写入result结果异常,{e}'
+            self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
+            self.fail_num += 1
+            result = "fail"
+            return result
+
+    # 写入excel请求结果
+    def write_res_to_excel(self, row: int, res: dict):
         """
         :param row:
         :param res:
@@ -78,33 +120,11 @@ class ExcelPack(ReadExcel):
         except Exception as e:
             write_str = str(u"响应结果转字符串格式错误！")
             self.logger.error(f'响应结果转字符串格式错误:{e}')
-        self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
-        self.logger.info(f"【响应结果写入excel：{res}】")
-        # 断言加入列表，遍历列表
         try:
-            if Assert().assert_code(int(self.get_expected_status_code(row)), res['code']) and \
-                    Assert().assert_msg(self.get_expected_msg(row), res['body']['msg']) and \
-                    Assert().assert_in_body(self.get_expected_data(row), str(res['body'])):
-                self.write_cell_data(row, global_var().get_result(), "PASS", cell_style=3)
-                self.logger.info(
-                    f"【测试用例：{self.get_new_case_name(row)}】===============>> 【PASS！】\n")
-                self.pass_num += 1
-                result = "pass"
-                return result
-
-            else:
-                self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
-                self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
-                self.fail_num += 1
-                result = "fail"
-                return result
+            self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
         except Exception as e:
-            self.logger.info(f'【响应内容为空，无法断言，断言异常：{e}】')
-            self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
-            self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
-            self.fail_num += 1
-            result = "fail"
-            return result
+            raise f'写入response结果异常,{e}'
+        self.logger.info(f"【响应结果写入excel完成：{res}】")
 
     # 输出测试总结
     def write_test_summary(self):
@@ -253,7 +273,10 @@ class ExcelPack(ReadExcel):
                     self.logger.error('【excel无法找到对应依赖的响应内容】')
         # 写入返回数据
         deal_str = str(dict_data).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
-        self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
+        try:
+            self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
+        except Exception as e:
+            raise f'写入依赖data结果异常,{e}'
         return dict_data
 
     # 处理headers
@@ -328,7 +351,6 @@ class ExcelPack(ReadExcel):
                                            parametric_key=parametric_key))
                 try:
                     if res['body'] != 'response获取响应data异常':
-
                         if res['body']['msg'] != '未经授权的访问':
                             pass
                         else:
@@ -336,18 +358,15 @@ class ExcelPack(ReadExcel):
                             headers = self.get_new_headers(row)
                             res = self.runs.send_request(method=method, url=url, data=data, headers=headers, file=file,
                                                          parametric_key=parametric_key)
+                        self.write_res_to_excel(row, res)
                         # 结果写入excel测试结果()==》断言
-                        result = self.assert_eq_write_result(row, res)
+                        result = self.assert_eq_result(row, res)
+
                     else:
-                        # 在excel中写入结果
                         try:
-                            write_str = str(res)
+                            self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
                         except Exception as e:
-                            write_str = str(u"响应结果转字符串格式错误！")
-                            self.logger.error(f'响应结果转字符串格式错误:{e}')
-                        self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
-                        self.logger.info(f"【响应结果写入excel：{res}】")
-                        self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
+                            raise f'写入result结果异常,{e}'
                         self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
                         self.fail_num += 1
                         result = "fail"
@@ -370,17 +389,22 @@ class ExcelPack(ReadExcel):
                 all_case.append(case)
             elif self.get_run_status(row) == "no":
                 self.logger.info(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【不执行】\n")
-                self.write_cell_data(row, global_var().get_result(), "SKIP", cell_style=5)  # excel结果列写入跳过
-                # self.write_cell_data(row, global_var().get_response(), "", cell_style=2)  # 清空响应
+                try:
+                    self.write_cell_data(row, global_var().get_result(), "SKIP", cell_style=5)  # excel结果列写入跳过
+                    # self.write_cell_data(row, global_var( ).get_response(), "", cell_style=2)  # 清空响应
+                except Exception as e:
+                    raise f'写入result结果异常,{e}'
             else:
-                self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【请确认执行状态是yes或no】\n")
+                self.logger.error(
+                    f"【测试用例：{self.get_new_case_name(row)}】===============>> 【请确认执行状态是yes或no】\n")
         self.write_test_summary()  # 输出测试结果
         return all_case
 
-# # 测试
-# if __name__ == '__main__':
-#     from common.setting import API_EXCEL_FILE
-#
-#     excel = ExcelPack(file_name=API_EXCEL_FILE, sheet_id=0)
-#     # 批量执行
-#     excel.run_excel_case()
+
+# 测试
+if __name__ == '__main__':
+    from common.setting import API_EXCEL_FILE
+
+    excel = ExcelPack(file_name=API_EXCEL_FILE, sheet_id=0)
+    # 批量执行
+    excel.run_excel_case(APIHOST='http://wb.tudoucloud.com')

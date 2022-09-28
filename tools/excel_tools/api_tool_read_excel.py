@@ -20,6 +20,8 @@ from xlutils.copy import copy
 from common.setting import upload_file
 from tools.common_tools.api_tool_global_var import global_var
 
+from openpyxl import styles
+
 
 class ReadExcel:
     def __init__(self, file_name: str, sheet_id: int):
@@ -66,9 +68,11 @@ class ReadExcel:
         :param cell_style:
         :return:
         """
-        al = xlwt.Alignment()
-        style = xlwt.XFStyle()
-        font = xlwt.Font()
+        al = xlwt.Alignment()  # 对齐
+        style = xlwt.XFStyle() # 初始化样式
+        font = xlwt.Font()  # 字体
+
+
         if cell_style == 1:
             al.vert = 0x01  # 设置垂直居中
             al.wrap = 1  # 自动换行
@@ -90,6 +94,8 @@ class ReadExcel:
             al.vert = 0x01  # 设置垂直居中
             font.bold = True  # 设置粗体
             font.colour_index = 4  # 设置紫色 # 参考：http://www.javashuo.com/article/p-sfvgazwx-c.html
+        else:
+            pass
         style.alignment = al
 
         style.font = font
@@ -113,7 +119,7 @@ class ReadExcel:
         return self.get_cell_data(row, global_var().get_id())
 
     # 获取用例模块名称
-    def get_case_mode(self,row:int):
+    def get_case_mode(self, row: int):
         """
         :param row:
         :return:

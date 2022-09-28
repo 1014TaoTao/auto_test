@@ -141,8 +141,8 @@ class Config:
         keys = self.config.options(title)
         return keys
 
-# if __name__ == '__main__':
-#     from common import setting
-#
-#     conf_path = setting.CONFIG_INI
-#     print(Config(conf_path).apihost_43_13)
+if __name__ == '__main__':
+    from common import setting
+
+    conf_path = setting.CONFIG_INI
+    print(Config(conf_path).get_options_by_section('environment_195'))

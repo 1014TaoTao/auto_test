@@ -26,7 +26,7 @@ API_LOG_PATH = os.path.join(BASE_PATH, "logs", "api_logs")
 
 # api数据路径
 TEST_CASE_LIST = glob.glob(f"{DATA_PATH}/api/excel_data/*.xls")
-API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "zt_test.xls")
+API_EXCEL_FILE = os.path.join(DATA_PATH, "api", "excel_data", "saas_yh.xls")
 sheet_id = 0
 API_SQL_FILE = os.path.join(DATA_PATH, "api", 'sql_data', 'test.sql')
 API_YAML_PATH = os.path.join(DATA_PATH, "api", 'yaml_data', 'test.yaml')
