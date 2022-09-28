@@ -1,0 +1,33 @@
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/uaa/oauth/token】
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'grantType': 'password', 'accountType': 'mobile', 'scope': 'trust', 'password': 'eede6d66c93b0340342c18f8c5c76a87', 'mobile': '18192408293', 'clientId': 'saas_op', 'clientSecret': 'dc278c7ba8b3ddedbde7361fcedb70ee'}】
+[时间]:2022-08-17 09:24:42,534-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-17 09:24:42,597-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'timestamp': 1660699540592, 'status': 401, 'error': 'Unauthorized', 'message': 'Unauthorized', 'path': '/oauth/token'}, 'time_consuming': 47.608, 'time_total': 0.047608}】
+[时间]:2022-08-17 09:24:42,597-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-17 09:24:42,597-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/uaa/oauth/token】
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'grantType': 'password', 'accountType': 'mobile', 'scope': 'trust', 'password': 'eede6d66c93b0340342c18f8c5c76a87', 'mobile': '18192408293', 'clientId': 'saas_op', 'clientSecret': 'dc278c7ba8b3ddedbde7361fcedb70ee', 'username': '18192408293'}】
+[时间]:2022-08-17 09:25:34,563-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-17 09:25:34,672-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'timestamp': 1660699592641, 'status': 401, 'error': 'Unauthorized', 'message': 'Unauthorized', 'path': '/oauth/token'}, 'time_consuming': 102.289, 'time_total': 0.102289}】
+[时间]:2022-08-17 09:25:34,672-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-17 09:25:34,672-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/oauth/token】
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'grantType': 'password', 'accountType': 'mobile', 'scope': 'trust', 'password': 'eede6d66c93b0340342c18f8c5c76a87', 'mobile': '18192408293', 'clientId': 'saas_op', 'clientSecret': 'dc278c7ba8b3ddedbde7361fcedb70ee', 'username': '18192408293'}】
+[时间]:2022-08-17 09:25:51,388-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-17 09:25:51,531-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 500, 'body': {'msg': '系统错误，请稍后再试～', 'code': -999, 'data': 'Failed to handle request [GET http://10.0.34.13:18603/oauth/token?grantType=password&accountType=mobile&scope=trust&password=eede6d66c93b0340342c18f8c5c76a87&mobile=18192408293&clientId=saas_op&clientSecret=dc278c7ba8b3ddedbde7361fcedb70ee&username=18192408293]: 404 NOT_FOUND'}, 'time_consuming': 116.31, 'time_total': 0.11631}】
+[时间]:2022-08-17 09:25:51,531-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 500
+[时间]:2022-08-17 09:25:51,531-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+

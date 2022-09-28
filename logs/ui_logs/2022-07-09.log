@@ -1,0 +1,139 @@
+[时间]:2022-07-09 12:25:21,163-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 4.1878 秒
+[时间]:2022-07-09 12:25:21,303-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1385 秒
+[时间]:2022-07-09 12:25:22,454-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.1502 秒
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/uaa/oauth/token】
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-07-09 12:26:43,577-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-07-09 12:26:43,843-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': {'access_token': '997a13ee-0b7b-4be9-bece-4c9ea711d8e2', 'token_type': 'bearer', 'refresh_token': '769c8b4d-3cb3-4223-a4ec-999a1fd274c7', 'expires_in': 29999, 'scope': 'trust', 'tenant_id': 1, 'tenant_name': '土豆数据', 'user_type': 2, 'user_id': 5643, 'user_name': '张涛'}, 'time_consuming': 245.398, 'time_total': 0.245398, 'cookie': <RequestsCookieJar[]>}】
+[时间]:2022-07-09 12:26:43,843-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言status_code:successed】期望状态码: 200 【==】 实际状态码: 200
+[时间]:2022-07-09 12:26:43,843-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言msg:successed】期望msg: 张涛 【in】 实际body: 张涛
+[时间]:2022-07-09 12:26:43,843-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【登录操作token成功】
+
+[时间]:2022-07-09 12:26:45,467-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.6240 秒
+[时间]:2022-07-09 12:26:45,602-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1344 秒
+[时间]:2022-07-09 12:26:46,588-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 0.9858 秒
+[时间]:2022-07-09 13:55:17,587-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-07-09 13:55:17,602-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-07-09 13:55:17,602-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-07-09 13:55:17,602-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/uaa/oauth/token】
+[时间]:2022-07-09 13:55:17,602-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-07-09 13:55:17,602-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-07-09 13:55:17,602-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': {'access_token': '997a13ee-0b7b-4be9-bece-4c9ea711d8e2', 'token_type': 'bearer', 'refresh_token': '769c8b4d-3cb3-4223-a4ec-999a1fd274c7', 'expires_in': 24685, 'scope': 'trust', 'tenant_id': 1, 'tenant_name': '土豆数据', 'user_type': 2, 'user_id': 5643, 'user_name': '张涛'}, 'time_consuming': 244.655, 'time_total': 0.244655, 'cookie': <RequestsCookieJar[]>}】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言status_code:successed】期望状态码: 200 【==】 实际状态码: 200
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言msg:successed】期望msg: 张涛 【in】 实际body: 张涛
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_headers.py-[信息]:【写入token至./data/api/token.txt文件完成】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_headers.py-[信息]:【读取token成功：Bearer 997a13ee-0b7b-4be9-bece-4c9ea711d8e2】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:10007/kube/v1/api/operator/statis】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Authorization': 'Bearer 997a13ee-0b7b-4be9-bece-4c9ea711d8e2'}】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: None】
+[时间]:2022-07-09 13:55:17,853-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-07-09 13:55:17,931-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 2, 'publicShared': 0}}, 'time_consuming': 65.709, 'time_total': 0.065709, 'cookie': <RequestsCookieJar[]>}】
+[时间]:2022-07-09 13:55:17,931-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 0.0000 秒
+[时间]:2022-07-09 13:55:35,429-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 0.0000 秒
+[时间]:2022-07-09 14:01:46,900-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.5351 秒
+[时间]:2022-07-09 14:01:48,182-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.2803 秒
+[时间]:2022-07-09 14:04:12,539-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.5760 秒
+[时间]:2022-07-09 14:05:35,745-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 83.2050 秒
+[时间]:2022-07-09 14:05:50,017-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.4988 秒
+[时间]:2022-07-09 14:06:09,734-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 19.7166 秒
+[时间]:2022-07-09 14:07:27,352-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 2.1632 秒
+[时间]:2022-07-09 14:08:02,701-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 35.3483 秒
+[时间]:2022-07-09 14:10:20,469-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.6191 秒
+[时间]:2022-07-09 14:10:20,598-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1286 秒
+[时间]:2022-07-09 14:10:21,920-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.3218 秒
+[时间]:2022-07-09 14:11:00,138-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.5222 秒
+[时间]:2022-07-09 14:11:00,534-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.3957 秒
+[时间]:2022-07-09 14:11:01,934-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.3984 秒
+[时间]:2022-07-09 14:13:04,159-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.3446 秒
+[时间]:2022-07-09 14:13:04,295-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1344 秒
+[时间]:2022-07-09 14:13:05,727-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.4320 秒
+[时间]:2022-07-09 14:14:07,694-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.5952 秒
+[时间]:2022-07-09 14:14:07,828-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1325 秒
+[时间]:2022-07-09 14:14:09,236-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.4080 秒
+[时间]:2022-07-09 14:19:27,514-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.3887 秒
+[时间]:2022-07-09 14:19:27,645-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1295 秒
+[时间]:2022-07-09 14:19:29,023-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.3782 秒
+[时间]:2022-07-09 14:20:45,709-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.6498 秒
+[时间]:2022-07-09 14:20:45,838-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1281 秒
+[时间]:2022-07-09 14:20:47,177-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10007/overview, 花费 1.3386 秒
+[时间]:2022-07-09 16:04:54,659-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.6562 秒
+[时间]:2022-07-09 16:04:54,782-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1217 秒
+[时间]:2022-07-09 16:04:55,810-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 1.0282 秒
+[时间]:2022-07-09 16:04:56,024-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2145 秒 
+[时间]:2022-07-09 16:04:56,182-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1580 秒 
+[时间]:2022-07-09 16:04:56,327-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1444 秒
+[时间]:2022-07-09 16:04:58,334-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 强制等待 2 秒
+[时间]:2022-07-09 16:04:58,335-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('class', 'slider')> 到元素: <('class', 'sliderText')>, 花费 0.0000 秒
+[时间]:2022-07-09 16:05:58,555-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.4529 秒
+[时间]:2022-07-09 16:05:58,684-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1274 秒
+[时间]:2022-07-09 16:05:59,750-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 1.0661 秒
+[时间]:2022-07-09 16:05:59,951-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2009 秒 
+[时间]:2022-07-09 16:06:00,117-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1660 秒 
+[时间]:2022-07-09 16:06:00,231-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1141 秒
+[时间]:2022-07-09 16:06:02,242-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 强制等待 2 秒
+[时间]:2022-07-09 16:06:02,242-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('class', 'slider')> 到元素: <105>, 花费 0.0000 秒
+[时间]:2022-07-09 16:06:58,687-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.3551 秒
+[时间]:2022-07-09 16:06:58,817-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1290 秒
+[时间]:2022-07-09 16:06:59,910-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 1.0920 秒
+[时间]:2022-07-09 16:07:00,107-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.1970 秒 
+[时间]:2022-07-09 16:07:00,261-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1537 秒 
+[时间]:2022-07-09 16:07:00,379-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1169 秒
+[时间]:2022-07-09 16:07:02,380-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 强制等待 2 秒
+[时间]:2022-07-09 16:07:02,380-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('class', 'slider')> 到元素: <105>, 花费 0.0000 秒
+[时间]:2022-07-09 16:14:14,304-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.4403 秒
+[时间]:2022-07-09 16:14:14,439-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1350 秒
+[时间]:2022-07-09 16:14:15,519-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 1.0802 秒
+[时间]:2022-07-09 16:14:15,768-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2481 秒 
+[时间]:2022-07-09 16:14:15,947-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1788 秒 
+[时间]:2022-07-09 16:14:16,058-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1110 秒
+[时间]:2022-07-09 16:14:18,069-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 强制等待 2 秒
+[时间]:2022-07-09 16:14:18,069-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('class', 'slider')> 到元素: <105>, 花费 0.0000 秒
+[时间]:2022-07-09 16:44:56,203-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.6776 秒
+[时间]:2022-07-09 16:44:56,343-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1395 秒
+[时间]:2022-07-09 16:44:57,366-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 1.0237 秒
+[时间]:2022-07-09 16:44:57,574-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2079 秒 
+[时间]:2022-07-09 16:44:57,729-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1544 秒 
+[时间]:2022-07-09 16:44:57,838-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1089 秒
+[时间]:2022-07-09 16:44:59,846-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 强制等待 2 秒
+[时间]:2022-07-09 16:44:59,846-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('class', 'slider')> 到元素: <('class', 'ValidateImageblock')>, 花费 0.0000 秒
+[时间]:2022-07-09 16:54:32,271-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.3380 秒
+[时间]:2022-07-09 16:54:32,392-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1211 秒
+[时间]:2022-07-09 16:54:33,353-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 0.9612 秒
+[时间]:2022-07-09 16:54:33,565-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2121 秒 
+[时间]:2022-07-09 16:54:33,724-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1590 秒 
+[时间]:2022-07-09 16:54:33,839-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1150 秒
+[时间]:2022-07-09 16:54:35,845-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 强制等待 2 秒
+[时间]:2022-07-09 16:54:35,846-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('class', 'slider')> 到元素: <('class', 'ValidateImageblock')>, 花费 0.0000 秒
+[时间]:2022-07-09 16:55:12,446-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.5694 秒
+[时间]:2022-07-09 16:55:12,574-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1271 秒
+[时间]:2022-07-09 16:55:13,309-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 0.7346 秒
+[时间]:2022-07-09 16:55:13,451-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.1426 秒 
+[时间]:2022-07-09 16:55:13,605-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1539 秒 
+[时间]:2022-07-09 16:55:13,719-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1137 秒
+[时间]:2022-07-09 17:09:17,604-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.4595 秒
+[时间]:2022-07-09 17:09:17,732-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1273 秒
+[时间]:2022-07-09 17:09:18,745-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 1.0120 秒
+[时间]:2022-07-09 17:09:18,964-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2186 秒 
+[时间]:2022-07-09 17:09:19,121-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1571 秒 
+[时间]:2022-07-09 17:09:19,233-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1120 秒
+[时间]:2022-07-09 17:09:46,818-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.4809 秒
+[时间]:2022-07-09 17:09:46,952-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1321 秒
+[时间]:2022-07-09 17:09:47,937-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 0.9856 秒
+[时间]:2022-07-09 17:09:48,139-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.2016 秒 
+[时间]:2022-07-09 17:09:48,298-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1590 秒 
+[时间]:2022-07-09 17:09:48,421-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1221 秒
+[时间]:2022-07-09 17:09:48,422-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('css', '.card-body')> 到元素: <('xpath', '.card-body')>, 花费 0.0000 秒
+[时间]:2022-07-09 17:10:21,851-[级别]:INFO-[文件]:browser.py-[信息]:SUCCESS==> 开启浏览器: Chrome, 共花费 1.4625 秒
+[时间]:2022-07-09 17:10:21,983-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 设置窗口最大化, 花费 0.1309 秒
+[时间]:2022-07-09 17:10:22,907-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 打开网址 http://10.0.34.13:10004/login, 花费 0.9240 秒
+[时间]:2022-07-09 17:10:23,105-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='text']> 输入内容: 15382112620, 花费 0.1970 秒 
+[时间]:2022-07-09 17:10:23,264-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 定位元素: <xpath==//input[@type='password']> 输入内容: Admin123, 花费 0.1591 秒 
+[时间]:2022-07-09 17:10:23,384-[级别]:INFO-[文件]:base.py-[信息]:SUCCESS==> 点击元素: <xpath==//button[@type='submit']>, 花费 0.1200 秒
+[时间]:2022-07-09 17:10:23,385-[级别]:ERROR-[文件]:base.py-[信息]:FAIL   ==> 无法找到拖动元素: <('css', '.card-body')> 到元素: <('css', '.card-body')>, 花费 0.0000 秒

@@ -1,0 +1,219 @@
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://192.168.0.115:18603/uaa/oauth/token】
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'grantType': 'password', 'accountType': 'mobile', 'scope': 'trust', 'password': 'eede6d66c93b0340342c18f8c5c76a87', 'mobile': '18192408293', 'clientId': 'saas_op', 'clientSecret': 'dc278c7ba8b3ddedbde7361fcedb70ee', 'username': '18192408293'}】
+[时间]:2022-08-18 22:28:30,947-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:28:31,245-[级别]:ERROR-[文件]:api_tool_reponse.py-[信息]:【获取响应data异常: Expecting value: line 1 column 1 (char 0)】
+[时间]:2022-08-18 22:28:31,245-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': 'response获取响应data异常', 'time_consuming': 278.737, 'time_total': 0.278737}】
+[时间]:2022-08-18 22:28:31,245-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:28:31,245-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://192.168.0.115:18603/uaa/oauth/token】
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:29:37,970-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:29:38,242-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': {'access_token': '48e3784d-046f-49a3-9004-aef89ca6b697', 'token_type': 'bearer', 'refresh_token': '926519c5-9bf1-491f-b94a-3735c2c8d32c', 'expires_in': 29999, 'scope': 'trust', 'tenant_id': 1, 'tenant_name': '土豆数据', 'user_type': 2, 'user_id': 14478, 'user_name': '张涛'}, 'time_consuming': 224.371, 'time_total': 0.224371}】
+[时间]:2022-08-18 22:29:38,242-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言status_code:successed】期望状态码: 200 【==】 实际状态码: 200
+[时间]:2022-08-18 22:29:38,242-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言msg:failed】期望msg: 18192408293 【not in】 实际body: 张涛
+[时间]:2022-08-18 22:29:38,242-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言username失败】
+
+[时间]:2022-08-18 22:30:25,631-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:30:25,646-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:30:25,646-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:30:25,646-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/uaa/oauth/token】
+[时间]:2022-08-18 22:30:25,646-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:30:25,646-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:30:25,646-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:30:25,818-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 174.191, 'time_total': 0.174191}】
+[时间]:2022-08-18 22:30:25,818-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:30:25,818-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://bj-c1-gw-api.tudoucloud.com/uaa/oauth/token】
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:34:36,680-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:34:36,774-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 74.01, 'time_total': 0.07401}】
+[时间]:2022-08-18 22:34:36,774-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:34:36,774-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:34:55,320-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:34:55,320-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:34:55,320-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:34:55,320-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://bj-c1-gw-api.tudoucloud.com:18603/uaa/oauth/token】
+[时间]:2022-08-18 22:34:55,320-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:34:55,334-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:34:55,334-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:34:55,397-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 68.405, 'time_total': 0.068405}】
+[时间]:2022-08-18 22:34:55,397-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:34:55,412-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://bj-c1-gw-api.tudoucloud.com/uaa/oauth/token】
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:35:21,917-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:35:22,276-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 343.947, 'time_total': 0.343947}】
+[时间]:2022-08-18 22:35:22,276-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:35:22,276-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://uaa.tudoucloud.com】
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:38:55,220-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:38:55,267-[级别]:ERROR-[文件]:api_tool_reponse.py-[信息]:【获取响应data异常: Expecting value: line 1 column 1 (char 0)】
+[时间]:2022-08-18 22:38:55,267-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': 'response获取响应data异常', 'time_consuming': 47.776, 'time_total': 0.047776}】
+[时间]:2022-08-18 22:38:55,267-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言status_code:successed】期望状态码: 200 【==】 实际状态码: 200
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://uaa.tudoucloud.com/uaa/oauth/token】
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:40:01,496-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:40:01,621-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 116.539, 'time_total': 0.116539}】
+[时间]:2022-08-18 22:40:01,621-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:40:01,621-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://op-uaa.tudoucloud.com/uaa/oauth/token】
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:41:40,308-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:41:40,433-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 113.318, 'time_total': 0.113318}】
+[时间]:2022-08-18 22:41:40,433-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:41:40,433-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://op-uaa.tudoucloud.com】
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:42:19,927-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:42:19,989-[级别]:ERROR-[文件]:api_tool_reponse.py-[信息]:【获取响应data异常: Expecting value: line 1 column 1 (char 0)】
+[时间]:2022-08-18 22:42:19,989-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': 'response获取响应data异常', 'time_consuming': 52.271, 'time_total': 0.052271}】
+[时间]:2022-08-18 22:42:19,989-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言status_code:successed】期望状态码: 200 【==】 实际状态码: 200
+[时间]:2022-08-18 22:54:31,358-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:54:31,358-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:54:31,358-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:54:31,358-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://gateway.tudoucloud.com/uaa/oauth/token】
+[时间]:2022-08-18 22:54:31,373-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:54:31,373-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:54:31,373-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:54:31,499-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 130.494, 'time_total': 0.130494}】
+[时间]:2022-08-18 22:54:31,499-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:54:31,499-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://gateway.tudoucloud.com:18603/uaa/oauth/token】
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:54:46,898-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:54:47,070-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 156.842, 'time_total': 0.156842}】
+[时间]:2022-08-18 22:54:47,070-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:54:47,070-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://gateway.tudoucloud.com:18603/uaa/oauth/token】
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:58:58,161-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:58:58,254-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 87.92, 'time_total': 0.08792}】
+[时间]:2022-08-18 22:58:58,254-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 22:58:58,254-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://gateway.tudoucloud.com:18603】
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 22:59:34,625-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 22:59:34,787-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 500, 'body': {'msg': '系统错误，请稍后再试～', 'code': -999, 'data': 'Failed to handle request [GET http://gateway.tudoucloud.com:18603/?username=%E5%BC%A0%E6%B6%9B&mobile=15382112620&password=e64b78fc3bc91bcbc7dc232ba8ec59e0&account_type=mobile&grant_type=password&scope=trust&client_secret=2c27867ba8b35dedbde7361f8ffb704d&client_id=saas_op]: 404 NOT_FOUND'}, 'time_consuming': 117.101, 'time_total': 0.117101}】
+[时间]:2022-08-18 22:59:34,787-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 500
+[时间]:2022-08-18 22:59:34,787-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 23:00:00,973-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 23:00:00,989-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 23:00:00,989-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 23:00:00,989-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://gateway.tudoucloud.com:18603】
+[时间]:2022-08-18 23:00:00,989-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 23:00:00,989-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 23:00:00,989-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 23:00:01,083-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 500, 'body': {'msg': '系统错误，请稍后再试～', 'code': -999, 'data': 'Failed to handle request [GET http://gateway.tudoucloud.com:18603/?username=%E5%BC%A0%E6%B6%9B&mobile=15382112620&password=e64b78fc3bc91bcbc7dc232ba8ec59e0&account_type=mobile&grant_type=password&scope=trust&client_secret=2c27867ba8b35dedbde7361f8ffb704d&client_id=saas_op]: 404 NOT_FOUND'}, 'time_consuming': 93.753, 'time_total': 0.093753}】
+[时间]:2022-08-18 23:00:01,083-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 500
+[时间]:2022-08-18 23:00:01,083-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://op-uaa.tudoucloud.com:18603/uaa/oauth/token】
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 23:01:54,848-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 23:01:54,911-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 53.602, 'time_total': 0.053602}】
+[时间]:2022-08-18 23:01:54,911-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 23:01:54,911-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://op-uaa.tudoucloud.com/uaa/oauth/token】
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 23:02:06,028-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 23:02:06,153-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 113.896, 'time_total': 0.113896}】
+[时间]:2022-08-18 23:02:06,153-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 23:02:06,153-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://tudoucloud.com:18603/uaa/oauth/token】
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 23:02:24,844-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 23:02:25,000-[级别]:ERROR-[文件]:api_tool_request.py-[信息]:发送请求异常:HTTPConnectionPool(host='tudoucloud.com', port=18603): Max retries exceeded with url: /uaa/oauth/token?username=%E5%BC%A0%E6%B6%9B&mobile=15382112620&password=e64b78fc3bc91bcbc7dc232ba8ec59e0&account_type=mobile&grant_type=password&scope=trust&client_secret=2c27867ba8b35dedbde7361f8ffb704d&client_id=saas_op (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022DFD4303A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+[时间]:2022-08-18 23:02:25,000-[级别]:ERROR-[文件]:api_tool_reponse.py-[信息]:response处理数据异常：'NoneType' object has no attribute 'status_code'
+[时间]:2022-08-18 23:19:32,623-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 23:19:32,638-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 23:19:32,638-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 23:19:32,638-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://10.0.34.13:18603/uaa/oauth/token】
+[时间]:2022-08-18 23:19:32,638-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 23:19:32,638-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 23:19:32,638-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 23:19:32,795-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 401, 'body': {'error': 'invalid_client', 'error_description': 'Bad client credentials'}, 'time_consuming': 148.243, 'time_total': 0.148243}】
+[时间]:2022-08-18 23:19:32,795-[级别]:ERROR-[文件]:api_tool_assert.py-[信息]:【断言status_code:failed】期望状态码: 200 【!=】 实际状态码: 401
+[时间]:2022-08-18 23:19:32,795-[级别]:ERROR-[文件]:api_tool_login.py-[信息]:【登录断言code失败】
+
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【开始获取token...start】
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求开始...start】
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求类型Method: get】
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求地址Url: http://192.168.0.115:18603/uaa/oauth/token】
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求头Headers: {'Content-Type': 'application/json;charset=UTF-8'}】
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【请求数据Data: {'username': '张涛', 'mobile': 15382112620, 'password': 'e64b78fc3bc91bcbc7dc232ba8ec59e0', 'account_type': 'mobile', 'grant_type': 'password', 'scope': 'trust', 'client_secret': '2c27867ba8b35dedbde7361f8ffb704d', 'client_id': 'saas_op'}】
+[时间]:2022-08-18 23:20:03,396-[级别]:INFO-[文件]:api_tool_request.py-[信息]:【上传文件File: None】
+[时间]:2022-08-18 23:20:03,818-[级别]:INFO-[文件]:api_tool_reponse.py-[信息]:【请求响应结果为: {'code': 200, 'body': {'access_token': '48e3784d-046f-49a3-9004-aef89ca6b697', 'token_type': 'bearer', 'refresh_token': '926519c5-9bf1-491f-b94a-3735c2c8d32c', 'expires_in': 26974, 'scope': 'trust', 'tenant_id': 1, 'tenant_name': '土豆数据', 'user_type': 2, 'user_id': 14478, 'user_name': '张涛'}, 'time_consuming': 410.355, 'time_total': 0.410355}】
+[时间]:2022-08-18 23:20:03,818-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言status_code:successed】期望状态码: 200 【==】 实际状态码: 200
+[时间]:2022-08-18 23:20:03,818-[级别]:INFO-[文件]:api_tool_assert.py-[信息]:【断言msg:successed】期望msg: 张涛 【in】 实际body: 张涛
+[时间]:2022-08-18 23:20:03,818-[级别]:INFO-[文件]:api_tool_login.py-[信息]:【登录操作token成功】
+

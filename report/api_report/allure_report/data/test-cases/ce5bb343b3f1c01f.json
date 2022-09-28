@@ -1,0 +1,340 @@
+{
+  "uid" : "ce5bb343b3f1c01f",
+  "name" : "test_003-集群管理-计算集群列表",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "a21c19f9d5773c4b89b455ef2b76795b",
+  "time" : {
+    "start" : 1661000399900,
+    "stop" : 1661000399900,
+    "duration" : 0
+  },
+  "description" : "test_003-集群管理-计算集群列表 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster",
+  "descriptionHtml" : "<p>test_003-集群管理-计算集群列表 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1661000399556,
+      "stop" : 1661000399838,
+      "duration" : 282
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_003-集群管理-计算集群列表 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f03af8caf6cf1345",
+        "name" : "测试结果",
+        "source" : "f03af8caf6cf1345.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "用例名称：test_003-集群管理-计算集群列表",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c0bac14726d26215",
+        "name" : "用例名称",
+        "source" : "c0bac14726d26215.attach",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b2bfcc2e320711b3",
+        "name" : "请求方式",
+        "source" : "b2bfcc2e320711b3.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8769720b40a54d18",
+        "name" : "请求地址",
+        "source" : "8769720b40a54d18.attach",
+        "type" : "text/plain",
+        "size" : 72
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer 6df56e74-18d6-4bb1-803b-413d230e2d22'}",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "75542f01f1850403",
+        "name" : "请求头",
+        "source" : "75542f01f1850403.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求参数：{'pageNo': 1, 'pageSize': 100}",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "21fd7345fc79e9d4",
+        "name" : "请求参数",
+        "source" : "21fd7345fc79e9d4.attach",
+        "type" : "text/plain",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f15e71365437d26",
+        "name" : "code请求断言",
+        "source" : "f15e71365437d26.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "68549b00a4119f18",
+        "name" : "msg请求断言",
+        "source" : "68549b00a4119f18.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：name': 'kubeos_v1'",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "71ed1d5630e15f49",
+        "name" : "data请求断言",
+        "source" : "71ed1d5630e15f49.attach",
+        "type" : "text/plain",
+        "size" : 33
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 2, 'name': 'kubeos_v1', 'serviceProvider': 1, 'description': 'kubeos_v1', 'nodeTotal': 11, 'masterNode': 1, 'workNode': 10, 'abnormalNode': 0, 'cpuTotal': 671, 'cpuUsed': 22, 'memTotal': 2970213109760, 'memUsed': 456640126976, 'diskTotal': 2593257898608, 'diskUsed': 0, 'gpuTotal': 6, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 3300, 'podsUsed': 151, 'etcdTotal': 1, 'kubeletTotal': 11, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 11, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 120.183, 'time_total': 0.120183}",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dbb9327859aeaddb",
+        "name" : "响应结果",
+        "source" : "dbb9327859aeaddb.attach",
+        "type" : "text/plain",
+        "size" : 674
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1661000399900,
+        "stop" : 1661000399900,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "24444-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'pass', 'title': 'test_003-集群管理-计算集群列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster', 'method': 'get', 'headers': {'Authorization': 'Bearer 6df56e74-18d6-4bb1-803b-413d230e2d22'}, 'data': {'pageNo': 1, 'pageSize': 100}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'kubeos_v1'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 2, 'name': 'kubeos_v1', 'serviceProvider': 1, 'description': 'kubeos_v1', 'nodeTotal': 11, 'masterNode': 1, 'workNode': 10, 'abnormalNode': 0, 'cpuTotal': 671, 'cpuUsed': 22, 'memTotal': 2970213109760, 'memUsed': 456640126976, 'diskTotal': 2593257898608, 'diskUsed': 0, 'gpuTotal': 6, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 3300, 'podsUsed': 151, 'etcdTotal': 1, 'kubeletTotal': 11, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 11, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 120.183, 'time_total': 0.120183}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ce5bb343b3f1c01f.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_003-集群管理-计算集群列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster', 'method': 'get', 'headers': {'Authorization': 'Bearer 6df56e74-18d6-4bb1-803b-413d230e2d22'}, 'data': {'pageNo': 1, 'pageSize': 100}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'kubeos_v1'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 2, 'name': 'kubeos_v1', 'serviceProvider': 1, 'description': 'kubeos_v1', 'nodeTotal': 11, 'masterNode': 1, 'workNode': 10, 'abnormalNode': 0, 'cpuTotal': 671, 'cpuUsed': 22, 'memTotal': 2970213109760, 'memUsed': 456640126976, 'diskTotal': 2593257898608, 'diskUsed': 0, 'gpuTotal': 6, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 3300, 'podsUsed': 151, 'etcdTotal': 1, 'kubeletTotal': 11, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 11, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 120.183, 'time_total': 0.120183}}" ]
+}

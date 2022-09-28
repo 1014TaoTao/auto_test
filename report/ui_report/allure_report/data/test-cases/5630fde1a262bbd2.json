@@ -1,0 +1,224 @@
+{
+  "uid" : "5630fde1a262bbd2",
+  "name" : "test_01",
+  "fullName" : "testCase.ui.test_baidu.TestBaiDu#test_01",
+  "historyId" : "cafdc1e2b84c36682f7492c461018890",
+  "time" : {
+    "start" : 1657709371383,
+    "stop" : 1657709375167,
+    "duration" : 3784
+  },
+  "description" : "test_01",
+  "descriptionHtml" : "<p>test_01</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1657709369549,
+      "stop" : 1657709369783,
+      "duration" : 234
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "init_project",
+    "time" : {
+      "start" : 1657709369783,
+      "stop" : 1657709371383,
+      "duration" : 1600
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "打开浏览器并最大化",
+      "time" : {
+        "start" : 1657709369783,
+        "stop" : 1657709371383,
+        "duration" : 1600
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "定位元素检查",
+      "time" : {
+        "start" : 1657709371383,
+        "stop" : 1657709377106,
+        "duration" : 5723
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 2
+  } ],
+  "testStage" : {
+    "description" : "test_01",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "输入关键词",
+      "time" : {
+        "start" : 1657709371383,
+        "stop" : 1657709373288,
+        "duration" : 1905
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1657709373289,
+        "stop" : 1657709375166,
+        "duration" : 1877
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f9f319570e33f590",
+      "name" : "log",
+      "source" : "f9f319570e33f590.txt",
+      "type" : "text/plain",
+      "size" : 965
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "init_project::0",
+    "time" : {
+      "start" : 1657709377106,
+      "stop" : 1657709379454,
+      "duration" : 2348
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "关闭浏览器",
+      "time" : {
+        "start" : 1657709377106,
+        "stop" : 1657709379454,
+        "duration" : 2348
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "test_01"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:test_01"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:百度测试用例"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('init_project')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.ui"
+  }, {
+    "name" : "suite",
+    "value" : "test_baidu"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBaiDu"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "16132-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.ui.test_baidu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://www.baidu.com/",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://www.baidu.com/",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://www.baidu.com/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('init_project')" ]
+  },
+  "source" : "5630fde1a262bbd2.json",
+  "parameterValues" : [ ]
+}
