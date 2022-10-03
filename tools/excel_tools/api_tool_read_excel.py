@@ -20,8 +20,6 @@ from xlutils.copy import copy
 from common.setting import upload_file
 from tools.common_tools.api_tool_global_var import global_var
 
-from openpyxl import styles
-
 
 class ReadExcel:
     def __init__(self, file_name: str, sheet_id: int):
@@ -31,8 +29,6 @@ class ReadExcel:
         """
         self.file_name = file_name
         self.sheet_id = sheet_id
-
-        self.sheet_data = self.get_sheet_data()  # 获取表数据
 
     # 获取sheet的内容
     def get_sheet_data(self):
@@ -48,7 +44,7 @@ class ReadExcel:
         """
         :return:
         """
-        return self.sheet_data.nrows
+        return self.get_sheet_data().nrows
 
     # 获取某个单元格内容
     def get_cell_data(self, row: int, col: int):
@@ -57,7 +53,7 @@ class ReadExcel:
         :param col:
         :return:
         """
-        return self.sheet_data.cell(row, col).value
+        return self.get_sheet_data().cell(row, col).value
 
     # 向单元格写内容
     def write_cell_data(self, row: int, col: int, value: str, cell_style: int = 0):
@@ -69,9 +65,8 @@ class ReadExcel:
         :return:
         """
         al = xlwt.Alignment()  # 对齐
-        style = xlwt.XFStyle() # 初始化样式
+        style = xlwt.XFStyle()  # 初始化样式
         font = xlwt.Font()  # 字体
-
 
         if cell_style == 1:
             al.vert = 0x01  # 设置垂直居中

@@ -77,35 +77,29 @@ class ExcelPack(ReadExcel):
             if Assert().assert_code(int(self.get_expected_status_code(row)), res['code']) and \
                     Assert().assert_msg(self.get_expected_msg(row), res['body']['msg']) and \
                     Assert().assert_in_body(self.get_expected_data(row), str(res['body'])):
-                try:
-                    self.write_cell_data(row, global_var().get_result(), "PASS", cell_style=3)
-                except Exception as e:
-                    raise f'写入result结果异常,{e}'
-                self.logger.info(
-                    f"【测试用例：{self.get_new_case_name(row)}】===============>> 【PASS！】\n")
                 self.pass_num += 1
+                cell_style = 3
                 result = "pass"
-                return result
-
             else:
-                try:
-                    self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
-                except Exception as e:
-                    raise f'写入result结果异常,{e}'
-                self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
                 self.fail_num += 1
+                cell_style = 4
                 result = "fail"
-                return result
+
         except Exception as e:
             self.logger.info(f'【响应内容格式有误，无法断言，断言异常：{e}】')
-            try:
-                self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
-            except Exception as e:
-                raise f'写入result结果异常,{e}'
-            self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
             self.fail_num += 1
+            cell_style = 4
             result = "fail"
-            return result
+        self.write_res_to_excel(row, res)
+        try:
+            self.write_cell_data(row, global_var().get_result(), result, cell_style)
+            self.logger.info(f"【响应结果写入result完成：{result}】")
+        except Exception as e:
+            raise f'写入result结果异常,{e}'
+        self.logger.info(
+            f"【测试用例：{self.get_new_case_name(row)}】===============>> 【{result}！】\n")
+
+        return result
 
     # 写入excel请求结果
     def write_res_to_excel(self, row: int, res: dict):
@@ -175,6 +169,7 @@ class ExcelPack(ReadExcel):
                     try:
                         # new_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
                         # url = url.replace(value, str(new_str))
+                        # 因为url中携带变量一版只有一个，所有此处没有考虑多变量，暂未发现多变量情况
                         case_str = list_url_params[1]
                         new_str = re.search(f'{case_str:}.*?(?=,)', response).group().replace(f"{case_str}",
                                                                                               "").replace(
@@ -273,10 +268,10 @@ class ExcelPack(ReadExcel):
                     self.logger.error('【excel无法找到对应依赖的响应内容】')
         # 写入返回数据
         deal_str = str(dict_data).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
-        try:
-            self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
-        except Exception as e:
-            raise f'写入依赖data结果异常,{e}'
+        # try:
+        #     self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
+        # except Exception as e:
+        #     raise f'写入依赖data结果异常,{e}'
         return dict_data
 
     # 处理headers
@@ -358,7 +353,6 @@ class ExcelPack(ReadExcel):
                             headers = self.get_new_headers(row)
                             res = self.runs.send_request(method=method, url=url, data=data, headers=headers, file=file,
                                                          parametric_key=parametric_key)
-                        self.write_res_to_excel(row, res)
                         # 结果写入excel测试结果()==》断言
                         result = self.assert_eq_result(row, res)
 
@@ -404,7 +398,8 @@ class ExcelPack(ReadExcel):
 # 测试
 if __name__ == '__main__':
     from common.setting import API_EXCEL_FILE
+    from common import consts
 
     excel = ExcelPack(file_name=API_EXCEL_FILE, sheet_id=0)
     # 批量执行
-    excel.run_excel_case(APIHOST='http://wb.tudoucloud.com')
+    excel.run_excel_case(APIHOST=consts.API_HOST)

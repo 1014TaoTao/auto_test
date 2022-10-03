@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import os
 
 from common import setting, consts
 from tools.common_tools.public_tool_run_all import Run
@@ -34,15 +33,15 @@ class RunTest:
             self.file_list = setting.API_FILE_LIST
 
             self.logger.info(r"""
-                                                  _         _        _           _
-                                  __ _ _ __ (_)  / \\  _   _| |_ __ _| |_ __  ___| |_
-                                 / _` | '_ \\| | / _ \\| | | | |_/ _ \\| |/ _ \\/ __| __|
-                                | (_| | |_) | |/ ___ \\ |_| | || (_) | |  __/\\__ \\ |_
-                                 \\__,_| .__/|_/_/   \\_\\___/ \\__\\___/ \\_\\___||___/\\__|
-                                      |_|
-                                      Starting      ...     ...     ...
-                                    """
-                             )
+                                          _         _        _           _
+                          __ _ _ __ (_)  / \\  _   _| |_ __ _| |_ __  ___| |_
+                         / _` | '_ \\| | / _ \\| | | | |_/ _ \\| |/ _ \\/ __| __|
+                        | (_| | |_) | |/ ___ \\ |_| | || (_) | |  __/\\__ \\ |_
+                         \\__,_| .__/|_/_/   \\_\\___/ \\__\\___/ \\_\\___||___/\\__|
+                              |_|
+                              Starting      ...     ...     ...
+                            """
+                     )
         elif self.type_test in ['UI', 'Ui', 'ui']:
             self.log_path = setting.UI_LOG_PATH
             self.logger = logger(self.log_path)

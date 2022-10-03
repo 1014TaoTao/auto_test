@@ -14,10 +14,10 @@ TESTCASEPATH = setting.API_EXCEL_FILE
 C = Config()
 # 登录人名称
 TESTER: str = C.get_testers()[0]
-API_HOST: str = C.get_api_host()[5]
+API_HOST: str = C.get_api_host()[0]
 # 如果要切换环境，只需要修改索引下标值
 # [op,cp]
-ENVIRONMENT: str = C.get_environment_type()[1]
+ENVIRONMENT: str = C.get_environment_type()[0]
 LOGIN_URL: str = C.get_login_url(ENVIRONMENT)
 LOGIN_DATA: dict = C.get_login_data(ENVIRONMENT)
 LOGIN_HEADERS: dict = C.get_login_headers(ENVIRONMENT)
