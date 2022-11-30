@@ -36,7 +36,6 @@ api_host:
   - http://3dm.tudoucloud.com
   - http://wb.tudoucloud.com
 
-
 email:
   smtpserver: smtp.qq.com
   sender: 948080782@qq.com
@@ -56,28 +55,28 @@ testers:
   - 严雪娇
 
 delete_report_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 run_report_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 send_email_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 open_report_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 databases_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 send_dingding_news_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 
 redis:
   host: 127.0.0.1
   port: 6379
 
 dingding:
-  secret: 'SEC14d75e31de633eaec66f15267ff75f1def52bd32d961798750cca780ff88dafe'
-  webhook: 'https://oapi.dingtalk.com/robot/send?access_token=50d6b1a92b4db2f06419e621978e8b47fe01b23d17e11f93e407ec2bab7100e8'
+  secret: "SEC14d75e31de633eaec66f15267ff75f1def52bd32d961798750cca780ff88dafe"
+  webhook: "https://oapi.dingtalk.com/robot/send?access_token=50d6b1a92b4db2f06419e621978e8b47fe01b23d17e11f93e407ec2bab7100e8"

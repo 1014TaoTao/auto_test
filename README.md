@@ -1,54 +1,62 @@
+<!--
+ * @Author: ZhangTao 948080782@qq.com
+ * @Date: 2022-11-30 13:53:20
+ * @LastEditors: ZhangTao 948080782@qq.com
+ * @LastEditTime: 2022-11-30 13:57:45
+ * @FilePath: \pytest_auto_uitest_apitest\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
 # 项目名称：pytest_auto_unitest_apitest
 
-## 一、项目及框架的搭建:
+## 一、项目及框架的搭建
 
 1.工具：
 
-  - python下载地址: https://www.python.org/download
+- python 下载地址: <https://www.python.org/download>
 
-  - pycharm下载地址: https://www.jetbrains.com/pycharm
+- pycharm 下载地址: <https://www.jetbrains.com/pycharm>
 
-  - jdk下载地址: https://repo.huaweicloud.com/java/jdk/
+- jdk 下载地址: <https://repo.huaweicloud.com/java/jdk/>
 
-  - allure(需要安装jdK)下载地址: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/
+- allure(需要安装 jdK)下载地址: <https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/>
 
-2.搭建步骤
+  2.搭建步骤
 
-- 2.1拉取代码
-  
-  - git clone http://gitlab.e-tudou.com/tudou-autotest-project/pytest_auto_uitest_apitest.git
-  
+- 2.1 拉取代码
+
+  - git clone <http://gitlab.e-tudou.com/tudou-autotest-project/pytest_auto_uitest_apitest.git>
+
   - 查看本地和远程所有分支 git branch -a
-  
+
   - 切换分支 git checkout [branch-name]
 
-- 2.2创建虚拟环境：
+- 2.2 创建虚拟环境：
 
   - python -m venv venv
 
-  -  venv/Scripts/activate
+  - venv/Scripts/activate
 
-  -  回车激活虚拟环境
+  - 回车激活虚拟环境
 
-- 2.3pip更换源：
-  
-  -  pip install pqi 安装一次就够了
-  
-  -  pqi ls
-    
-  -  pqi use aliyun 更换阿里云源
+- 2.3pip 更换源：
 
-- 2.4安装项目依赖包
+  - pip install pqi 安装一次就够了
+
+  - pqi ls
+
+  - pqi use aliyun 更换阿里云源
+
+- 2.4 安装项目依赖包
 
   - pip install -r requirements.txt
 
-
-## 二.工程目录： 
+## 二.工程目录
 
 ```text.
 pytest_auto_uitest_apitest:   # 项目父目录
 ├─auto_shell    # 工作中涉及的脚本文件（方便工作中使用）
-├─basepage    # ui自动化基础类封装目录 
+├─basepage    # ui自动化基础类封装目录
 ├─bat    # bat文件目录，存放bat脚本
 ├─case    # 测试用例存放目录
 │  ├─api    # 接口测试用例目录
@@ -82,8 +90,6 @@ pytest_auto_uitest_apitest:   # 项目父目录
 
 ## 三.项目说明
 
->   ./框架说明/API_README.md     # 接口自动化说明 \
+> ./框架说明/API_README.md # 接口自动化说明 \
     ./框架说明/Per_README.md     # 性能自动化说明 \
-    ./框架说明/UI_READNE.md      # UI自动化说明
-
-  
+    ./框架说明/UI_README.md      # UI自动化说明

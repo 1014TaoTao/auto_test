@@ -38,30 +38,40 @@ API_REPORT_PATH = os.path.join(BASE_PATH, "report", "api_report")
 API_REPORT_RESULT_PATH = os.path.join(API_REPORT_PATH, "allure_result")
 API_REPORT_END_PATH = os.path.join(API_REPORT_PATH, "allure_report")
 html_reposrt_path = os.path.join(API_REPORT_END_PATH, 'index.html')
-API_REPORT_HISTORY_PATH = os.path.join(API_REPORT_PATH, "allure_report", "history")
-API_RESULT_HISTORY_PATH = os.path.join(API_REPORT_PATH, "allure_result", "history")
+API_REPORT_HISTORY_PATH = os.path.join(
+    API_REPORT_PATH, "allure_report", "history")
+API_RESULT_HISTORY_PATH = os.path.join(
+    API_REPORT_PATH, "allure_result", "history")
 
 # api项目压缩文件路径
 API_FILE_LIST_PATH = os.path.join(API_REPORT_PATH, "API_report.zip")  # 要压缩文件名称
-API_REPORT_DIR = os.path.join(API_REPORT_PATH, "report", "allure_report")  # 要压缩文件路径
-API_FILE_LIST = [os.path.join(API_REPORT_PATH, "API_report.zip")]  # 邮件附件列表，格式为列表
+API_REPORT_DIR = os.path.join(
+    API_REPORT_PATH, "report", "allure_report")  # 要压缩文件路径
+API_FILE_LIST = [os.path.join(
+    API_REPORT_PATH, "API_report.zip")]  # 邮件附件列表，格式为列表
 
 # allure环境配置信息
-API_StartEnvironmentFilePath = os.path.join(BASE_PATH, "report", "environment.properties")
-API_StartEnvironmentFileXMLPath = os.path.join(BASE_PATH, "report", "environment.xml")
+API_StartEnvironmentFilePath = os.path.join(
+    BASE_PATH, "report", "environment.properties")
+API_StartEnvironmentFileXMLPath = os.path.join(
+    BASE_PATH, "report", "environment.xml")
 API_StartExcutorJson = os.path.join(BASE_PATH, "report", "executor.json")
 
 # allure环境信息复制位置
-API_EndEnvironmentXMLFile = os.path.join(API_REPORT_PATH, "allure_result", "environment.xml")
-API_EndEnvironmentFile = os.path.join(API_REPORT_PATH, "allure_result", "environment.properties")
-API_EndExcutorJson = os.path.join(API_REPORT_PATH, "allure_result", "executor.json")
+API_EndEnvironmentXMLFile = os.path.join(
+    API_REPORT_PATH, "allure_result", "environment.xml")
+API_EndEnvironmentFile = os.path.join(
+    API_REPORT_PATH, "allure_result", "environment.properties")
+API_EndExcutorJson = os.path.join(
+    API_REPORT_PATH, "allure_result", "executor.json")
 
 # token存放位置
 TOKEN_FILE = os.path.join(DATA_PATH, "api", "token.txt")
 
 
 # allure执行结果信息存放位置
-PROMETHEUSDATA = os.path.join(API_REPORT_END_PATH, "export", "prometheusData.txt")
+PROMETHEUSDATA = os.path.join(
+    API_REPORT_END_PATH, "export", "prometheusData.txt")
 
 # ===================UI配置======================
 # 日志地址
@@ -80,21 +90,29 @@ UI_REPORT_PATH = os.path.join(BASE_PATH, "report", "ui_report")
 UI_REPORT_RESULT_PATH = os.path.join(UI_REPORT_PATH, "allure_result")
 UI_REPORT_END_PATH = os.path.join(UI_REPORT_PATH, "allure_report")
 
-UI_REPORT_HISTORY_PATH = os.path.join(UI_REPORT_PATH, "allure_report", "history")
-UI_RESULT_HISTORY_PATH = os.path.join(UI_REPORT_PATH, "allure_result", "history")
+UI_REPORT_HISTORY_PATH = os.path.join(
+    UI_REPORT_PATH, "allure_report", "history")
+UI_RESULT_HISTORY_PATH = os.path.join(
+    UI_REPORT_PATH, "allure_result", "history")
 
 UI_FILE_LIST_PATH = os.path.join(UI_REPORT_PATH, "UI_report.zip")  # 要压缩文件名称
-UI_REPORT_DIR = os.path.join(UI_REPORT_PATH, "report", "allure_report")  # 要压缩文件路径
+UI_REPORT_DIR = os.path.join(
+    UI_REPORT_PATH, "report", "allure_report")  # 要压缩文件路径
 
 UI_FILE_LIST = [os.path.join(UI_REPORT_PATH, "UI_report.zip")]  # 邮件附件列表，格式为列表
 
-UI_StartEnvironmentFilePath = os.path.join(BASE_PATH, "report", "environment.properties")
-UI_StartEnvironmentFileXMLPath = os.path.join(BASE_PATH, "report", "environment.xml")
+UI_StartEnvironmentFilePath = os.path.join(
+    BASE_PATH, "report", "environment.properties")
+UI_StartEnvironmentFileXMLPath = os.path.join(
+    BASE_PATH, "report", "environment.xml")
 UI_StartExcutorJson = os.path.join(BASE_PATH, "report", "executor.json")
 
-UI_EndEnvironmentFile = os.path.join(UI_REPORT_PATH, "allure_result", "environment.properties")
-UI_EndEnvironmentXMLFile = os.path.join(UI_REPORT_PATH, "allure_result", "environment.xml")
-UI_EndExcutorJson = os.path.join(UI_REPORT_PATH, "allure_result", "executor.json")
+UI_EndEnvironmentFile = os.path.join(
+    UI_REPORT_PATH, "allure_result", "environment.properties")
+UI_EndEnvironmentXMLFile = os.path.join(
+    UI_REPORT_PATH, "allure_result", "environment.xml")
+UI_EndExcutorJson = os.path.join(
+    UI_REPORT_PATH, "allure_result", "executor.json")
 
 UI_IMG_PATH = os.path.join(UI_REPORT_PATH, "img")
 # 正常截图文件位置：

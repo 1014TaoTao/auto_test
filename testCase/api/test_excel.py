@@ -1,3 +1,11 @@
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:20
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:02:08
+FilePath: \pytest_auto_uitest_apitest\testCase\api\test_excel.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # coding:utf-8
 from typing import Union, List, Dict, Tuple, Any
 
@@ -24,19 +32,22 @@ def run_setup() -> list:
             Login().api_login()
         except Exception as e:
             logger.error(f"【登录写入token异常：{e}】")
-        result = ExcelPack(file_name=TESTCASEPATH, sheet_id=setting.sheet_id).run_excel_case(APIHOST)
+        result = ExcelPack(file_name=TESTCASEPATH,
+                           sheet_id=setting.sheet_id).run_excel_case(APIHOST)
         return result
 
 
 @allure.description("excel接口测试")  # 项目描述
 @allure.link(url="https://njqa.zgyjyx.net/api", name="allure.link：超链接")  # 项目地址
-@allure.issue(url="https://njqa.zgyjyx.net/api", name='allure.issue：BUG地址')  # bug链接
-@allure.testcase(url="https://njqa.zgyjyx.net/api", name='allure.testcase：测试用例地址')  # 测试用例地址
+# bug链接
+@allure.issue(url="https://njqa.zgyjyx.net/api", name='allure.issue：BUG地址')
+# 测试用例地址
+@allure.testcase(url="https://njqa.zgyjyx.net/api", name='allure.testcase：测试用例地址')
 @allure.feature("feature一级标签:excel接口测试")  # 一级标签
 @allure.story("story二级标签:excel接口测试")  # 二级标签
 @allure.title("excel接口测试")  # 用例标题
 class TestExcel:
-    @pytest.mark.parametrize('args',run_setup())
+    @pytest.mark.parametrize('args', run_setup())
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.epic('excel接口测试')
     def test_excel(self, args):
@@ -44,7 +55,8 @@ class TestExcel:
         :param args:
         :return:
         """
-        allure.dynamic.description(f"{str(args['title'])} {str(args['method'])} {str(args['url'])}")
+        allure.dynamic.description(
+            f"{str(args['title'])} {str(args['method'])} {str(args['url'])}")
         allure.dynamic.title(str(args['title']))
         with allure.step(u"测试结果：{0}".format(str(args['result']))):
             allure.attach(u"测试结果：{0}".format(str(args['result'])), "测试结果")
@@ -65,13 +77,16 @@ class TestExcel:
             allure.attach(u"请求参数：{0}".format(str(args['data'])), "请求参数")
 
         with allure.step(u"请求断言：{0}".format(str(args['status_code']))):
-            allure.attach(u"请求断言：{0}".format(str(args['status_code'])), "code请求断言")
+            allure.attach(u"请求断言：{0}".format(
+                str(args['status_code'])), "code请求断言")
 
         with allure.step(u"请求断言：{0}".format(str(args['expected_msg']))):
-            allure.attach(u"请求断言：{0}".format(str(args['expected_msg'])), "msg请求断言")
+            allure.attach(u"请求断言：{0}".format(
+                str(args['expected_msg'])), "msg请求断言")
 
         with allure.step(u"请求断言：{0}".format(str(args['expected_data']))):
-            allure.attach(u"请求断言：{0}".format(str(args['expected_data'])), "data请求断言")
+            allure.attach(u"请求断言：{0}".format(
+                str(args['expected_data'])), "data请求断言")
 
         with allure.step(u"响应结果：{0}".format(str(args['res']))):
             allure.attach(u"响应结果：{0}".format(str(args['res'])), "响应结果")

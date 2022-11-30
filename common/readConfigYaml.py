@@ -89,7 +89,8 @@ class Config:
         :param environment_type:
         :return:
         """
-        username = self.get_environment_info()[environment_type]['data']['username']
+        username = self.get_environment_info(
+        )[environment_type]['data']['username']
 
         return username
 
@@ -100,7 +101,6 @@ class Config:
         """
         base_host = self.data['api_host']
         return base_host
-
 
     # 是否删除旧的测试数据
     def get_delete_report_on_off(self) -> str:
@@ -169,12 +169,12 @@ class Config:
 # 测试
 # if __name__ == '__main__':
 #     from common import setting
-#
+
 #     C = Config()
 #     print(C.get_login_url('op'))
 #     print(C.get_login_data('op'))
 #     print(C.get_login_username('op'))
-#
+
 #     print(C.get_login_url('cp'))
 #     print(C.get_login_data('cp'))
 #     print(C.get_login_username('cp'))

@@ -48,13 +48,16 @@ class Config:
         self.loginusername_120 = self.get_conf("environment_122", "username")
 
         # 43_13环境配置
-        self.environment_43_13 = self.get_conf("environment_34_13", "environment")
-        self.versionCode_43_13 = self.get_conf("environment_34_13", "versionCode")
+        self.environment_43_13 = self.get_conf(
+            "environment_34_13", "environment")
+        self.versionCode_43_13 = self.get_conf(
+            "environment_34_13", "versionCode")
         self.apihost_43_13 = self.get_conf("environment_34_13", "apihost")
         self.basehost_43_13 = self.get_conf("environment_34_13", "basehost")
         self.loginHost_43_13 = self.get_conf("environment_34_13", "loginHost")
         self.loginInfo_43_13 = self.get_conf("environment_34_13", "loginInfo")
-        self.loginusername_43_13 = self.get_conf("environment_34_13", "username")
+        self.loginusername_43_13 = self.get_conf(
+            "environment_34_13", "username")
 
         # 邮件配置
         self.smtpserver = self.get_conf("email", "smtpserver")
@@ -84,9 +87,11 @@ class Config:
         # 运行结束是否直接打开报告
         self.open_on_off = self.get_conf("over_open_report", "open_on_off")
         # 控制台输出日志
-        self.log_control_on_off = self.get_conf("control_log", "log_control_on_off")
+        self.log_control_on_off = self.get_conf(
+            "control_log", "log_control_on_off")
         # 是否发送钉钉消息
-        self.send_dingding_news_on_off = self.get_conf("send_dingding_news", "send_dingding_news_on_off")
+        self.send_dingding_news_on_off = self.get_conf(
+            "send_dingding_news", "send_dingding_news_on_off")
 
     def get_conf(self, title: str, value: str) -> Any:
         """
@@ -140,6 +145,7 @@ class Config:
 
         keys = self.config.options(title)
         return keys
+
 
 if __name__ == '__main__':
     from common import setting
