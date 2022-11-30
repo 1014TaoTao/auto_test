@@ -1,15 +1,7 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""
-@Time    : 2022/3/20 16:40
-@Author  : ZhangTAO
-@File    : public_tool_time.py
-@Software: PyCharm
-"""
 import time
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 
 def countMilliseconds() -> int:
@@ -32,7 +24,8 @@ def Timestamp_conversion(timeStr: str) -> int:
 
     try:
         datetimeFormat = datetime.strptime(str(timeStr), "%Y-%m-%d %H:%M:%S")
-        timestamp = int(time.mktime(datetimeFormat.timetuple()) * 1000.0 + datetimeFormat.microsecond / 1000.0)
+        timestamp = int(time.mktime(datetimeFormat.timetuple())
+                        * 1000.0 + datetimeFormat.microsecond / 1000.0)
         return timestamp
     except ValueError:
         raise '日期格式错误, 需要传入得格式为 "%Y-%m-%d %H:%M:%S" '

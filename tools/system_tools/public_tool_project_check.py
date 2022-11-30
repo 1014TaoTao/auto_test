@@ -1,3 +1,11 @@
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:50
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:16:34
+FilePath: \pytest_auto_uitest_apitest\tools\system_tools\public_tool_project_check.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # -*- encoding: utf-8 -*-
 
 import platform
@@ -16,7 +24,8 @@ class OperationSystemPython:
         :return:
         """
         oper_system = platform.system()
-        logger(log_path).info('【{0} - {1}】'.format(oper_system, platform.architecture()))
+        logger(log_path).info(
+            '【{0} - {1}】'.format(oper_system, platform.architecture()))
         return oper_system
 
     # python 版本号

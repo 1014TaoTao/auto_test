@@ -48,7 +48,8 @@ class toolMyDB:
                 key = ','.join(data.keys())
                 values = map(self._deal_values, data.values())
                 insert_data = ', '.join(values)
-                sql = "insert into {table}({key}) values ({val})".format(table=table, key=key, val=insert_data)
+                sql = "insert into {table}({key}) values ({val})".format(
+                    table=table, key=key, val=insert_data)
                 effect_row = self.cursor.execute(sql)
                 self.cnn.commit()
                 return effect_row
@@ -66,7 +67,8 @@ class toolMyDB:
         """
         condition_list = self._deal_values(condition)
         condition_data = ' and '.join(condition_list)
-        sql = "delete from {table} where {condition}".format(table=table, condition=condition_data)
+        sql = "delete from {table} where {condition}".format(
+            table=table, condition=condition_data)
         effect_row = self.cursor.execute(sql)
         self.cnn.commit()
         # self.close_db()
@@ -87,7 +89,8 @@ class toolMyDB:
             sql = "update {table} set {values} where {condition}".format(table=table, values=update_data,
                                                                          condition=condition_data)
         else:
-            sql = "update {table} set {values}".format(table=table, values=update_data)
+            sql = "update {table} set {values}".format(
+                table=table, values=update_data)
         effect_row = self.cursor.execute(sql)
         self.cnn.commit()
         # self.close_db()
@@ -101,7 +104,8 @@ class toolMyDB:
         :param get_one bool:
         :return:
         """
-        sql = "select * from {table} where id = {id}".format(table=table, id=id)
+        sql = "select * from {table} where id = {id}".format(
+            table=table, id=id)
         self.cursor.execute(sql)
         result = self.cursor.fetchone()
         # self.close_db()
@@ -117,7 +121,8 @@ class toolMyDB:
         :param condition type 字典:
         :return:
         """
-        sql = "select * from {table} where {filed} = '{value}'".format(table=table, filed=filed, value=value)
+        sql = "select * from {table} where {filed} = '{value}'".format(
+            table=table, filed=filed, value=value)
         self.cursor.execute(sql)
         result = self.cursor.fetchall()
         # self.close_db()

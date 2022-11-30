@@ -7,13 +7,14 @@
 @File    : public_tool_random.py
 @Software: PyCharm
 """
-import re
 import datetime
-import jsonpath
-import string
 import random
-from faker import Faker
+import re
+import string
+
+import jsonpath
 from dateutil.relativedelta import relativedelta
+from faker import Faker
 
 from common import setting
 from tools.logs_tools.public_tool_log import logger
@@ -116,7 +117,8 @@ class Context:
         """
         生成不存在的手机号
         """
-        phone = random.choice(['100', '110', '120']) + ''.join(random.choice('0123456789') for _ in range(8))
+        phone = random.choice(['100', '110', '120']) + \
+            ''.join(random.choice('0123456789') for _ in range(8))
         return phone
 
     def random_str(self, str_len: int) -> str:
@@ -277,7 +279,8 @@ class Context:
         """
         ctcc = [133, 153, 173, 177, 180, 181, 189, 191, 193, 199]
         cucc = [130, 131, 132, 155, 156, 166, 175, 176, 185, 186, 166]
-        cmcc = [134, 135, 136, 137, 138, 139, 147, 150, 151, 152, 157, 158, 159, 172, 178, 182, 183, 184, 187, 188, 198]
+        cmcc = [134, 135, 136, 137, 138, 139, 147, 150, 151, 152,
+                157, 158, 159, 172, 178, 182, 183, 184, 187, 188, 198]
         begin = 10 ** 7
         end = 10 ** 8 - 1
         prefix = random.choice(ctcc + cucc + cmcc)
@@ -294,7 +297,8 @@ def regular(target) -> str:
         while re.findall(regular_pattern, target):
             key = re.search(regular_pattern, target).group(1)
 
-            target = re.sub(regular_pattern, str(getattr(Context(), key)), target, 1)
+            target = re.sub(regular_pattern, str(
+                getattr(Context(), key)), target, 1)
         return target
 
     except AttributeError:
@@ -316,7 +320,8 @@ def SqlRegular(value, res=None):
     SqlJsonList = re.findall(r"\$json\((.*?)\)\$", value)
 
     for i in SqlJsonList:
-        pattern = re.compile(r'\$json\(' + i.replace('$', "\$").replace('[', '\[') + r'\)\$')
+        pattern = re.compile(
+            r'\$json\(' + i.replace('$', "\$").replace('[', '\[') + r'\)\$')
         key = str(SqlJson(i, res))
         value = re.sub(pattern, key, value, count=1)
         value = SqlRegular(value, res)

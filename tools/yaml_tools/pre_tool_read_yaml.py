@@ -1,13 +1,6 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 
-"""
-@Time    : 2022/3/16 15:36
-@Author  : ZhangTAO
-@File    : yaml_read.py
-@Software: PyCharm
-"""
 from string import Template
 
 import yaml

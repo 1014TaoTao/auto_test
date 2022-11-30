@@ -1,3 +1,11 @@
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:50
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:14:55
+FilePath: \pytest_auto_uitest_apitest\tools\logs_tools\public_tool_log.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # coding:utf-8
 # ==============================
 #        日志类的封装
@@ -43,7 +51,8 @@ class LoggerHandler(object):
             )
 
             # 设置日志问价格式
-            f_file = logging.FileHandler(self.file_name, encoding='utf-8')  # 文件输出
+            f_file = logging.FileHandler(
+                self.file_name, encoding='utf-8')  # 文件输出
             f_file.setLevel(self.file_level)  # 文件输出等级
             f_file.setFormatter(formatter)  # 文件输出格式
             self.logger.addHandler(f_file)  # 输入文件
@@ -75,5 +84,6 @@ def logger(log_path):
         stream_level="debug",
         file_level="info",
         # file_name = os.path.join(log_path, datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + '.log')
-        file_name=os.path.join(log_path, datetime.datetime.now().strftime('%Y-%m-%d') + '.log')
+        file_name=os.path.join(
+            log_path, datetime.datetime.now().strftime('%Y-%m-%d') + '.log')
     ).get_logger

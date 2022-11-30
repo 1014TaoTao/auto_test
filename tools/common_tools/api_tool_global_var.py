@@ -144,4 +144,3 @@ class global_var:
         :return:
         """
         return self.upload_path
-

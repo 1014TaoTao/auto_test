@@ -19,7 +19,8 @@ class Manager:
         :return:
         """
         logger(log_path).info("开始执行run_bat")
-        p = subprocess.Popen("cmd.exe /c" + file, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        p = subprocess.Popen("cmd.exe /c" + file,
+                             stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         curline = p.stdout.readline()
         while curline != b'':
             print(curline)
@@ -83,7 +84,8 @@ class Manager:
         logger(log_path).info("开始复制 executor.json文件到allure_result下")
         shutil.copy(StartExcutorJson, EndExcutorJson)
 
-        os.system(f"allure generate {REPORT_RESULT_PATH} -o {REPORT_END_PATH} --clean")
+        os.system(
+            f"allure generate {REPORT_RESULT_PATH} -o {REPORT_END_PATH} --clean")
 
         # 复制history文件夹，在本地生成趋势图
         files = os.listdir(REPORT_HISTORY_PATH)
@@ -93,11 +95,12 @@ class Manager:
             os.mkdir(RESULT_HISTORY_PATH)
         logger(log_path).info("复制history文件夹")
         for file in files:
-            shutil.copy(os.path.join(REPORT_HISTORY_PATH, file), RESULT_HISTORY_PATH)
+            shutil.copy(os.path.join(REPORT_HISTORY_PATH, file),
+                        RESULT_HISTORY_PATH)
 
         logger(log_path).info("完成==>生成测试报告")
 
-    def run_allure_server(self, log_path,REPORT_END_PATH):
+    def run_allure_server(self, log_path, REPORT_END_PATH):
         """
         :param REPORT_END_PATH:
         :return:

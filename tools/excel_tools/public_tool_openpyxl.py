@@ -149,28 +149,28 @@ excelUtil = ExcelUtil()
 #     # 获取某个sheet
 #     excelUtil.get_sheet_by_name("Sheet1")
 #     excelUtil.get_sheet_by_index()
-    # # 获取某个cell的值
-    # data = excelUtil.get_cell_value(col=2, row=4)
-    # print(data)
-    # data = excelUtil.get_cell_value_by_xy("A3")
-    # print(data)
-    # # 获取sheet行数
-    # data = excelUtil.get_sheet_rows()
-    # print(data)
-    # # 获取sheet列数
-    # data = excelUtil.get_sheet_cols()
-    # print(data)
-    # # 获取某一行数据
-    # data = excelUtil.get_row_value(3)
-    # print(data)
-    # # 获取某一列数据
-    # data = excelUtil.get_col_value()
-    # print(data)
-    # # 写入数据
-    # excelUtil.write_data(row=9, col=1, value="test", path=path)
-    # # 获取全部数据
-    # data = excelUtil.get_excel_data()
-    # print(data)
-    # # # 获取行号
-    # data = excelUtil.get_row_num('test_001')
-    # print(data)
+# # 获取某个cell的值
+# data = excelUtil.get_cell_value(col=2, row=4)
+# print(data)
+# data = excelUtil.get_cell_value_by_xy("A3")
+# print(data)
+# # 获取sheet行数
+# data = excelUtil.get_sheet_rows()
+# print(data)
+# # 获取sheet列数
+# data = excelUtil.get_sheet_cols()
+# print(data)
+# # 获取某一行数据
+# data = excelUtil.get_row_value(3)
+# print(data)
+# # 获取某一列数据
+# data = excelUtil.get_col_value()
+# print(data)
+# # 写入数据
+# excelUtil.write_data(row=9, col=1, value="test", path=path)
+# # 获取全部数据
+# data = excelUtil.get_excel_data()
+# print(data)
+# # # 获取行号
+# data = excelUtil.get_row_num('test_001')
+# print(data)

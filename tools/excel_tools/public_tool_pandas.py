@@ -9,6 +9,7 @@ __title__  = pandas操作Excel工具类
 import datetime
 import inspect
 import warnings
+
 import numpy
 import pandas as pd
 from pandas import ExcelWriter
@@ -46,7 +47,8 @@ class Check(object):
         def decorator(method):
             def wrapper(*args, **kwargs):
                 # 判断字段是否是excel中的真子集
-                check_columns_result = Check.check_columns(method, *args, **kwargs)
+                check_columns_result = Check.check_columns(
+                    method, *args, **kwargs)
                 if not check_columns_result:
                     raise Exception(message)
 
@@ -61,7 +63,8 @@ class Check(object):
         def decorator(method):
             def wrapper(*args, **kwargs):
                 # 判断字段是否是excel中的真子集
-                check_columns_result = Check.check_columns(method, *args, **kwargs)
+                check_columns_result = Check.check_columns(
+                    method, *args, **kwargs)
                 if check_columns_result:
                     raise Exception(message)
 
@@ -367,7 +370,8 @@ class LgyNewExcel(object):
     def save_excel(self):
         with ExcelWriter(self.__filename) as writer:
             for temp_list in self.__data_sheet_list:
-                temp_list["data"].to_excel(writer, index=False, sheet_name=temp_list["sheet_name"])
+                temp_list["data"].to_excel(
+                    writer, index=False, sheet_name=temp_list["sheet_name"])
 
 
 class LgyGroupData(object):
@@ -412,7 +416,8 @@ class LgyGroupData(object):
         """
         if func_list is None:
             func_list = ["sum"]
-        self.handle_result_data = self.data[handle_columns_name_list].agg(func_list)
+        self.handle_result_data = self.data[handle_columns_name_list].agg(
+            func_list)
         return self.handle_result_data
 
     def get_handle_data(self, handle_columns_name: str, group_columns_key: tuple, func_name: str = "sum", ):
@@ -435,4 +440,3 @@ def get_empty_excel(columns):
     :return:
     """
     return pd.DataFrame(columns=columns)
-

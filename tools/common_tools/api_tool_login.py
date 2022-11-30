@@ -1,7 +1,7 @@
 # coding:utf8
 
 
-from common import setting, consts
+from common import consts, setting
 from tools.assert_tools.api_tool_assert import Assert
 from tools.common_tools.api_tool_headers import HeadersPack
 from tools.logs_tools.public_tool_log import logger
@@ -43,7 +43,8 @@ class Login:
             else:
                 self.logger.error(f"【登录断言code失败】\n")
         except Exception as e:
-            raise f"登录异常，请检查平台连接情况：{e}\n"  # 'NoneType' object is not subscriptable 平台连接不上
+            # 'NoneType' object is not subscriptable 平台连接不上
+            raise f"登录异常，请检查平台连接情况：{e}\n"
 
 
 if __name__ == '__main__':

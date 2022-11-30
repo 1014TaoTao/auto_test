@@ -8,9 +8,9 @@
 @Software: PyCharm
 """
 import json
+import os
 
 from common.setting import API_REPORT_END_PATH
-import os
 
 
 class AllureFileClean:

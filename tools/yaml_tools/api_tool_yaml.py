@@ -2,8 +2,8 @@
 import yaml
 
 from common import setting
-from tools.requests_tools.api_tool_request import Requests
 from tools.logs_tools.public_tool_log import logger
+from tools.requests_tools.api_tool_request import Requests
 
 
 class YamlPack:
@@ -152,15 +152,19 @@ class YamlPack:
             ex = str(expected).replace("{", "").replace("}", "")
             # print(ex)
             if ex in str(res):  # 写是否通过
-                self.logger.info(f"【断言SUCCESS】期望结果: (%s) 【in】 实际结果: (%s)" % (ex, res))
+                self.logger.info(
+                    f"【断言SUCCESS】期望结果: (%s) 【in】 实际结果: (%s)" % (ex, res))
                 self.logger.info(f"【实际响应结果输出完成：(%s)】" % res)
-                self.logger.info(f"【测试用例：{case_name}】===============>> 【PASS！】\n")
+                self.logger.info(
+                    f"【测试用例：{case_name}】===============>> 【PASS！】\n")
                 self.pass_num += 1
                 result = "pass"
             else:
-                self.logger.error(f"【断言FAIL】期望结果: (%s) 【not in】 实际结果: (%s)" % (ex, res))
+                self.logger.error(
+                    f"【断言FAIL】期望结果: (%s) 【not in】 实际结果: (%s)" % (ex, res))
                 self.logger.info(f"【实际响应结果输出完成：(%s)】" % res)
-                self.logger.info(f"【测试用例：{case_name}】===============>> 【FAIL！】\n")
+                self.logger.info(
+                    f"【测试用例：{case_name}】===============>> 【FAIL！】\n")
                 self.fail_num += 1
                 result = "fail"
 

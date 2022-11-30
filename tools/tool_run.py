@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from common import setting, consts
+from common import consts, setting
 from tools.common_tools.public_tool_run_all import Run
 from tools.logs_tools.public_tool_log import logger
 from tools.system_tools import public_tool_project_check
@@ -41,7 +41,7 @@ class RunTest:
                               |_|
                               Starting      ...     ...     ...
                             """
-                     )
+                             )
         elif self.type_test in ['UI', 'Ui', 'ui']:
             self.log_path = setting.UI_LOG_PATH
             self.logger = logger(self.log_path)

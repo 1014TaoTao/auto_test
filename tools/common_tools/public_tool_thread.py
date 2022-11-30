@@ -1,14 +1,15 @@
-#!/usr/bin/python3
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:50
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:11:39
+FilePath: \pytest_auto_uitest_apitest\tools\common_tools\public_tool_thread.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # -*- coding: utf-8 -*-
 
-"""
-@Time    : 2022/3/20 17:16
-@Author  : ZhangTAO
-@File    : public_tool_thread.py
-@Software: PyCharm
-"""
-import time
 import threading
+import time
 
 
 class PyTimer:
@@ -25,7 +26,8 @@ class PyTimer:
     def _run_func(self):
         """运行定时事件函数"""
 
-        th = threading.Thread(target=self.func, args=self.args, kwargs=self.kwargs)
+        th = threading.Thread(
+            target=self.func, args=self.args, kwargs=self.kwargs)
         th.setDaemon(True)
         th.start()
 

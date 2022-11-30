@@ -1,11 +1,19 @@
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:50
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:15:51
+FilePath: \pytest_auto_uitest_apitest\tools\requests_tools\api_tool_request.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # coding:utf-8
 # ==============================
 #         请求的封装
 # ==============================
 from typing import MutableMapping
+from typing.io import IO
 
 import requests
-from typing.io import IO
 
 from common import setting
 from tools.logs_tools.public_tool_log import logger
@@ -65,7 +73,8 @@ class Requests:
                     files=file,
                     headers=headers)
             else:
-                self.logger.error(ValueError('parametric_key为params、json、data,不可以是其他类型'))
+                self.logger.error(ValueError(
+                    'parametric_key为params、json、data,不可以是其他类型'))
                 res = None
             return res
         except Exception as e:

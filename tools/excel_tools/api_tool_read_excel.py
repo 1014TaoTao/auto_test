@@ -162,7 +162,8 @@ class ReadExcel:
         :param row:
         :return:
         """
-        expected_status_code = self.get_cell_data(row, global_var().get_status_code())
+        expected_status_code = self.get_cell_data(
+            row, global_var().get_status_code())
         return expected_status_code
 
     # 获取断言msg

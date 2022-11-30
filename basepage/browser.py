@@ -1,4 +1,11 @@
-#!/usr/bin/env python3
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:20
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:08:21
+FilePath: \pytest_auto_uitest_apitest\basepage\browser.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # -*- coding: utf-8 -*-
 
 # 选择浏览器
@@ -18,7 +25,8 @@ logger = logger(setting.UI_LOG_PATH)
 def select_browser(browser=setting.BROWSER, remote_address=None):
     driver = None
     start_time = time.time()
-    dc = {'platform': 'ANY', 'browserName': 'chrome', 'version': '', 'javascriptEnabled': True}
+    dc = {'platform': 'ANY', 'browserName': 'chrome',
+          'version': '', 'javascriptEnabled': True}
     try:
         if remote_address is None:  # web端
             if browser == "chrome" or browser == "Chrome":
@@ -29,9 +37,12 @@ def select_browser(browser=setting.BROWSER, remote_address=None):
                 # options.add_argument('--headless')
                 # options.add_argument('--disable-gpu')
                 # 新版本的去掉警告（70以上版本）
-                options.add_experimental_option('useAutomationExtension', False)  # 去掉开发者警告
-                options.add_experimental_option('excludeSwitches', ['enable-automation'])  # 去掉黄条
-                driver = webdriver.Chrome(options=options, service=Service(setting.DRIVER))
+                options.add_experimental_option(
+                    'useAutomationExtension', False)  # 去掉开发者警告
+                options.add_experimental_option(
+                    'excludeSwitches', ['enable-automation'])  # 去掉黄条
+                driver = webdriver.Chrome(
+                    options=options, service=Service(setting.DRIVER))
 
             elif browser == "firefox" or browser == "Firefox":
                 driver = webdriver.Firefox()

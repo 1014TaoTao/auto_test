@@ -1,4 +1,11 @@
-#!/usr/bin/env python3
+'''
+Author: ZhangTao 948080782@qq.com
+Date: 2022-11-30 13:53:50
+LastEditors: ZhangTao 948080782@qq.com
+LastEditTime: 2022-11-30 14:11:58
+FilePath: \pytest_auto_uitest_apitest\tools\common_tools\ui_tool_elenium_check.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 # -*- coding:utf-8 -*-
 import os
 import time
@@ -34,9 +41,11 @@ def inspect_element():
                     if pattern not in LOCATE_MODE:
                         raise AttributeError('【%s】路径中【%s]元素没有指定类型' % (i, k))
                     if pattern == 'xpath':
-                        assert '//' in value, '【%s】路径中【%s]元素xpath类型与值不配' % (i, k)
+                        assert '//' in value, '【%s】路径中【%s]元素xpath类型与值不配' % (
+                            i, k)
                     if pattern == 'css':
-                        assert '//' not in value, '【%s】路径中【%s]元素css类型与值不配' % (i, k)
+                        assert '//' not in value, '【%s】路径中【%s]元素css类型与值不配' % (
+                            i, k)
                     if pattern in ('id', 'name', 'class'):
                         assert value, '【%s】路径中【%s]元素类型与值不匹配' % (i, k)
     end_time = time.time()

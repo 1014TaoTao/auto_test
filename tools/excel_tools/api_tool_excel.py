@@ -3,7 +3,7 @@
 #       EXCEL读取出来的数据处理封装
 # ==============================
 import re
-from typing import Tuple, Union, Any, List, Dict
+from typing import Any, Dict, List, Tuple, Union
 
 from requests import Response
 
@@ -13,9 +13,9 @@ from tools.common_tools.api_tool_global_var import global_var
 from tools.common_tools.api_tool_headers import read_token
 from tools.common_tools.api_tool_login import Login
 from tools.excel_tools.api_tool_read_excel import ReadExcel
+from tools.logs_tools.public_tool_log import logger
 from tools.requests_tools.api_tool_reponse import Response
 from tools.requests_tools.api_tool_request import Requests
-from tools.logs_tools.public_tool_log import logger
 
 
 class ExcelPack(ReadExcel):
@@ -92,7 +92,8 @@ class ExcelPack(ReadExcel):
             result = "fail"
         self.write_res_to_excel(row, res)
         try:
-            self.write_cell_data(row, global_var().get_result(), result, cell_style)
+            self.write_cell_data(
+                row, global_var().get_result(), result, cell_style)
             self.logger.info(f"【响应结果写入result完成：{result}】")
         except Exception as e:
             raise f'写入result结果异常,{e}'
@@ -115,7 +116,8 @@ class ExcelPack(ReadExcel):
             write_str = str(u"响应结果转字符串格式错误！")
             self.logger.error(f'响应结果转字符串格式错误:{e}')
         try:
-            self.write_cell_data(row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
+            self.write_cell_data(
+                row, global_var().get_response(), write_str, cell_style=2)  # 写响应结果
         except Exception as e:
             raise f'写入response结果异常,{e}'
         self.logger.info(f"【响应结果写入excel完成：{res}】")
@@ -139,12 +141,13 @@ class ExcelPack(ReadExcel):
         :return:
         """
         # 拼接用例名称为：id+title
-        case_name = self.get_case_id(row) + '-' + self.get_case_mode(row) + '-' + self.get_case_title(row)
+        case_name = self.get_case_id(
+            row) + '-' + self.get_case_mode(row) + '-' + self.get_case_title(row)
         return case_name
 
     # 处理url,获取需要匹配的字符串并返回url
     def get_new_url(self, row: int, APIHOST: str) -> Union[
-        Union[str, Tuple[Union[str, Any], Exception]], Any]:
+            Union[str, Tuple[Union[str, Any], Exception]], Any]:
         """
         :param row:
         :return:
@@ -160,7 +163,8 @@ class ExcelPack(ReadExcel):
             value = re.search("{{(.+?)}}", url).group()
             if value:
                 self.logger.info('【url中存在依赖关系，开始处理...】')
-                list_url_params = value.replace("{{", "").replace("}}", "").split(":")
+                list_url_params = value.replace(
+                    "{{", "").replace("}}", "").split(":")
                 case_id = list_url_params[0]
                 response = self.get_case_line(case_id, row)
 
@@ -210,7 +214,8 @@ class ExcelPack(ReadExcel):
                     data = self.get_case_json(row)
                 # 列表依赖
                 elif type(eval(str_data)) == list:
-                    self.logger.error("列表类型入参，且有依赖情况开发中...，遇到具体问题再处理。")  # 列表类型入参，依赖暂时没有做,
+                    # 列表类型入参，依赖暂时没有做,
+                    self.logger.error("列表类型入参，且有依赖情况开发中...，遇到具体问题再处理。")
                     data = str_data
             # 无依赖
             else:
@@ -259,15 +264,16 @@ class ExcelPack(ReadExcel):
                         res_str = eval(re.search(f'{case_str: }.*?(?=,)', response).group().replace(f'{case_str}',
                                                                                                     '').replace(
                             ": '", ''))
-                        dict_data[revise_str] = res_str  # {id:9},在response获取得字段加入json_data字典中
-
+                        # {id:9},在response获取得字段加入json_data字典中
+                        dict_data[revise_str] = res_str
 
                     except Exception as e:
                         self.logger.error(f'【在响应中获取依赖异常：{e}】')
                 else:
                     self.logger.error('【excel无法找到对应依赖的响应内容】')
         # 写入返回数据
-        deal_str = str(dict_data).replace(r"', '", "',\n  '").replace("{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
+        deal_str = str(dict_data).replace(r"', '", "',\n  '").replace(
+            "{'", "{\n  '").replace("'}", "'\n}")  # 格式化字典
         # try:
         #     self.write_cell_data(row, global_var().get_data(), deal_str, cell_style=6)
         # except Exception as e:
@@ -291,7 +297,8 @@ class ExcelPack(ReadExcel):
                 try:
                     token = read_token()
                     headers_dict["Authorization"] = token
-                    self.logger.info(f"【读取token于./data/api/token.txt文件，并加入headers成功】")
+                    self.logger.info(
+                        f"【读取token于./data/api/token.txt文件，并加入headers成功】")
                 except Exception as e:
                     self.logger.error(f"【读取token错误！{e}】】")
             else:
@@ -303,7 +310,8 @@ class ExcelPack(ReadExcel):
                 try:
                     token = read_token()
                     headers_dict["Authorization"] = token
-                    self.logger.info(f"【读取token于./data/api/token.txt文件，并加入headers成功】")
+                    self.logger.info(
+                        f"【读取token于./data/api/token.txt文件，并加入headers成功】")
                 except Exception as e:
                     self.logger.error(f"【读取token错误！{e}】】")
             else:
@@ -323,7 +331,8 @@ class ExcelPack(ReadExcel):
             if self.get_run_status(row) == "yes":  # 是否运行
                 # 用例标题
                 case_name = self.get_new_case_name(row)
-                self.logger.info(f"【测试用例：{case_name}】===============>> 【start】")
+                self.logger.info(
+                    f"【测试用例：{case_name}】===============>> 【start】")
                 # 处理method
                 method = self.get_new_method(row)
                 # 获取参数类型
@@ -358,10 +367,12 @@ class ExcelPack(ReadExcel):
 
                     else:
                         try:
-                            self.write_cell_data(row, global_var().get_result(), "FAIL", cell_style=4)
+                            self.write_cell_data(
+                                row, global_var().get_result(), "FAIL", cell_style=4)
                         except Exception as e:
                             raise f'写入result结果异常,{e}'
-                        self.logger.error(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
+                        self.logger.error(
+                            f"【测试用例：{self.get_new_case_name(row)}】===============>> 【FAIL！】\n")
                         self.fail_num += 1
                         result = "fail"
 
@@ -382,9 +393,11 @@ class ExcelPack(ReadExcel):
                 }
                 all_case.append(case)
             elif self.get_run_status(row) == "no":
-                self.logger.info(f"【测试用例：{self.get_new_case_name(row)}】===============>> 【不执行】\n")
+                self.logger.info(
+                    f"【测试用例：{self.get_new_case_name(row)}】===============>> 【不执行】\n")
                 try:
-                    self.write_cell_data(row, global_var().get_result(), "SKIP", cell_style=5)  # excel结果列写入跳过
+                    self.write_cell_data(row, global_var().get_result(
+                    ), "SKIP", cell_style=5)  # excel结果列写入跳过
                     # self.write_cell_data(row, global_var( ).get_response(), "", cell_style=2)  # 清空响应
                 except Exception as e:
                     raise f'写入result结果异常,{e}'
@@ -397,8 +410,8 @@ class ExcelPack(ReadExcel):
 
 # 测试
 if __name__ == '__main__':
-    from common.setting import API_EXCEL_FILE
     from common import consts
+    from common.setting import API_EXCEL_FILE
 
     excel = ExcelPack(file_name=API_EXCEL_FILE, sheet_id=0)
     # 批量执行

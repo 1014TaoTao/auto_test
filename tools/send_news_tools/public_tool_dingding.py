@@ -6,9 +6,8 @@ from typing import Any
 
 from dingtalkchatbot.chatbot import DingtalkChatbot, FeedLink
 
-from common import setting, readConfigYaml
+from common import readConfigYaml, setting
 from tools.allure_tools.public_tool_allurereport import CaseCount
-
 # from common import consts
 from tools.logs_tools.public_tool_log import logger
 
@@ -19,7 +18,8 @@ class DingTalk:
 
         self.secret = readConfigYaml.Config().get_dingding_secret()
         self.webhook = readConfigYaml.Config().get_dingding_webhook()
-        self.ding_news = DingtalkChatbot(webhook=self.webhook, secret=self.secret, pc_slide=False, fail_notice=False)
+        self.ding_news = DingtalkChatbot(
+            webhook=self.webhook, secret=self.secret, pc_slide=False, fail_notice=False)
 
         self.allureData = CaseCount()
         self.PASS = self.allureData.passCount(REPORT_END_PATH)
@@ -50,7 +50,8 @@ class DingTalk:
         :return:
         """
         try:
-            self.ding_news.send_link(title=title, text=text, message_url=message_url, pic_url=pic_url)
+            self.ding_news.send_link(
+                title=title, text=text, message_url=message_url, pic_url=pic_url)
         except Exception:
             raise
 
@@ -66,7 +67,8 @@ class DingTalk:
             self.ding_news.send_markdown(title=title, text=msg, is_at_all=True)
         else:
             if isinstance(mobiles, list):
-                self.ding_news.send_markdown(title=title, text=msg, at_mobiles=mobiles)
+                self.ding_news.send_markdown(
+                    title=title, text=msg, at_mobiles=mobiles)
             else:
                 raise TypeError("mobiles类型错误 不是list类型.")
 
@@ -107,11 +109,10 @@ class DingTalk:
                  "报告详情：[点击查看](%s)" % reprot_url + "\n\n" +
                  "构建地址：[点击查看](%s)" % jenkins_url + "\n\n" +
                  "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font> \n\n --- \n\n " % time.strftime(
-                "%Y-%m-%d "
-                "%H:%M:%S"),
+                     "%Y-%m-%d "
+                     "%H:%M:%S"),
             at_mobiles=setting.at_mobiles_list
         )
-
 
         """
         markdown类型
