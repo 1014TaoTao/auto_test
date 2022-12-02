@@ -1,5 +1,98 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+      "children" : [ {
+        "name" : "test_001-虚拟化-云主机列表查询",
+        "uid" : "9eca5fc0af3295a7",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669907495665,
+          "stop" : 1669907495705,
+          "duration" : 40
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_001-虚拟化-云主机列表查询', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine', 'method': 'get', 'headers': {'Authorization': 'Bearer 4a983a9c-f912-4001-ae58-c4fd3939cb71'}, 'data': {'pageNo': 1, 'pageSize': 20, 'name': 'ubuntu20', 'namespace': 'vm'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'ubuntu20'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 0, 'list': []}}, 'time_consuming': 348.4, 'time_total': 0.3484}}" ]
+      }, {
+        "name" : "test_002-虚拟化-无参数且与依赖测试",
+        "uid" : "68b9741c9d982c75",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669907495927,
+          "stop" : 1669907495936,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_002-虚拟化-无参数且与依赖测试', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail', 'method': 'get', 'headers': {'Authorization': 'Bearer 4a983a9c-f912-4001-ae58-c4fd3939cb71'}, 'data': {}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'ubuntu20'\", 'res': {'code': 200, 'body': {'code': 0, 'msg': 'name为空', 'data': None}, 'time_consuming': 176.73, 'time_total': 0.17673}}" ]
+      }, {
+        "name" : "test_003-虚拟化-有参数且有依赖测试",
+        "uid" : "7eec01f11ebcf556",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669907495959,
+          "stop" : 1669907495968,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_003-虚拟化-有参数且有依赖测试', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail', 'method': 'get', 'headers': {'Authorization': 'Bearer 4a983a9c-f912-4001-ae58-c4fd3939cb71'}, 'data': {'pageNo': 1, 'pageSize': 100}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'ubuntu20'\", 'res': {'code': 200, 'body': {'code': 0, 'msg': 'name为空', 'data': None}, 'time_consuming': 174.703, 'time_total': 0.174703}}" ]
+      }, {
+        "name" : "test_004-集群管理-计算集群列表",
+        "uid" : "5a126127ef915159",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669907495984,
+          "stop" : 1669907496000,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_004-集群管理-计算集群列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster', 'method': 'get', 'headers': {'Authorization': 'Bearer 4a983a9c-f912-4001-ae58-c4fd3939cb71'}, 'data': {'pageNo': 1, 'pageSize': 100}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'kubeos_v1'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 7, 'name': 'kubeos_v2', 'serviceProvider': 1, 'description': 'kubeos_v2', 'nodeTotal': 8, 'masterNode': 1, 'workNode': 7, 'abnormalNode': 0, 'cpuTotal': 440, 'cpuUsed': 10, 'memTotal': 2735661158400, 'memUsed': 442141450240, 'diskTotal': 4387216888739, 'diskUsed': 0, 'gpuTotal': 8, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 2400, 'podsUsed': 117, 'etcdTotal': 1, 'kubeletTotal': 8, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 8, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 193.405, 'time_total': 0.193405}}" ]
+      }, {
+        "name" : "test_006-任务管理-高性能计算列表",
+        "uid" : "b6f8e12e246f2e74",
+        "parentUid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669907496040,
+          "stop" : 1669907496056,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'result': 'fail', 'title': 'test_006-任务管理-高性能计算列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/argo/task', 'method': 'get', 'headers': {'Authorization': 'Bearer 4a983a9c-f912-4001-ae58-c4fd3939cb71'}, 'data': {'name': '', 'originalName': '', 'pageNo': 1, 'pageSize': 20}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"originalName': 'KubeOS'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1003, 'list': [{'name': 'standardize-data-oj-task-i-386115800782925824', 'flowId': '11273cee4ba5425099ed9dd4c2418c99', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 19:26:21', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'ys-to-bz', 'uid': 'e1ad3b43-a7b9-4757-9f01-c4cbc9d287b6', 'instanceName': 'standardize-data-oj-task-i-386115800782925824-td8w9', 'createUserName': 'TD18603015137'}, {'name': 'integration-taskojtaski386110126317432832', 'flowId': 'fb36c089968948e59d887e5b4cc5e4e3', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 19:03:50', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'vector-data-import', 'uid': '6fa322e4-025f-4528-8768-a8ede6a68964', 'instanceName': 'integration-taskojtaski386110126317432832-rf5fg', 'createUserName': 'TD18603015137'}, {'name': 'integration-taskojtaski386109782497751040', 'flowId': 'fb36c089968948e59d887e5b4cc5e4e3', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 19:02:28', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'vector-data-import', 'uid': '7cf38672-d29f-41fe-be7a-8b234d14284b', 'instanceName': 'integration-taskojtaski386109782497751040-9c98g', 'createUserName': 'TD18603015137'}, {'name': 'integration-taskojtaski386098787733794816', 'flowId': 'fb36c089968948e59d887e5b4cc5e4e3', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 18:18:45', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'vector-data-import', 'uid': '26b9ae18-2ee2-4310-8d22-de25cfdc8264', 'instanceName': 'integration-taskojtaski386098787733794816-bn6cq', 'createUserName': 'TD18603015137'}, {'name': '数据采集ojtaski386087672438124544', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Suspended', 'createTime': '2022-12-01 18:18:22', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': 'c6508738-bfdc-4af8-8a20-2519a8a614ce', 'instanceName': 'shujucaijiojtaski386087672438124544-9d9nx', 'createUserName': 'TD18603015137'}, {'name': 'integration-taskojtaski386092485888503808', 'flowId': 'fb36c089968948e59d887e5b4cc5e4e3', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 5854, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:53:42', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'vector-data-import', 'uid': '0400238b-e4a6-4b8e-a0e5-47c8118e4b2f', 'instanceName': 'integration-taskojtaski386092485888503808-tztrm', 'createUserName': None}, {'name': '数据采集ojtaski386087672438124544', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:34:34', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': 'dd75af04-9f89-435d-85cf-723885b883b4', 'instanceName': 'shujucaijiojtaski386087672438124544-pxtct', 'createUserName': 'TD18603015137'}, {'name': '数据采集ojtaski386084685112528896', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 5854, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:22:42', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': '3f9f2d2a-210d-41c4-87d6-36de1ab12b71', 'instanceName': 'shujucaijiojtaski386084685112528896-cknf9', 'createUserName': None}, {'name': '数据采集ojtaski386082410184953856', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:13:40', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': '485870f9-1792-4035-8c9f-cf19ad783879', 'instanceName': 'shujucaijiojtaski386082410184953856-vvr5k', 'createUserName': 'TD18603015137'}, {'name': '数据采集ojtaski386080893033893888', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:07:38', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': '13ba2bb4-094e-4120-9fb2-3228a546256a', 'instanceName': 'shujucaijiojtaski386080893033893888-whnms', 'createUserName': 'TD18603015137'}, {'name': '数据采集ojtaski386080811286908928', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:07:18', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': 'be698565-e221-464b-8954-62e1e523c3af', 'instanceName': 'shujucaijiojtaski386080811286908928-zrncn', 'createUserName': 'TD18603015137'}, {'name': '数据采集ojtaski386078971140886528', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 17:00:00', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': 'bf112b3f-c93a-4d94-9004-fb332e5a91fe', 'instanceName': 'shujucaijiojtaski386078971140886528-hmzh5', 'createUserName': 'TD18603015137'}, {'name': '快拼-2022120114075293500-1', 'flowId': '8dfe6d70edc44a8d9ca6d39b136a1ffd', 'originalName': '在线实景三维租户端', 'originalId': '7755', 'description': None, 'appCode': '3dacq-model', 'appBiz': 'kube_3dacqmodel', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 1, 'createUser': 1, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 16:50:29', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': '3dmodel-quickmosaic-animation', 'uid': '608def11-8da8-4967-8afa-8b82ba38d493', 'instanceName': 'kuaipin-2022120114075293500-1-bjrhs', 'createUserName': 'admin'}, {'name': '数据采集ojtaski386075670827618304', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 16:46:53', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': '3bf143ba-20f5-4559-b643-1e08029c5e3d', 'instanceName': 'shujucaijiojtaski386075670827618304-576tf', 'createUserName': 'TD18603015137'}, {'name': '数据采集ojtaski386075640863510528', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 16:46:46', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': 'f113755e-4982-421f-b1e7-2d6c1bb7f5c9', 'instanceName': 'shujucaijiojtaski386075640863510528-bv7qw', 'createUserName': 'TD18603015137'}, {'name': '快拼-2022120113581890900-1', 'flowId': '8dfe6d70edc44a8d9ca6d39b136a1ffd', 'originalName': '在线实景三维租户端', 'originalId': '7755', 'description': None, 'appCode': '3dacq-model', 'appBiz': 'kube_3dacqmodel', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 1, 'createUser': 1, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 16:37:25', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': '3dmodel-quickmosaic-animation', 'uid': '7d44b234-431e-45bb-8098-7b05b869b135', 'instanceName': 'kuaipin-2022120113581890900-1-scvh7', 'createUserName': 'admin'}, {'name': '快拼-2022120113581890900-1', 'flowId': '8dfe6d70edc44a8d9ca6d39b136a1ffd', 'originalName': '在线实景三维租户端', 'originalId': '7755', 'description': None, 'appCode': '3dacq-model', 'appBiz': 'kube_3dacqmodel', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 1, 'createUser': 1, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 16:34:57', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': '3dmodel-quickmosaic-animation', 'uid': 'a3c4902b-9969-49be-8379-fc371ac2a70e', 'instanceName': 'kuaipin-2022120113581890900-1-qpnrr', 'createUserName': 'admin'}, {'name': 'integration-taskojtaski386071617074745344', 'flowId': 'fb36c089968948e59d887e5b4cc5e4e3', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 16:30:47', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'vector-data-import', 'uid': 'b492233c-2cf1-412f-accb-5f03684e6c0c', 'instanceName': 'integration-taskojtaski386071617074745344-tb5gs', 'createUserName': 'TD18603015137'}, {'name': 'integration-taskojtaski386070697561673728', 'flowId': 'fb36c089968948e59d887e5b4cc5e4e3', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 5853, 'archived': False, 'taskStatus': 'Succeeded', 'createTime': '2022-12-01 16:27:07', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'vector-data-import', 'uid': '0b0cc6b7-7acf-4d9c-a255-2cd4f6166379', 'instanceName': 'integration-taskojtaski386070697561673728-t5szh', 'createUserName': None}, {'name': '数据采集ojtaski386070661352247296', 'flowId': '8a8dba6f60824a92a3471bcec0c74ad4', 'originalName': '数据中台', 'originalId': '', 'description': None, 'appCode': 'dataCenter', 'appBiz': 'kubu_dataCenter', 'key': None, 'outId': None, 'queueName': None, 'priority': 1000, 'extensions': None, 'tenantId': 102, 'createUser': 166, 'archived': False, 'taskStatus': 'Failed', 'createTime': '2022-12-01 16:26:58', 'startTime': None, 'endTime': None, 'totalTime': None, 'flowName': 'data-collection', 'uid': 'ba02a2d3-3d89-4710-a5ab-19eca0ce1f5f', 'instanceName': 'shujucaijiojtaski386070661352247296-d9kgk', 'createUserName': 'TD18603015137'}]}}, 'time_consuming': 155.035, 'time_total': 0.155035}}" ]
+      } ],
+      "uid" : "d8c3433cfa0bbd1b20fd4b03e1e57bf7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

@@ -1,79 +1,99 @@
-# Æô¶¯dockerfile
+# å¯åŠ¨dockerfile
+
 docker build -t zt-jenkins:1.0 ./Dockerfile
-# Æô¶¯jenkinsfile
+
+# å¯åŠ¨jenkinsfile
+
 docker run -itd -p 10086:8080 -p 50000:50000 -p 10087:44055 -v /home/jenkins/:/var/jenkins_home --name zt-jenkins --restart always --privileged=true -u root jenkins
 
-Jenkins °²×°
-docker run -itd -p 10086:8080 -p 50000:50000 -p 10087:44055 -v /home/jenkins/:/var/jenkins_home --name zt-jenkins --restart always --privileged=true -u root jenkins
+# -p 9090:8080 jenkinsçš„webè®¿é—®ç«¯å£9090
 
-# -p 9090:8080 jenkinsµÄweb·ÃÎÊ¶Ë¿Ú9090
+# -v /home/jenkins:/var/jenkins_home å®¹å™¨/var/jenkins_homeè·¯å¾„æ˜ å°„åˆ°å®¿ä¸»æœº/home/jenkins
 
-# -v /home/jenkins:/var/jenkins_home ÈİÆ÷/var/jenkins_homeÂ·¾¶Ó³Éäµ½ËŞÖ÷»ú/home/jenkins
-
-½øÈë jenkins ÈİÆ÷ CLI ½çÃæ
+è¿›å…¥ jenkins å®¹å™¨ CLI ç•Œé¢
 docker exec -it -uroot jenkins_name bash
- 
-°²×°Ò»Ğ©ÒÀÀµ°ü
-# ÅäÖÃapt-getÔ´
-echo "">sources.list
-echo "deb http://ftp2.cn.debian.org/debian/ buster main">>sources.list
-echo "deb http://ftp2.cn.debian.org/debian/debian-security buster/updates main">>sources.list
-echo "deb http://ftp2.cn.debian.org/debian/debian buster-updates main">>sources.list
-½â¾ölinux¸üĞÂaptÈí¼şÔ´Ê±±¨³öGPG´íÎó
 
-# »ñÈ¡×îĞÂµÄÈí¼ş°ü
+å®‰è£…ä¸€äº›ä¾èµ–åŒ…
+
+# é…ç½®apt-getæº
+
+echo "">sources.list
+echo "deb <http://ftp2.cn.debian.org/debian/> buster main">>sources.list
+echo "deb <http://ftp2.cn.debian.org/debian/debian-security> buster/updates main">>sources.list
+echo "deb <http://ftp2.cn.debian.org/debian/debian> buster-updates main">>sources.list
+è§£å†³linuxæ›´æ–°aptè½¯ä»¶æºæ—¶æŠ¥å‡ºGPGé”™è¯¯
+
+# è·å–æœ€æ–°çš„è½¯ä»¶åŒ…
+
 apt-get update
 
-# Éı¼¶ÒÑ°²×°µÄÈí¼ş°ü
+# å‡çº§å·²å®‰è£…çš„è½¯ä»¶åŒ…
+
 apt-get upgrade
 
-# ÌáÇ°°²×°£¬ÒÔ±ã½ÓÏÂÀ´µÄÅäÖÃ²Ù×÷
+# æå‰å®‰è£…ï¼Œä»¥ä¾¿æ¥ä¸‹æ¥çš„é…ç½®æ“ä½œ
+
 apt-get -y install gcc automake autoconf libtool make
 apt-get -y install make*
 apt-get -y install zlib*
 apt-get -y install openssl libssl-dev
 apt-get install sudo
-°²×° Python »·¾³
-# Á½ÖÖ·½Ê½
-# 1 Ö±½ÓÊ¹ÓÃapt-get°²×°£¬´Ë·½Ê½°²×°Íê³Éºó»·¾³±äÁ¿ÒÑÅäÖÃ
+å®‰è£… Python ç¯å¢ƒ
+
+# ä¸¤ç§æ–¹å¼
+
+# 1 ç›´æ¥ä½¿ç”¨apt-getå®‰è£…ï¼Œæ­¤æ–¹å¼å®‰è£…å®Œæˆåç¯å¢ƒå˜é‡å·²é…ç½®
+
 apt-get install python3.6
 apt-get install python3-pip
-# 2 ÏÂÔØPython°²×°°ü£¬±àÒë°²×°
+
+# 2 ä¸‹è½½Pythonå®‰è£…åŒ…ï¼Œç¼–è¯‘å®‰è£…
+
 cd /usr/local/src
-wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
+wget <https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz>
 tar -zxvf Python-3.6.8.tgz
 mv Python-3.6.8 py3.6
 cd py3.6
 
-# ±àÒë
+# ç¼–è¯‘
+
 ./configure --prefix=/var/jenkins_home/py3.6
 make && make install
 
-# Ìí¼ÓÈíÁ¬½Ó
+# æ·»åŠ è½¯è¿æ¥
+
 ln -s /usr/local/src/py3.6/bin/python3.6 /usr/bin/python3
 ln -s /usr/local/src/py3.6/bin/pip3 /usr/bin/pip3
-# ¸ü¸ÄpipÔ´
+
+# æ›´æ”¹pipæº
 
 mkdir ~/.pip
 vi ~/.pip/pipconf
-¡¡¡¡¡¡¡¡[global]
-¡¡¡¡¡¡¡¡index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+ã€€ã€€ã€€ã€€[global]
+ã€€ã€€ã€€ã€€index-url = <https://pypi.tuna.tsinghua.edu.cn/simple>
 
-°²×° Allure »·¾³
-# ¹ÙÍøÏÂÔØ allure °ü
-# https://github.com/allure-framework/allure2/releases
+å®‰è£… Allure ç¯å¢ƒ
 
-# ÏÈ½«°üÉÏ´«µ½Ö÷»ú£¬È»ºó´ÓÖ÷»ú¸´ÖÆµ½ÈİÆ÷ÄÚ
+# å®˜ç½‘ä¸‹è½½ allure åŒ…
+
+# <https://github.com/allure-framework/allure2/releases>
+
+# å…ˆå°†åŒ…ä¸Šä¼ åˆ°ä¸»æœºï¼Œç„¶åä»ä¸»æœºå¤åˆ¶åˆ°å®¹å™¨å†…
+
 docker cp allure-commandline-2.13.6.zip jenkins1:/usr/local/src
-# ½âÑ¹
+
+# è§£å‹
+
 unzip allure-commandline-2.13.6.zip
 
-# ¸³ÓèÎÄ¼ş¼ĞËùÓĞÄÚÈİ×î¸ßÈ¨ÏŞ
+# èµ‹äºˆæ–‡ä»¶å¤¹æ‰€æœ‰å†…å®¹æœ€é«˜æƒé™
+
 mv allure-2.13.6 allure
 chmod -R 777 allure
 
-# ÅäÖÃ allure ºÍ py »·¾³±äÁ¿£¨ÖğĞĞÊäÈë£©
-cat >> /root/.bashrc << "EOF" 
-export PATH=/usr/local/src/allure/bin:$PATH 
-export PATH=/usr/local/src/py3.6/bin:$PATH 
+# é…ç½® allure å’Œ py ç¯å¢ƒå˜é‡ï¼ˆé€è¡Œè¾“å…¥ï¼‰
+
+cat >> /root/.bashrc << "EOF"
+export PATH=/usr/local/src/allure/bin:$PATH
+export PATH=/usr/local/src/py3.6/bin:$PATH
 EOF

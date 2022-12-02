@@ -3,6 +3,6 @@
   "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
   "reportName" : "AllureReport",
   "data" : {
-    "duration" : 140
+    "duration" : 503
   }
 } ]

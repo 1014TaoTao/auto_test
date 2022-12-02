@@ -1,4 +1,5 @@
 ## allure常用装饰器
+
     ## allure.dynamic 动态属性
     @allure.dynamic.severity
     @allure.dynamic.feature
@@ -54,7 +55,6 @@
         attachment_type - 其中一个allure.attachment_type值
         extension - 提供的将用作创建文件的扩展名
 
-
 ```python
 url = "https://www.baidu.com/"
 text = "天天向上"
@@ -80,14 +80,12 @@ pip install pytest-timeout
 更改默认命令行选项，当我们用命令行运行时，需要输入多个参数，很不方便。比如想测试完生成报告，失败重跑两次，一共运行两次，通过分布式去测试，如果在命令行中执行的话，命令会很长，很不方便
 -s -v -q --alluredir ./report/allure_result --rerun=2 --count=2  -n=auto
 
-
-
 [pytest]
 addopts = -s -v -q --alluredir ./report/allure_result --rerun=2 --count=2  -n=auto
 testpaths = ./testCase/
-python_files = test_*.py   test_*.py  *_test .py  test*.py
-python_classes = Test*   Test_*  test*  test_*
-python_functions = test_*  test*
+python_files = test_*.py   test_*.py*_test .py  test*.py
+python_classes = Test*   Test_*test*  test_*
+python_functions = test_*test*
 minversion = 6.2.5
 log_cli = 1
 log_cli_level = DEBUG
@@ -96,13 +94,10 @@ log_cli_format = %(asctime)s - %(filename)s - %(module)s - %(funcName)s - %(line
 log_file = test.log
 timeout = 30
 
-
-
 basepage ——selenium的基类，对selenium的方法进行封装
 pageelements——页面元素，把页面元素单独提取出来，放入一个文件中
 searchpage ——页面对象类，把selenium方法和页面元素进行整合
 testcase ——使用pytest对整合的searchpage进行测试用例编写
-
 
 -o report/allure-report：allure报告生成的位置【指定目录生成测试报告】
 -c report/allure-report：新的allure报告生成之前先把先前的allure报告清理掉
