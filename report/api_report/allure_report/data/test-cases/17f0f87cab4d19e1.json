@@ -1,0 +1,350 @@
+{
+  "uid" : "17f0f87cab4d19e1",
+  "name" : "test_004-集群管理-计算集群列表",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "b3a00e30cd1b0eee9ea07459c7028da5",
+  "time" : {
+    "start" : 1670103166755,
+    "stop" : 1670103166763,
+    "duration" : 8
+  },
+  "description" : "test_004-集群管理-计算集群列表 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster",
+  "descriptionHtml" : "<p>test_004-集群管理-计算集群列表 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+  "statusTrace" : "self = <testCase.api.test_excel.TestExcel object at 0x000001FBDAB59280>\nargs = {'data': {'pageNo': 1, 'pageSize': 100}, 'expected_data': \"name': 'kubeos_v1'\", 'expected_msg': '成功', 'headers': {'Authorization': 'Bearer 12b4ebad-3670-490e-a096-5f6cf54a889a'}, ...}\n\n    @pytest.mark.parametrize('args', run_setup())\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.epic('excel接口测试')\n    def test_excel(self, args):\n        \"\"\"\n        :param args:\n        :return:\n        \"\"\"\n        allure.dynamic.description(\n            f\"{str(args['title'])} {str(args['method'])} {str(args['url'])}\")\n        allure.dynamic.title(str(args['title']))\n        with allure.step(u\"测试结果：{0}\".format(str(args['result']))):\n            allure.attach(u\"测试结果：{0}\".format(str(args['result'])), \"测试结果\")\n    \n        with allure.step(u\"用例名称：{0}\".format(str(args['title']))):\n            allure.attach(u\"用例名称：{0}\".format(str(args['title'])), \"用例名称\")\n    \n        with allure.step(u\"请求方式：{0}\".format(str(args['method']))):\n            allure.attach(u\"请求方式：{0}\".format(str(args['method'])), \"请求方式\")\n    \n        with allure.step(u\"请求地址：{0}\".format(str(args['url']))):\n            allure.attach(u\"请求地址：{0}\".format(str(args['url'])), \"请求地址\")\n    \n        with allure.step(u\"请求头 ：{0}\".format(str(args['headers']))):\n            allure.attach(u\"请求头 ：{0}\".format(str(args['headers'])), \"请求头\")\n    \n        with allure.step(u\"请求参数：{0}\".format(str(args['data']))):\n            allure.attach(u\"请求参数：{0}\".format(str(args['data'])), \"请求参数\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['status_code']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['status_code'])), \"code请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_msg']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_msg'])), \"msg请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_data']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_data'])), \"data请求断言\")\n    \n        with allure.step(u\"响应结果：{0}\".format(str(args['res']))):\n            allure.attach(u\"响应结果：{0}\".format(str(args['res'])), \"响应结果\")\n    \n        with allure.step(\"断言\"):\n>           assert args[\"result\"] == \"pass\"\nE           AssertionError: assert 'fail' == 'pass'\nE             - pass\nE             + fail\n\ntestCase\\api\\test_excel.py:95: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1670103166007,
+      "stop" : 1670103166443,
+      "duration" : 436
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_004-集群管理-计算集群列表 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+    "statusTrace" : "self = <testCase.api.test_excel.TestExcel object at 0x000001FBDAB59280>\nargs = {'data': {'pageNo': 1, 'pageSize': 100}, 'expected_data': \"name': 'kubeos_v1'\", 'expected_msg': '成功', 'headers': {'Authorization': 'Bearer 12b4ebad-3670-490e-a096-5f6cf54a889a'}, ...}\n\n    @pytest.mark.parametrize('args', run_setup())\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.epic('excel接口测试')\n    def test_excel(self, args):\n        \"\"\"\n        :param args:\n        :return:\n        \"\"\"\n        allure.dynamic.description(\n            f\"{str(args['title'])} {str(args['method'])} {str(args['url'])}\")\n        allure.dynamic.title(str(args['title']))\n        with allure.step(u\"测试结果：{0}\".format(str(args['result']))):\n            allure.attach(u\"测试结果：{0}\".format(str(args['result'])), \"测试结果\")\n    \n        with allure.step(u\"用例名称：{0}\".format(str(args['title']))):\n            allure.attach(u\"用例名称：{0}\".format(str(args['title'])), \"用例名称\")\n    \n        with allure.step(u\"请求方式：{0}\".format(str(args['method']))):\n            allure.attach(u\"请求方式：{0}\".format(str(args['method'])), \"请求方式\")\n    \n        with allure.step(u\"请求地址：{0}\".format(str(args['url']))):\n            allure.attach(u\"请求地址：{0}\".format(str(args['url'])), \"请求地址\")\n    \n        with allure.step(u\"请求头 ：{0}\".format(str(args['headers']))):\n            allure.attach(u\"请求头 ：{0}\".format(str(args['headers'])), \"请求头\")\n    \n        with allure.step(u\"请求参数：{0}\".format(str(args['data']))):\n            allure.attach(u\"请求参数：{0}\".format(str(args['data'])), \"请求参数\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['status_code']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['status_code'])), \"code请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_msg']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_msg'])), \"msg请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_data']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_data'])), \"data请求断言\")\n    \n        with allure.step(u\"响应结果：{0}\".format(str(args['res']))):\n            allure.attach(u\"响应结果：{0}\".format(str(args['res'])), \"响应结果\")\n    \n        with allure.step(\"断言\"):\n>           assert args[\"result\"] == \"pass\"\nE           AssertionError: assert 'fail' == 'pass'\nE             - pass\nE             + fail\n\ntestCase\\api\\test_excel.py:95: AssertionError",
+    "steps" : [ {
+      "name" : "测试结果：fail",
+      "time" : {
+        "start" : 1670103166755,
+        "stop" : 1670103166755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4200acf2d84ecd61",
+        "name" : "测试结果",
+        "source" : "4200acf2d84ecd61.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "用例名称：test_004-集群管理-计算集群列表",
+      "time" : {
+        "start" : 1670103166755,
+        "stop" : 1670103166755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bd3e7640cd97ee97",
+        "name" : "用例名称",
+        "source" : "bd3e7640cd97ee97.attach",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1670103166755,
+        "stop" : 1670103166755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2b3dc771a30b50d2",
+        "name" : "请求方式",
+        "source" : "2b3dc771a30b50d2.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster",
+      "time" : {
+        "start" : 1670103166755,
+        "stop" : 1670103166763,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ba4bcf3b1358567",
+        "name" : "请求地址",
+        "source" : "ba4bcf3b1358567.attach",
+        "type" : "text/plain",
+        "size" : 72
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer 12b4ebad-3670-490e-a096-5f6cf54a889a'}",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bcbb4c6f516fb497",
+        "name" : "请求头",
+        "source" : "bcbb4c6f516fb497.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求参数：{'pageNo': 1, 'pageSize': 100}",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "385701dd55765a64",
+        "name" : "请求参数",
+        "source" : "385701dd55765a64.attach",
+        "type" : "text/plain",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d5721c4d78f81b45",
+        "name" : "code请求断言",
+        "source" : "d5721c4d78f81b45.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5dce806306eff06f",
+        "name" : "msg请求断言",
+        "source" : "5dce806306eff06f.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求断言：name': 'kubeos_v1'",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8ad4a4bd130c02c0",
+        "name" : "data请求断言",
+        "source" : "8ad4a4bd130c02c0.attach",
+        "type" : "text/plain",
+        "size" : 33
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 7, 'name': 'kubeos_v2', 'serviceProvider': 1, 'description': 'kubeos_v2', 'nodeTotal': 8, 'masterNode': 1, 'workNode': 7, 'abnormalNode': 0, 'cpuTotal': 440, 'cpuUsed': 10, 'memTotal': 2735661158400, 'memUsed': 465669713920, 'diskTotal': 4387216888739, 'diskUsed': 0, 'gpuTotal': 8, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 2400, 'podsUsed': 116, 'etcdTotal': 1, 'kubeletTotal': 8, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 8, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 199.272, 'time_total': 0.199272}",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "11f3512507170445",
+        "name" : "响应结果",
+        "source" : "11f3512507170445.attach",
+        "type" : "text/plain",
+        "size" : 670
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1670103166763,
+        "stop" : 1670103166763,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail\n",
+      "statusTrace" : "  File \"e:\\my_project\\pytest_auto_uitest_apitest\\testCase\\api\\test_excel.py\", line 95, in test_excel\n    assert args[\"result\"] == \"pass\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "17532-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'fail', 'title': 'test_004-集群管理-计算集群列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster', 'method': 'get', 'headers': {'Authorization': 'Bearer 12b4ebad-3670-490e-a096-5f6cf54a889a'}, 'data': {'pageNo': 1, 'pageSize': 100}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'kubeos_v1'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 7, 'name': 'kubeos_v2', 'serviceProvider': 1, 'description': 'kubeos_v2', 'nodeTotal': 8, 'masterNode': 1, 'workNode': 7, 'abnormalNode': 0, 'cpuTotal': 440, 'cpuUsed': 10, 'memTotal': 2735661158400, 'memUsed': 465669713920, 'diskTotal': 4387216888739, 'diskUsed': 0, 'gpuTotal': 8, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 2400, 'podsUsed': 116, 'etcdTotal': 1, 'kubeletTotal': 8, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 8, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 199.272, 'time_total': 0.199272}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "17f0f87cab4d19e1.json",
+  "parameterValues" : [ "{'result': 'fail', 'title': 'test_004-集群管理-计算集群列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster', 'method': 'get', 'headers': {'Authorization': 'Bearer 12b4ebad-3670-490e-a096-5f6cf54a889a'}, 'data': {'pageNo': 1, 'pageSize': 100}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"name': 'kubeos_v1'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'id': 7, 'name': 'kubeos_v2', 'serviceProvider': 1, 'description': 'kubeos_v2', 'nodeTotal': 8, 'masterNode': 1, 'workNode': 7, 'abnormalNode': 0, 'cpuTotal': 440, 'cpuUsed': 10, 'memTotal': 2735661158400, 'memUsed': 465669713920, 'diskTotal': 4387216888739, 'diskUsed': 0, 'gpuTotal': 8, 'gpuUsed': 0, 'videoMemoryTotal': 0, 'videoMemoryUsed': 0, 'podsTotal': 2400, 'podsUsed': 116, 'etcdTotal': 1, 'kubeletTotal': 8, 'schedulerTotal': 1, 'controllerTotal': 1, 'kubeProxyTotal': 8, 'flag': False, 'apiserverTotal': 1}]}}, 'time_consuming': 199.272, 'time_total': 0.199272}}" ]
+}
