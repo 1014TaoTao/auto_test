@@ -9,8 +9,11 @@ TESTCASEPATH = setting.API_EXCEL_FILE
 
 # 获取Jenkins选项参数(切记参数名称不可以使用中文)
 ENVIRONMENT: str = os.environ['ENVIRONMENT']
+print(ENVIRONMENT)
 API_HOST: str = os.environ['APIHOST']
+print(API_HOST)
 TESTER: str = os.environ['TESTER']
+print(TESTER)
 
 C = Config()
 # 登录人名称

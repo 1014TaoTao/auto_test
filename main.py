@@ -23,6 +23,7 @@ if __name__ == '__main__':
     # type_test = 'API'
 
     type_test: str = os.environ['TESTTYPE']
+    print(type_test)
 
     Go = RunTest(type_test=type_test)
     Go.run()
