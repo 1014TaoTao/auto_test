@@ -19,9 +19,6 @@ C = Config()
 # 如果要切换环境，只需要修改索引下标值
 # [op,cp]
 # ENVIRONMENT: str = C.get_environment_type()[0]
-print(ENVIRONMENT)
-print(API_HOST)
-print(TESTER)
 LOGIN_URL: str = C.get_login_url(ENVIRONMENT)
 LOGIN_DATA: dict = C.get_login_data(ENVIRONMENT)
 LOGIN_HEADERS: dict = C.get_login_headers(ENVIRONMENT)
