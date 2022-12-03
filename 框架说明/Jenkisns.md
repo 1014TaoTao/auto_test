@@ -80,11 +80,12 @@ vi ~/.pip/pipconf
 
 # 先将包上传到主机，然后从主机复制到容器内
 
-docker cp allure-commandline-2.13.6.zip jenkins1:/usr/local/src
+docker cp allure-commandline-2.13.6.tgz jenkins1:/usr/local/src
 
 # 解压
 
-unzip allure-commandline-2.13.6.zip
+<!-- unzip allure-commandline-2.13.6.zip -->
+tar -zxvf allure-commandline-2.13.6.tgz
 
 # 赋予文件夹所有内容最高权限
 
@@ -97,3 +98,26 @@ cat >> /root/.bashrc << "EOF"
 export PATH=/usr/local/src/allure/bin:$PATH
 export PATH=/usr/local/src/py3.6/bin:$PATH
 EOF
+
+
+
+# jenkins安装好后，页面配置
+
+全局工具配置
+    jdk:
+        通过export查看jdk环境变量，并写入jenkins
+        别名：JAVA_HOME
+        路径：/opt/java/openjdk
+
+    git:
+        通过which is git查导git路径
+        别名：git
+        路径：/usr/bin/git
+
+    allure:
+        jenkins全局配置allure
+        别名：allure
+        路径：/usr/local/src/allure
+
+
+系统配置：
