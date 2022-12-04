@@ -1,0 +1,350 @@
+{
+  "uid" : "a44d75d41e6497d6",
+  "name" : "test_002-虚拟化-无参数且与依赖测试",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "dcce6d58e12eb9a7f40c3c3bbb640f53",
+  "time" : {
+    "start" : 1670162761186,
+    "stop" : 1670162761226,
+    "duration" : 40
+  },
+  "description" : "test_002-虚拟化-无参数且与依赖测试 get http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail",
+  "descriptionHtml" : "<p>test_002-虚拟化-无参数且与依赖测试 get http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+  "statusTrace" : "self = <testCase.api.test_excel.TestExcel object at 0x00000282232B5CA0>\nargs = {'data': {}, 'expected_data': \"displayName': 'ubuntu20'\", 'expected_msg': '成功', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, ...}\n\n    @pytest.mark.parametrize('args', run_setup())\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.epic('excel接口测试')\n    def test_excel(self, args):\n        \"\"\"\n        :param args:\n        :return:\n        \"\"\"\n        allure.dynamic.description(\n            f\"{str(args['title'])} {str(args['method'])} {str(args['url'])}\")\n        allure.dynamic.title(str(args['title']))\n        with allure.step(u\"测试结果：{0}\".format(str(args['result']))):\n            allure.attach(u\"测试结果：{0}\".format(str(args['result'])), \"测试结果\")\n    \n        with allure.step(u\"用例名称：{0}\".format(str(args['title']))):\n            allure.attach(u\"用例名称：{0}\".format(str(args['title'])), \"用例名称\")\n    \n        with allure.step(u\"请求方式：{0}\".format(str(args['method']))):\n            allure.attach(u\"请求方式：{0}\".format(str(args['method'])), \"请求方式\")\n    \n        with allure.step(u\"请求地址：{0}\".format(str(args['url']))):\n            allure.attach(u\"请求地址：{0}\".format(str(args['url'])), \"请求地址\")\n    \n        with allure.step(u\"请求头 ：{0}\".format(str(args['headers']))):\n            allure.attach(u\"请求头 ：{0}\".format(str(args['headers'])), \"请求头\")\n    \n        with allure.step(u\"请求参数：{0}\".format(str(args['data']))):\n            allure.attach(u\"请求参数：{0}\".format(str(args['data'])), \"请求参数\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['status_code']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['status_code'])), \"code请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_msg']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_msg'])), \"msg请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_data']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_data'])), \"data请求断言\")\n    \n        with allure.step(u\"响应结果：{0}\".format(str(args['res']))):\n            allure.attach(u\"响应结果：{0}\".format(str(args['res'])), \"响应结果\")\n    \n        with allure.step(\"断言\"):\n>           assert args[\"result\"] == \"pass\"\nE           AssertionError: assert 'fail' == 'pass'\nE             - pass\nE             + fail\n\ntestCase\\api\\test_excel.py:95: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1670162760938,
+      "stop" : 1670162761059,
+      "duration" : 121
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "test_002-虚拟化-无参数且与依赖测试 get http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
+    "statusTrace" : "self = <testCase.api.test_excel.TestExcel object at 0x00000282232B5CA0>\nargs = {'data': {}, 'expected_data': \"displayName': 'ubuntu20'\", 'expected_msg': '成功', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, ...}\n\n    @pytest.mark.parametrize('args', run_setup())\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.epic('excel接口测试')\n    def test_excel(self, args):\n        \"\"\"\n        :param args:\n        :return:\n        \"\"\"\n        allure.dynamic.description(\n            f\"{str(args['title'])} {str(args['method'])} {str(args['url'])}\")\n        allure.dynamic.title(str(args['title']))\n        with allure.step(u\"测试结果：{0}\".format(str(args['result']))):\n            allure.attach(u\"测试结果：{0}\".format(str(args['result'])), \"测试结果\")\n    \n        with allure.step(u\"用例名称：{0}\".format(str(args['title']))):\n            allure.attach(u\"用例名称：{0}\".format(str(args['title'])), \"用例名称\")\n    \n        with allure.step(u\"请求方式：{0}\".format(str(args['method']))):\n            allure.attach(u\"请求方式：{0}\".format(str(args['method'])), \"请求方式\")\n    \n        with allure.step(u\"请求地址：{0}\".format(str(args['url']))):\n            allure.attach(u\"请求地址：{0}\".format(str(args['url'])), \"请求地址\")\n    \n        with allure.step(u\"请求头 ：{0}\".format(str(args['headers']))):\n            allure.attach(u\"请求头 ：{0}\".format(str(args['headers'])), \"请求头\")\n    \n        with allure.step(u\"请求参数：{0}\".format(str(args['data']))):\n            allure.attach(u\"请求参数：{0}\".format(str(args['data'])), \"请求参数\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['status_code']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['status_code'])), \"code请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_msg']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_msg'])), \"msg请求断言\")\n    \n        with allure.step(u\"请求断言：{0}\".format(str(args['expected_data']))):\n            allure.attach(u\"请求断言：{0}\".format(\n                str(args['expected_data'])), \"data请求断言\")\n    \n        with allure.step(u\"响应结果：{0}\".format(str(args['res']))):\n            allure.attach(u\"响应结果：{0}\".format(str(args['res'])), \"响应结果\")\n    \n        with allure.step(\"断言\"):\n>           assert args[\"result\"] == \"pass\"\nE           AssertionError: assert 'fail' == 'pass'\nE             - pass\nE             + fail\n\ntestCase\\api\\test_excel.py:95: AssertionError",
+    "steps" : [ {
+      "name" : "测试结果：fail",
+      "time" : {
+        "start" : 1670162761186,
+        "stop" : 1670162761186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a5eaf0dd96154c8f",
+        "name" : "测试结果",
+        "source" : "a5eaf0dd96154c8f.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "用例名称：test_002-虚拟化-无参数且与依赖测试",
+      "time" : {
+        "start" : 1670162761186,
+        "stop" : 1670162761186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "293a879c029b7b89",
+        "name" : "用例名称",
+        "source" : "293a879c029b7b89.attach",
+        "type" : "text/plain",
+        "size" : 61
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1670162761186,
+        "stop" : 1670162761186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "37128f474239008e",
+        "name" : "请求方式",
+        "source" : "37128f474239008e.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail",
+      "time" : {
+        "start" : 1670162761186,
+        "stop" : 1670162761186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "58a6797349e49424",
+        "name" : "请求地址",
+        "source" : "58a6797349e49424.attach",
+        "type" : "text/plain",
+        "size" : 79
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}",
+      "time" : {
+        "start" : 1670162761186,
+        "stop" : 1670162761186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "73248a3709aee4a",
+        "name" : "请求头",
+        "source" : "73248a3709aee4a.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求参数：{}",
+      "time" : {
+        "start" : 1670162761186,
+        "stop" : 1670162761194,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "995e64237708a197",
+        "name" : "请求参数",
+        "source" : "995e64237708a197.attach",
+        "type" : "text/plain",
+        "size" : 17
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1670162761194,
+        "stop" : 1670162761194,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d179446c30ca8f2b",
+        "name" : "code请求断言",
+        "source" : "d179446c30ca8f2b.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1670162761194,
+        "stop" : 1670162761194,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e85b5bd0727c3d0",
+        "name" : "msg请求断言",
+        "source" : "e85b5bd0727c3d0.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：displayName': 'ubuntu20'",
+      "time" : {
+        "start" : 1670162761194,
+        "stop" : 1670162761194,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "76e92db5ecf32a58",
+        "name" : "data请求断言",
+        "source" : "76e92db5ecf32a58.attach",
+        "type" : "text/plain",
+        "size" : 39
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 0, 'msg': 'name为空', 'data': None}, 'time_consuming': 93.999, 'time_total': 0.093999}",
+      "time" : {
+        "start" : 1670162761194,
+        "stop" : 1670162761223,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e8550d9ede8402dd",
+        "name" : "响应结果",
+        "source" : "e8550d9ede8402dd.attach",
+        "type" : "text/plain",
+        "size" : 134
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1670162761223,
+        "stop" : 1670162761226,
+        "duration" : 3
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail\n",
+      "statusTrace" : "  File \"e:\\my_project\\pytest_auto_uitest_apitest\\testCase\\api\\test_excel.py\", line 95, in test_excel\n    assert args[\"result\"] == \"pass\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "5828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'fail', 'title': 'test_002-虚拟化-无参数且与依赖测试', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': {}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'ubuntu20'\", 'res': {'code': 200, 'body': {'code': 0, 'msg': 'name为空', 'data': None}, 'time_consuming': 93.999, 'time_total': 0.093999}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a44d75d41e6497d6.json",
+  "parameterValues" : [ "{'result': 'fail', 'title': 'test_002-虚拟化-无参数且与依赖测试', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine/detail', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': {}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'ubuntu20'\", 'res': {'code': 200, 'body': {'code': 0, 'msg': 'name为空', 'data': None}, 'time_consuming': 93.999, 'time_total': 0.093999}}" ]
+}

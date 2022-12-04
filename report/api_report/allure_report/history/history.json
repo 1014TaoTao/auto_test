@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4b1ea5276187095e",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/4b1ea5276187095e",
+      "uid" : "ffa5b60b8bb90960",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/ffa5b60b8bb90960",
       "status" : "passed",
       "time" : {
-        "start" : 1670103166779,
-        "stop" : 1670103166796,
-        "duration" : 17
+        "start" : 1670162761268,
+        "stop" : 1670162761276,
+        "duration" : 8
       }
     } ]
   },
@@ -29,14 +29,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "23b7a9fa13cafa65",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/23b7a9fa13cafa65",
+      "uid" : "a44d75d41e6497d6",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/a44d75d41e6497d6",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "time" : {
-        "start" : 1670103166656,
-        "stop" : 1670103166702,
-        "duration" : 46
+        "start" : 1670162761186,
+        "stop" : 1670162761226,
+        "duration" : 40
       }
     } ]
   },
@@ -50,13 +50,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fac5c676ab4431",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/fac5c676ab4431",
+      "uid" : "f02a35444916c05c",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/f02a35444916c05c",
       "status" : "passed",
       "time" : {
-        "start" : 1670103166837,
-        "stop" : 1670103166845,
-        "duration" : 8
+        "start" : 1670162761300,
+        "stop" : 1670162761300,
+        "duration" : 0
       }
     } ]
   },
@@ -70,14 +70,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "47234c186b5fd208",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/47234c186b5fd208",
+      "uid" : "868961c14ac749e8",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/868961c14ac749e8",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "time" : {
-        "start" : 1670103166722,
-        "stop" : 1670103166738,
-        "duration" : 16
+        "start" : 1670162761235,
+        "stop" : 1670162761243,
+        "duration" : 8
       }
     } ]
   },
@@ -91,12 +91,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cb2195716031f97d",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/cb2195716031f97d",
+      "uid" : "dd6fb561e1b60ca1",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/dd6fb561e1b60ca1",
       "status" : "passed",
       "time" : {
-        "start" : 1670103166894,
-        "stop" : 1670103166902,
+        "start" : 1670162761333,
+        "stop" : 1670162761341,
         "duration" : 8
       }
     } ]
@@ -111,14 +111,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a06252386d9b68e1",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/a06252386d9b68e1",
+      "uid" : "d882d50359eb6eb9",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/d882d50359eb6eb9",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "time" : {
-        "start" : 1670103166460,
-        "stop" : 1670103166476,
-        "duration" : 16
+        "start" : 1670162761061,
+        "stop" : 1670162761069,
+        "duration" : 8
       }
     } ]
   },
@@ -132,13 +132,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "795292f04040ff6d",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/795292f04040ff6d",
+      "uid" : "7cdc85b68729b84b",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/7cdc85b68729b84b",
       "status" : "passed",
       "time" : {
-        "start" : 1670103166853,
-        "stop" : 1670103166869,
-        "duration" : 16
+        "start" : 1670162761309,
+        "stop" : 1670162761317,
+        "duration" : 8
       }
     } ]
   },
@@ -152,13 +152,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "17f0f87cab4d19e1",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/17f0f87cab4d19e1",
+      "uid" : "46485f7ff5d84dbd",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/46485f7ff5d84dbd",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "time" : {
-        "start" : 1670103166755,
-        "stop" : 1670103166763,
+        "start" : 1670162761251,
+        "stop" : 1670162761259,
         "duration" : 8
       }
     } ]
@@ -173,14 +173,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "72c0f70d8c3ef82b",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/72c0f70d8c3ef82b",
+      "uid" : "6836754cc041caca",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/6836754cc041caca",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 'fail' == 'pass'\n  - pass\n  + fail",
       "time" : {
-        "start" : 1670103166804,
-        "stop" : 1670103166821,
-        "duration" : 17
+        "start" : 1670162761276,
+        "stop" : 1670162761284,
+        "duration" : 8
       }
     } ]
   },
@@ -194,13 +194,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3836f1ca257e53ce",
-      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/3836f1ca257e53ce",
+      "uid" : "c4fc400fca79df5b",
+      "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/c4fc400fca79df5b",
       "status" : "passed",
       "time" : {
-        "start" : 1670103166874,
-        "stop" : 1670103166885,
-        "duration" : 11
+        "start" : 1670162761325,
+        "stop" : 1670162761333,
+        "duration" : 8
       }
     } ]
   }

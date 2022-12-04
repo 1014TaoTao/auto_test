@@ -1,0 +1,340 @@
+{
+  "uid" : "ffa5b60b8bb90960",
+  "name" : "test_005-集群管理-地址中有依赖测试",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "e9636788f4cc8fd6e9c757068021da9c",
+  "time" : {
+    "start" : 1670162761268,
+    "stop" : 1670162761276,
+    "duration" : 8
+  },
+  "description" : "test_005-集群管理-地址中有依赖测试 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster/nodes/7",
+  "descriptionHtml" : "<p>test_005-集群管理-地址中有依赖测试 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster/nodes/7</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1670162760938,
+      "stop" : 1670162761059,
+      "duration" : 121
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "test_005-集群管理-地址中有依赖测试 get http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster/nodes/7",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "af67c8a1e7adbba5",
+        "name" : "测试结果",
+        "source" : "af67c8a1e7adbba5.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "用例名称：test_005-集群管理-地址中有依赖测试",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f3507e42be9db0d4",
+        "name" : "用例名称",
+        "source" : "f3507e42be9db0d4.attach",
+        "type" : "text/plain",
+        "size" : 61
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "988fe479fa654049",
+        "name" : "请求方式",
+        "source" : "988fe479fa654049.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster/nodes/7",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "63f56211afccad9a",
+        "name" : "请求地址",
+        "source" : "63f56211afccad9a.attach",
+        "type" : "text/plain",
+        "size" : 80
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "35979b130d3c00f",
+        "name" : "请求头",
+        "source" : "35979b130d3c00f.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求参数：None",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "968b15271b946464",
+        "name" : "请求参数",
+        "source" : "968b15271b946464.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c327c011e5e649bf",
+        "name" : "code请求断言",
+        "source" : "c327c011e5e649bf.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a0c353b1c660e3d8",
+        "name" : "msg请求断言",
+        "source" : "a0c353b1c660e3d8.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求断言：nodeRole': '工作节点'",
+      "time" : {
+        "start" : 1670162761268,
+        "stop" : 1670162761276,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "12ed3b4029f4050e",
+        "name" : "data请求断言",
+        "source" : "12ed3b4029f4050e.attach",
+        "type" : "text/plain",
+        "size" : 40
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': [{'nodeIp': '10.0.34.20', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 270045990912, 'memUsed': 28471582720, 'podsTotal': 300, 'podsUsed': 27}, {'nodeIp': '10.0.34.30', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 6, 'memTotal': 270076825600, 'memUsed': 20068106240, 'podsTotal': 300, 'podsUsed': 11}, {'nodeIp': '10.0.34.24', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 540597436416, 'memUsed': 161463726080, 'podsTotal': 300, 'podsUsed': 10}, {'nodeIp': '10.0.34.25', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '管理节点', 'cpuTotal': 13, 'cpuUsed': 0, 'memTotal': 33623748608, 'memUsed': 3336196096, 'podsTotal': 300, 'podsUsed': 3}, {'nodeIp': '10.0.34.22', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 540597436416, 'memUsed': 281767415808, 'podsTotal': 300, 'podsUsed': 15}, {'nodeIp': '10.0.34.11', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 0, 'memTotal': 270044860416, 'memUsed': 7893237760, 'podsTotal': 300, 'podsUsed': 10}, {'nodeIp': '10.0.34.23', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 0, 'memTotal': 540597436416, 'memUsed': 7987404800, 'podsTotal': 300, 'podsUsed': 17}, {'nodeIp': '10.0.34.18', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 2, 'memTotal': 270077423616, 'memUsed': 19753570304, 'podsTotal': 300, 'podsUsed': 24}]}, 'time_consuming': 167.318, 'time_total': 0.167318}",
+      "time" : {
+        "start" : 1670162761276,
+        "stop" : 1670162761276,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "43f49a184a84af6c",
+        "name" : "响应结果",
+        "source" : "43f49a184a84af6c.attach",
+        "type" : "text/plain",
+        "size" : 1820
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1670162761276,
+        "stop" : 1670162761276,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "5828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'pass', 'title': 'test_005-集群管理-地址中有依赖测试', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster/nodes/7', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': None, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"nodeRole': '工作节点'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': [{'nodeIp': '10.0.34.20', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 270045990912, 'memUsed': 28471582720, 'podsTotal': 300, 'podsUsed': 27}, {'nodeIp': '10.0.34.30', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 6, 'memTotal': 270076825600, 'memUsed': 20068106240, 'podsTotal': 300, 'podsUsed': 11}, {'nodeIp': '10.0.34.24', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 540597436416, 'memUsed': 161463726080, 'podsTotal': 300, 'podsUsed': 10}, {'nodeIp': '10.0.34.25', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '管理节点', 'cpuTotal': 13, 'cpuUsed': 0, 'memTotal': 33623748608, 'memUsed': 3336196096, 'podsTotal': 300, 'podsUsed': 3}, {'nodeIp': '10.0.34.22', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 540597436416, 'memUsed': 281767415808, 'podsTotal': 300, 'podsUsed': 15}, {'nodeIp': '10.0.34.11', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 0, 'memTotal': 270044860416, 'memUsed': 7893237760, 'podsTotal': 300, 'podsUsed': 10}, {'nodeIp': '10.0.34.23', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 0, 'memTotal': 540597436416, 'memUsed': 7987404800, 'podsTotal': 300, 'podsUsed': 17}, {'nodeIp': '10.0.34.18', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 2, 'memTotal': 270077423616, 'memUsed': 19753570304, 'podsTotal': 300, 'podsUsed': 24}]}, 'time_consuming': 167.318, 'time_total': 0.167318}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ffa5b60b8bb90960.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_005-集群管理-地址中有依赖测试', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/computer/cluster/nodes/7', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': None, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"nodeRole': '工作节点'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': [{'nodeIp': '10.0.34.20', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 270045990912, 'memUsed': 28471582720, 'podsTotal': 300, 'podsUsed': 27}, {'nodeIp': '10.0.34.30', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 6, 'memTotal': 270076825600, 'memUsed': 20068106240, 'podsTotal': 300, 'podsUsed': 11}, {'nodeIp': '10.0.34.24', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 540597436416, 'memUsed': 161463726080, 'podsTotal': 300, 'podsUsed': 10}, {'nodeIp': '10.0.34.25', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '管理节点', 'cpuTotal': 13, 'cpuUsed': 0, 'memTotal': 33623748608, 'memUsed': 3336196096, 'podsTotal': 300, 'podsUsed': 3}, {'nodeIp': '10.0.34.22', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 1, 'memTotal': 540597436416, 'memUsed': 281767415808, 'podsTotal': 300, 'podsUsed': 15}, {'nodeIp': '10.0.34.11', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 0, 'memTotal': 270044860416, 'memUsed': 7893237760, 'podsTotal': 300, 'podsUsed': 10}, {'nodeIp': '10.0.34.23', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 0, 'memTotal': 540597436416, 'memUsed': 7987404800, 'podsTotal': 300, 'podsUsed': 17}, {'nodeIp': '10.0.34.18', 'nodeState': 'normal', 'unSchedule': False, 'nodeRole': '工作节点', 'cpuTotal': 61, 'cpuUsed': 2, 'memTotal': 270077423616, 'memUsed': 19753570304, 'podsTotal': 300, 'podsUsed': 24}]}, 'time_consuming': 167.318, 'time_total': 0.167318}}" ]
+}

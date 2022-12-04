@@ -15,7 +15,7 @@ TESTER: str = os.environ['TESTER']
 C = Config()
 # 登录人名称
 # TESTER: str = C.get_testers()[0]
-# APIHOST: str = C.get_api_host()[0]
+# API_HOST: str = C.get_api_host()[0]
 # 如果要切换环境，只需要修改索引下标值
 # [op,cp]
 # ENVIRONMENT: str = C.get_environment_type()[0]
