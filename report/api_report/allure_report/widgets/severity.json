@@ -1,100 +1,100 @@
 [ {
-  "uid" : "a44d75d41e6497d6",
-  "name" : "test_002-虚拟化-无参数且与依赖测试",
-  "time" : {
-    "start" : 1670162761186,
-    "stop" : 1670162761226,
-    "duration" : 40
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "ffa5b60b8bb90960",
-  "name" : "test_005-集群管理-地址中有依赖测试",
-  "time" : {
-    "start" : 1670162761268,
-    "stop" : 1670162761276,
-    "duration" : 8
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "6836754cc041caca",
-  "name" : "test_006-任务管理-高性能计算列表",
-  "time" : {
-    "start" : 1670162761276,
-    "stop" : 1670162761284,
-    "duration" : 8
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "dd6fb561e1b60ca1",
-  "name" : "test_010-应用中心-应用实列列表",
-  "time" : {
-    "start" : 1670162761333,
-    "stop" : 1670162761341,
-    "duration" : 8
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "d882d50359eb6eb9",
-  "name" : "test_001-虚拟化-云主机列表查询",
-  "time" : {
-    "start" : 1670162761061,
-    "stop" : 1670162761069,
-    "duration" : 8
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "7cdc85b68729b84b",
-  "name" : "test_008-算子管理-算子列表",
-  "time" : {
-    "start" : 1670162761309,
-    "stop" : 1670162761317,
-    "duration" : 8
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "868961c14ac749e8",
+  "uid" : "7322fdca091dbba0",
   "name" : "test_003-虚拟化-有参数且有依赖测试",
   "time" : {
-    "start" : 1670162761235,
-    "stop" : 1670162761243,
-    "duration" : 8
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "46485f7ff5d84dbd",
-  "name" : "test_004-集群管理-计算集群列表",
-  "time" : {
-    "start" : 1670162761251,
-    "stop" : 1670162761259,
-    "duration" : 8
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f02a35444916c05c",
-  "name" : "test_007-流程管理-流程列表",
-  "time" : {
-    "start" : 1670162761300,
-    "stop" : 1670162761300,
+    "start" : 1670164665867,
+    "stop" : 1670164665867,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "c4fc400fca79df5b",
+  "uid" : "91e7ac66d382646a",
+  "name" : "test_001-虚拟化-云主机列表查询",
+  "time" : {
+    "start" : 1670164665848,
+    "stop" : 1670164665848,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "1aafb9e625b5db3",
   "name" : "test_009-应用中心-应用模板列表",
   "time" : {
-    "start" : 1670162761325,
-    "stop" : 1670162761333,
+    "start" : 1670164665946,
+    "stop" : 1670164665954,
     "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "351096966112440a",
+  "name" : "test_006-任务管理-高性能计算列表",
+  "time" : {
+    "start" : 1670164665904,
+    "stop" : 1670164665912,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8c51164262162b3b",
+  "name" : "test_008-算子管理-算子列表",
+  "time" : {
+    "start" : 1670164665931,
+    "stop" : 1670164665939,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "286b456ffea9b6a4",
+  "name" : "test_002-虚拟化-无参数且与依赖测试",
+  "time" : {
+    "start" : 1670164665848,
+    "stop" : 1670164665867,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "5dc3e0631f9eed7b",
+  "name" : "test_010-应用中心-应用实列列表",
+  "time" : {
+    "start" : 1670164665960,
+    "stop" : 1670164665967,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b225158214f7731a",
+  "name" : "test_007-流程管理-流程列表",
+  "time" : {
+    "start" : 1670164665918,
+    "stop" : 1670164665926,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "fbd0f8c0dfc532df",
+  "name" : "test_005-集群管理-地址中有依赖测试",
+  "time" : {
+    "start" : 1670164665892,
+    "stop" : 1670164665899,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a3a24a4c7af70914",
+  "name" : "test_004-集群管理-计算集群列表",
+  "time" : {
+    "start" : 1670164665881,
+    "stop" : 1670164665887,
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "blocker"

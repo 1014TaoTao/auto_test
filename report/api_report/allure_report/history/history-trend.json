@@ -3,10 +3,10 @@
   "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
   "reportName" : "AllureReport",
   "data" : {
-    "failed" : 5,
+    "failed" : 0,
     "broken" : 0,
     "skipped" : 0,
-    "passed" : 5,
+    "passed" : 10,
     "unknown" : 0,
     "total" : 10
   }

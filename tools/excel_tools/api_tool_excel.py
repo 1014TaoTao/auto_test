@@ -254,16 +254,15 @@ class ExcelPack(ReadExcel):
             case_depend = depend_list[i].split(":")[0]
             revise_str = revise_list[i]
             for case_str in case_str_list:
-                self.sheet_data = self.get_sheet_data()
+                # self.sheet_data = self.get_sheet_data()
                 response = self.get_case_line(case_depend, row)
                 if response != u"【excel无法找到对应依赖的响应内容】":
                     try:
-                        # res_str = eval(response)['body']['data']['list'][0][case_str]  # 获取响应值
-                        # dict_data[revise_str] = str(res_str)  # {id:9},在response获取得字段加入json_data字典中
 
-                        res_str = eval(re.search(f'{case_str: }.*?(?=,)', response).group().replace(f'{case_str}',
-                                                                                                    '').replace(
+                        res_str = eval(re.search(f'{case_str}.*?(?=,)', response).group().replace(f'{case_str}',
+                                                                                                  '').replace(
                             ": '", ''))
+
                         # {id:9},在response获取得字段加入json_data字典中
                         dict_data[revise_str] = res_str
 
