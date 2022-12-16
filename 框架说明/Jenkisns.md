@@ -99,8 +99,6 @@ export PATH=/usr/local/src/allure/bin:$PATH
 export PATH=/usr/local/src/py3.6/bin:$PATH
 EOF
 
-
-
 # jenkins安装好后，页面配置
 
 全局工具配置
@@ -118,6 +116,12 @@ EOF
         jenkins全局配置allure
         别名：allure
         路径：/usr/local/src/allure
-
+        环境变量：
+            SystemVersion:Windows10-64bit
+            PythonVersion:python-3.8.10
+            AllureVersion:allure-2.16.1
+            ProjectName:pytest_auto_uitest_apitest
+            Author:zhangtao
+            Email:948080782@qq.com
 
 系统配置：
