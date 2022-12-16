@@ -1,0 +1,338 @@
+{
+  "uid" : "2ad76122a971a58c",
+  "name" : "test_001-虚拟化-云主机列表查询",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "fdba51cb1489fe82d008808d30b8d118",
+  "time" : {
+    "start" : 1670164665848,
+    "stop" : 1670164665848,
+    "duration" : 0
+  },
+  "description" : "test_001-虚拟化-云主机列表查询 get http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine",
+  "descriptionHtml" : "<p>test_001-虚拟化-云主机列表查询 get http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1670164665767,
+      "stop" : 1670164665848,
+      "duration" : 81
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_001-虚拟化-云主机列表查询 get http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "406b487f0316df65",
+        "name" : "测试结果",
+        "source" : "406b487f0316df65.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "用例名称：test_001-虚拟化-云主机列表查询",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "56843f6c9fef4f3e",
+        "name" : "用例名称",
+        "source" : "56843f6c9fef4f3e.attach",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e25669ff9dbdc617",
+        "name" : "请求方式",
+        "source" : "e25669ff9dbdc617.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b01a298a9da404f3",
+        "name" : "请求地址",
+        "source" : "b01a298a9da404f3.attach",
+        "type" : "text/plain",
+        "size" : 72
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c13ada8eb1fd6e44",
+        "name" : "请求头",
+        "source" : "c13ada8eb1fd6e44.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求参数：{'pageNo': 1, 'pageSize': 20, 'name': 'vm-centos', 'namespace': 'vm'}",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "847160043aebc32c",
+        "name" : "请求参数",
+        "source" : "847160043aebc32c.attach",
+        "type" : "text/plain",
+        "size" : 84
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "eb49696a423981dc",
+        "name" : "code请求断言",
+        "source" : "eb49696a423981dc.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa3365b55ef721df",
+        "name" : "msg请求断言",
+        "source" : "fa3365b55ef721df.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：displayName': 'vm-centos'",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "617d7670212004fd",
+        "name" : "data请求断言",
+        "source" : "617d7670212004fd.attach",
+        "type" : "text/plain",
+        "size" : 40
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'name': 'vm-centos-9frw1g', 'displayName': 'vm-centos', 'namespace': 'vm', 'status': 'Running', 'ipv4': None, 'macAddress': '42:d3:16:04:78:2c', 'cpu': 1, 'mem': '2Gi', 'gpu': '0', 'platformType': 'CentOS Linux 7 (Core)', 'osType': 'linux', 'uuid': '91a37f5c-f8f5-4fb2-a958-598d4de41f55', 'runningTime': 1256433, 'imageName': 'centos7.qcow2', 'description': '', 'createTime': '2022-11-19 06:21:10', 'createUser': '5627', 'createUserName': None, 'svcDetail': {'svcName': 'vm-centos-9frw1g-svc', 'ip': '10.0.34.102', 'ports': [{'port': 22, 'protocol': None, 'description': '远程链接端口'}]}}]}}, 'time_consuming': 149.278, 'time_total': 0.149278}",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8737ac1cce05f416",
+        "name" : "响应结果",
+        "source" : "8737ac1cce05f416.attach",
+        "type" : "text/plain",
+        "size" : 747
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1670164665848,
+        "stop" : 1670164665848,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "ZhangTao"
+  }, {
+    "name" : "thread",
+    "value" : "10688-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'pass', 'title': 'test_001-虚拟化-云主机列表查询', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': {'pageNo': 1, 'pageSize': 20, 'name': 'vm-centos', 'namespace': 'vm'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'vm-centos'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'name': 'vm-centos-9frw1g', 'displayName': 'vm-centos', 'namespace': 'vm', 'status': 'Running', 'ipv4': None, 'macAddress': '42:d3:16:04:78:2c', 'cpu': 1, 'mem': '2Gi', 'gpu': '0', 'platformType': 'CentOS Linux 7 (Core)', 'osType': 'linux', 'uuid': '91a37f5c-f8f5-4fb2-a958-598d4de41f55', 'runningTime': 1256433, 'imageName': 'centos7.qcow2', 'description': '', 'createTime': '2022-11-19 06:21:10', 'createUser': '5627', 'createUserName': None, 'svcDetail': {'svcName': 'vm-centos-9frw1g-svc', 'ip': '10.0.34.102', 'ports': [{'port': 22, 'protocol': None, 'description': '远程链接端口'}]}}]}}, 'time_consuming': 149.278, 'time_total': 0.149278}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ad76122a971a58c.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_001-虚拟化-云主机列表查询', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/kubevirt/machine', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': {'pageNo': 1, 'pageSize': 20, 'name': 'vm-centos', 'namespace': 'vm'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"displayName': 'vm-centos'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 1, 'list': [{'name': 'vm-centos-9frw1g', 'displayName': 'vm-centos', 'namespace': 'vm', 'status': 'Running', 'ipv4': None, 'macAddress': '42:d3:16:04:78:2c', 'cpu': 1, 'mem': '2Gi', 'gpu': '0', 'platformType': 'CentOS Linux 7 (Core)', 'osType': 'linux', 'uuid': '91a37f5c-f8f5-4fb2-a958-598d4de41f55', 'runningTime': 1256433, 'imageName': 'centos7.qcow2', 'description': '', 'createTime': '2022-11-19 06:21:10', 'createUser': '5627', 'createUserName': None, 'svcDetail': {'svcName': 'vm-centos-9frw1g-svc', 'ip': '10.0.34.102', 'ports': [{'port': 22, 'protocol': None, 'description': '远程链接端口'}]}}]}}, 'time_consuming': 149.278, 'time_total': 0.149278}}" ]
+}

@@ -3,6 +3,20 @@
   "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
   "reportName" : "AllureReport",
   "data" : {
+    "duration" : 866051253
+  }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 70720157
+  }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
+  "data" : {
     "duration" : 119
   }
 } ]

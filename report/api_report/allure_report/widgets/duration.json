@@ -1,100 +1,200 @@
 [ {
-  "uid" : "5dc3e0631f9eed7b",
-  "name" : "test_010-应用中心-应用实列列表",
+  "uid" : "e8d44ead748d93cd",
+  "name" : "test_002-虚拟化-无参数且与依赖测试",
   "time" : {
-    "start" : 1670164665960,
-    "stop" : 1670164665967,
+    "start" : 1671101436717,
+    "stop" : 1671101436722,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bce3c4834403179f",
+  "name" : "test_004-集群管理-计算集群列表",
+  "time" : {
+    "start" : 1671101436744,
+    "stop" : 1671101436751,
     "duration" : 7
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "351096966112440a",
-  "name" : "test_006-任务管理-高性能计算列表",
+  "uid" : "8f111c3cb14cb6bd",
+  "name" : "test_007-流程管理-流程列表",
   "time" : {
-    "start" : 1670164665904,
-    "stop" : 1670164665912,
+    "start" : 1670235385945,
+    "stop" : 1670235385955,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b8632c3267495979",
+  "name" : "test_007-流程管理-流程列表",
+  "time" : {
+    "start" : 1671101436784,
+    "stop" : 1671101436792,
     "duration" : 8
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "a3a24a4c7af70914",
-  "name" : "test_004-集群管理-计算集群列表",
+  "uid" : "d0dc2c3a532a2aca",
+  "name" : "test_006-任务管理-高性能计算列表",
   "time" : {
-    "start" : 1670164665881,
-    "stop" : 1670164665887,
+    "start" : 1671101436771,
+    "stop" : 1671101436778,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e35280433cb1f94",
+  "name" : "test_009-应用中心-应用模板列表",
+  "time" : {
+    "start" : 1670235385980,
+    "stop" : 1670235385990,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "800100d1c5cce4e7",
+  "name" : "test_008-算子管理-算子列表",
+  "time" : {
+    "start" : 1671101436798,
+    "stop" : 1671101436804,
     "duration" : 6
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "fbd0f8c0dfc532df",
+  "uid" : "a56993bdb3c8eab",
   "name" : "test_005-集群管理-地址中有依赖测试",
   "time" : {
-    "start" : 1670164665892,
-    "stop" : 1670164665899,
-    "duration" : 7
+    "start" : 1671101436756,
+    "stop" : 1671101436765,
+    "duration" : 9
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "286b456ffea9b6a4",
-  "name" : "test_002-虚拟化-无参数且与依赖测试",
+  "uid" : "1c94a3e5f527837a",
+  "name" : "test_005-集群管理-地址中有依赖测试",
   "time" : {
-    "start" : 1670164665848,
-    "stop" : 1670164665867,
-    "duration" : 19
+    "start" : 1670235385899,
+    "stop" : 1670235385909,
+    "duration" : 10
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "b225158214f7731a",
-  "name" : "test_007-流程管理-流程列表",
-  "time" : {
-    "start" : 1670164665918,
-    "stop" : 1670164665926,
-    "duration" : 8
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "7322fdca091dbba0",
-  "name" : "test_003-虚拟化-有参数且有依赖测试",
-  "time" : {
-    "start" : 1670164665867,
-    "stop" : 1670164665867,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "91e7ac66d382646a",
+  "uid" : "d76e9b68d2cc7361",
   "name" : "test_001-虚拟化-云主机列表查询",
   "time" : {
-    "start" : 1670164665848,
-    "stop" : 1670164665848,
-    "duration" : 0
+    "start" : 1670235385578,
+    "stop" : 1670235385589,
+    "duration" : 11
   },
-  "status" : "passed",
+  "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "8c51164262162b3b",
-  "name" : "test_008-算子管理-算子列表",
+  "uid" : "fb5c2d6afbd5097b",
+  "name" : "test_010-应用中心-应用实列列表",
   "time" : {
-    "start" : 1670164665931,
-    "stop" : 1670164665939,
-    "duration" : 8
+    "start" : 1671101436822,
+    "stop" : 1671101436831,
+    "duration" : 9
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "1aafb9e625b5db3",
+  "uid" : "11fa4a0236c034b7",
+  "name" : "test_010-应用中心-应用实列列表",
+  "time" : {
+    "start" : 1670235385996,
+    "stop" : 1670235386005,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e7510f780e7382bb",
   "name" : "test_009-应用中心-应用模板列表",
   "time" : {
-    "start" : 1670164665946,
-    "stop" : 1670164665954,
-    "duration" : 8
+    "start" : 1671101436809,
+    "stop" : 1671101436815,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f647f780f355a10c",
+  "name" : "test_003-虚拟化-有参数且有依赖测试",
+  "time" : {
+    "start" : 1671101436728,
+    "stop" : 1671101436738,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "52fb4a97b8160a08",
+  "name" : "test_008-算子管理-算子列表",
+  "time" : {
+    "start" : 1670235385962,
+    "stop" : 1670235385972,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a84d1facd7646348",
+  "name" : "test_003-虚拟化-有参数且有依赖测试",
+  "time" : {
+    "start" : 1670235385846,
+    "stop" : 1670235385856,
+    "duration" : 10
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "5bfb08c14ba5b3c1",
+  "name" : "test_006-任务管理-高性能计算列表",
+  "time" : {
+    "start" : 1670235385916,
+    "stop" : 1670235385927,
+    "duration" : 11
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "4156edafd8e05c11",
+  "name" : "test_002-虚拟化-无参数且与依赖测试",
+  "time" : {
+    "start" : 1670235385814,
+    "stop" : 1670235385825,
+    "duration" : 11
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c1da41f24a115b84",
+  "name" : "test_004-集群管理-计算集群列表",
+  "time" : {
+    "start" : 1670235385871,
+    "stop" : 1670235385881,
+    "duration" : 10
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f5408948d2b8cdfc",
+  "name" : "test_001-虚拟化-云主机列表查询",
+  "time" : {
+    "start" : 1671101436705,
+    "stop" : 1671101436711,
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "blocker"
