@@ -4,10 +4,10 @@ import pytest
 
 
 from tools.common_tools.public_tool_manager import Manager
-from tools.email_tools.public_tool_email import EmailPack
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_email import EmailPack
+from tools.public_tool_log import logger
 from tools.send_news_tools.public_tool_dingding import DingTalk
-from tools.zip_tools.public_tool_zip import ZipPath
+from tools.public_tool_zip import ZipPath
 
 
 class Run:

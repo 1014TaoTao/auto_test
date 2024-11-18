@@ -7,12 +7,12 @@ environment:
     data:
       account_type: "mobile"
       client_id: "saas_op"
-      client_secret: "dc278c7ba8b3ddedbde7361fcedb70ee"
+      client_secret: "xxx"
       grant_type: "password"
-      mobile: "18192408293"
-      password: "eede6d66c93b0340342c18f8c5c76a87"
+      mobile: "xxx"
+      password: "xxx"
       scope: "trust"
-      username: "18192408293"
+      username: "xxx"
   cp:
     url: "http://wb.tudoucloud.com/uaa/oauth/token"
     headers:
@@ -21,12 +21,12 @@ environment:
     data:
       account_type: "mobile"
       client_id: "saas_cp"
-      client_secret: "cd342c7baed3dd3b55e7361fcedb88eh"
+      client_secret: "xxx"
       grant_type: "password"
-      mobile: "18603015137"
-      password: "737cec5e3ca2a2fb367fbedf4965fbc6"
+      mobile: "xxx"
+      password: "xxx"
       scope: "trust"
-      username: "18603015137"
+      username: "xxx"
 
 api_host:
   - http://kubeos.tudoucloud.com
@@ -39,7 +39,7 @@ api_host:
 email:
   smtpserver: smtp.qq.com
   sender: xx@qq.com
-  password: gboboxzhptgubcag
+  password: xxx
   receiver: xx@qq.com
 
 databases:
@@ -51,8 +51,8 @@ databases:
   charset: utf8
 
 testers:
-  - xx
-  - 严雪娇
+  - 张三
+  - 李四
 
 delete_report_on_off:
   - "on"

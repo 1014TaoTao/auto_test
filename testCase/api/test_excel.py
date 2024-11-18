@@ -1,4 +1,5 @@
 # coding:utf-8
+
 from typing import Union, List, Dict, Tuple, Any
 
 import allure
@@ -7,7 +8,7 @@ import pytest
 from common import setting, consts
 from tools.common_tools.api_tool_login import Login
 from tools.excel_tools.api_tool_excel import ExcelPack
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 
 logger = logger(setting.API_LOG_PATH)
 

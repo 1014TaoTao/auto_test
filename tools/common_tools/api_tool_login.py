@@ -2,9 +2,9 @@
 
 
 from common import consts, setting
-from tools.assert_tools.api_tool_assert import Assert
+from tools.api_tool_assert import Assert
 from tools.common_tools.api_tool_headers import HeadersPack
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 from tools.requests_tools.api_tool_reponse import Response
 from tools.requests_tools.api_tool_request import Requests
 

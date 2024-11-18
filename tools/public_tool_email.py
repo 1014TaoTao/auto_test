@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from common.readConfigYaml import Config
-from tools.allure_tools.public_tool_allurereport import (AllureFileClean,
+from tools.public_tool_allurereport import (AllureFileClean,
                                                          CaseCount)
 from tools.logs_tools.public_tool_log import logger
 

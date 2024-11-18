@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from common import setting
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 
 
 class Response:

@@ -7,9 +7,9 @@ from typing import Any
 from dingtalkchatbot.chatbot import DingtalkChatbot, FeedLink
 
 from common import readConfigYaml, setting
-from tools.allure_tools.public_tool_allurereport import CaseCount
+from tools.public_tool_allurereport import CaseCount
 # from common import consts
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 
 
 class DingTalk:

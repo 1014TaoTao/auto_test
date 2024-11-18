@@ -11,7 +11,7 @@ from dateutil.relativedelta import relativedelta
 from faker import Faker
 
 from common import setting
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 
 
 class Context:

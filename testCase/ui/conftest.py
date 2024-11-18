@@ -6,7 +6,7 @@ import pytest
 from basepage.base import Page
 from basepage.browser import select_browser
 from common import setting
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 from tools.common_tools.ui_tool_selenium_check import inspect_element
 
 logger = logger(setting.UI_LOG_PATH)

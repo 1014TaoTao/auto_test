@@ -2,8 +2,8 @@
 
 from common import consts, setting
 from tools.common_tools.public_tool_run_all import Run
-from tools.logs_tools.public_tool_log import logger
-from tools.system_tools import public_tool_project_check
+from tools.public_tool_log import logger
+from tools import public_tool_project_check
 
 """
     执行前确认pytest.ini文件中testpath的路径

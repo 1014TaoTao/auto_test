@@ -4,7 +4,7 @@ import os
 import zipfile
 
 # 解压缩工具类
-from tools.logs_tools.public_tool_log import logger
+from tools.public_tool_log import logger
 
 
 class ZipPath:
