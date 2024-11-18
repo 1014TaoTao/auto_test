@@ -1,12 +1,5 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""
-@Time    : 2022/3/8 11:10
-@Author  : ZhangTAO
-@File    : mango_tool.py
-@Software: PyCharm
-"""
 import sys
 from typing import Any
 

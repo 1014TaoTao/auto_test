@@ -1,12 +1,5 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""
-@Time    : 2022/4/29 10:22
-@Author  : ZhangTAO
-@File    : test_locust_demo.py
-@Software: PyCharm
-"""
 import queue
 
 import requests

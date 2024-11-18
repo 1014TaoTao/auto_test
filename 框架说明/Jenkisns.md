@@ -121,7 +121,7 @@ EOF
             PythonVersion:python-3.8.10
             AllureVersion:allure-2.16.1
             ProjectName:pytest_auto_uitest_apitest
-            Author:zhangtao
-            Email:948080782@qq.com
+            Author:xxx
+            Email:xx@qq.com
 
 系统配置：

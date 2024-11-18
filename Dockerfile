@@ -2,7 +2,7 @@
 FROM jenkins/jenkins:latest
 
 # 2.镜像维护者的姓名和邮箱地址
-MAINTAINER zt <948080782@qq.com>
+MAINTAINER zt <xx@qq.com>
 
 
 # 3.指定当前工作目录

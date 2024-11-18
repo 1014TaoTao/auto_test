@@ -14,13 +14,13 @@
   "values" : [ "pytest_auto_uitest_apitest" ],
   "name" : "ProjectName"
 }, {
-  "values" : [ "zhangtao" ],
+  "values" : [ "xxx" ],
   "name" : "author"
 }, {
-  "values" : [ "948080782@qq.com" ],
+  "values" : [ "xx@qq.com" ],
   "name" : "email"
 }, {
-  "values" : [ "张涛" ],
+  "values" : [ "xx" ],
   "name" : "测试人员"
 }, {
   "values" : [ "TEST" ],

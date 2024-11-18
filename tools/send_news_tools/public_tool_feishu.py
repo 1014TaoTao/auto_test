@@ -1,220 +1,222 @@
-# from json import JSONDecodeError
-# import requests
-# import json
-# import logging
-# import time
-# import urllib3
-# import datetime
-#
-# from common.setting import ConfigHandler
-# from utils.readFilesUtils.yamlControl import GetYamlData
-# from utils.otherUtils.allureDate.allure_report_data import CaseCount
-#
-# urllib3.disable_warnings()
-#
-# try:
-#     JSONDecodeError = json.decoder.JSONDecodeError
-# except AttributeError:
-#     JSONDecodeError = ValueError
-#
-#
-# def is_not_null_and_blank_str(content):
-#     """
-#   ·Ç¿Õ×Ö·û´®
-#   :param content: ×Ö·û´®
-#   :return: ·Ç¿Õ - True£¬¿Õ - False
-#   """
-#     if content and content.strip():
-#         return True
-#     else:
-#         return False
-#
-#
-# class FeiShuTalkChatBot(object):
-#     """·ÉÊé»úÆ÷ÈËÍ¨Öª"""
-#     def __init__(self):
-#
-#         self.timeStamp = str(round(time.time() * 1000))
-#         self.devConfig = ConfigHandler()
-#         # ´ÓyamlÎÄ¼þÖÐ»ñÈ¡¶¤¶¤ÅäÖÃÐÅÏ¢
-#
-#         self.name = GetYamlData(ConfigHandler.config_path).get_yaml_data()['ProjectName'][0]
-#         self.test_name = GetYamlData(ConfigHandler.config_path).get_yaml_data()['TesterName']
-#         self.host = GetYamlData(ConfigHandler.config_path).get_yaml_data()['Env']
-#         self.tester = GetYamlData(ConfigHandler.config_path).get_yaml_data()
-#         self.allure_data = CaseCount()
-#         self.PASS = self.allure_data.pass_count()
-#         self.FAILED = self.allure_data.failed_count()
-#         self.BROKEN = self.allure_data.broken_count()
-#         self.SKIP = self.allure_data.skipped_count()
-#         self.TOTAL = self.allure_data.total_count()
-#         self.RATE = self.allure_data.pass_rate()
-#
-#         self.headers = {'Content-Type': 'application/json; charset=utf-8'}
-#         self.devConfig = ConfigHandler()
-#         self.getFeiShuTalk = GetYamlData(self.devConfig.config_path).get_yaml_data()['FeiShuTalk']
-#         self.webhook = self.getFeiShuTalk["webhook"]
-#
-#     def send_text(self, msg: str):
-#         """
-#     ÏûÏ¢ÀàÐÍÎªtextÀàÐÍ
-#     :param msg: ÏûÏ¢ÄÚÈÝ
-#     :return: ·µ»ØÏûÏ¢·¢ËÍ½á¹û
-#     """
-#         data = {"msg_type": "text", "at": {}}
-#         if is_not_null_and_blank_str(msg):  # ´«Èëmsg·Ç¿Õ
-#             data["content"] = {"text": msg}
-#         else:
-#             logging.error("textÀàÐÍ£¬ÏûÏ¢ÄÚÈÝ²»ÄÜÎª¿Õ£¡")
-#             raise ValueError("textÀàÐÍ£¬ÏûÏ¢ÄÚÈÝ²»ÄÜÎª¿Õ£¡")
-#
-#         logging.debug('textÀàÐÍ£º%s' % data)
-#         return self.post()
-#
-#     def post(self):
-#         """
-#     ·¢ËÍÏûÏ¢£¨ÄÚÈÝUTF-8±àÂë£©
-#     :return: ·µ»ØÏûÏ¢·¢ËÍ½á¹û
-#     """
-#         rich_text = {
-#             "email": "fanlv@bytedance.com",
-#             "msg_type": "post",
-#             "content": {
-#                 "post": {
-#                     "zh_cn": {
-#                         "title": "¡¾×Ô¶¯»¯²âÊÔÍ¨Öª¡¿",
-#                         "content": [
-#                             [
-#                                 {
-#                                     "tag": "a",
-#                                     "text": "²âÊÔ±¨¸æ",
-#                                     "href": "https://192.168.xx.72:8080/job/helper_test_adverte/allure/#"
-#                                 },
-#                                 {
-#                                     "tag": "at",
-#                                     "user_id": "ou_18eac85d35a26f989317ad4f02e8bbbb"
-#                                     # "text":"³ÂÈñÄÐ"
-#                                 }
-#                             ],
-#                             [
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "²âÊÔ  ÈËÔ± : "
-#                                 },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{testname}".format(testname=self.test_name)
-#                                 }
-#                             ],
-#                             [
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "ÔËÐÐ  »·¾³ : "
-#                                 },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{host}".format(host=str(self.host))
-#                                 }
-#                             ],
-#                             [{
-#                                 "tag": "text",
-#                                 "text": "³É   ¹¦   ÂÊ : "
-#                             },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{rate}".format(rate=self.RATE) + " %"
-#                                 }],  # ³É¹¦ÂÊ
-#
-#                             [{
-#                                 "tag": "text",
-#                                 "text": "³É¹¦ÓÃÀýÊý : "
-#                             },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{total}".format(total=self.PASS)
-#                                 }],  # ³É¹¦ÓÃÀýÊý
-#
-#                             [{
-#                                 "tag": "text",
-#                                 "text": "Ê§°ÜÓÃÀýÊý : "
-#                             },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{failed}".format(failed=self.FAILED)
-#                                 }],  # Ê§°ÜÓÃÀýÊý
-#                             [{
-#                                 "tag": "text",
-#                                 "text": "Òì³£ÓÃÀýÊý : "
-#                             },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{failed}".format(failed=self.BROKEN)
-#                                 }],  # Ëð»µÓÃÀýÊý
-#                             [
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "Ê±  ¼ä : "
-#                                 },
-#                                 {
-#                                     "tag": "text",
-#                                     "text": "{test}".format(test=datetime.datetime.now().strftime('%Y-%m-%d'))
-#                                 }
-#                             ],
-#
-#                             [
-#                                 {
-#                                     "tag": "img",
-#                                     "image_key": "d640eeea-4d2f-4cb3-88d8-c964fab53987",
-#                                     "width": 300,
-#                                     "height": 300
-#                                 }
-#                             ]
-#                         ]
-#                     }
-#                 }
-#             }
-#         }
-#         try:
-#             post_data = json.dumps(rich_text)
-#             response = requests.post(self.webhook, headers=self.headers, data=post_data, verify=False)
-#         except requests.exceptions.HTTPError as exc:
-#             logging.error("ÏûÏ¢·¢ËÍÊ§°Ü£¬ HTTP error: %d, reason: %s" % (exc.response.status_code, exc.response.reason))
-#             raise
-#         except requests.exceptions.ConnectionError:
-#             logging.error("ÏûÏ¢·¢ËÍÊ§°Ü£¬HTTP connection error!")
-#             raise
-#         except requests.exceptions.Timeout:
-#             logging.error("ÏûÏ¢·¢ËÍÊ§°Ü£¬Timeout error!")
-#             raise
-#         except requests.exceptions.RequestException:
-#             logging.error("ÏûÏ¢·¢ËÍÊ§°Ü, Request Exception!")
-#             raise
-#         else:
-#             try:
-#                 result = response.json()
-#             except JSONDecodeError:
-#                 logging.error("·þÎñÆ÷ÏìÓ¦Òì³££¬×´Ì¬Âë£º%s£¬ÏìÓ¦ÄÚÈÝ£º%s" % (response.status_code, response.text))
-#                 return {'errcode': 500, 'errmsg': '·þÎñÆ÷ÏìÓ¦Òì³£'}
-#             else:
-#                 logging.debug('·¢ËÍ½á¹û£º%s' % result)
-#                 # ÏûÏ¢·¢ËÍÊ§°ÜÌáÐÑ£¨errcode ²»Îª 0£¬±íÊ¾ÏûÏ¢·¢ËÍÒì³££©£¬Ä¬ÈÏ²»ÌáÐÑ£¬¿ª·¢Õß¿ÉÒÔ¸ù¾Ý·µ»ØµÄÏûÏ¢·¢ËÍ½á¹û×ÔÐÐÅÐ¶ÏºÍ´¦Àí
-#                 if result.get('StatusCode') != 0:
-#                     time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
-#                     error_data = {
-#                         "msgtype": "text",
-#                         "text": {
-#                             "content": "[×¢Òâ-×Ô¶¯Í¨Öª]·ÉÊé»úÆ÷ÈËÏûÏ¢·¢ËÍÊ§°Ü£¬Ê±¼ä£º%s£¬Ô­Òò£º%s£¬Çë¼°Ê±¸ú½ø£¬Ð»Ð»!" % (
-#                                 time_now, result['errmsg'] if result.get('errmsg', False) else 'Î´ÖªÒì³£')
-#                         },
-#                         "at": {
-#                             "isAtAll": False
-#                         }
-#                     }
-#                     logging.error("ÏûÏ¢·¢ËÍÊ§°Ü£¬×Ô¶¯Í¨Öª£º%s" % error_data)
-#                     requests.post(self.webhook, headers=self.headers, data=json.dumps(error_data))
-#                 return result
-#
-#
-# # if __name__ == '__main__':
-# #     send = FeiShuTalkChatBot()
-# #     send.post()
+# -*- coding: utf-8 -*-#
+
+from json import JSONDecodeError
+import requests
+import json
+import logging
+import time
+import urllib3
+import datetime
+
+from common.setting import ConfigHandler
+from utils.readFilesUtils.yamlControl import GetYamlData
+from utils.otherUtils.allureDate.allure_report_data import CaseCount
+
+urllib3.disable_warnings()
+
+try:
+    JSONDecodeError = json.decoder.JSONDecodeError
+except AttributeError:
+    JSONDecodeError = ValueError
+
+
+def is_not_null_and_blank_str(content):
+    """
+  ï¿½Ç¿ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+  :param content: ï¿½Ö·ï¿½ï¿½ï¿½
+  :return: ï¿½Ç¿ï¿½ - Trueï¿½ï¿½ï¿½ï¿½ - False
+  """
+    if content and content.strip():
+        return True
+    else:
+        return False
+
+
+class FeiShuTalkChatBot(object):
+    """ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨Öª"""
+    def __init__(self):
+
+        self.timeStamp = str(round(time.time() * 1000))
+        self.devConfig = ConfigHandler()
+        # ï¿½ï¿½yamlï¿½Ä¼ï¿½ï¿½Ð»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+
+        self.name = GetYamlData(ConfigHandler.config_path).get_yaml_data()['ProjectName'][0]
+        self.test_name = GetYamlData(ConfigHandler.config_path).get_yaml_data()['TesterName']
+        self.host = GetYamlData(ConfigHandler.config_path).get_yaml_data()['Env']
+        self.tester = GetYamlData(ConfigHandler.config_path).get_yaml_data()
+        self.allure_data = CaseCount()
+        self.PASS = self.allure_data.pass_count()
+        self.FAILED = self.allure_data.failed_count()
+        self.BROKEN = self.allure_data.broken_count()
+        self.SKIP = self.allure_data.skipped_count()
+        self.TOTAL = self.allure_data.total_count()
+        self.RATE = self.allure_data.pass_rate()
+
+        self.headers = {'Content-Type': 'application/json; charset=utf-8'}
+        self.devConfig = ConfigHandler()
+        self.getFeiShuTalk = GetYamlData(self.devConfig.config_path).get_yaml_data()['FeiShuTalk']
+        self.webhook = self.getFeiShuTalk["webhook"]
+
+    def send_text(self, msg: str):
+        """
+    ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Îªtextï¿½ï¿½ï¿½ï¿½
+    :param msg: ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+    :return: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Í½ï¿½ï¿½
+    """
+        data = {"msg_type": "text", "at": {}}
+        if is_not_null_and_blank_str(msg):  # ï¿½ï¿½ï¿½ï¿½msgï¿½Ç¿ï¿½
+            data["content"] = {"text": msg}
+        else:
+            logging.error("textï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½")
+            raise ValueError("textï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½")
+
+        logging.debug('textï¿½ï¿½ï¿½Í£ï¿½%s' % data)
+        return self.post()
+
+    def post(self):
+        """
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UTF-8ï¿½ï¿½ï¿½ë£©
+    :return: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Í½ï¿½ï¿½
+    """
+        rich_text = {
+            "email": "fanlv@bytedance.com",
+            "msg_type": "post",
+            "content": {
+                "post": {
+                    "zh_cn": {
+                        "title": "ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨Öªï¿½ï¿½",
+                        "content": [
+                            [
+                                {
+                                    "tag": "a",
+                                    "text": "ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½",
+                                    "href": "https://192.168.xx.72:8080/job/helper_test_adverte/allure/#"
+                                },
+                                {
+                                    "tag": "at",
+                                    "user_id": "ou_18eac85d35a26f989317ad4f02e8bbbb"
+                                    # "text":"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "text",
+                                    "text": "ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½Ô± : "
+                                },
+                                {
+                                    "tag": "text",
+                                    "text": "{testname}".format(testname=self.test_name)
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "text",
+                                    "text": "ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ : "
+                                },
+                                {
+                                    "tag": "text",
+                                    "text": "{host}".format(host=str(self.host))
+                                }
+                            ],
+                            [{
+                                "tag": "text",
+                                "text": "ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ : "
+                            },
+                                {
+                                    "tag": "text",
+                                    "text": "{rate}".format(rate=self.RATE) + " %"
+                                }],  # ï¿½É¹ï¿½ï¿½ï¿½
+
+                            [{
+                                "tag": "text",
+                                "text": "ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : "
+                            },
+                                {
+                                    "tag": "text",
+                                    "text": "{total}".format(total=self.PASS)
+                                }],  # ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+                            [{
+                                "tag": "text",
+                                "text": "Ê§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : "
+                            },
+                                {
+                                    "tag": "text",
+                                    "text": "{failed}".format(failed=self.FAILED)
+                                }],  # Ê§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                            [{
+                                "tag": "text",
+                                "text": "ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : "
+                            },
+                                {
+                                    "tag": "text",
+                                    "text": "{failed}".format(failed=self.BROKEN)
+                                }],  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                            [
+                                {
+                                    "tag": "text",
+                                    "text": "Ê±  ï¿½ï¿½ : "
+                                },
+                                {
+                                    "tag": "text",
+                                    "text": "{test}".format(test=datetime.datetime.now().strftime('%Y-%m-%d'))
+                                }
+                            ],
+
+                            [
+                                {
+                                    "tag": "img",
+                                    "image_key": "d640eeea-4d2f-4cb3-88d8-c964fab53987",
+                                    "width": 300,
+                                    "height": 300
+                                }
+                            ]
+                        ]
+                    }
+                }
+            }
+        }
+        try:
+            post_data = json.dumps(rich_text)
+            response = requests.post(self.webhook, headers=self.headers, data=post_data, verify=False)
+        except requests.exceptions.HTTPError as exc:
+            logging.error("ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ HTTP error: %d, reason: %s" % (exc.response.status_code, exc.response.reason))
+            raise
+        except requests.exceptions.ConnectionError:
+            logging.error("ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½HTTP connection error!")
+            raise
+        except requests.exceptions.Timeout:
+            logging.error("ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Timeout error!")
+            raise
+        except requests.exceptions.RequestException:
+            logging.error("ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½, Request Exception!")
+            raise
+        else:
+            try:
+                result = response.json()
+            except JSONDecodeError:
+                logging.error("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ì³£ï¿½ï¿½×´Ì¬ï¿½ë£º%sï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½%s" % (response.status_code, response.text))
+                return {'errcode': 500, 'errmsg': 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ì³£'}
+            else:
+                logging.debug('ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½ï¿½%s' % result)
+                # ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½ï¿½ï¿½ï¿½Ñ£ï¿½errcode ï¿½ï¿½Îª 0ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï²ï¿½ï¿½ï¿½ï¿½Ñ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½ï¿½Ô¸ï¿½ï¿½Ý·ï¿½ï¿½Øµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ÏºÍ´ï¿½ï¿½ï¿½
+                if result.get('StatusCode') != 0:
+                    time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
+                    error_data = {
+                        "msgtype": "text",
+                        "text": {
+                            "content": "[×¢ï¿½ï¿½-ï¿½Ô¶ï¿½Í¨Öª]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Ê±ï¿½ä£º%sï¿½ï¿½Ô­ï¿½ï¿½%sï¿½ï¿½ï¿½ë¼°Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»Ð»!" % (
+                                time_now, result['errmsg'] if result.get('errmsg', False) else 'Î´Öªï¿½ì³£')
+                        },
+                        "at": {
+                            "isAtAll": False
+                        }
+                    }
+                    logging.error("ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½Ô¶ï¿½Í¨Öªï¿½ï¿½%s" % error_data)
+                    requests.post(self.webhook, headers=self.headers, data=json.dumps(error_data))
+                return result
+
+
+# if __name__ == '__main__':
+#     send = FeiShuTalkChatBot()
+#     send.post()

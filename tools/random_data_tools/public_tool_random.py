@@ -1,12 +1,6 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""
-@Time    : 2022/3/20 16:57
-@Author  : ZhangTAO
-@File    : public_tool_random.py
-@Software: PyCharm
-"""
+
 import datetime
 import random
 import re

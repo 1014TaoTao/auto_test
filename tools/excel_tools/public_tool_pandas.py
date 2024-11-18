@@ -1,9 +1,4 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-"""
-__title__  = pandas操作Excel工具类
-"""
 
 
 import datetime

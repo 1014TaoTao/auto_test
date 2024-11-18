@@ -38,9 +38,9 @@ api_host:
 
 email:
   smtpserver: smtp.qq.com
-  sender: 948080782@qq.com
+  sender: xx@qq.com
   password: gboboxzhptgubcag
-  receiver: 948080782@qq.com
+  receiver: xx@qq.com
 
 databases:
   host: 127.0.0.1
@@ -51,7 +51,7 @@ databases:
   charset: utf8
 
 testers:
-  - 张涛
+  - xx
   - 严雪娇
 
 delete_report_on_off:
@@ -78,5 +78,5 @@ redis:
   port: 6379
 
 dingding:
-  secret: "SEC14d75e31de633eaec66f15267ff75f1def52bd32d961798750cca780ff88dafe"
-  webhook: "https://oapi.dingtalk.com/robot/send?access_token=50d6b1a92b4db2f06419e621978e8b47fe01b23d17e11f93e407ec2bab7100e8"
+  secret: "xxx"
+  webhook: "https://oapi.dingtalk.com/robot/send?access_token=xxx"

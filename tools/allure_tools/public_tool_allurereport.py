@@ -1,12 +1,5 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""
-@Time    : 2022/3/20 14:40
-@Author  : ZhangTAO
-@File    : public_tool_allurereport.py
-@Software: PyCharm
-"""
 import json
 import os
 

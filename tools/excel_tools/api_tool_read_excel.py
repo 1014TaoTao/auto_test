@@ -4,12 +4,7 @@
 # ==============================
 #         EXCEL读取封装
 # ==============================
-"""
-@Time    : 2022/2/12 13:56
-@Author  : ZhangTAO
-@File    : api_tool_read_excel.py
-@Software: PyCharm
-"""
+
 import os.path
 
 import filetype  # 判断上传文件类型
