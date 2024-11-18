@@ -1,0 +1,76 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo",
+    "children" : [ {
+      "name" : "TestLongin",
+      "children" : [ {
+        "name" : "test_longin",
+        "uid" : "8cf4d90086020005",
+        "parentUid" : "829bb91a80768ef72981bfe737924ddd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1657357534119,
+          "stop" : 1657357534119,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "829bb91a80768ef72981bfe737924ddd"
+    } ],
+    "uid" : "b3ab64535ad66c4ce064c5467c723836"
+  }, {
+    "name" : "testCase.ui",
+    "children" : [ {
+      "name" : "test_baidu",
+      "children" : [ {
+        "name" : "TestBaiDu",
+        "children" : [ {
+          "name" : "test_01",
+          "uid" : "f8d00a06ef5f2e52",
+          "parentUid" : "ec7942ba34ad5af08dda64dfb60f1b17",
+          "status" : "passed",
+          "time" : {
+            "start" : 1659794039448,
+            "stop" : 1659794044228,
+            "duration" : 4780
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 30,
+          "retriesStatusChange" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_02",
+          "uid" : "5f3cb563770e4216",
+          "parentUid" : "ec7942ba34ad5af08dda64dfb60f1b17",
+          "status" : "passed",
+          "time" : {
+            "start" : 1659794044232,
+            "stop" : 1659794047693,
+            "duration" : 3461
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 29,
+          "retriesStatusChange" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ec7942ba34ad5af08dda64dfb60f1b17"
+      } ],
+      "uid" : "cc73202fbba77ec2c30e46c6d44c1624"
+    } ],
+    "uid" : "e81e6f2bec5e0e012c0a1cc7ab6e644c"
+  } ]
+}

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # 选择浏览器
@@ -8,20 +7,35 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 from common import setting
-from tools.public_tool_log import logger
+from tools.logs_tools.public_tool_log import logger
 
 success = "SUCCESS"
 fail = "FAIL   "
 logger = logger(setting.UI_LOG_PATH)
 
+
 def select_browser(browser=setting.BROWSER, remote_address=None):
     driver = None
     start_time = time.time()
-    dc = {'platform': 'ANY', 'browserName': 'chrome', 'version': '', 'javascriptEnabled': True}
+    dc = {'platform': 'ANY', 'browserName': 'chrome',
+          'version': '', 'javascriptEnabled': True}
     try:
         if remote_address is None:  # web端
             if browser == "chrome" or browser == "Chrome":
-                driver = webdriver.Chrome(service=Service(setting.DRIVER))
+                # driver = webdriver.Chrome(service=Service(setting.DRIVER))
+                options = webdriver.ChromeOptions()
+                # options.add_argument('start-maximized')
+                # 无头模式：启动浏览器进程，但不会显示出来
+                # options.add_argument('--headless')
+                # options.add_argument('--disable-gpu')
+                # 新版本的去掉警告（70以上版本）
+                options.add_experimental_option(
+                    'useAutomationExtension', False)  # 去掉开发者警告
+                options.add_experimental_option(
+                    'excludeSwitches', ['enable-automation'])  # 去掉黄条
+                driver = webdriver.Chrome(
+                    options=options, service=Service(setting.DRIVER))
+
             elif browser == "firefox" or browser == "Firefox":
                 driver = webdriver.Firefox()
             elif browser == "internet explorer" or browser == "ie":

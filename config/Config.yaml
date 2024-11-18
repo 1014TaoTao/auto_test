@@ -1,160 +1,46 @@
 environment:
-  environment_195:
-    environment: 195环境
-    versionCode: v1.0
-    apihost: 'http://192.168.0.195:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
-    basehost: 'http://192.168.0.195:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      zhangtao195:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      yemingxincp:
-        username: yemingxin
-        mobile: 18810733561
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-      yemingxinop:
-        username: 运营账号
-        mobile: 17600668960
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      ranxiaomin:
-        username: ranxiaomin
-        mobile: 17319901852
-        password: 737cec5e3ca2a2fb367fbedf4965fbc6
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-  environment_115:
-    environment: 115环境
-    versionCode: v1.0
-    apihost: 'http://192.168.0.115:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','11000','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
-    basehost: 'http://192.168.0.115:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      zhangtao115:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      yemingxincp:
-        username: 北京晶科瑞特科技发展有限公司
-        mobile: 15045783203
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-      yemingxinop:
-        username: 运营账号
-        mobile: 17600000001
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      wangjingjingcp:
-        username: TD18709293556
-        mobile: 18709293556
-        password: e4b122e04d83b12518393d63dccdc1b9
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-      wangjingjingop:
-        username: 弗雷云西安管理员
-        mobile: xian@i-tudou.com
-        password: eede6d66c93b0340342c18f8c5c76a87
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      ranxiaomin:
-        username: ranxiaomin
-        mobile: 17319901852
-        password: 737cec5e3ca2a2fb367fbedf4965fbc6
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_cp
-  environment_122:
-    environment: 122环境
-    versionCode: v1.0
-    apihost: 'http://192.168.0.120:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','11000','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
-    basehost: 'http://192.168.0.120:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      zhangtao122:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
+  op:
+    url: "http://op-wb.tudoucloud.com/uaa/oauth/token"
+    headers:
+      Content-Type: "application/json;charset=UTF-8"
+    # 请勿修改key，会导致登陆失败
+    data:
+      account_type: "mobile"
+      client_id: "saas_op"
+      client_secret: "dc278c7ba8b3ddedbde7361fcedb70ee"
+      grant_type: "password"
+      mobile: "18192408293"
+      password: "eede6d66c93b0340342c18f8c5c76a87"
+      scope: "trust"
+      username: "18192408293"
+  cp:
+    url: "http://wb.tudoucloud.com/uaa/oauth/token"
+    headers:
+      Content-Type: "application/json;charset=UTF-8"
+    # 请勿修改key，会导致登陆失败
+    data:
+      account_type: "mobile"
+      client_id: "saas_cp"
+      client_secret: "cd342c7baed3dd3b55e7361fcedb88eh"
+      grant_type: "password"
+      mobile: "18603015137"
+      password: "737cec5e3ca2a2fb367fbedf4965fbc6"
+      scope: "trust"
+      username: "18603015137"
 
-  environment_34_13:
-    environment: 34.13环境
-    versionCode: v1.0
-    apihost: 'http://10.0.34.13:'
-    port: ['10000','10001','10002','10003','10004','10005','10006','10007','10008','10009','10010','10011','10012','10013','10014','10015','10016','10018','10019','10020','10021','20000','20001','20002','20003','20008','20009','20012','20014','20015','20016','20017','20018','20020','20021','20022','20030','30004']
-    basehost: 'http://10.0.34.13:18603'
-    loginHost: /uaa/oauth/token
-    loginInfo:
-      kubeamdin:
-        username: 18192408293
-        mobile: 18192408293
-        password: eede6d66c93b0340342c18f8c5c76a87
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
-      zhangtao34_13:
-        username: 张涛
-        mobile: 15382112620
-        password: e64b78fc3bc91bcbc7dc232ba8ec59e0
-        account_type: mobile
-        grant_type: password
-        scope: trust
-        client_secret: 2c27867ba8b35dedbde7361f8ffb704d
-        client_id: saas_op
+api_host:
+  - http://kubeos.tudoucloud.com
+  - http://kube.tudoucloud.com
+  - http://datagaea.tudoucloud.com
+  - http://ai.tudoucloud.com
+  - http://3dm.tudoucloud.com
+  - http://wb.tudoucloud.com
 
 email:
   smtpserver: smtp.qq.com
-  sender: 948080782@qq.com
+  sender: xx@qq.com
   password: gboboxzhptgubcag
-  receiver: 948080782@qq.com
+  receiver: xx@qq.com
 
 databases:
   host: 127.0.0.1
@@ -165,34 +51,32 @@ databases:
   charset: utf8
 
 testers:
-  - 王静静
-  - 张涛
-  - 叶明鑫
-  - 冉晓敏
+  - xx
+  - 严雪娇
 
 delete_report_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 run_report_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 send_email_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 open_report_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 databases_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 send_dingding_news_on_off:
-  - 'on'
-  - 'off'
+  - "on"
+  - "off"
 
 redis:
   host: 127.0.0.1
   port: 6379
 
 dingding:
-  secret: 'SECf8815f0a111a94769adb673465f3761cb7fb38924aa5ddbab8d77a8e20913177'
-  webhook: 'https://oapi.dingtalk.com/robot/send?access_token=eafaa8fc545ae9f0baace9ac3e8e2f4455c4f9291c4e60736f8a143724de17ce'
+  secret: "xxx"
+  webhook: "https://oapi.dingtalk.com/robot/send?access_token=xxx"

@@ -1,0 +1,377 @@
+{
+  "uid" : "800100d1c5cce4e7",
+  "name" : "test_008-算子管理-算子列表",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "7b4978d00796630777becc653c383281",
+  "time" : {
+    "start" : 1671101436798,
+    "stop" : 1671101436804,
+    "duration" : 6
+  },
+  "description" : "test_008-算子管理-算子列表 get http://kubeos.tudoucloud.com/kube/v1/api/argo/operator",
+  "descriptionHtml" : "<p>test_008-算子管理-算子列表 get http://kubeos.tudoucloud.com/kube/v1/api/argo/operator</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1671101436604,
+      "stop" : 1671101436703,
+      "duration" : 99
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_008-算子管理-算子列表 get http://kubeos.tudoucloud.com/kube/v1/api/argo/operator",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1671101436798,
+        "stop" : 1671101436799,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cc9f3e9da65cc203",
+        "name" : "测试结果",
+        "source" : "cc9f3e9da65cc203.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "用例名称：test_008-算子管理-算子列表",
+      "time" : {
+        "start" : 1671101436799,
+        "stop" : 1671101436799,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "64870f84945eb0d1",
+        "name" : "用例名称",
+        "source" : "64870f84945eb0d1.attach",
+        "type" : "text/plain",
+        "size" : 49
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1671101436799,
+        "stop" : 1671101436800,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6b045b0580942c72",
+        "name" : "请求方式",
+        "source" : "6b045b0580942c72.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/argo/operator",
+      "time" : {
+        "start" : 1671101436800,
+        "stop" : 1671101436800,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dff26b8f5db4aa6e",
+        "name" : "请求地址",
+        "source" : "dff26b8f5db4aa6e.attach",
+        "type" : "text/plain",
+        "size" : 69
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer bfc2c2f1-a6d1-4103-b0e2-c6bf12f649b0'}",
+      "time" : {
+        "start" : 1671101436801,
+        "stop" : 1671101436801,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "52485e1025d8e2a9",
+        "name" : "请求头",
+        "source" : "52485e1025d8e2a9.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求参数：{'pageNo': 1, 'pageSize': 20, 'tabType': 'my'}",
+      "time" : {
+        "start" : 1671101436801,
+        "stop" : 1671101436801,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1492b5a494cc311",
+        "name" : "请求参数",
+        "source" : "1492b5a494cc311.attach",
+        "type" : "text/plain",
+        "size" : 61
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1671101436802,
+        "stop" : 1671101436802,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1cf5da380843a64c",
+        "name" : "code请求断言",
+        "source" : "1cf5da380843a64c.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1671101436802,
+        "stop" : 1671101436803,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6bbdd4dfe837c916",
+        "name" : "msg请求断言",
+        "source" : "6bbdd4dfe837c916.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：tabType': 'my'",
+      "time" : {
+        "start" : 1671101436803,
+        "stop" : 1671101436803,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "624b6ba8b9a0d56b",
+        "name" : "data请求断言",
+        "source" : "624b6ba8b9a0d56b.attach",
+        "type" : "text/plain",
+        "size" : 29
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 176, 'list': [{'id': '103edd46e7754b3bb0f4d2ebaa82108f', 'name': 'rs-dehaze', 'generateName': 'rs-dehaze', 'description': '遥感去雾', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-12-15 06:43:07', 'updateTime': '2022-12-15 10:48:47'}, {'id': 'd50292cd8b3e49eb8b846e962ff1d946', 'name': 'undistorter-2-beta', 'generateName': 'undistorter-2-beta', 'description': '执行图形畸变矫正，可并行', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-15 07:10:22', 'updateTime': '2022-12-15 07:11:45'}, {'id': 'b568b82914b640e9b9b5583ac23a9b82', 'name': 'undistorter-1-beta', 'generateName': 'undistorter-1-beta', 'description': '图形畸变矫正-初始化', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-15 07:03:36', 'updateTime': '2022-12-15 07:06:21'}, {'id': 'd67e30eb04124f8abaf61a1a042d3886', 'name': 'rs-colorstretch', 'generateName': 'rs-colorstretch', 'description': '遥感真彩转换，植被增强，降位', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-15 05:33:59'}, {'id': '0ba7175a6b04499c9ee1247ff504d9ba', 'name': 'rs-fusion-dis', 'generateName': 'rs-fusion-dis', 'description': '影像融合', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 10:19:54'}, {'id': '4ff0af9e6fbd4332bffde7dca5fe0109', 'name': 'smallbaseline', 'generateName': 'smallbaseline', 'description': 'mintpy时序分析', 'category': 'InSAR', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 09:27:15'}, {'id': '75193809155840319b547aeab7235754', 'name': 'rs-ortho-dis', 'generateName': 'rs-ortho-dis', 'description': '影像纠正', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 03:32:03'}, {'id': '9159d1456a494cd780369200dc79131f', 'name': 'run-14-merge-burst-igram', 'generateName': 'run-14-merge-burst-igram', 'description': 'burst干涉图拼接\\n[Function-1] : mergeBursts\\t\\toutfile : /process/merged/interferograms/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:51'}, {'id': '344b4f124fb742fe9d1032afb2714fed', 'name': 'run-13-generate-burst-igram', 'generateName': 'run-13-generate-burst-igram', 'description': '生成burst干涉图\\n[Function-1] : generateIgram\\t\\tinterferogram : /process/interferograms/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:37'}, {'id': '914371de7fec4095a538a875e80aa94a', 'name': 'run-12-merge-reference-secondary-slc', 'generateName': 'run-12-merge-reference-secondary-slc', 'description': 'burst拼接\\n[Function-1] : mergeBursts\\t\\toutfile : /process/merged/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:16'}, {'id': '3f403e172f2841c4b420fcbd3f7b8358', 'name': 'run-10-fullburst-resample', 'generateName': 'run-10-fullburst-resample', 'description': 'burst重采样\\n[Function-1] : resamp_withCarrier\\tcoregdir : /process/coreg_secondarys/\\t\\toverlap : False', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:04:24'}, {'id': 'd838b3d29fb544eaa61b7627fa70a260', 'name': 'run-09-fullburst-geo2rdr', 'generateName': 'run-09-fullburst-geo2rdr', 'description': 'burst配准\\n[Function-1] : geo2rdr \\t\\tcoregSLCdir : /process/coreg_secondarys/\\toverlap : False', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:04:12'}, {'id': '27b72055118d49d9a5a4af2ad1cdde85', 'name': 'run-08-timeseries-misreg', 'generateName': 'run-08-timeseries-misreg', 'description': '计算时序偏移量\\ninvertMisreg.py\\t\\t\\tOUTPUT : /process/misreg/range/dates/ && /process/misreg/azimuth/dates/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:03:12'}, {'id': 'b0107cdd7a774177884ad8e540e6046b', 'name': 'run-07-pairs-misreg', 'generateName': 'run-07-pairs-misreg', 'description': '叠掩区域干涉并计算偏移量\\n[Function-1] : generateIgram\\t\\tinterferogram : /process/coarse_interferograms/\\n[Function-2] : overlap_withDEM \\toverlap_dir : /process/ESD/\\n[Function-3] : estimateAzimuthMisreg \\tout_azimuth : /process/misreg/azimuth/pairs/\\n[Function-4] : estimateRangeMisreg\\tout_range : /process/misreg/range/pairs/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:53'}, {'id': '18db888cee7b40a6828753c25d3a2daa', 'name': 'run-06-overlap-resample', 'generateName': 'run-06-overlap-resample', 'description': '叠掩区域重采样\\n[Function-1] : resamp_withCarrier\\tcoregdir : /process/coreg_secondarys/\\t\\toverlap : True', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:41'}, {'id': 'c103fcb7b48040509508767bad8cee55', 'name': 'run-05-overlap-geo2rdr', 'generateName': 'run-05-overlap-geo2rdr', 'description': '叠掩区域配准\\n[Function-1] : geo2rdr\\t\\t\\tcoregSLCdir : /process/coreg_secondarys/\\toverlap : True', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:17'}, {'id': '5dca291189d14a6686eea97145961d7b', 'name': 'run-04-extract-burst-overlaps', 'generateName': 'run-04-extract-burst-overlaps', 'description': '提取burst叠掩区域\\nsubsetReference.py', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:01'}, {'id': '19d99262f89f485db8a406291e1dabbc', 'name': 'run-03-average-baseline', 'generateName': 'run-03-average-baseline', 'description': '计算干涉基线\\n[Function-1] : computeBaseline\\tbaseline_file : /process/baselines/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:01:40'}, {'id': 'a95de808c11943dcaf09f57dd3f1d72f', 'name': 'run-16-unwrap', 'generateName': 'run-16-unwrap', 'description': '相位解缠\\n[Function-1] : unwrap', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 02:24:08'}, {'id': 'bca4c57eb3b24d009c23ff0de27ca95d', 'name': 'run-15-filter-coherence', 'generateName': 'run-15-filter-coherence', 'description': '干涉图滤波\\n[Function-1] : FilterAndCoherence', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 02:23:55'}]}}, 'time_consuming': 809.854, 'time_total': 0.809854}",
+      "time" : {
+        "start" : 1671101436803,
+        "stop" : 1671101436804,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "686e0ccb17f1ac77",
+        "name" : "响应结果",
+        "source" : "686e0ccb17f1ac77.attach",
+        "type" : "text/plain",
+        "size" : 10113
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1671101436804,
+        "stop" : 1671101436804,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "xxx"
+  }, {
+    "name" : "thread",
+    "value" : "47908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'pass', 'title': 'test_008-算子管理-算子列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/argo/operator', 'method': 'get', 'headers': {'Authorization': 'Bearer bfc2c2f1-a6d1-4103-b0e2-c6bf12f649b0'}, 'data': {'pageNo': 1, 'pageSize': 20, 'tabType': 'my'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"tabType': 'my'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 176, 'list': [{'id': '103edd46e7754b3bb0f4d2ebaa82108f', 'name': 'rs-dehaze', 'generateName': 'rs-dehaze', 'description': '遥感去雾', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-12-15 06:43:07', 'updateTime': '2022-12-15 10:48:47'}, {'id': 'd50292cd8b3e49eb8b846e962ff1d946', 'name': 'undistorter-2-beta', 'generateName': 'undistorter-2-beta', 'description': '执行图形畸变矫正，可并行', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-15 07:10:22', 'updateTime': '2022-12-15 07:11:45'}, {'id': 'b568b82914b640e9b9b5583ac23a9b82', 'name': 'undistorter-1-beta', 'generateName': 'undistorter-1-beta', 'description': '图形畸变矫正-初始化', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-15 07:03:36', 'updateTime': '2022-12-15 07:06:21'}, {'id': 'd67e30eb04124f8abaf61a1a042d3886', 'name': 'rs-colorstretch', 'generateName': 'rs-colorstretch', 'description': '遥感真彩转换，植被增强，降位', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-15 05:33:59'}, {'id': '0ba7175a6b04499c9ee1247ff504d9ba', 'name': 'rs-fusion-dis', 'generateName': 'rs-fusion-dis', 'description': '影像融合', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 10:19:54'}, {'id': '4ff0af9e6fbd4332bffde7dca5fe0109', 'name': 'smallbaseline', 'generateName': 'smallbaseline', 'description': 'mintpy时序分析', 'category': 'InSAR', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 09:27:15'}, {'id': '75193809155840319b547aeab7235754', 'name': 'rs-ortho-dis', 'generateName': 'rs-ortho-dis', 'description': '影像纠正', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 03:32:03'}, {'id': '9159d1456a494cd780369200dc79131f', 'name': 'run-14-merge-burst-igram', 'generateName': 'run-14-merge-burst-igram', 'description': 'burst干涉图拼接\\n[Function-1] : mergeBursts\\t\\toutfile : /process/merged/interferograms/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:51'}, {'id': '344b4f124fb742fe9d1032afb2714fed', 'name': 'run-13-generate-burst-igram', 'generateName': 'run-13-generate-burst-igram', 'description': '生成burst干涉图\\n[Function-1] : generateIgram\\t\\tinterferogram : /process/interferograms/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:37'}, {'id': '914371de7fec4095a538a875e80aa94a', 'name': 'run-12-merge-reference-secondary-slc', 'generateName': 'run-12-merge-reference-secondary-slc', 'description': 'burst拼接\\n[Function-1] : mergeBursts\\t\\toutfile : /process/merged/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:16'}, {'id': '3f403e172f2841c4b420fcbd3f7b8358', 'name': 'run-10-fullburst-resample', 'generateName': 'run-10-fullburst-resample', 'description': 'burst重采样\\n[Function-1] : resamp_withCarrier\\tcoregdir : /process/coreg_secondarys/\\t\\toverlap : False', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:04:24'}, {'id': 'd838b3d29fb544eaa61b7627fa70a260', 'name': 'run-09-fullburst-geo2rdr', 'generateName': 'run-09-fullburst-geo2rdr', 'description': 'burst配准\\n[Function-1] : geo2rdr \\t\\tcoregSLCdir : /process/coreg_secondarys/\\toverlap : False', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:04:12'}, {'id': '27b72055118d49d9a5a4af2ad1cdde85', 'name': 'run-08-timeseries-misreg', 'generateName': 'run-08-timeseries-misreg', 'description': '计算时序偏移量\\ninvertMisreg.py\\t\\t\\tOUTPUT : /process/misreg/range/dates/ && /process/misreg/azimuth/dates/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:03:12'}, {'id': 'b0107cdd7a774177884ad8e540e6046b', 'name': 'run-07-pairs-misreg', 'generateName': 'run-07-pairs-misreg', 'description': '叠掩区域干涉并计算偏移量\\n[Function-1] : generateIgram\\t\\tinterferogram : /process/coarse_interferograms/\\n[Function-2] : overlap_withDEM \\toverlap_dir : /process/ESD/\\n[Function-3] : estimateAzimuthMisreg \\tout_azimuth : /process/misreg/azimuth/pairs/\\n[Function-4] : estimateRangeMisreg\\tout_range : /process/misreg/range/pairs/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:53'}, {'id': '18db888cee7b40a6828753c25d3a2daa', 'name': 'run-06-overlap-resample', 'generateName': 'run-06-overlap-resample', 'description': '叠掩区域重采样\\n[Function-1] : resamp_withCarrier\\tcoregdir : /process/coreg_secondarys/\\t\\toverlap : True', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:41'}, {'id': 'c103fcb7b48040509508767bad8cee55', 'name': 'run-05-overlap-geo2rdr', 'generateName': 'run-05-overlap-geo2rdr', 'description': '叠掩区域配准\\n[Function-1] : geo2rdr\\t\\t\\tcoregSLCdir : /process/coreg_secondarys/\\toverlap : True', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:17'}, {'id': '5dca291189d14a6686eea97145961d7b', 'name': 'run-04-extract-burst-overlaps', 'generateName': 'run-04-extract-burst-overlaps', 'description': '提取burst叠掩区域\\nsubsetReference.py', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:01'}, {'id': '19d99262f89f485db8a406291e1dabbc', 'name': 'run-03-average-baseline', 'generateName': 'run-03-average-baseline', 'description': '计算干涉基线\\n[Function-1] : computeBaseline\\tbaseline_file : /process/baselines/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:01:40'}, {'id': 'a95de808c11943dcaf09f57dd3f1d72f', 'name': 'run-16-unwrap', 'generateName': 'run-16-unwrap', 'description': '相位解缠\\n[Function-1] : unwrap', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 02:24:08'}, {'id': 'bca4c57eb3b24d009c23ff0de27ca95d', 'name': 'run-15-filter-coherence', 'generateName': 'run-15-filter-coherence', 'description': '干涉图滤波\\n[Function-1] : FilterAndCoherence', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 02:23:55'}]}}, 'time_consuming': 809.854, 'time_total': 0.809854}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "baece98943293be7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670164665931,
+        "stop" : 1670164665939,
+        "duration" : 8
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "87f4ed139cdad60d",
+        "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/87f4ed139cdad60d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670164665931,
+          "stop" : 1670164665939,
+          "duration" : 8
+        }
+      }, {
+        "uid" : "8c51164262162b3b",
+        "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure//#testresult/8c51164262162b3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670164665931,
+          "stop" : 1670164665939,
+          "duration" : 8
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "800100d1c5cce4e7.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_008-算子管理-算子列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/argo/operator', 'method': 'get', 'headers': {'Authorization': 'Bearer bfc2c2f1-a6d1-4103-b0e2-c6bf12f649b0'}, 'data': {'pageNo': 1, 'pageSize': 20, 'tabType': 'my'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"tabType': 'my'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 176, 'list': [{'id': '103edd46e7754b3bb0f4d2ebaa82108f', 'name': 'rs-dehaze', 'generateName': 'rs-dehaze', 'description': '遥感去雾', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-12-15 06:43:07', 'updateTime': '2022-12-15 10:48:47'}, {'id': 'd50292cd8b3e49eb8b846e962ff1d946', 'name': 'undistorter-2-beta', 'generateName': 'undistorter-2-beta', 'description': '执行图形畸变矫正，可并行', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-15 07:10:22', 'updateTime': '2022-12-15 07:11:45'}, {'id': 'b568b82914b640e9b9b5583ac23a9b82', 'name': 'undistorter-1-beta', 'generateName': 'undistorter-1-beta', 'description': '图形畸变矫正-初始化', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-15 07:03:36', 'updateTime': '2022-12-15 07:06:21'}, {'id': 'd67e30eb04124f8abaf61a1a042d3886', 'name': 'rs-colorstretch', 'generateName': 'rs-colorstretch', 'description': '遥感真彩转换，植被增强，降位', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-15 05:33:59'}, {'id': '0ba7175a6b04499c9ee1247ff504d9ba', 'name': 'rs-fusion-dis', 'generateName': 'rs-fusion-dis', 'description': '影像融合', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 10:19:54'}, {'id': '4ff0af9e6fbd4332bffde7dca5fe0109', 'name': 'smallbaseline', 'generateName': 'smallbaseline', 'description': 'mintpy时序分析', 'category': 'InSAR', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 09:27:15'}, {'id': '75193809155840319b547aeab7235754', 'name': 'rs-ortho-dis', 'generateName': 'rs-ortho-dis', 'description': '影像纠正', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-14 03:32:03'}, {'id': '9159d1456a494cd780369200dc79131f', 'name': 'run-14-merge-burst-igram', 'generateName': 'run-14-merge-burst-igram', 'description': 'burst干涉图拼接\\n[Function-1] : mergeBursts\\t\\toutfile : /process/merged/interferograms/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:51'}, {'id': '344b4f124fb742fe9d1032afb2714fed', 'name': 'run-13-generate-burst-igram', 'generateName': 'run-13-generate-burst-igram', 'description': '生成burst干涉图\\n[Function-1] : generateIgram\\t\\tinterferogram : /process/interferograms/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:37'}, {'id': '914371de7fec4095a538a875e80aa94a', 'name': 'run-12-merge-reference-secondary-slc', 'generateName': 'run-12-merge-reference-secondary-slc', 'description': 'burst拼接\\n[Function-1] : mergeBursts\\t\\toutfile : /process/merged/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:05:16'}, {'id': '3f403e172f2841c4b420fcbd3f7b8358', 'name': 'run-10-fullburst-resample', 'generateName': 'run-10-fullburst-resample', 'description': 'burst重采样\\n[Function-1] : resamp_withCarrier\\tcoregdir : /process/coreg_secondarys/\\t\\toverlap : False', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:04:24'}, {'id': 'd838b3d29fb544eaa61b7627fa70a260', 'name': 'run-09-fullburst-geo2rdr', 'generateName': 'run-09-fullburst-geo2rdr', 'description': 'burst配准\\n[Function-1] : geo2rdr \\t\\tcoregSLCdir : /process/coreg_secondarys/\\toverlap : False', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:04:12'}, {'id': '27b72055118d49d9a5a4af2ad1cdde85', 'name': 'run-08-timeseries-misreg', 'generateName': 'run-08-timeseries-misreg', 'description': '计算时序偏移量\\ninvertMisreg.py\\t\\t\\tOUTPUT : /process/misreg/range/dates/ && /process/misreg/azimuth/dates/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:03:12'}, {'id': 'b0107cdd7a774177884ad8e540e6046b', 'name': 'run-07-pairs-misreg', 'generateName': 'run-07-pairs-misreg', 'description': '叠掩区域干涉并计算偏移量\\n[Function-1] : generateIgram\\t\\tinterferogram : /process/coarse_interferograms/\\n[Function-2] : overlap_withDEM \\toverlap_dir : /process/ESD/\\n[Function-3] : estimateAzimuthMisreg \\tout_azimuth : /process/misreg/azimuth/pairs/\\n[Function-4] : estimateRangeMisreg\\tout_range : /process/misreg/range/pairs/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:53'}, {'id': '18db888cee7b40a6828753c25d3a2daa', 'name': 'run-06-overlap-resample', 'generateName': 'run-06-overlap-resample', 'description': '叠掩区域重采样\\n[Function-1] : resamp_withCarrier\\tcoregdir : /process/coreg_secondarys/\\t\\toverlap : True', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:41'}, {'id': 'c103fcb7b48040509508767bad8cee55', 'name': 'run-05-overlap-geo2rdr', 'generateName': 'run-05-overlap-geo2rdr', 'description': '叠掩区域配准\\n[Function-1] : geo2rdr\\t\\t\\tcoregSLCdir : /process/coreg_secondarys/\\toverlap : True', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:17'}, {'id': '5dca291189d14a6686eea97145961d7b', 'name': 'run-04-extract-burst-overlaps', 'generateName': 'run-04-extract-burst-overlaps', 'description': '提取burst叠掩区域\\nsubsetReference.py', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:02:01'}, {'id': '19d99262f89f485db8a406291e1dabbc', 'name': 'run-03-average-baseline', 'generateName': 'run-03-average-baseline', 'description': '计算干涉基线\\n[Function-1] : computeBaseline\\tbaseline_file : /process/baselines/', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 03:01:40'}, {'id': 'a95de808c11943dcaf09f57dd3f1d72f', 'name': 'run-16-unwrap', 'generateName': 'run-16-unwrap', 'description': '相位解缠\\n[Function-1] : unwrap', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 02:24:08'}, {'id': 'bca4c57eb3b24d009c23ff0de27ca95d', 'name': 'run-15-filter-coherence', 'generateName': 'run-15-filter-coherence', 'description': '干涉图滤波\\n[Function-1] : FilterAndCoherence', 'category': 'InSAR', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-11 02:23:55'}]}}, 'time_consuming': 809.854, 'time_total': 0.809854}}" ]
+}

@@ -9,6 +9,20 @@
       <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/plugins/xray" />
       <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/plugins/xunit-xml" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/data/attachments" />
+      <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report/data/test-cases" />
+      <excludeFolder url="file://$MODULE_DIR$/logs/api_logs" />
+      <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_report" />
+      <excludeFolder url="file://$MODULE_DIR$/report/api_report/allure_result" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/data/attachments" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/data/test-cases" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/jira" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/junit" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/trx" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/xctest" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/xray" />
+      <excludeFolder url="file://$MODULE_DIR$/report/ui_report/allure_report/plugins/xunit-xml" />
+      <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (pytest_auto_uitest_apitest)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

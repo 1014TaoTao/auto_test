@@ -1,70 +1,37 @@
 [ {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
   "data" : {
-    "failed" : 2,
-    "broken" : 1,
-    "skipped" : 0,
-    "passed" : 5,
-    "unknown" : 0,
-    "total" : 8
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 2,
+    "failed" : 5,
     "broken" : 0,
     "skipped" : 0,
-    "passed" : 6,
+    "passed" : 15,
     "unknown" : 0,
-    "total" : 8
+    "total" : 20
   }
 }, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 5,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 15,
+    "unknown" : 0,
+    "total" : 20
+  }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
   "data" : {
     "failed" : 0,
     "broken" : 0,
     "skipped" : 0,
-    "passed" : 3,
+    "passed" : 10,
     "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "failed" : 2,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 5,
-    "unknown" : 0,
-    "total" : 7
-  }
-}, {
-  "data" : {
-    "failed" : 2,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 5,
-    "unknown" : 0,
-    "total" : 7
+    "total" : 10
   }
 } ]

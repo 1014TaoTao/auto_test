@@ -1,46 +1,25 @@
 [ {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
   "data" : {
-    "run" : 8,
-    "retry" : 2
+    "run" : 20,
+    "retry" : 10
   }
 }, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
   "data" : {
-    "run" : 8,
-    "retry" : 5
+    "run" : 20,
+    "retry" : 0
   }
 }, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
+  "buildOrder" : 1,
+  "reportUrl" : "http://10.1.5.26:9091/job/pytest_auto_uitest_apitest/allure/",
+  "reportName" : "AllureReport",
   "data" : {
-    "run" : 3,
-    "retry" : 3
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "run" : 3,
-    "retry" : 1
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://helloqa.com#1/AllureReport",
-  "reportName" : "iTesting Allure Report",
-  "data" : {
-    "run" : 7,
-    "retry" : 2
-  }
-}, {
-  "data" : {
-    "run" : 7,
+    "run" : 10,
     "retry" : 0
   }
 } ]
