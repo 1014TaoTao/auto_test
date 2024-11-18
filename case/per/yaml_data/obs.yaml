@@ -1,0 +1,21 @@
+Case:
+    - Test:
+        name: 创建桶
+        request:
+            method: POST
+            url: $host/obs/v1/api/buckets
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+                Content-Type: application/json;charset=UTF-8
+                Authorization: $token
+            data:
+                bucketName: zt-test-02
+                bucketPolicy: PublicReadWrite
+                lifecycleDays: -1
+                ownerId: 5657
+                quotaAmount: 100
+                quotaUnit: GB
+        expected:
+            status_code: 201
+            code: 1
+            msg: 成功

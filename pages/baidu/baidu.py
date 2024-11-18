@@ -1,10 +1,11 @@
-#!/usr/bin/env python3
+
 # -*- coding: utf-8 -*-
 
 from basepage.base import Page
-from tools.ui_tool_read_yaml import Element
+from common import setting
+from tools.yaml_tools.ui_tool_read_yaml import Element
 
-search = Element()
+search = Element(element_path=setting.UI_YAML_PATH)
 
 
 class BaiDu(Page):
@@ -15,7 +16,7 @@ class BaiDu(Page):
         self.open_url(url)
         sousuokuang = search['搜索框']
         sousuobutton = search['搜索按钮']
-        self.type_input(sousuokuang, text)
+        self.text_input(sousuokuang, text)
         self.click(sousuobutton)
 
 # if __name__ == '__main__':

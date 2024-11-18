@@ -1,0 +1,338 @@
+{
+  "uid" : "baece98943293be7",
+  "name" : "test_008-算子管理-算子列表",
+  "fullName" : "testCase.api.test_excel.TestExcel#test_excel",
+  "historyId" : "7b4978d00796630777becc653c383281",
+  "time" : {
+    "start" : 1670164665931,
+    "stop" : 1670164665939,
+    "duration" : 8
+  },
+  "description" : "test_008-算子管理-算子列表 get http://kubeos.tudoucloud.com/kube/v1/api/argo/operator",
+  "descriptionHtml" : "<p>test_008-算子管理-算子列表 get http://kubeos.tudoucloud.com/kube/v1/api/argo/operator</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1670164665767,
+      "stop" : 1670164665848,
+      "duration" : 81
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_008-算子管理-算子列表 get http://kubeos.tudoucloud.com/kube/v1/api/argo/operator",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试结果：pass",
+      "time" : {
+        "start" : 1670164665931,
+        "stop" : 1670164665932,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c400f54fc4e04fe2",
+        "name" : "测试结果",
+        "source" : "c400f54fc4e04fe2.attach",
+        "type" : "text/plain",
+        "size" : 19
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "用例名称：test_008-算子管理-算子列表",
+      "time" : {
+        "start" : 1670164665932,
+        "stop" : 1670164665933,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "66ab29dbce289193",
+        "name" : "用例名称",
+        "source" : "66ab29dbce289193.attach",
+        "type" : "text/plain",
+        "size" : 49
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求方式：get",
+      "time" : {
+        "start" : 1670164665933,
+        "stop" : 1670164665933,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8d2233de9a0263f8",
+        "name" : "请求方式",
+        "source" : "8d2233de9a0263f8.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求地址：http://kubeos.tudoucloud.com/kube/v1/api/argo/operator",
+      "time" : {
+        "start" : 1670164665934,
+        "stop" : 1670164665934,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d72f4555c798ab",
+        "name" : "请求地址",
+        "source" : "d72f4555c798ab.attach",
+        "type" : "text/plain",
+        "size" : 69
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求头 ：{'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}",
+      "time" : {
+        "start" : 1670164665934,
+        "stop" : 1670164665935,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bd104567e6ddf6c6",
+        "name" : "请求头",
+        "source" : "bd104567e6ddf6c6.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求参数：{'pageNo': 1, 'pageSize': 20, 'tabType': 'my'}",
+      "time" : {
+        "start" : 1670164665935,
+        "stop" : 1670164665936,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "516b44df7bf46fa3",
+        "name" : "请求参数",
+        "source" : "516b44df7bf46fa3.attach",
+        "type" : "text/plain",
+        "size" : 61
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：200.0",
+      "time" : {
+        "start" : 1670164665936,
+        "stop" : 1670164665936,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24cded0eb487e574",
+        "name" : "code请求断言",
+        "source" : "24cded0eb487e574.attach",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：成功",
+      "time" : {
+        "start" : 1670164665936,
+        "stop" : 1670164665937,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dfcce3252552763f",
+        "name" : "msg请求断言",
+        "source" : "dfcce3252552763f.attach",
+        "type" : "text/plain",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求断言：tabType': 'my'",
+      "time" : {
+        "start" : 1670164665937,
+        "stop" : 1670164665937,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f51a0d3371c00c75",
+        "name" : "data请求断言",
+        "source" : "f51a0d3371c00c75.attach",
+        "type" : "text/plain",
+        "size" : 29
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应结果：{'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 170, 'list': [{'id': '908b279fbbcf49c381057a398c3fe751', 'name': 'rs-colorsynch', 'generateName': 'rs-colorsynch', 'description': '遥感匀色', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-11-28 06:58:35', 'updateTime': '2022-12-03 13:32:14'}, {'id': 'd67e30eb04124f8abaf61a1a042d3886', 'name': 'rs-colorstretch', 'generateName': 'rs-colorstretch', 'description': '遥感真彩转换，植被增强，降位', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-03 11:23:55'}, {'id': '0ba7175a6b04499c9ee1247ff504d9ba', 'name': 'rs-fusion-dis', 'generateName': 'rs-fusion-dis', 'description': '影像融合', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 10:04:58'}, {'id': 'e5b11b50600046eca751e4cd5419fc12', 'name': 'rs-fusion-init', 'generateName': 'rs-fusion-init', 'description': '影像融合初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 10:03:08'}, {'id': '75193809155840319b547aeab7235754', 'name': 'rs-ortho-dis', 'generateName': 'rs-ortho-dis', 'description': '影像纠正', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:49:13'}, {'id': 'fbc52dc0324d458ba558b228835c3744', 'name': 'rs-ortho-init', 'generateName': 'rs-ortho-init', 'description': '影像纠正初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:47:54'}, {'id': '8c37de7f70bd4234931b0d4aaaca7ac2', 'name': 'rs-adjustment-dis', 'generateName': 'rs-adjustment-dis', 'description': '遥感区域网平差', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:26:03'}, {'id': '7e700816e205440087fa75e6dc6c81dd', 'name': 'rs-match-dis', 'generateName': 'rs-match-dis', 'description': '匹配算子', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:20:54'}, {'id': '5f2fef3f63d34b5cbf685c15da95adc8', 'name': 'rs-match-init', 'generateName': 'rs-match-init', 'description': '为匹配算子分配任务', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:19:46'}, {'id': '28588de2bdb945769ac58b7792e52a41', 'name': 'quickmosaic-animation-2-2', 'generateName': 'quickmosaic-animation-2-2', 'description': '动画快拼第二步', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 1, 'createUserName': 'admin', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-11-09 04:21:54', 'updateTime': '2022-12-02 06:28:34'}, {'id': '57ec25f2cdb74f698fa79b68fa3c41c1', 'name': 'quickmosaic-animation-2-1', 'generateName': 'quickmosaic-animation-2-1', 'description': '动画快拼第一步，升级版', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 06:28:20'}, {'id': 'bb3ebaef5e9e486dbe7137e869468f5c', 'name': 'upload-rastertiles-2', 'generateName': 'upload-rastertiles-2', 'description': '快拼，单张纠正tif影像切片并上传至S3', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 06:28:01'}, {'id': '8d76e38fadfa423fb07d093aa9c78a06', 'name': 'quickmosaic-animation-2-2-dev', 'generateName': 'quickmosaic-animation-2-2-dev', 'description': '动画快拼第二步-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:27:01', 'updateTime': '2022-12-02 06:27:01'}, {'id': '0d6cdb578d3a4127a70a76609fb8dac2', 'name': 'upload-rastertiles-2-dev', 'generateName': 'upload-rastertiles-2-dev', 'description': '快拼，单张纠正tif影像切片并上传至S3-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:06:51', 'updateTime': '2022-12-02 06:06:51'}, {'id': '9ce7847c67064e81bb82e0cceb60b1dc', 'name': 'quickmosaic-animation-2-1-dev', 'generateName': 'quickmosaic-animation-2-1-dev', 'description': '动画快拼第一步，升级版-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:03:49', 'updateTime': '2022-12-02 06:05:36'}, {'id': '1f5bcadda9c640958b1b9c7be1613760', 'name': 'rs-mosaic-init', 'generateName': 'rs-mosaic-init', 'description': '镶嵌并行初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-12-01 08:43:35', 'updateTime': '2022-12-01 09:28:27'}, {'id': '0f03f9278ef744a4bea54f5cb6c61b31', 'name': 'rs-mosaic-dis', 'generateName': 'rs-mosaic-dis', 'description': '影像镶嵌', 'category': 'RS_DOM', 'debugStatus': 'failed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': None, 'updateTime': '2022-12-01 09:06:05'}, {'id': '1447c66617314356859d557ca5c13929', 'name': '空三分块', 'generateName': 'kongsanfenkuai', 'description': '空三，第一步分块', 'category': '三维建模', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 221, 'createUserName': '王强', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-11-30 06:21:51'}, {'id': 'c9bcc5c1c8b74c4ca3af6b089731d8f2', 'name': '稀疏点云坐标转换', 'generateName': 'xishudianyunzuobiaozhuanhuan', 'description': '稀疏点云坐标转换', 'category': '三维建模', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-11-30 01:30:21'}, {'id': 'd7ffe0fa71fa4faaadc23ea9a0b40127', 'name': 'images-seg-深度图融合', 'generateName': 'images-seg-shenduturonghe', 'description': '深度图融合第二版，单张深度图生成', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-11-29 03:27:36', 'updateTime': '2022-11-29 03:27:36'}]}}, 'time_consuming': 719.197, 'time_total': 0.719197}",
+      "time" : {
+        "start" : 1670164665938,
+        "stop" : 1670164665939,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e1eae46c82f03348",
+        "name" : "响应结果",
+        "source" : "e1eae46c82f03348.attach",
+        "type" : "text/plain",
+        "size" : 9063
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1670164665939,
+        "stop" : 1670164665939,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "excel接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "feature一级标签:excel接口测试"
+  }, {
+    "name" : "story",
+    "value" : "story二级标签:excel接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_excel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExcel"
+  }, {
+    "name" : "host",
+    "value" : "xxx"
+  }, {
+    "name" : "thread",
+    "value" : "10688-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.api.test_excel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'result': 'pass', 'title': 'test_008-算子管理-算子列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/argo/operator', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': {'pageNo': 1, 'pageSize': 20, 'tabType': 'my'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"tabType': 'my'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 170, 'list': [{'id': '908b279fbbcf49c381057a398c3fe751', 'name': 'rs-colorsynch', 'generateName': 'rs-colorsynch', 'description': '遥感匀色', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-11-28 06:58:35', 'updateTime': '2022-12-03 13:32:14'}, {'id': 'd67e30eb04124f8abaf61a1a042d3886', 'name': 'rs-colorstretch', 'generateName': 'rs-colorstretch', 'description': '遥感真彩转换，植被增强，降位', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-03 11:23:55'}, {'id': '0ba7175a6b04499c9ee1247ff504d9ba', 'name': 'rs-fusion-dis', 'generateName': 'rs-fusion-dis', 'description': '影像融合', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 10:04:58'}, {'id': 'e5b11b50600046eca751e4cd5419fc12', 'name': 'rs-fusion-init', 'generateName': 'rs-fusion-init', 'description': '影像融合初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 10:03:08'}, {'id': '75193809155840319b547aeab7235754', 'name': 'rs-ortho-dis', 'generateName': 'rs-ortho-dis', 'description': '影像纠正', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:49:13'}, {'id': 'fbc52dc0324d458ba558b228835c3744', 'name': 'rs-ortho-init', 'generateName': 'rs-ortho-init', 'description': '影像纠正初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:47:54'}, {'id': '8c37de7f70bd4234931b0d4aaaca7ac2', 'name': 'rs-adjustment-dis', 'generateName': 'rs-adjustment-dis', 'description': '遥感区域网平差', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:26:03'}, {'id': '7e700816e205440087fa75e6dc6c81dd', 'name': 'rs-match-dis', 'generateName': 'rs-match-dis', 'description': '匹配算子', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:20:54'}, {'id': '5f2fef3f63d34b5cbf685c15da95adc8', 'name': 'rs-match-init', 'generateName': 'rs-match-init', 'description': '为匹配算子分配任务', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:19:46'}, {'id': '28588de2bdb945769ac58b7792e52a41', 'name': 'quickmosaic-animation-2-2', 'generateName': 'quickmosaic-animation-2-2', 'description': '动画快拼第二步', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 1, 'createUserName': 'admin', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-11-09 04:21:54', 'updateTime': '2022-12-02 06:28:34'}, {'id': '57ec25f2cdb74f698fa79b68fa3c41c1', 'name': 'quickmosaic-animation-2-1', 'generateName': 'quickmosaic-animation-2-1', 'description': '动画快拼第一步，升级版', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 06:28:20'}, {'id': 'bb3ebaef5e9e486dbe7137e869468f5c', 'name': 'upload-rastertiles-2', 'generateName': 'upload-rastertiles-2', 'description': '快拼，单张纠正tif影像切片并上传至S3', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 06:28:01'}, {'id': '8d76e38fadfa423fb07d093aa9c78a06', 'name': 'quickmosaic-animation-2-2-dev', 'generateName': 'quickmosaic-animation-2-2-dev', 'description': '动画快拼第二步-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:27:01', 'updateTime': '2022-12-02 06:27:01'}, {'id': '0d6cdb578d3a4127a70a76609fb8dac2', 'name': 'upload-rastertiles-2-dev', 'generateName': 'upload-rastertiles-2-dev', 'description': '快拼，单张纠正tif影像切片并上传至S3-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:06:51', 'updateTime': '2022-12-02 06:06:51'}, {'id': '9ce7847c67064e81bb82e0cceb60b1dc', 'name': 'quickmosaic-animation-2-1-dev', 'generateName': 'quickmosaic-animation-2-1-dev', 'description': '动画快拼第一步，升级版-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:03:49', 'updateTime': '2022-12-02 06:05:36'}, {'id': '1f5bcadda9c640958b1b9c7be1613760', 'name': 'rs-mosaic-init', 'generateName': 'rs-mosaic-init', 'description': '镶嵌并行初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-12-01 08:43:35', 'updateTime': '2022-12-01 09:28:27'}, {'id': '0f03f9278ef744a4bea54f5cb6c61b31', 'name': 'rs-mosaic-dis', 'generateName': 'rs-mosaic-dis', 'description': '影像镶嵌', 'category': 'RS_DOM', 'debugStatus': 'failed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': None, 'updateTime': '2022-12-01 09:06:05'}, {'id': '1447c66617314356859d557ca5c13929', 'name': '空三分块', 'generateName': 'kongsanfenkuai', 'description': '空三，第一步分块', 'category': '三维建模', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 221, 'createUserName': '王强', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-11-30 06:21:51'}, {'id': 'c9bcc5c1c8b74c4ca3af6b089731d8f2', 'name': '稀疏点云坐标转换', 'generateName': 'xishudianyunzuobiaozhuanhuan', 'description': '稀疏点云坐标转换', 'category': '三维建模', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-11-30 01:30:21'}, {'id': 'd7ffe0fa71fa4faaadc23ea9a0b40127', 'name': 'images-seg-深度图融合', 'generateName': 'images-seg-shenduturonghe', 'description': '深度图融合第二版，单张深度图生成', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-11-29 03:27:36', 'updateTime': '2022-11-29 03:27:36'}]}}, 'time_consuming': 719.197, 'time_total': 0.719197}}"
+  } ],
+  "links" : [ {
+    "name" : "allure.testcase：测试用例地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "test_case"
+  }, {
+    "name" : "allure.issue：BUG地址",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "issue"
+  }, {
+    "name" : "allure.link：超链接",
+    "url" : "https://njqa.zgyjyx.net/api",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "baece98943293be7.json",
+  "parameterValues" : [ "{'result': 'pass', 'title': 'test_008-算子管理-算子列表', 'url': 'http://kubeos.tudoucloud.com/kube/v1/api/argo/operator', 'method': 'get', 'headers': {'Authorization': 'Bearer d748ea06-a842-4bb1-a541-96cb83fe0218'}, 'data': {'pageNo': 1, 'pageSize': 20, 'tabType': 'my'}, 'status_code': 200.0, 'expected_msg': '成功', 'expected_data': \"tabType': 'my'\", 'res': {'code': 200, 'body': {'code': 1, 'msg': '成功', 'data': {'total': 170, 'list': [{'id': '908b279fbbcf49c381057a398c3fe751', 'name': 'rs-colorsynch', 'generateName': 'rs-colorsynch', 'description': '遥感匀色', 'category': 'RS_DOM', 'debugStatus': 'debugging', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-11-28 06:58:35', 'updateTime': '2022-12-03 13:32:14'}, {'id': 'd67e30eb04124f8abaf61a1a042d3886', 'name': 'rs-colorstretch', 'generateName': 'rs-colorstretch', 'description': '遥感真彩转换，植被增强，降位', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-03 11:23:55'}, {'id': '0ba7175a6b04499c9ee1247ff504d9ba', 'name': 'rs-fusion-dis', 'generateName': 'rs-fusion-dis', 'description': '影像融合', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 10:04:58'}, {'id': 'e5b11b50600046eca751e4cd5419fc12', 'name': 'rs-fusion-init', 'generateName': 'rs-fusion-init', 'description': '影像融合初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 10:03:08'}, {'id': '75193809155840319b547aeab7235754', 'name': 'rs-ortho-dis', 'generateName': 'rs-ortho-dis', 'description': '影像纠正', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:49:13'}, {'id': 'fbc52dc0324d458ba558b228835c3744', 'name': 'rs-ortho-init', 'generateName': 'rs-ortho-init', 'description': '影像纠正初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:47:54'}, {'id': '8c37de7f70bd4234931b0d4aaaca7ac2', 'name': 'rs-adjustment-dis', 'generateName': 'rs-adjustment-dis', 'description': '遥感区域网平差', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:26:03'}, {'id': '7e700816e205440087fa75e6dc6c81dd', 'name': 'rs-match-dis', 'generateName': 'rs-match-dis', 'description': '匹配算子', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:20:54'}, {'id': '5f2fef3f63d34b5cbf685c15da95adc8', 'name': 'rs-match-init', 'generateName': 'rs-match-init', 'description': '为匹配算子分配任务', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 08:19:46'}, {'id': '28588de2bdb945769ac58b7792e52a41', 'name': 'quickmosaic-animation-2-2', 'generateName': 'quickmosaic-animation-2-2', 'description': '动画快拼第二步', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 1, 'createUserName': 'admin', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-11-09 04:21:54', 'updateTime': '2022-12-02 06:28:34'}, {'id': '57ec25f2cdb74f698fa79b68fa3c41c1', 'name': 'quickmosaic-animation-2-1', 'generateName': 'quickmosaic-animation-2-1', 'description': '动画快拼第一步，升级版', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 06:28:20'}, {'id': 'bb3ebaef5e9e486dbe7137e869468f5c', 'name': 'upload-rastertiles-2', 'generateName': 'upload-rastertiles-2', 'description': '快拼，单张纠正tif影像切片并上传至S3', 'category': '快拼动画', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-12-02 06:28:01'}, {'id': '8d76e38fadfa423fb07d093aa9c78a06', 'name': 'quickmosaic-animation-2-2-dev', 'generateName': 'quickmosaic-animation-2-2-dev', 'description': '动画快拼第二步-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:27:01', 'updateTime': '2022-12-02 06:27:01'}, {'id': '0d6cdb578d3a4127a70a76609fb8dac2', 'name': 'upload-rastertiles-2-dev', 'generateName': 'upload-rastertiles-2-dev', 'description': '快拼，单张纠正tif影像切片并上传至S3-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:06:51', 'updateTime': '2022-12-02 06:06:51'}, {'id': '9ce7847c67064e81bb82e0cceb60b1dc', 'name': 'quickmosaic-animation-2-1-dev', 'generateName': 'quickmosaic-animation-2-1-dev', 'description': '动画快拼第一步，升级版-dev', 'category': '快拼动画-dev', 'debugStatus': 'not', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-12-02 06:03:49', 'updateTime': '2022-12-02 06:05:36'}, {'id': '1f5bcadda9c640958b1b9c7be1613760', 'name': 'rs-mosaic-init', 'generateName': 'rs-mosaic-init', 'description': '镶嵌并行初始化', 'category': 'RS_DOM', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': '2022-12-01 08:43:35', 'updateTime': '2022-12-01 09:28:27'}, {'id': '0f03f9278ef744a4bea54f5cb6c61b31', 'name': 'rs-mosaic-dis', 'generateName': 'rs-mosaic-dis', 'description': '影像镶嵌', 'category': 'RS_DOM', 'debugStatus': 'failed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5627, 'updateUserName': '18192408293', 'tenantId': 1, 'createTime': None, 'updateTime': '2022-12-01 09:06:05'}, {'id': '1447c66617314356859d557ca5c13929', 'name': '空三分块', 'generateName': 'kongsanfenkuai', 'description': '空三，第一步分块', 'category': '三维建模', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 221, 'createUserName': '王强', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-11-30 06:21:51'}, {'id': 'c9bcc5c1c8b74c4ca3af6b089731d8f2', 'name': '稀疏点云坐标转换', 'generateName': 'xishudianyunzuobiaozhuanhuan', 'description': '稀疏点云坐标转换', 'category': '三维建模', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5627, 'createUserName': '18192408293', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 1, 'createTime': '2022-04-14 08:18:49', 'updateTime': '2022-11-30 01:30:21'}, {'id': 'd7ffe0fa71fa4faaadc23ea9a0b40127', 'name': 'images-seg-深度图融合', 'generateName': 'images-seg-shenduturonghe', 'description': '深度图融合第二版，单张深度图生成', 'category': '三维建模----beta', 'debugStatus': 'succeed', 'createType': 'general', 'tabType': 'my', 'createUser': 5628, 'createUserName': '三维演示', 'updateUser': 5628, 'updateUserName': '三维演示', 'tenantId': 715, 'createTime': '2022-11-29 03:27:36', 'updateTime': '2022-11-29 03:27:36'}]}}, 'time_consuming': 719.197, 'time_total': 0.719197}}" ]
+}

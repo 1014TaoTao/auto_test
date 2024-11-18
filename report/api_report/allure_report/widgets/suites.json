@@ -1,26 +1,26 @@
 {
   "total" : 2,
   "items" : [ {
-    "uid" : "77621dcedaace14da6a0d5dca6d0efff",
-    "name" : "testCase.api",
+    "uid" : "d3cf1515650a5ed7a96e23a845f006fa",
+    "name" : "testCase",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 5,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 5,
       "unknown" : 0,
-      "total" : 7
+      "total" : 10
     }
   }, {
-    "uid" : "e81e6f2bec5e0e012c0a1cc7ab6e644c",
-    "name" : "testCase.ui",
+    "uid" : "77621dcedaace14da6a0d5dca6d0efff",
+    "name" : "testCase.api",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 1
+      "total" : 10
     }
   } ]
 }

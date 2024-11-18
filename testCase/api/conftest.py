@@ -3,21 +3,18 @@
 # -------------------------------------------------------------------------------
 # Name:         conftest
 # Description:
-# Author:       ZhangTao
+# Author:       xxx
 # Date:         2021/1/15
 # -------------------------------------------------------------------------------
-# import allure
-# import pytest
-#
-# from common import setting, consts
-# from tools import public_tool_project_check
-# from tools.api_tool_excel import ExcelPack
-# from tools.api_tool_headers import headersPack
-# from tools.public_tool_log import logger
-# from tools.api_tool_login import Login
+import allure
+import pytest
 
+# from common import setting, consts
+# from tools.excel_tools.api_tool_excel import ExcelPack
 #
-# -----------------------------全局初始化--------------------------------------------
+# from tools.logs_tools.public_tool_log import logger
+#
+# # -----------------------------全局初始化--------------------------------------------
 # logger = logger(setting.API_LOG_PATH)
 
 """
@@ -40,20 +37,23 @@
 
 
 # @pytest.fixture(scope="session", autouse=True)
-# @pytest.fixture()
 # def api_init_project():
-#     with allure.step("检查系统信息"):
-#         logger.info('==========< 开始 API自动化项目 测试 >===========')
-#         # 打印系统和python的版本信息
-#         public_tool_project_check.api_sys_project(log_path=setting.API_LOG_PATH)
-#         logger.info(f"【本次执行环境为:{consts.ENVIRONMENT},执行人员：{consts.TESTER}】")
+#     with allure.step("项目初始化"):
+#         from common import consts
+#         from tools.common_tools.api_tool_login import Login
+#         TESTCASEPATH: str = consts.TESTCASEPATH
+#         APIHOST: str = consts.APIHOST
+#         APIHOSTPORT: str = consts.APIHOSTPORT
+#         BASEHOST: str = consts.BASEHOST
+#         LOGINHOST: str = consts.LOGINHOST
+#         USERNAME: str = consts.USERNAME
+#         LOGINDATA: dict = consts.LOGINDATA
+#
 #         try:
-#             Login().api_login()
+#             Login(BASEHOST, LOGINHOST, LOGINDATA, USERNAME).api_login()
 #         except Exception as e:
 #             logger.error(f"【登录写入token异常：{e}】")
-#         result = ExcelPack(file_name=setting.API_EXCEL_FILE, sheet_id=setting.sheet_id).run_excel_case()
-#         return result
-
-
-# def many_user_login():
-#
+#         result = ExcelPack(file_name=TESTCASEPATH, sheet_id=setting.sheet_id).run_excel_case(APIHOST, APIHOSTPORT,
+#                                                                                              BASEHOST, LOGINHOST,
+#                                                                                              LOGINDATA, USERNAME)
+#         yield result
