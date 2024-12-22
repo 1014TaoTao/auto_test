@@ -8,7 +8,7 @@ from typing.io import IO
 import requests
 
 from common import setting
-from tools.public_tool_log import logger
+from tools.logi_tool import logger
 
 
 class Requests:

@@ -3,7 +3,7 @@
 
 from basepage.base import Page
 from common import setting
-from tools.yaml_tools.ui_tool_read_yaml import Element
+from tools.ui_tool_read_yaml import Element
 
 search = Element(element_path=setting.UI_YAML_PATH)
 

@@ -4,7 +4,7 @@ import pytest
 
 from common import setting
 from pages.baidu.baidu import BaiDu
-from tools.yaml_tools.ui_tool_read_yaml import Element
+from tools.ui_tool_read_yaml import Element
 
 search = Element(element_path=setting.UI_YAML_PATH)
 

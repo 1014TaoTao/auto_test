@@ -13,7 +13,7 @@ import xlwt
 from xlutils.copy import copy
 
 from common.setting import upload_file
-from tools.common_tools.api_tool_global_var import global_var
+from tools.api_tool_global_var import global_var
 
 
 class ReadExcel:

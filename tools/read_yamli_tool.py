@@ -7,7 +7,7 @@ import yaml
 
 from common import setting
 from common.readConfigIni import Config
-from tools.common_tools.api_tool_headers import read_token
+from tools.api_tool_headers import read_token
 
 
 class YamlPack:

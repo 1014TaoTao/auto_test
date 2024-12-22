@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
 
 from common import setting
-from tools.public_tool_log import logger
+from tools.logi_tool import logger
 
 success = "SUCCESS"
 fail = "FAIL   "

@@ -1,4 +1,4 @@
-## allure常用装饰器
+# allure常用装饰器
 
     ## allure.dynamic 动态属性
     @allure.dynamic.severity
@@ -84,7 +84,7 @@ pip install pytest-timeout
 addopts = -s -v -q --alluredir ./report/allure_result --rerun=2 --count=2  -n=auto
 testpaths = ./testCase/
 python_files = test_*.py   test_*.py*_test .py  test*.py
-python_classes = Test*   Test_*test*  test_*
+python_classes = Test*Test_*test*  test_*
 python_functions = test_*test*
 minversion = 6.2.5
 log_cli = 1

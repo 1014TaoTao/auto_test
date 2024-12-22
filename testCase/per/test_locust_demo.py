@@ -9,7 +9,7 @@ from locust.runners import MasterRunner
 from loguru import logger
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-from tools.yaml_tools.pre_tool_read_yaml import YamlPack
+from tools.pre_tool_read_yaml import YamlPack
 
 # 禁用安全请求警告
 # 加上这行代码即可，关闭安全请求警告

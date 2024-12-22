@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from common import consts, setting
-from tools.common_tools.public_tool_run_all import Run
-from tools.public_tool_log import logger
-from tools import public_tool_project_check
+import pytest
 
+from common import consts, setting
+from tools.log_tool import logger
+from tools import server_check_tool
+
+from tools.public_tool_manager import Manager
+from tools.emaili_tool import EmailPack
+from tools.public_tool_dingding import DingTalk
+from tools.public_tool_zip import ZipPath
 """
     执行前确认pytest.ini文件中testpath的路径
 """
@@ -74,60 +79,61 @@ class RunTest:
         self.title = self.type_test
 
         self.ENVIRONMENT: str = consts.ENVIRONMENT
-        self.TESTER: str = consts.TESTER
+        self.TESTER: str = consts.TESTER告
 
     def run(self):
         self.logger.info(f'==========< 开始 {self.title}自动化 测试 >===========')
 
-        R = Run()
-
         # 打印系统和python的版本信息
-        public_tool_project_check.sys_project(log_path=self.log_path)
+        server_check_tool.sys_project(log_path=self.log_path)
 
         self.logger.info(f"【本次执行环境为:{self.ENVIRONMENT},执行人员：{self.TESTER}】")
 
         # 删除旧的测试结果数据
-        # R.delete_old_file(
-        #     log_path=self.log_path,
-        #     REPORT_RESULT_PATH=self.REPORT_RESULT_PATH
-        # )
+        Manager().del_old_result(log_path=self.log_path, REPORT_RESULT_PATH=self.REPORT_RESULT_PATH)
 
         # 执行测试
-        R.run_test(log_path=self.log_path)
+        logger(log_path=self.log_path).info("开始==>执行测试用例")
+        args = [__file__,
+                 "--report=_report.html",   # 指定报告文件名
+                 '--title=test_report 测试报告',    # 指定报告标题
+                 '--tester=Phoenixy',   # 指定报告中的测试者
+                 '--desc=报告描述信息',   # 指定报告中的项目描述
+                 '--template=1',    # 指定报告模板样式（1 or 2）
+                 '-W', "ignore:Module already imported:pytest.PytestWarning"
+                 ]
+        pytest.main(args)
+        logger(log_path=self.log_path).info("完成==>执行测试用例")
 
         # 生成测试报告
-        R.run_allure_report(log_path=self.log_path,
-                            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
-                            REPORT_END_PATH=self.REPORT_END_PATH,
-                            REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
-                            RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
-                            StartEnvironmentFilePath=self.StartEnvironmentFilePath,
-                            EndEnvironmentFile=self.EndEnvironmentFile,
-                            StartExcutorJson=self.StartExcutorJson,
-                            EndExcutorJson=self.EndExcutorJson)
-
-        # 发送邮件
-        R.run_email(
-            REPORT_END_PATH=self.REPORT_END_PATH,
-            dirpath=self.dirpath,
-            outFullName=self.outFullName,
+        Manager().generate_report(
             log_path=self.log_path,
-            file_list=self.file_list
+            REPORT_RESULT_PATH=self.REPORT_RESULT_PATH,
+            REPORT_END_PATH=self.REPORT_END_PATH,
+            REPORT_HISTORY_PATH=self.REPORT_HISTORY_PATH,
+            RESULT_HISTORY_PATH=self.RESULT_HISTORY_PATH,
+            StartEnvironmentFilePath=self.StartEnvironmentFilePath,
+            EndEnvironmentFile=self.EndEnvironmentFile,
+            StartExcutorJson=self.StartExcutorJson,
+            EndExcutorJson=self.EndExcutorJson
         )
 
+        # 发送邮件
+        ZipPath().zipDir(log_path=self.log_path, dirpath=self.dirpath, outFullName=self.outFullName)
+        EmailPack(REPORT_END_PATH=self.REPORT_END_PATH).send_default_email(log_path=self.log_path, file_list=self.file_list)
+
         # 打开allure报告
-        # R.open_report(
-        #     log_path=self.log_path,
-        #     REPORT_END_PATH=self.REPORT_END_PATH
-        # )
+        # Manager().run_allure_server(log_path=self.log_path, REPORT_END_PATH=self.REPORT_END_PATH)
 
         # 发送钉钉消息
-        R.send_dingding(
+        self.send_dingding(
             REPORT_END_PATH=self.REPORT_END_PATH,
             log_path=self.log_path,
             title=self.title,
             ENVIRONMENT=self.ENVIRONMENT,
             TESTER=self.TESTER
         )
+        DingTalk(REPORT_END_PATH=self.REPORT_END_PATH).send_dingding(log_path=self.log_path, ENVIRONMENT=self.ENVIRONMENT, TESTER=self.TESTER)
+        logger(log_path=self.log_path).info("完成==>发送钉钉报告")
 
         self.logger.info(f'==========< 结束 {self.title}自动化 测试 >===========')

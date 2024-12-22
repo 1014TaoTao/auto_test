@@ -6,7 +6,7 @@ import os
 import shutil
 import subprocess
 
-from tools.public_tool_log import logger
+from tools.logi_tool import logger
 
 
 class Manager:

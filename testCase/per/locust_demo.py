@@ -6,7 +6,7 @@ import queue
 from gevent import monkey
 from gevent._semaphore import Semaphore
 
-from tools.yaml_tools.pre_tool_read_yaml import YamlPack
+from tools.pre_tool_read_yaml import YamlPack
 
 monkey.patch_all()  # 开启协程
 
