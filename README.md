@@ -1,4 +1,6 @@
-# 项目名称：pytest_auto_unitest_apitest
+# 项目名称：auto_test
+
+该项目目的解决整合api、ui、性能自动化测试的框架
 
 ## 一、项目及框架的搭建
 
