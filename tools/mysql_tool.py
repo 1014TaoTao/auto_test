@@ -211,7 +211,7 @@ class toolMyDB:
 #     user = "root"
 #     port = 3306
 #     passwd = "123456"
-#     db = "pytest_auto_uitest_apitest"
+#     db = "auto_test"
 #     charset = "utf8"
 #     mydb = toolMyDB(host, user, port, passwd, db, charset)
 #     rs = mydb.query_sql("select * from ui")

@@ -29,7 +29,7 @@
 ## 二.工程目录
 
 ```text.
-\PYTEST_AUTO_UITEST_APITEST # 项目名称
+\AUTO_TEST # 项目名称
 ├─basepage      # ui自动化基础类封装目录 
 ├─bat           # bat文件目录，存放bat脚本
 ├─case          # 测试用例存放目录

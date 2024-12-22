@@ -82,7 +82,7 @@ if __name__ == '__main__':
         'Authorization': 'Bearer 6b37084a-bc09-4982-9eba-900b1ef8287c'
     }
     file = [
-        ('file', ('gitea-1.9.1.tgz', open('G:\pytest_auto_uitest_apitest\data\gitea-1.9.1.tgz', 'rb'),'application/gzip'))
+        ('file', ('gitea-1.9.1.tgz', open('G:\auto_test\data\gitea-1.9.1.tgz', 'rb'),'application/gzip'))
     ]
     res = Requests().send_request(url=url, method='post', parametric_key='data', headers=headers, file=file, data=None)
     print(res.json())

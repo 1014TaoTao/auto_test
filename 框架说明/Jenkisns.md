@@ -120,7 +120,7 @@ EOF
             SystemVersion:Windows10-64bit
             PythonVersion:python-3.8.10
             AllureVersion:allure-2.16.1
-            ProjectName:pytest_auto_uitest_apitest
+            ProjectName:auto_test
             Author:xxx
             Email:xx@qq.com
 

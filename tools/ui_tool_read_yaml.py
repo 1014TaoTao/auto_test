@@ -32,7 +32,7 @@ class Element:
 
 
 # if __name__ == '__main__':
-#     element_path = r'E:\pytest_auto_uitest_apitest\case\ui\yaml_data\test.yaml'
+#     element_path = r'E:\auto_test\case\ui\yaml_data\test.yaml'
 #     search = Element(element_path)
 #     print(search['搜索框'])
 #     print(search['搜索按钮'])

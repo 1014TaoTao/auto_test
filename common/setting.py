@@ -4,7 +4,7 @@ import os
 
 # ===================公共配置======================
 # 项目的根目录-
-# \pytest_auto_uitest_apitest
+# \auto_test
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # if not os.path.exists(BAT_FILE):
 #     raise FileNotFoundError("请确保pytest_auto_uitest_ap文件存在！")
@@ -140,8 +140,8 @@ PER_CONFIG_PATH = os.path.join(BASE_PATH, "locust.conf")
 
 
 # ===================public配置======================
-jenkins_url = "http://10.1.3.124:10086/job/pytest_auto_uitest_apitest/"
-reprot_url = "http://10.1.3.124:10086/job/pytest_auto_uitest_apitest/allure/"
+jenkins_url = "http://10.1.3.124:10086/job/auto_test/"
+reprot_url = "http://10.1.3.124:10086/job/auto_test/allure/"
 at_mobiles_list = [xxx]
 
 

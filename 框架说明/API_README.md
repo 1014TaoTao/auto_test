@@ -16,7 +16,7 @@
 
 - 2.1拉取代码
   
-  - git clone <http://gitlab.e-tudou.com/tudou-autotest-project/pytest_auto_uitest_apitest.git>
+  - git clone <http://gitlab.e-tudou.com/tudou-autotest-project/auto_test.git>
   
   - 查看本地和远程所有分支 git branch -a
   
@@ -65,7 +65,7 @@
 ## 二.工程目录
 
 ```text.
-pytest_auto_uitest_apitest:   # 项目父目录
+auto_test:   # 项目父目录
 ├─auto_shell    # 工作中涉及的脚本文件（方便工作中使用）
 │  ├─assa   # saas相关的脚本
 │  ├─kube   # kube相关的脚本

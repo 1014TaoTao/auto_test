@@ -1,7 +1,7 @@
 <environment>
     <parameter>
         <key>ProjectName</key>
-        <value>pytest_auto_uitest_apitest</value>
+        <value>auto_test</value>
     </parameter>
 
     <parameter>

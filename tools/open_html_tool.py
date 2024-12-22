@@ -8,7 +8,7 @@ class OpenHtml:
         pass
 
     def see_html(self):
-        url = r'http://localhost:63342/pytest_auto_uitest_apitest/report/api_report/allure_report/index.html'
+        url = r'http://localhost:63342/auto_test/report/api_report/allure_report/index.html'
         webbrowser.open(url)
 #
 # if __name__ == '__main__':
