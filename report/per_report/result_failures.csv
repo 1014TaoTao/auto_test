@@ -1,3 +1,0 @@
-Method,Name,Error,Occurrences
-GET,/kube/v1/api/tekton/pipeline,Got wrong response,2
-GET,/kube/v1/api/tekton/task/list,Got wrong response,7

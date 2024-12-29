@@ -1,33 +1,21 @@
 # -*- coding: utf-8 -*-#
 
 # 钉钉发送消息模块
-import time
 from typing import Any
-
 from dingtalkchatbot.chatbot import DingtalkChatbot, FeedLink
 
-from common import readConfigYaml, setting
-from tools.allurereporti_tool import CaseCount
-# from common import consts
-from tools.logi_tool import logger
+from common import consts
 
 
-class DingTalk:
+class DingTalkPack:
 
-    def __init__(self, REPORT_END_PATH):
+    def __init__(self):
 
-        self.secret = readConfigYaml.Config().get_dingding_secret()
-        self.webhook = readConfigYaml.Config().get_dingding_webhook()
-        self.ding_news = DingtalkChatbot(
-            webhook=self.webhook, secret=self.secret, pc_slide=False, fail_notice=False)
-
-        self.allureData = CaseCount()
-        self.PASS = self.allureData.passCount(REPORT_END_PATH)
-        self.FAILED = self.allureData.failedCount(REPORT_END_PATH)
-        self.BROKEN = self.allureData.brokenCount(REPORT_END_PATH)
-        self.SKIP = self.allureData.skippedCount(REPORT_END_PATH)
-        self.TOTAL = self.allureData.totalCount(REPORT_END_PATH)
-        self.RATE = self.allureData.passRate(REPORT_END_PATH)
+        self.webhook=consts.DINGDING_WEBHOOK
+        self.secret=consts.DINGDING_SECRET
+        self.at_mobiles=consts.DINGDING_AT_MOBILES
+        
+        self.ding_news = DingtalkChatbot( webhook=self.webhook, secret=self.secret, pc_slide=False, fail_notice=False)
 
     def send_text(self, msg: str, mobiles: list = None) -> None:
         """
@@ -50,8 +38,7 @@ class DingTalk:
         :return:
         """
         try:
-            self.ding_news.send_link(
-                title=title, text=text, message_url=message_url, pic_url=pic_url)
+            self.ding_news.send_link(title=title, text=text, message_url=message_url, pic_url=pic_url)
         except Exception:
             raise
 
@@ -62,70 +49,70 @@ class DingTalk:
         :param msg:
         markdown 格式
         """
-
         if mobiles is None:
             self.ding_news.send_markdown(title=title, text=msg, is_at_all=True)
         else:
             if isinstance(mobiles, list):
-                self.ding_news.send_markdown(
-                    title=title, text=msg, at_mobiles=mobiles)
+                self.ding_news.send_markdown(title=title, text=msg, at_mobiles=mobiles)
             else:
                 raise TypeError("mobiles类型错误 不是list类型.")
 
-    @staticmethod
-    def feed_link(title: str, message_url: str, pic_url: str) -> Any:
-
+    def feed_link(self, title: str, message_url: str, pic_url: str) -> Any:
+        """
+        发送link类型
+        :param title:
+        :param message_url:
+        :param pic_url:
+        :return:
+        """
         return FeedLink(title=title, message_url=message_url, pic_url=pic_url)
 
     def send_feed_link(self, *arg) -> None:
+        """
+        发送feedlink类型
+        :param arg:
+        :return:
+        """
         try:
             self.ding_news.send_feed_card(list(arg))
         except Exception:
             raise
 
-    # 发送钉钉消息
-    def send_dingding(self, log_path, title, ENVIRONMENT: str, TESTER: str):
+    def send_dingding(self,
+                      title,
+                      environment,
+                      tester,
+                      total,
+                      pass_num,
+                      fail_num,
+                      error_num,
+                      skip_num,
+                      rate,
+                      duration,
+                      reprot_url,
+                      jenkins_url,
+                      ):
         """
         发送钉钉通知
         :return:
         """
-        logger(log_path).info("开始==>发送钉钉报告")
-        jenkins_url = setting.jenkins_url
-        reprot_url = setting.reprot_url
 
         self.ding_news.send_markdown(
-            title=f'【{title}自动化测试报告】',
-            text=f"<font color=\'#FFA500\'>[通知] </font>{title}自动化测试...执行完成 \n\n --- \n\n" +
-                 f"项目名称：{title}自动化测试报告 \n\n " +
-                 "执行环境：<font color=\"#1d953f\">%s</font>" % ENVIRONMENT + "\n\n" +
-                 "运行总数：<font color=\"#d71345\">%s 个</font>" % self.TOTAL + "\n\n" +
-                 "通过数量：<font color=\"#1d953f\">%s 个</font>" % self.PASS + "\n\n" +
-                 "异常数量：<font color=\"#fdb933\">%s 个</font>" % self.BROKEN + "\n\n" +
-                 "跳过数量：<font color=\"#2585a6\">%s 个</font>" % self.SKIP + "\n\n" +
-                 "失败数量：<font color=\"#c63c26\">%s 个</font>" % self.FAILED + "\n\n" +
-                 "成功率为：<font color=\"#1d953f\">%s </font>" % self.RATE + "\n\n" +
-                 # "执行人员：<font color=\"#130c0e\">@%s</font>" % TESTER + "\n\n --- \n\n" +
-                 "执行人员：<font color=\"#f2eada\">@%s</font>" % TESTER + "\n\n --- \n\n" +
+            title=f'【{title}测试执行完毕提醒',
+            text=f"<font color=\'#FFA500\'>[通知] </font>测试执行完成 \n\n --- \n\n" +
+                 "执行环境：<font color=\"#1d953f\">%s </font>" % environment + "\n\n" +
+                 "执行人员：<font color=\"#f2eada\">@%s</font>" % tester + "\n\n --- \n\n" +
+                 "运行总数：<font color=\"#d71345\">%s </font>" % total + "\n\n" +
+                 "通过数量：<font color=\"#1d953f\">%s </font>" % pass_num + "\n\n" +
+                 "失败数量：<font color=\"#c63c26\">%s </font>" % fail_num + "\n\n" +
+                 "异常数量：<font color=\"#fdb933\">%s </font>" % error_num + "\n\n" +
+                 "跳过数量：<font color=\"#2585a6\">%s </font>" % skip_num + "\n\n" +
+                 "成功率为：<font color=\"#1d953f\">%s </font>" % rate + "\n\n" +
+                 "运行时间：<font color=\"#464547\">%s </font>" % duration + "\n\n" +
                  "报告详情：[点击查看](%s)" % reprot_url + "\n\n" +
-                 "构建地址：[点击查看](%s)" % jenkins_url + "\n\n" +
-                 "</font> \n\n --- \n\n  **运行时间：** <font color=\"#464547\">%s</font> \n\n --- \n\n " % time.strftime(
-                     "%Y-%m-%d "
-                     "%H:%M:%S"),
-            at_mobiles=setting.at_mobiles_list
+                 "构建地址：[点击查看](%s) 详细情况可登录jenkins平台查看，非相关负责人员可忽略此消息。谢谢。" % jenkins_url ,
+            at_mobiles=self.at_mobiles
         )
 
-        """
-        markdown类型
-        :param title: 首屏会话透出的展示内容
-        :param text: markdown格式的消息内容
-        :param is_at_all: @所有人时：true，否则为：false（可选）
-        :param at_mobiles: 被@人的手机号（默认自动添加在text内容末尾，可取消自动化添加改为自定义设置，可选）
-        :param at_dingtalk_ids: 被@人的dingtalkId（可选）
-        :param is_auto_at: 是否自动在text内容末尾添加@手机号，默认自动添加，可设置为False取消（可选）        
-        :return: 返回消息发送结果
-        """
 
-# if __name__ == "__main__":
-#     # 发送钉钉推送消息
-#     ding = DingTalk()
-#     ding.send_dingding()
+

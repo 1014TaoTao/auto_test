@@ -1,7 +1,0 @@
-用户名输出框: "xpath==//input[@type='text']"
-密码输入框: "xpath==//input[@type='password']"
-登陆按钮: "xpath==//button[@type='submit']"
-
-滑块背景: "css==.card-body"
-滑块: "css==.card-body"
-#目标距离: "class==sliderText"

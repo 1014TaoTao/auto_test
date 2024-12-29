@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
+
 import os
 import time
-
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
+import logging
 
-from common import setting
-from tools.logi_tool import logger
+from config import setting
+
 
 success = "SUCCESS"
 fail = "FAIL   "
@@ -24,7 +25,6 @@ class Page:
     def __init__(self, driver, parent=None):
         self.driver = driver
         self.timeout = 20
-        self.logger = logger(setting.UI_LOG_PATH)
         self.parent = parent
         self.pass_num = 0
         self.fail_num = 0
@@ -39,10 +39,10 @@ class Page:
         start_time = time.time()
         try:
             self.driver.get(url)
-            self.logger.info("{0}==> 打开网址 {1}, 花费 {2} 秒".format(
+            logging.info("{0}==> 打开网址 {1}, 花费 {2} 秒".format(
                 success, url, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法加载 {1}, 花费 {2} 秒".format(
+            logging.error("{0}==> 无法加载 {1}, 花费 {2} 秒".format(
                 fail, url, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -84,13 +84,9 @@ class Page:
             os.makedirs(setting.UI_OR_IMG_PATH)
         try:
             self.driver.get_screenshot_as_file(file_path)
-            self.logger.info("{0}==> 截图当前页并保存,截图路径: {1}, 花费 {2} 秒".format(success,
-                                                                          file_path,
-                                                                          "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 截图当前页并保存,截图路径: {1}, 花费 {2} 秒".format(success, file_path, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法截图当前页并保存,截图路径: {1}, 花费 {2} 秒".format(fail,
-                                                                             file_path,
-                                                                             "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法截图当前页并保存,截图路径: {1}, 花费 {2} 秒".format(fail,file_path, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
         return file_path
@@ -143,8 +139,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.implicitly_wait(secs)
-        self.logger.info("{0}==> 设定隐性等待所有元素 {1} 秒, 花费 {2} 秒".format(success,
-                                                                    secs, "%.4f" % (time.time() - start_time)))
+        logging.info("{0}==> 设定隐性等待所有元素 {1} 秒, 花费 {2} 秒".format(success, secs, "%.4f" % (time.time() - start_time)))
 
     # 强制等待
     def sleep_wait(self, secs):
@@ -155,7 +150,7 @@ class Page:
         sleep(10)
         """
         time.sleep(secs)
-        self.logger.info("{0}==> 强制等待 {1} 秒".format(success, secs))
+        logging.info("{0}==> 强制等待 {1} 秒".format(success, secs))
 
     # 定位元素
     def _get_element(self, css):
@@ -196,7 +191,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.maximize_window()
-        self.logger.info("{0}==> 设置窗口最大化, 花费 {1} 秒".format(
+        logging.info("{0}==> 设置窗口最大化, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # 设置网页窗口尺寸
@@ -209,9 +204,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.set_window_size(wide, high)
-        self.logger.info("{0}==> 设置窗口尺寸,宽: {1},高: {2}, 花费 {3} 秒".format(success,
-                                                                        wide, high,
-                                                                        "%.4f" % (time.time() - start_time)))
+        logging.info("{0}==> 设置窗口尺寸,宽: {1},高: {2}, 花费 {3} 秒".format(success, wide, high, "%.4f" % (time.time() - start_time)))
 
     # 输出文本
     def text_input(self, css, text):
@@ -227,13 +220,9 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             el.send_keys(text)
-            self.logger.info("{0}==> 定位元素: <{1}> 输入内容: {2}, 花费 {3} 秒 ".format(success,
-                                                                              css1, text,
-                                                                              "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 定位元素: <{1}> 输入内容: {2}, 花费 {3} 秒 ".format(success, css1, text, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法定位元素: <{1}> 输入内容: {2}, 花费 {3} 秒".format(fail,
-                                                                                css1, text,
-                                                                                "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法定位元素: <{1}> 输入内容: {2}, 花费 {3} 秒".format(fail, css1, text, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -252,22 +241,16 @@ class Page:
             el = self._get_element(css)
             el.clear()
             el.send_keys(text)
-            self.logger.info("{0}==> 清空文本定位元素: <{1}> 输入内容: {2}, 花费 {3} 秒".format(success,
-                                                                                 css1, text,
-                                                                                 "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 清空文本定位元素: <{1}> 输入内容: {2}, 花费 {3} 秒".format(success, css1, text, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法定位清空文本元素: <{1}> 输入内容: {2}, 花费 {3} 秒".format(fail,
-                                                                                    css1, text,
-                                                                                    "%.4f" % (
-                                                                                        time.time() - start_time)))
+            logging.error("{0}==> 无法定位清空文本元素: <{1}> 输入内容: {2}, 花费 {3} 秒".format(fail, css1, text, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
     # 点击事件
     def click(self, css):
         """
-        可以点击任意文字/图片可以点击
-         连接、复选框、单选按钮，甚至下拉框等..
+        可以点击任意文字/图片可以点击连接、复选框、单选按钮，甚至下拉框等..
 
         用法:
         driver.click("id==kw")
@@ -279,10 +262,10 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             el.click()
-            self.logger.info("{0}==> 点击元素: <{1}>, 花费 {2} 秒".format(
+            logging.info("{0}==> 点击元素: <{1}>, 花费 {2} 秒".format(
                 success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到点击元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -301,10 +284,10 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             ActionChains(self.driver).context_click(el).perform()
-            self.logger.info(
+            logging.info(
                 "{0}==> 鼠标右击定位元素: <{1}>, 花费 {2} 秒".format(success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到鼠标右击定位元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -323,10 +306,10 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             ActionChains(self.driver).move_to_element(el).perform()
-            self.logger.info("{0}==> 移动元素: <{1}>, 花费 {2} 秒".format(
+            logging.info("{0}==> 移动元素: <{1}>, 花费 {2} 秒".format(
                 success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到移动元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -345,10 +328,10 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             ActionChains(self.driver).double_click(el).perform()
-            self.logger.info("{0}==> 双击元素: <{1}>, 花费 {2} 秒".format(
+            logging.info("{0}==> 双击元素: <{1}>, 花费 {2} 秒".format(
                 success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到双击元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img(
 
@@ -370,13 +353,9 @@ class Page:
             self._element_wait(ta_css)
             target = self._get_element(ta_css)
             ActionChains(self.driver).drag_and_drop(element, target).perform()
-            self.logger.info("{0}==> 拖动元素: <{1}> 到元素: <{2}>, 花费 {3} 秒".format(success,
-                                                                              el_css, ta_css,
-                                                                              "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 拖动元素: <{1}> 到元素: <{2}>, 花费 {3} 秒".format(success, el_css, ta_css, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法找到拖动元素: <{1}> 到元素: <{2}>, 花费 {3} 秒".format(fail,
-                                                                                   el_css, ta_css,
-                                                                                   "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法找到拖动元素: <{1}> 到元素: <{2}>, 花费 {3} 秒".format(fail, el_css, ta_css, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -393,10 +372,10 @@ class Page:
         try:
             # self.driver.find_element_by_partial_link_text(text).click()  # 弃用
             self.driver.find_element(by=By.LINK_TEXT(text)).click()
-            self.logger.info("{0}==> 点击超链接内容: {1}, 花费 {2} 秒".format(
+            logging.info("{0}==> 点击超链接内容: {1}, 花费 {2} 秒".format(
                 success, text, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到可以点击的超链接内容: {1}, 花费 {2} 秒".format(fail, text, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -411,7 +390,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.close()
-        self.logger.info("{0}==> 关闭当前窗口, 花费 {1} 秒".format(
+        logging.info("{0}==> 关闭当前窗口, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # 关闭浏览器
@@ -424,7 +403,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.quit()
-        self.logger.info("{0}==> 关闭所有窗口并退出浏览器, 花费 {1} 秒".format(
+        logging.info("{0}==> 关闭所有窗口并退出浏览器, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # 提交
@@ -441,10 +420,10 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             el.submit()
-            self.logger.info("{0}==> 提交元素: <{1}>, 花费 {2} 秒".format(
+            logging.info("{0}==> 提交元素: <{1}>, 花费 {2} 秒".format(
                 success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到可提交元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -459,7 +438,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.refresh()
-        self.logger.info("{0}==> 刷新网页, 花费 {1} 秒".format(
+        logging.info("{0}==> 刷新网页, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # 执行js脚本,参数为脚本内容，一般为字符串”“
@@ -473,11 +452,10 @@ class Page:
         start_time = time.time()
         try:
             self.driver.execute_script(script)
-            self.logger.info(
+            logging.info(
                 "{0}==> 执行js脚本: {1}, 花费 {2} 秒".format(success, script, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 该执行js脚本无效: {1}, 花费 {2} 秒".format(fail,
-                                                                       script, "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 该执行js脚本无效: {1}, 花费 {2} 秒".format(fail, script, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -503,14 +481,10 @@ class Page:
             self._element_wait(css)
             el = self._get_element(css)
             attr = el.get_attribute(attribute)
-            self.logger.info("{0}==> 获取属性元素: <{1}>,属性为: {2}, 花费 {3} 秒".format(success,
-                                                                              css, attribute,
-                                                                              "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 获取属性元素: <{1}>,属性为: {2}, 花费 {3} 秒".format(success, css, attribute, "%.4f" % (time.time() - start_time)))
             return attr
         except Exception:
-            self.logger.error("{0}==> 无法找到获取属性元素: <{1}>,属性为: {2}, 花费 {3} 秒".format(fail,
-                                                                                   css, attribute,
-                                                                                   "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法找到获取属性元素: <{1}>,属性为: {2}, 花费 {3} 秒".format(fail, css, attribute, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -527,11 +501,11 @@ class Page:
         try:
             self._element_wait(css)
             text = self._get_element(css).text
-            self.logger.info(
+            logging.info(
                 "{0}==> 获取元素文本: <{1}>, 花费 {2} 秒".format(success, css1, "%.4f" % (time.time() - start_time)))
             return text
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到获取元素文本元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -547,7 +521,7 @@ class Page:
 
         start_time = time.time()
         title = self.driver.title
-        self.logger.info("{0}==> 取网页标题, 花费 {1} 秒".format(
+        logging.info("{0}==> 取网页标题, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
         return title
 
@@ -561,7 +535,7 @@ class Page:
         """
         start_time = time.time()
         url = self.driver.current_url
-        self.logger.info("{0}==> 获取网页地址, 花费 {1} 秒".format(
+        logging.info("{0}==> 获取网页地址, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
         return url
 
@@ -575,7 +549,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.switch_to.alert.accept()
-        self.logger.info("{0}==> 弹框点击确认, 花费 {1} 秒".format(
+        logging.info("{0}==> 弹框点击确认, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # dimiss()弹框点击取消
@@ -588,7 +562,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.switch_to.alert.dismiss()
-        self.logger.info("{0}==> 弹框点击取消, 花费 {1} 秒".format(
+        logging.info("{0}==> 弹框点击取消, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # 进入窗口所在框架
@@ -605,10 +579,10 @@ class Page:
             self._element_wait(css)
             iframe_el = self._get_element(css)
             self.driver.switch_to.frame(iframe_el)
-            self.logger.info(
+            logging.info(
                 "{0}==> 进入窗口所在框架: <{1}>, 花费 {2} 秒".format(success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
+            logging.error(
                 "{0}==> 无法找到进入窗口所在框架元素: <{1}>, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -624,7 +598,7 @@ class Page:
         """
         start_time = time.time()
         self.driver.switch_to.default_content()
-        self.logger.info("{0}==> 退出窗口所在框架, 花费 {1} 秒".format(
+        logging.info("{0}==> 退出窗口所在框架, 花费 {1} 秒".format(
             success, "%.4f" % (time.time() - start_time)))
 
     # 打开新窗口，将鼠标切换到新打开的窗口
@@ -646,12 +620,9 @@ class Page:
             for handle in all_handles:
                 if handle != original_windows:
                     self.driver.switch_to.window(handle)
-            self.logger.info("{0}==> 点击元素: <{1}> 打开新的窗口并进入, 花费 {2} 秒".format(success,
-                                                                             css1, "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 点击元素: <{1}> 打开新的窗口并进入, 花费 {2} 秒".format(success, css1, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法找到点击元素: <{1}> 打开新的窗口并进入, 花费 {2} 秒".format(fail,
-                                                                                  css1,
-                                                                                  "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法找到点击元素: <{1}> 打开新的窗口并进入, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -667,11 +638,11 @@ class Page:
         css1 = css[0] + "==" + css[1]
         try:
             self._element_wait(css)
-            self.logger.info(
+            logging.info(
                 "{0}==> 动态等待定位元素: <{1}> 存在, 花费 {2} 秒".format(success, css1, "%.4f" % (time.time() - start_time)))
             return True
         except TimeoutException:
-            self.logger.error(
+            logging.error(
                 "{0}==> 动态等待定位元素: <{1}> 不存在, 花费 {2} 秒".format(fail, css1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             return False
@@ -695,11 +666,11 @@ class Page:
                 if flag == 5:
                     break
             self.driver.switch_to.window(all_handle[-1])
-            self.logger.info("{0}==> 切换浏览器窗口,窗口地址: {1}, 花费 {2} 秒".format(success,
-                                                                         self.driver.current_url,
-                                                                         "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 切换浏览器窗口,窗口地址: {1}, 花费 {2} 秒".format(success,
+                                                                    self.driver.current_url,
+                                                                    "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法切换浏览器窗口, 花费 {1} 秒".format(
+            logging.error("{0}==> 无法切换浏览器窗口, 花费 {1} 秒".format(
                 fail, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
@@ -720,11 +691,10 @@ class Page:
             ele.send_keys(text)
             time.sleep(secs)
             ele.send_keys(Keys.ENTER)
-            self.logger.info("{0}==> 定位元素 <{1}> 输入内容: {2},等待时间 {3} 秒,点击回车, 花费 {4} 秒".format(
+            logging.info("{0}==> 定位元素 <{1}> 输入内容: {2},等待时间 {3} 秒,点击回车, 花费 {4} 秒".format(
                 success, css1, text, secs, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法找到定位元素 <{1}> 输入内容: {2},等待时间 {3} 秒,点击回车, 花费 {4} 秒".
-                              format(fail, css1, text, secs, "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法找到定位元素 <{1}> 输入内容: {2},等待时间 {3} 秒,点击回车, 花费 {4} 秒". format(fail, css1, text, secs, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -740,12 +710,10 @@ class Page:
         js_str = "$('{0}').click()".format(css)
         try:
             self.driver.execute_script(js_str)
-            self.logger.info(
+            logging.info(
                 "{0}==> 通过js脚本定位点击，js脚本内容: {1}, 花费 {2} 秒".format(success, js_str, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error("{0}==> 无法通过js脚本定位点击，js脚本内容: {1}, 花费 {2} 秒".format(fail,
-                                                                                 js_str,
-                                                                                 "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 无法通过js脚本定位点击，js脚本内容: {1}, 花费 {2} 秒".format(fail, js_str, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -758,13 +726,10 @@ class Page:
         js_str = "window.scrollTo({0},{1})".format(horizontal, vertical)
         try:
             self.driver.execute_script(js_str)
-            self.logger.info("{0}==> 通过js脚本设定滚动条，js脚本内容，滚动条位置: {1}, 花费 {2} 秒".format(success, js_str,
-                                                                                     "%.4f" % (
-                                                                                         time.time() - start_time)))
+            logging.info("{0}==> 通过js脚本设定滚动条，js脚本内容，滚动条位置: {1}, 花费 {2} 秒".format(success, js_str, "%.4f" % (time.time() - start_time)))
         except Exception:
-            self.logger.error(
-                "{0}==> 无法通过js脚本设定滚动条，js脚本内容，滚动条位置: {1}, 花费 {2} 秒".format(fail, js_str,
-                                                                          "%.4f" % (time.time() - start_time)))
+            logging.error(
+                "{0}==> 无法通过js脚本设定滚动条，js脚本内容，滚动条位置: {1}, 花费 {2} 秒".format(fail, js_str, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             raise
 
@@ -774,7 +739,7 @@ class Page:
             if len(self.driver.find_elements(*loc)):
                 return self.driver.find_elements(*loc)
         except Exception:
-            self.logger.info("%s 无法找到定位元素 %s 在页面中." % (self, loc))
+            logging.info("%s 无法找到定位元素 %s 在页面中." % (self, loc))
             raise "%s 无法找到定位元素 %s 在页面中." % (self, loc)
 
     # 判断指定的元素中是否包含了预期的字符串，返回布尔值(包含关系)
@@ -789,14 +754,14 @@ class Page:
         try:
             WebDriverWait(self.driver, self.timeout, 0.5).until(
                 ec.text_to_be_present_in_element(locator, text))
-            self.logger.info(
+            logging.info(
                 "{0}==> 定位到元素: <{1}> , 花费 {2} 秒".format(success, locator1, "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
 
         except TimeoutException:
-            self.logger.error(
+            logging.error(
                 "{0}==> 元素无法定位: <{1}> , 花费 {2} 秒".format(fail, locator1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             self.fail_num += 1
@@ -815,14 +780,12 @@ class Page:
         try:
             WebDriverWait(self.driver, self.timeout, 0.5).until(
                 ec.text_to_be_present_in_element_value(locator, value))
-            self.logger.info("{0}==> 定位到元素: <{1}> , 花费 {2} 秒".format(success,
-                                                                     locator1, "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 定位到元素: <{1}> , 花费 {2} 秒".format(success, locator1, "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
         except TimeoutException:
-            self.logger.error("{0}==> 元素无法定位: <{1}> , 花费 {2} 秒".format(fail,
-                                                                       locator1, "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 元素无法定位: <{1}> , 花费 {2} 秒".format(fail, locator1, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             self.fail_num += 1
             result = "fail"
@@ -840,16 +803,12 @@ class Page:
         try:
             WebDriverWait(self.driver, self.timeout, 0.5).until(
                 ec.title_is(title))
-            self.logger.info("{0}==> 判断网页标题: <{1}> ,实际标题<{2}> 花费 {3} 秒".format(success,
-                                                                               title, self.get_title(),
-                                                                               "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 判断网页标题: <{1}> ,实际标题<{2}> 花费 {3} 秒".format(success, title, self.get_title(), "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
         except TimeoutException:
-            self.logger.error("{0}==> 判断网页标题: <{1}> ,实际标题<{2}> 花费 {3} 秒".format(fail,
-                                                                                title, self.get_title(),
-                                                                                "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 判断网页标题: <{1}> ,实际标题<{2}> 花费 {3} 秒".format(fail, title, self.get_title(), "%.4f" % (time.time() - start_time)))
             self.fail_img()
             self.fail_num += 1
             result = "fail"
@@ -867,14 +826,12 @@ class Page:
         try:
             WebDriverWait(self.driver, self.timeout, 0.5).until(
                 ec.title_contains(text))
-            self.logger.info("{0}==> 判断网页标题包含: <{1}> , 花费 {2} 秒".format(success,
-                                                                        text, "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 判断网页标题包含: <{1}> , 花费 {2} 秒".format(success, text, "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
         except TimeoutException:
-            self.logger.error("{0}==> 判断网页标题包含: <{1}> , 花费 {2} 秒".format(fail,
-                                                                         text, "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 判断网页标题包含: <{1}> , 花费 {2} 秒".format(fail, text, "%.4f" % (time.time() - start_time)))
             self.fail_img()
             self.fail_num += 1
             result = "fail"
@@ -891,14 +848,12 @@ class Page:
         start_time = time.time()
         try:
             assert (loc == text)
-            self.logger.info("{0}==> 断言: {1} == {2}, 花费 {3} 秒".format(success, loc,
-                                                                      text, "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 断言: {1} == {2}, 花费 {3} 秒".format(success, loc, text, "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
         except Exception:
-            self.logger.error("{0}==> 断言: {1} != {2}, 花费 {3} 秒".format(fail, loc,
-                                                                       text, "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 断言: {1} != {2}, 花费 {3} 秒".format(fail, loc, text, "%.4f" % (time.time() - start_time)))
             self.assert_img()
             self.fail_num += 1
             result = "fail"
@@ -915,14 +870,12 @@ class Page:
         start_time = time.time()
         try:
             assert (loc != text)
-            self.logger.info("{0}==> 断言: {1} != {2}, 花费 {3} 秒".format(success, loc,
-                                                                      text, "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 断言: {1} != {2}, 花费 {3} 秒".format(success, loc, text, "%.4f" % (time.time() - start_time)))
             self.pass_num += 1
             result = "pass"
             return result
         except Exception:
-            self.logger.error("{0}==> 断言: {1} == {2}, 花费 {3} 秒".format(fail, loc,
-                                                                       text, "%.4f" % (time.time() - start_time)))
+            logging.error("{0}==> 断言: {1} == {2}, 花费 {3} 秒".format(fail, loc, text, "%.4f" % (time.time() - start_time)))
             self.assert_img()
             self.fail_num += 1
             result = "fail"
@@ -944,9 +897,7 @@ class Page:
                 css1, css2)
             self.driver.execute_script(js_str)
         except Exception:
-            self.logger.info("{0}==> 定位属性，<{1}> ,js脚本: {2}，花费 {3} 秒".format(success,
-                                                                            css3, js_str,
-                                                                            "%.4f" % (time.time() - start_time)))
+            logging.info("{0}==> 定位属性，<{1}> ,js脚本: {2}，花费 {3} 秒".format(success, css3, js_str, "%.4f" % (time.time() - start_time)))
             raise "无法定位到元素，导致不能将目标属性处理为空"
 
 # if __name__ == '__main__':

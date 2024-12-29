@@ -1,20 +1,13 @@
 # -*- coding: utf-8 -*-
 
-
-import datetime
-import random
-import re
 import string
-
-import jsonpath
-from dateutil.relativedelta import relativedelta
+import random
+import datetime
 from faker import Faker
-
-from common import setting
-from tools.logi_tool import logger
+from dateutil.relativedelta import relativedelta
 
 
-class Context:
+class ContextPack:
     def __init__(self):
         self.faker = Faker(locale='zh_CN')
 
@@ -73,13 +66,21 @@ class Context:
         return SelfOperatedShop
 
     @property
-    def get_time(self) -> datetime.datetime:
+    def get_secend_time(self)->datetime:
         """
-        计算当前时间
+        计算当前时间: 年-月-日 时:分:秒:毫秒
         :return:
         """
         return datetime.datetime.now()
 
+    @property
+    def get_day_time(self)->str:
+        """
+        计算当前时间: 年-月-日
+        :return:
+        """
+        return datetime.datetime.now().strftime('%Y-%m-%d')
+    
     def generate_bank_card(self):
         """
         生成随机银行卡号
@@ -273,77 +274,17 @@ class Context:
         """
         ctcc = [133, 153, 173, 177, 180, 181, 189, 191, 193, 199]
         cucc = [130, 131, 132, 155, 156, 166, 175, 176, 185, 186, 166]
-        cmcc = [134, 135, 136, 137, 138, 139, 147, 150, 151, 152,
-                157, 158, 159, 172, 178, 182, 183, 184, 187, 188, 198]
+        cmcc = [134, 135, 136, 137, 138, 139, 147, 150, 151, 152, 157, 158, 159, 172, 178, 182, 183, 184, 187, 188, 198]
         begin = 10 ** 7
         end = 10 ** 8 - 1
         prefix = random.choice(ctcc + cucc + cmcc)
         return str(prefix) + str(random.randint(begin, end))
 
-
-def regular(target) -> str:
-    """
-    使用正则替换请求数据
-    :return:
-    """
-    try:
-        regular_pattern = r'\${{(.*?)}}'
-        while re.findall(regular_pattern, target):
-            key = re.search(regular_pattern, target).group(1)
-
-            target = re.sub(regular_pattern, str(
-                getattr(Context(), key)), target, 1)
-        return target
-
-    except AttributeError:
-        logger(setting.API_LOG_PATH).error("未找到对应的替换的数据, 请检查数据是否正确", target)
-        raise
-
-
-def SqlJson(jsPath, res):
-    return jsonpath.jsonpath(res, jsPath)[0]
-
-
-def SqlRegular(value, res=None):
-    """
-    这里处理sql中的依赖数据，通过获取接口响应的jsonpath的值进行替换
-    :param res: jsonpath使用的返回结果
-    :param value:
-    :return:
-    """
-    SqlJsonList = re.findall(r"\$json\((.*?)\)\$", value)
-
-    for i in SqlJsonList:
-        pattern = re.compile(
-            r'\$json\(' + i.replace('$', "\$").replace('[', '\[') + r'\)\$')
-        key = str(SqlJson(i, res))
-        value = re.sub(pattern, key, value, count=1)
-        value = SqlRegular(value, res)
-
-    return value
-
-
 if __name__ == '__main__':
-    C = Context()
-    # 简单随机数据
-    # print(C.random_str(16))
-    # print(C.random_int("100,200"))
-    # print(C.random_float("200,100,5"))
-    # print(C.random_choice("aaa,bbb,ccc"))
-    #
-    # # 生成日期数据
-    # print(C.generate_date())
-    # print(C.generate_datetime())
-    # print(C.generate_date('m+3'))
-    # print(C.generate_datetime('d+3'))
-    # print(C.generate_timestamp('s+100'))
-    # print(C.generate_noid('y-18'))
-
-    # 生成常用数据
-    print(C.generate_guid())
-    # print(C.generate_wxid())
-    # print(C.generate_noid())
-    # print(C.generate_phone())
-    #
-    # print(C.generate_email())
-    # print(C.generate_bank_card())
+    context = ContextPack()
+    print(context.get_secend_time)
+    print(context.get_day_time)
+    print(context.get_phone)
+    print(context.get_id_number)
+    print(context.get_female_name)
+    print(context.merchantSelfOperatedShop)

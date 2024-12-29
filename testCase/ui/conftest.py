@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import allure
 import pytest
+import logging
 
 from basepage.base import Page
 from basepage.browser import select_browser
-from common import setting
-from tools.logi_tool import logger
-from tools.ui_tool_selenium_check import inspect_element
+from config import setting
+from tools.element_check_tool import ElementPack
 
-logger = logger(setting.UI_LOG_PATH)
 driver = None
 
 # -----------------------------全局初始化--------------------------------------------
@@ -27,17 +25,18 @@ fixture的作用范围:
 @pytest.fixture(scope="session", autouse=True)
 def init_project():
     global driver
-    with allure.step("打开浏览器并最大化"):
-        if driver is None:
-            driver = select_browser()
-            Page(driver).max_window()
-            Page(driver).implicitly_wait(30)
-    with allure.step("定位元素检查"):
-        logger.info(f"ui自动化，校验元素定位data格式【START】！")
-        inspect_element()
-        yield driver
-    with allure.step("关闭浏览器"):
-        Page(driver).quit()
+    if driver is None:
+        driver = select_browser()
+        Page(driver).max_window()
+        Page(driver).implicitly_wait(30)
+
+    logging.info(f"ui自动化，校验元素定位data格式【START】！")
+    search = ElementPack(element_path=setting.UI_YAML_PATH)
+    search.inspect_element()
+
+    yield driver
+
+    Page(driver).quit()
 
 
 # 失败截图放在allure报告中
@@ -48,5 +47,7 @@ def pytest_runtest_makereport():
 
     if res.when == 'call' and res.failed:
         if hasattr(driver, 'get_screenshot_as_png'):
-            with allure.step("添加用例失败截图"):
-                allure.attach(driver.get_screenshot_as_png(), '失败截图', allure.attachment_type.PNG)
+            file_name = f"{res.nodeid.replace('::', '_').replace('/', '_')}.png"
+            res._metadata.update({'image': file_name})
+            driver.get_screenshot_as_file(
+                f"{setting.UI_FAIL_IMG_PATH}/{file_name}")
