@@ -279,12 +279,3 @@ class ContextPack:
         end = 10 ** 8 - 1
         prefix = random.choice(ctcc + cucc + cmcc)
         return str(prefix) + str(random.randint(begin, end))
-
-if __name__ == '__main__':
-    context = ContextPack()
-    print(context.get_secend_time)
-    print(context.get_day_time)
-    print(context.get_phone)
-    print(context.get_id_number)
-    print(context.get_female_name)
-    print(context.merchantSelfOperatedShop)

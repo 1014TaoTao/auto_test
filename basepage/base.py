@@ -14,7 +14,7 @@ from config import setting
 
 
 success = "SUCCESS"
-fail = "FAIL   "
+fail = "FAIL"
 
 
 class Page:
@@ -53,19 +53,19 @@ class Page:
 
     # 失败截图
     def fail_img(self) -> str:
-        file_name = 'fail%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
-        file_path = setting.UI_FAIL_IMG_PATH + "\\" + file_name
-        if not os.path.exists(setting.UI_FAIL_IMG_PATH):
-            os.makedirs(setting.UI_FAIL_IMG_PATH)
+        file_name = 'fail_%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
+        file_path = setting.UI_IMG_PATH + "\\" + file_name
+        if not os.path.exists(setting.UI_IMG_PATH):
+            os.makedirs(setting.UI_IMG_PATH)
         self.driver.get_screenshot_as_file(file_path)
         return file_path
 
     # 断言截图
     def assert_img(self) -> str:
-        file_name = 'assert%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
-        file_path = setting.UI_ASS_IMG_PATH + "\\" + file_name
-        if not os.path.exists(setting.UI_ASS_IMG_PATH):
-            os.makedirs(setting.UI_ASS_IMG_PATH)
+        file_name = 'assert_%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
+        file_path = setting.UI_IMG_PATH + "\\" + file_name
+        if not os.path.exists(setting.UI_IMG_PATH):
+            os.makedirs(setting.UI_IMG_PATH)
         self.driver.get_screenshot_as_file(file_path)
         return file_path
 
@@ -78,10 +78,10 @@ class Page:
         driver.take_screenshot('c:/test.png')
         """
         start_time = time.time()
-        file_name = '%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
-        file_path = setting.UI_OR_IMG_PATH + "\\" + file_name
-        if not os.path.exists(setting.UI_OR_IMG_PATH):
-            os.makedirs(setting.UI_OR_IMG_PATH)
+        file_name = 'ordinary_%s.png' % (time.strftime("%Y_%m_%d_%H_%M_%S"))
+        file_path = setting.UI_IMG_PATH + "\\" + file_name
+        if not os.path.exists(setting.UI_IMG_PATH):
+            os.makedirs(setting.UI_IMG_PATH)
         try:
             self.driver.get_screenshot_as_file(file_path)
             logging.info("{0}==> 截图当前页并保存,截图路径: {1}, 花费 {2} 秒".format(success, file_path, "%.4f" % (time.time() - start_time)))

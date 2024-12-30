@@ -2,46 +2,30 @@
 
 # 选择浏览器
 import time
-
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 import logging
+from selenium import webdriver
 
-from config import setting
-from common import consts
 
 success = "SUCCESS"
-fail = "FAIL   "
-browser = consts.BROWSER
+fail = "FAIL"
 
-def select_browser(browser=browser, remote_address=None):
+def select_browser(browser, remote_address=None):
     driver = None
     start_time = time.time()
     dc = {'platform': 'ANY', 'browserName': 'chrome', 'version': '', 'javascriptEnabled': True}
+    
     try:
         if remote_address is None:  # web端
-            if browser == "chrome" or browser == "Chrome":
-                # driver = webdriver.Chrome(service=Service(setting.DRIVER))
+            if browser in ["chrome", "Chrome"]:
                 options = webdriver.ChromeOptions()
-                # options.add_argument('start-maximized')
-                # 无头模式：启动浏览器进程，但不会显示出来
-                # options.add_argument('--headless')
-                # options.add_argument('--disable-gpu')
-                # 新版本的去掉警告（70以上版本）
-                options.add_experimental_option(
-                    'useAutomationExtension', False)  # 去掉开发者警告
-                options.add_experimental_option(
-                    'excludeSwitches', ['enable-automation'])  # 去掉黄条
-                driver = webdriver.Chrome(
-                    options=options, service=Service(setting.DRIVER))
-
-            elif browser == "firefox" or browser == "Firefox":
+                options.add_experimental_option('useAutomationExtension', False)  # 去掉开发者警告
+                options.add_experimental_option('excludeSwitches', ['enable-automation'])  # 去掉黄条
+                driver = webdriver.Chrome(options=options)
+            elif browser in ["firefox", "Firefox"]:
                 driver = webdriver.Firefox()
-            elif browser == "internet explorer" or browser == "ie":
+            elif browser in ["ie", "IE"]:
                 driver = webdriver.Ie()
-            elif browser == "opera":
-                driver = webdriver.Opera()
-            elif browser == "edge":
+            elif browser in ["edge", "Edge"]:
                 driver = webdriver.Edge()
         else:  # 移动端
             if browser == "RChrome":
@@ -53,9 +37,10 @@ def select_browser(browser=browser, remote_address=None):
                 dc['browserName'] = 'firefox'
                 dc['marionette'] = False
                 driver = webdriver.Remote(command_executor='https://' + remote_address + '/wd/hub', desired_capabilities=dc)
-        logging.info(
-            "{0}==> 开启浏览器: {1}, 共花费 {2} 秒".format(success, browser, "%.4f" % (time.time() - start_time)))
+        
+        logging.info("{0}==> 开启浏览器: {1}, 共花费 {2} 秒".format(success, browser, "%.4f" % (time.time() - start_time)))
 
     except Exception:
         raise NameError("没有找到 {0} 浏览器,请确认 'ie','firefox', 'chrome','RChrome','RIe' or 'RFirefox'是否存在或名称是否正确.".format(browser))
+    
     return driver

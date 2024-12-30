@@ -14,7 +14,7 @@ class ElementPack:
         self.element_path = element_path
         if not os.path.exists(self.element_path):
             logging.error(f"{self.element_path} 文件不存在！")
-        with open(self.element_path, encoding='utf-8') as f:
+        with open(self.element_path, 'r', encoding='utf-8') as f:
             self.data = yaml.safe_load(f)
 
     def __getitem__(self, item):
@@ -52,5 +52,4 @@ class ElementPack:
                 assert value, f'【{k}】元素类型与值不匹配'
         end_time = time.time()
 
-        logging.info(f"ui自动化，校验元素定位data格式【END！用时 %.3f秒！" %
-                     (end_time - start_time))
+        logging.info(f"ui自动化，校验元素定位data格式【END！用时 %.3f秒！" %(end_time - start_time))

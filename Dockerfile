@@ -15,27 +15,12 @@ EXPOSE  50000
 # 4.切换到root用户
 USER root
 RUN sed -i 's#http://deb.debian.org#https://mirrors.aliyun.com#g' /etc/apt/sources.list
-# 配置apt-get源
-# RUN echo "">sources.list
-# RUN echo "deb http://ftp2.cn.debian.org/debian/ buster main">>sources.list
-# RUN echo "deb http://ftp2.cn.debian.org/debian/debian-security buster/updates main">>sources.list
-# RUN echo "deb http://ftp2.cn.debian.org/debian/debian buster-updates main">>sources.list
 
 RUN cd /var/jenkins_home
 
 # 设定镜像当前时间，否则发送得钉钉消息执行得时候获取到得时间不准备。设置完成可以用date命令查看当前时间
 RUN rm -rf /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
-# 1.centos获取最新的软件包
-#yum update
-
-# 2.提前安装，以便接下来的配置操作
-#yum -y install gcc automake autoconf libtool make
-#yum -y install make*
-#yum -y install zlib*
-#yum install openssl-devel -y //
-#yum -y install sudo
 
 # 获取最新的debain软件包
 RUN apt-get update
@@ -67,17 +52,6 @@ RUN pqi use douban
 
 RUN touch requirements.txt
 
-# 下载allure
-RUN wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.17.3/allure-commandline-2.17.3.tgz
-RUN tar -zxvf allure-commandline-2.17.3.tgz
-RUN mv allure-2.17.3 allure
-RUN chmod -R 777 allure
-
-## 配置 allure (记得一行一个回车哦，不然就直接复制粘贴)
-#RUN cat >> /root/.bashrc << "EOF"
-#RUN export PATH=/var/jenkins_home/allure/bin:$PATH
-#RUN EOF
-
 #配置环境变量
 ENV PATH=/usr/local/bin/:$PATH
 ENV PATH=/var/jenkins_home/allure/bin:$PATH
@@ -89,7 +63,6 @@ RUN source /root/.bashrc
 RUN java --version
 RUN python3 --version
 RUN pip --version
-RUN allure --version
 
 
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]

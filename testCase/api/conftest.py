@@ -21,7 +21,7 @@ ENVIRONMENT: str = consts.ENVIRONMENT
 TESTER: str = consts.TESTER
 
 
-@pytest.fixture(scope="session", name="init_session", autouse=True)
+@pytest.fixture(scope="session", autouse=True)
 def init_session():
     """会话级别的测试初始化和结果收集"""
     if TEST_TYPE not in ['API', 'UI']:
@@ -97,7 +97,6 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
 def pytest_html_report_title(report):
     """设置报告标题"""
     report.title = f"{TEST_TYPE}自动化测试报告"
-
 
 def pytest_configure(config):
     """测试配置"""

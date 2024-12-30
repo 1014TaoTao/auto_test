@@ -11,7 +11,7 @@ from tools.manage import Manage
 
 manage = Manage()
 excel = ExcelPack(file_name=setting.API_EXCEL_FILE)
-yaml = YamlPack(yaml_path=setting.PER_YAML_PATH)
+yaml = YamlPack(yaml_path=setting.API_YAML_PATH)
 
 
 class TestExcel:

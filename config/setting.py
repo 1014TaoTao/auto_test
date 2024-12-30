@@ -24,29 +24,17 @@ LOG_PATH = os.path.join(BASE_PATH, "logs", ContextPack().get_day_time + '.log')
 # 项目测试报告
 REPORT_PATH = os.path.join(BASE_PATH, "reports")
 # 项目测试报告路径
-HTML_REPORT_PATH = os.path.join(
-    REPORT_PATH, ContextPack().get_day_time + '.html')
+HTML_REPORT_PATH = os.path.join(REPORT_PATH, ContextPack().get_day_time + '.html')
 
 # ===================API配置======================
 # api数据路径
-API_EXCEL_FILE = os.path.join(CASE_PATH, "api", "test.xlsx")
+API_EXCEL_FILE = os.path.join(CASE_PATH, "api", "case.xlsx")
+API_YAML_PATH = os.path.join(CASE_PATH, "api", 'case.yaml')
 
 # ===================UI配置======================
 # UI数据文件
-UI_YAML_PATH = os.path.join(CASE_PATH, "ui", 'test.yaml')
-# UI配置文件路径
+UI_YAML_PATH = os.path.join(CASE_PATH, "ui", 'case.yaml')
+# UI截图路径
 UI_IMG_PATH = os.path.join(REPORT_PATH, "img")
-# 正常截图文件位置：
-UI_OR_IMG_PATH = os.path.join(UI_IMG_PATH, "ordinary")
-# 断言截图存放位置
-UI_ASS_IMG_PATH = os.path.join(UI_IMG_PATH, "assert")
-# 失败截图存放位置
-UI_FAIL_IMG_PATH = os.path.join(UI_IMG_PATH, "fail")
-# driver驱动路径
-DRIVER = os.path.join(BASE_PATH, "driver", "chromedriver.exe")
 
-# ===================PRE配置======================
-# per数据文件
-PER_YAML_PATH = os.path.join(CASE_PATH, "per", 'test.yaml')
-# per配置文件路径
-LOCUST_CONFIG_PATH = os.path.join(BASE_PATH, "locust.conf")
+
