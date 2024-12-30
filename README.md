@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-Auto_Test 是一个完全开源免费的自动化测试框架，旨在整合多种工具和技术，提供全面的API和UI自动化测试解决方案。通过使用Python、pytest、Selenium、pytest-html、requests、openpyxl、pandas、DingTalk、Faker等技术，本项目能够帮助开发者高效地进行自动化测试，并生成详细的测试报告。
+Auto_Test 是一个完全开源免费的自动化测试框架，旨在整合多种工具和技术，提供全面的API和UI自动化测试解决方案。通过使用Python、pytest、Selenium、pytest-html、requests、openpyxl、pandas、DingTalk、email、Faker、Jenkins等技术，本项目能够帮助开发者高效地进行自动化测试，并生成详细的测试报告。支持通过Jenkins构建发送测试结果通知到邮件和钉钉，方便团队成员及时了解测试状态。
 
 ## 关键特性
 
