@@ -66,3 +66,17 @@ AUTO_TEST
 ## 参与和支持
 
 如果你觉得这个项目对你有帮助，请给我们一个Star，感谢你的支持!
+
+## 🎨 微信群
+
+在下方为群二维码，可以用于技术交流，也可以一起讨论在项目使用过程中遇到的各种问题。真心希望大家一起优化该项目，积极讨论，让我们一起抱团取暖！
+
+### 群二维码
+
+<table>
+    <tr>
+      <td><img src="https://gitee.com/tao__tao/fastapi_vue3_admin/raw/master/mkdocs/docs/resources/images/微信.jpg"/></td>
+      <td><img src="https://gitee.com/tao__tao/fastapi_vue3_admin/raw/master/mkdocs/docs/resources/images/微信群.jpg"/></td>
+      <td><img src="https://gitee.com/tao__tao/fastapi_vue3_admin/raw/master/mkdocs/docs/resources/images/wechatPay.jpg"/></td>
+    </tr>
+</table>
